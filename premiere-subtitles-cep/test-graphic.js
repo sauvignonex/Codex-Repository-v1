@@ -14,7 +14,7 @@
     if(rows[0][0]!=='ok')throw Error(rows[0][1]||'Неизвестный ответ Premiere: '+raw);
     return rows;
   }
-  async function write(raw,layout,scope="$._artemSubtitleTest",show=true,guard=null){
+  async function write(raw,layout,scope="$._artemSubtitleTest",show=true,guard=null,beforeWrite=null){
     if(layout.role==='speech'){
       await document.fonts.load('500 200px "Cera Pro"');
       const fit=window.subtitleTypography.fitSpeech(layout.speech,layout.size);
@@ -41,6 +41,8 @@
     const targets=[...fields.filter(f=>Object.hasOwn(texts,f.name)).map(f=>f.index),...Object.keys(numbers).map(name=>Number(rows.find(r=>r[0]==='param'&&r[2]===name)[1])),Number(colorRow[1])];
     if(targets.some(index=>!Number.isInteger(index)||index<0)||!/^#[0-9a-f]{6}$/i.test(layout.color))throw Error('Некорректные параметры шаблона или цвет.');
     if(guard)guard();
+    // Persist an unconfirmed state before a setter can partially change the native clip.
+    if(beforeWrite)beforeWrite();
     for(const [name,text] of Object.entries(texts)){
       const field=fields.find(f=>f.name===name);if(!field)throw Error('В шаблоне отсутствует '+name);
       field.obj.textEditValue=(text||'').replace(/\n/g,'\r');field.obj.fontTextRunLength=[field.obj.textEditValue.length];field.obj.capPropTextRunCount=1;

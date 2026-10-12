@@ -12,6 +12,13 @@
 
   window.subtitleBatch={signature,getState:()=>{let record=null;try{record=JSON.parse(localStorage.getItem(registryKey)||'null');}catch(_){}return{issue,ready:bindingReady,connected:Boolean(window.__adobe_cep__?.evalScript),busy:running||window.subtitleGraphic.busy||Boolean(window.subtitleTranscription?.busy)||Boolean(window.SubtitleEditorialUI?.busy),canCreate:bindingReady&&!button.disabled,record:bindingReady&&!bindingMissing?record:null};}};
 
+  function invalidateApplied(documentKey,index){
+    const record=JSON.parse(localStorage.getItem(registryKey)||'null');
+    if(record?.documentKey!==documentKey||!Number.isInteger(index)||index<0||index>=record.completed)throw Error('Связь с клипом изменилась. Запись не начиналась.');
+    if(Array.isArray(record.applied))record.applied[index]=null;
+    try{localStorage.setItem(registryKey,JSON.stringify(record));changed();}catch(_){throw Error('Не удалось сохранить состояние перед записью. Клип не изменён.');}
+  }
+
   async function checkpoint(appliedIndex,written){
 
     const row=window.subtitleGraphic.parse(await window.subtitleGraphic.call('$._artemSubtitleBatch.registry()'))[0];
@@ -138,7 +145,7 @@
 
       window.subtitleGraphic.parse(raw);
 
-      await window.subtitleGraphic.write(raw,{...layout,timing:cue,duration:(cue.end-cue.start)/1000},'$._artemSubtitleBatch',true,guard);
+      await window.subtitleGraphic.write(raw,{...layout,timing:cue,duration:(cue.end-cue.start)/1000},'$._artemSubtitleBatch',true,guard,()=>invalidateApplied(doc.id,cue.index));
 
       await checkpoint(cue.index,written);
 
@@ -169,7 +176,7 @@
         guard();
         status.textContent='Записываем исправление '+(n+1)+' из '+indices.length+'…';
         const raw=await subtitleGraphic.call('$._artemSubtitleBatch.select('+i+','+JSON.stringify(doc.id)+')');subtitleGraphic.parse(raw);
-        await subtitleGraphic.write(raw,{...layout,timing:cue,duration:(cue.end-cue.start)/1000},'$._artemSubtitleBatch',true,guard);await checkpoint(i,written);
+        await subtitleGraphic.write(raw,{...layout,timing:cue,duration:(cue.end-cue.start)/1000},'$._artemSubtitleBatch',true,guard,()=>invalidateApplied(doc.id,i));await checkpoint(i,written);
       }
       const latest=SubtitleDocument.getSnapshot(),newEdits=latest?.id!==doc.id||indices.some(i=>!latest.cues[i]||signature(latest.cues[i])!==signature(doc.cues[i]));
       status.textContent='Записано исправлений речи: '+indices.length+'. Хайлайты и тайминги сохранены. Новые клипы не импортировались.'+(newEdits?' Новые правки в панели ещё не записаны.':'');

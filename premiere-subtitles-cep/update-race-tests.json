@@ -1,12 +1,13 @@
 {
   "status": "browser-contract-tested; native Premiere verification pending",
-  "passed": 6,
+  "passed": 7,
   "checks": [
     "text, role, selected cue or document changed during host load stop before native selection/write",
     "edit while host selects linked clip is rejected by writer guard before mutation",
     "edits after native write begins remain pending; checkpoint uses written snapshot and update never imports",
     "speech correction promoted to highlight while waiting is never written by correction batch",
     "unchanged linked cue updates once and saves confirmed signature",
+    "partial write failure invalidates old applied signature even if panel text remains unchanged",
     "all pending speech corrections update exact linked cues while complete highlights and timings remain unchanged"
   ]
 }

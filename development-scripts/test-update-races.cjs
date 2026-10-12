@@ -11,7 +11,7 @@ const root=path.resolve(__dirname,'..'),checks=[];
   localStorage.setItem('artem.subtitle-studio.batch.v1',JSON.stringify({version:1,documentKey:d.id,sequenceID:'seq',total:2,completed:2,pending:false,phase:'complete',applied:d.cues.map(subtitleBatch.signature)}));
   subtitleHost.ensure=async()=>{};
   subtitleGraphic.call=async script=>{requests.push(script);if(script.includes('.registry()'))return ['ok',d.id,'project','seq',2,2,'complete',0,'clip0','clip0','clip1'].join('|');if(script.includes('.verifyBinding()'))return 'ok|present';return 'ok';};
-  subtitleGraphic.write=async(_,layout,scope,show,guard)=>{if(guard)guard();writes.push(JSON.parse(JSON.stringify(layout)));};
+  subtitleGraphic.write=async(_,layout,scope,show,guard,beforeWrite)=>{if(guard)guard();if(beforeWrite)beforeWrite();writes.push(JSON.parse(JSON.stringify(layout)));};
  });return p;}
  async function run(p){await p.evaluate(()=>document.getElementById('srt-update-block').dispatchEvent(new Event('click')));}
  async function settle(p){await p.waitForFunction(()=>!subtitleBatch.getState().busy);}
@@ -39,6 +39,13 @@ const root=path.resolve(__dirname,'..'),checks=[];
   const p=await fixture();await run(p);await settle(p);assert.equal(await p.evaluate(()=>writes.length),1);assert.equal(await p.evaluate(()=>JSON.parse(localStorage.getItem('artem.subtitle-studio.batch.v1')).applied[0]),await p.evaluate(()=>subtitleBatch.signature(SubtitleDocument.getSelected())));await p.close();
  }
  checks.push('unchanged linked cue updates once and saves confirmed signature');
+ {
+  const p=await fixture();await p.evaluate(()=>{subtitleGraphic.write=async(_,layout,scope,show,guard,beforeWrite)=>{guard();beforeWrite();writes.push(layout);throw Error('partial native failure');};});await run(p);await settle(p);
+  const result=await p.evaluate(()=>({record:JSON.parse(localStorage.getItem('artem.subtitle-studio.batch.v1')),current:subtitleBatch.signature(SubtitleDocument.getSelected()),status:document.getElementById('srt-batch-status').textContent}));
+  assert.equal(result.record.applied[0],null);assert.notEqual(result.record.applied[0],result.current);assert.match(result.status,/partial native failure/);await p.close();
+ }
+ checks.push('partial write failure invalidates old applied signature even if panel text remains unchanged');
+
  {
   const p=await fixture();await p.evaluate(()=>{
    const a={role:'speech',size:100,accentSize:100,position:50,color:'#ffffff',motion:'soft'};
