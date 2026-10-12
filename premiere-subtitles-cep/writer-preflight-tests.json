@@ -1,0 +1,10 @@
+{
+  "status": "writer-contract-tested; native Premiere verification pending",
+  "passed": 4,
+  "checks": [
+    "every missing text, numeric or color parameter fails before any setter",
+    "invalid timing, color and target indexes fail before any setter",
+    "guard runs after font wait and before first setter",
+    "valid prepared write confirms text, numeric, color and timing values"
+  ]
+}

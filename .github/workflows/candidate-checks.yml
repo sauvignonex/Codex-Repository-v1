@@ -34,6 +34,8 @@ jobs:
           node development-scripts/test-host-loader.cjs
           node development-scripts/test-playback-recovery.cjs
           node development-scripts/test-playback-061.cjs
+          node development-scripts/test-writer-preflight.cjs
+          node development-scripts/test-update-races.cjs
           python development-scripts/test-package-candidate.py
           node --check premiere-subtitles-cep/panel.js
           node --check premiere-subtitles-cep/host-loader.js
@@ -52,4 +54,6 @@ jobs:
             premiere-subtitles-cep/playback-recovery-tests.json
             premiere-subtitles-cep/playback-tests-candidate.json
             premiere-subtitles-cep/package-candidate-tests.json
+            premiere-subtitles-cep/writer-preflight-tests.json
+            premiere-subtitles-cep/update-race-tests.json
           if-no-files-found: error
