@@ -1,6 +1,6 @@
 {
   "generated": "2026-10-13",
-  "hash_scope": "raw repository file bytes before checkout EOL conversion",
+  "hash_scope": "raw repository file bytes; .gitattributes disables checkout EOL conversion",
   "files": [
     {
       "path": ".env.example",
@@ -9,8 +9,8 @@
     },
     {
       "path": ".gitattributes",
-      "bytes": 280,
-      "sha256": "72d90d4989aa8b771289238f22f59150df3e19074539e1f791db937e8844c99f"
+      "bytes": 156,
+      "sha256": "20bdff9a90442cdbb31889e9e60c7ef154b5ff3d1af7662440edaabcf205e823"
     },
     {
       "path": ".github/copilot-instructions.md",
