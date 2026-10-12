@@ -12,7 +12,7 @@ except (OSError, urllib.error.URLError):
     executable,model=Path(config['llama']),Path(config['topicsModel'])
     if not executable.is_file() or not model.is_file():
         raise RuntimeError('Topic model is not installed')
-    if hashlib.sha256(executable.read_bytes()).hexdigest()!=config['llamaSha256']:
+    if hashlib.sha256(executable.read_bytes()).hexdigest()!=config['llamaSha256'].lower():
         raise RuntimeError('Runtime digest mismatch')
     # The file model path stays relative for Windows executables with narrow argv.
     logs=model.parent

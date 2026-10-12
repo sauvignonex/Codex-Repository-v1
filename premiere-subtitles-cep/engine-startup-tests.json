@@ -1,0 +1,13 @@
+{
+  "status": "browser-CEP-contract-tested; native engines not started",
+  "passed": 7,
+  "checks": [
+    "blank configuration prevents process/job creation and identifies missing Python",
+    "failed process launch persists an error job, releases UI and preserves current document",
+    "reopened error job never resumes phantom recognition polling",
+    "retry starts a fresh recognition job and cancellation remains available",
+    "offline topic model with unconfigured paths fails before launching or long polling",
+    "occupied topic API port does not start another model",
+    "already healthy expected model works without local config/startup"
+  ]
+}

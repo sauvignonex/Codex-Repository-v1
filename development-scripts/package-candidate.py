@@ -68,6 +68,12 @@ def build(output, template=None, engine_config=None):
             'development-scripts/test-host-loader.cjs',
             'development-scripts/browser-test-runtime.cjs',
             'development-scripts/test-writer-preflight.cjs',
+            'development-scripts/test-engine-config.cjs',
+            'development-scripts/test-engine-startup.cjs',
+            'development-scripts/test-local-ai-launcher.py',
+            'premiere-subtitles-cep/local-ai-launcher-tests.json',
+            'premiere-subtitles-cep/engine-config-tests.json',
+            'premiere-subtitles-cep/engine-startup-tests.json',
             'development-scripts/test-update-races.cjs',
             'premiere-subtitles-cep/writer-preflight-tests.json',
             'premiere-subtitles-cep/update-race-tests.json',
@@ -111,6 +117,9 @@ def build(output, template=None, engine_config=None):
             if not isinstance(config, dict) or not all(isinstance(config.get(k), str) and config[k].strip()
                                                        for k in ('python', 'ffmpeg', 'whisper', 'model', 'llama', 'topicsModel', 'llamaSha256')):
                 raise ValueError('Неполная конфигурация локальных движков.')
+            digest = config['llamaSha256']
+            if len(digest) != 64 or any(char not in '0123456789abcdefABCDEF' for char in digest):
+                raise ValueError('Неверная контрольная сумма локального движка.')
             files['premiere-subtitles-cep/transcription-config.json'] = (json.dumps(config, ensure_ascii=False, indent=2) + '\n').encode()
     instructions = ('Кандидат 0.6.3 — не проверено в Adobe, не финальный выпуск.\n'
                     'Этот архив не устанавливает панель и не изменяет проекты/кэш.\n'

@@ -94,6 +94,25 @@ class CandidateTests(unittest.TestCase):
             module.build(self.root / 'bad-config.zip', self.fixture(), config)
         self.assertFalse((self.root / 'bad-config.zip').exists())
 
+    def test_complete_config_with_invalid_digest_rejected(self):
+        config = self.root / 'engines.json'
+        data = json.loads((module.ROOT / 'premiere-subtitles-cep/transcription-config.json').read_text(encoding='utf-8-sig'))
+        data['llamaSha256'] = 'invalid'
+        config.write_text(json.dumps(data))
+        with self.assertRaises(ValueError):
+            module.build(self.root / 'bad-digest.zip', self.fixture(), config)
+        self.assertFalse((self.root / 'bad-digest.zip').exists())
+
+    def test_valid_config_preserved_in_qa_bundle(self):
+        config = self.root / 'engines.json'
+        data = json.loads((module.ROOT / 'premiere-subtitles-cep/transcription-config.json').read_text(encoding='utf-8-sig'))
+        data['llamaSha256'] = data['llamaSha256'].upper()
+        config.write_text('\ufeff' + json.dumps(data), encoding='utf-8')
+        output = self.root / 'configured-qa.zip'
+        module.build(output, self.fixture(), config)
+        with zipfile.ZipFile(output) as archive:
+            self.assertEqual(json.loads(archive.read('premiere-subtitles-cep/transcription-config.json')), data)
+
 
 if __name__ == '__main__':
     result = unittest.TextTestRunner().run(unittest.defaultTestLoader.loadTestsFromTestCase(CandidateTests))

@@ -36,15 +36,15 @@
     if(busy||window.subtitleGraphic.busy||window.SubtitleEditorialUI?.busy)throw Error('Дождись текущей операции.');
     if(!window.cep?.process||!window.__adobe_cep__?.getSystemPath)throw Error('Открой панель в Premiere для распознавания.');
     if(typeof path!=='string'||!path)throw Error('Выбери аудио или видео.');
-    const config=read(root()+'/transcription-config.json');
-    for(const name of ['python','whisper','ffmpeg','model']){if(window.cep.fs.stat(config[name]).err!==0)throw Error('Не установлен локальный движок. Запусти установку транскрипции из папки плагина.');}
+    const config=window.SubtitleEngineConfig.read('speech');
     const base=decodeURI(window.__adobe_cep__.getSystemPath('userData')).replace(/^file:\/\/\//,'').replace(/\\/g,'/').replace(/\/$/,'')+'/SubtitleStudio';
     for(const folder of [base,base+'/jobs']){if(window.cep.fs.stat(folder).err!==0&&window.cep.fs.makedir(folder).err!==0)throw Error('Не удалось создать папку распознавания.');}
     const id=crypto.randomUUID(),folder=base+'/jobs/'+id;
     if(window.cep.fs.makedir(folder).err!==0)throw Error('Не удалось сохранить новое задание.');
     job={id,folder,input:path,selection,created:Date.now(),phase:'running'};write(folder+'/job.json',{id,input:path,selection,language:q('transcription-language').value});write(folder+'/ui.json',job);localStorage.setItem(key,JSON.stringify(job));
-    const process=window.cep.process.createProcess(config.python,root()+'/transcription-worker.py',folder+'/job.json');
-    if(process.err!==0)throw Error('Не удалось запустить локальное распознавание.');
+    let process;pid=null;
+    try{process=window.cep.process.createProcess(config.python,root()+'/transcription-worker.py',folder+'/job.json');if(process.err!==0)throw Error('Не удалось запустить локальное распознавание.');}
+    catch(error){job.phase='error';try{write(folder+'/ui.json',job);localStorage.setItem(key,JSON.stringify(job));}catch(_){try{localStorage.removeItem(key);}catch(ignore){}}throw error;}
     pid=process.data;setBusy(true);message(selection?'Распознаём выделенный клип «'+selection.name+'»…':'Запускаем локальное распознавание…');timer=setTimeout(poll,500);
   }
   async function recognize(fromFile=false){

@@ -36,7 +36,10 @@ jobs:
           node development-scripts/test-playback-061.cjs
           node development-scripts/test-writer-preflight.cjs
           node development-scripts/test-update-races.cjs
+          node development-scripts/test-engine-config.cjs
+          node development-scripts/test-engine-startup.cjs
           python development-scripts/test-package-candidate.py
+          python development-scripts/test-local-ai-launcher.py
           node --check premiere-subtitles-cep/panel.js
           node --check premiere-subtitles-cep/host-loader.js
       - name: Build verified source-only archive
@@ -56,4 +59,7 @@ jobs:
             premiere-subtitles-cep/package-candidate-tests.json
             premiere-subtitles-cep/writer-preflight-tests.json
             premiere-subtitles-cep/update-race-tests.json
+            premiere-subtitles-cep/engine-config-tests.json
+            premiere-subtitles-cep/engine-startup-tests.json
+            premiere-subtitles-cep/local-ai-launcher-tests.json
           if-no-files-found: error
