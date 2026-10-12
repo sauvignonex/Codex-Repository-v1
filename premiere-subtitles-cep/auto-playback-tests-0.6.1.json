@@ -1,0 +1,8 @@
+{
+  "passed": 3,
+  "checks": [
+    "success",
+    "cancel",
+    "off"
+  ]
+}

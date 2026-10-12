@@ -1,0 +1,16 @@
+const {chromium}=require('C:/Users/Artem/.cache/codex-runtimes/codex-primary-runtime/dependencies/node/node_modules/playwright');
+const path=require('path'),fs=require('fs');
+(async()=>{const b=await chromium.launch({channel:'chrome',headless:true});const p=await b.newPage({viewport:{width:520,height:1100}});const errors=[],checks=[];p.on('pageerror',e=>errors.push(e.message));
+await p.goto('file:///'+path.resolve(__dirname,'../premiere-subtitles-cep/index.html').replaceAll('\\','/'));
+await p.evaluate(()=>SubtitleDesign.select('style'));await p.locator('#ss-text').fill('Проверка сохранения');await p.waitForTimeout(400);await p.reload();checks.push({name:'persistent-text',passed:await p.locator('#ss-text').inputValue()==='Проверка сохранения'});
+await p.evaluate(()=>SubtitleDesign.select('finish'));await p.locator('#diagnostics').evaluate(el=>el.open=true);await p.locator('#host-check').click();checks.push({name:'outside-host-no-false-success',passed:(await p.locator('#host-status').textContent()).includes('вне Premiere')});
+await p.evaluate(()=>window.__adobe_cep__={getSystemPath:()=> 'C:/test',evalScript:(code,cb)=>cb(code.includes('var files=')?'ready|0.6.2':'ok|26.2|%D0%A2%D0%B5%D1%81%D1%82|1080|1920')});await p.evaluate(()=>SubtitleDesign.select('finish'));await p.locator('#diagnostics').evaluate(el=>el.open=true);await p.locator('#host-check').click();await p.waitForFunction(()=>document.getElementById('host-status').textContent.includes('Тест'));checks.push({name:'mock-host-decoding',passed:(await p.locator('#host-status').textContent()).includes('Тест')});
+await p.evaluate(()=>window.__adobe_cep__={evalScript:(code,cb)=>cb('EvalScript error.')});await p.evaluate(()=>SubtitleDesign.select('finish'));await p.locator('#diagnostics').evaluate(el=>el.open=true);await p.locator('#host-check').click();await p.waitForFunction(()=>document.getElementById('host-status').textContent.includes('Не удалось'));checks.push({name:'mock-host-error',passed:(await p.locator('#host-status').textContent()).includes('Не удалось')});
+await p.evaluate(()=>window.subtitleStorage.setWidgetState=async()=>{throw Error('quota')});await p.evaluate(()=>SubtitleDesign.select('style'));await p.locator('#ss-text').fill('Текст не потерян');await p.waitForTimeout(400);checks.push({name:'storage-failure-visible',passed:await p.locator('#ss-storage-warning').isVisible()&&await p.locator('#ss-text').inputValue()==='Текст не потерян'});
+await p.reload();await p.evaluate(()=>SubtitleDesign.select('style'));await p.locator('#ss-role').selectOption('accent');await p.evaluate(()=>SubtitleDesign.select('style'));await p.locator('#ss-text').fill('«МАРИЙСКИЙ\nДЕСЕРТ»');
+const accent=await p.evaluate(()=>window.subtitlePreview.getLayout());checks.push({name:'Christopher sentence case across two lines',passed:accent.text==='«Марийский\nдесерт»'&&accent.font==='Christopher'});
+checks.push({name:'case formatting preserves editable source',passed:await p.locator('#ss-text').inputValue()==='«МАРИЙСКИЙ\nДЕСЕРТ»'});
+await p.screenshot({path:'work/cep-preview.png',fullPage:true});checks.push({name:'no-js-errors',passed:errors.length===0});fs.writeFileSync('work/cep-audit.json',JSON.stringify({checks,errors},null,2));console.log(JSON.stringify({checks,errors}));await b.close();if(checks.some(x=>!x.passed))process.exitCode=1;})();
+
+
+

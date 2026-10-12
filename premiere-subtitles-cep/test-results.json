@@ -1,0 +1,29 @@
+{
+  "checks": [
+    {
+      "name": "persistent-text",
+      "passed": true
+    },
+    {
+      "name": "outside-host-no-false-success",
+      "passed": true
+    },
+    {
+      "name": "mock-host-decoding",
+      "passed": true
+    },
+    {
+      "name": "mock-host-error",
+      "passed": true
+    },
+    {
+      "name": "storage-failure-visible",
+      "passed": true
+    },
+    {
+      "name": "no-js-errors",
+      "passed": true
+    }
+  ],
+  "errors": []
+}

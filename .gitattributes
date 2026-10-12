@@ -1,0 +1,16 @@
+*.md text eol=lf
+*.js text eol=lf
+*.cjs text eol=lf
+*.jsx text eol=lf
+*.json text eol=lf
+*.py text eol=lf
+*.html text eol=lf
+*.css text eol=lf
+*.xml text eol=lf
+*.ps1 text eol=crlf
+*.png binary
+*.mp4 binary
+*.wav binary
+*.aep binary
+*.prproj binary
+*.mogrt binary

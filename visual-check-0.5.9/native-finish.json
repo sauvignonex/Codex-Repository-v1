@@ -1,0 +1,13 @@
+{
+  "verified": true,
+  "state": {
+    "version": "CEP · 0.5.9",
+    "stage": "finish",
+    "tabs": 4,
+    "button": "Сделать субтитры",
+    "summary": "Текущее оформление сохранено в панели.",
+    "diagnosticsHere": true,
+    "overflow": false
+  },
+  "savedDocumentAndReviewUnchanged": true
+}

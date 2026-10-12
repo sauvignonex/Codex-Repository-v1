@@ -1,0 +1,88 @@
+{
+  "checks": [
+    {
+      "file": "batch.js",
+      "matched": true
+    },
+    {
+      "file": "batch.jsx",
+      "matched": true
+    },
+    {
+      "file": "bridge.js",
+      "matched": true
+    },
+    {
+      "file": "host-loader.js",
+      "matched": true
+    },
+    {
+      "file": "host.jsx",
+      "matched": true
+    },
+    {
+      "file": "index.html",
+      "matched": true
+    },
+    {
+      "file": "panel.css",
+      "matched": true
+    },
+    {
+      "file": "panel.js",
+      "matched": true
+    },
+    {
+      "file": "srt-ui.js",
+      "matched": true
+    },
+    {
+      "file": "srt.js",
+      "matched": true
+    },
+    {
+      "file": "storage.js",
+      "matched": true
+    },
+    {
+      "file": "test-graphic.js",
+      "matched": true
+    },
+    {
+      "file": "test-graphic.jsx",
+      "matched": true
+    },
+    {
+      "file": "typography.js",
+      "matched": true
+    },
+    {
+      "file": "CSXS\\manifest.xml",
+      "matched": true
+    },
+    {
+      "file": "templates\\Subtitle Studio Title 07.mogrt",
+      "matched": true
+    },
+    {
+      "file": "templates\\Subtitle Studio Vertical 035.mogrt",
+      "matched": true
+    },
+    {
+      "file": "templates\\Subtitle Studio Vertical 036.mogrt",
+      "matched": true
+    },
+    {
+      "file": "templates\\Subtitle Studio Vertical 037.mogrt",
+      "matched": true
+    },
+    {
+      "file": "templates\\Subtitle Studio Vertical 038.mogrt",
+      "matched": true
+    },
+    {
+      "file": "templates\\Subtitle Studio Vertical 040.mogrt",
+      "matched": true
+    }
+  ]
+}

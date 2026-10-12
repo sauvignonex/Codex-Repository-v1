@@ -1,0 +1,30 @@
+{
+  "verified": true,
+  "selection": [
+    "ok",
+    "clip",
+    "D:\\Projects Adobe\\Разработка плагина\\Звук\\шёпот леса кортекст звук обр.wav",
+    "0",
+    "61100",
+    "0",
+    "шёпот леса кортекст звук обр.wav",
+    "428ae3a6-9b46-4044-b516-28fe1467bef4"
+  ],
+  "status": "Распознано 34 фраз. Проверь текст ниже и нажми «Использовать фразы». Текущий набор пока сохранён.",
+  "phrases": 34,
+  "existingDocumentUnchanged": true,
+  "job": {
+    "id": "72e274a1-ae1c-4cd5-8dc0-257fea57a151",
+    "folder": "C:/Users/Artem/AppData/Roaming/SubtitleStudio/jobs/72e274a1-ae1c-4cd5-8dc0-257fea57a151",
+    "input": "D:\\Projects Adobe\\Разработка плагина\\Звук\\шёпот леса кортекст звук обр.wav",
+    "selection": {
+      "sourceInMs": 0,
+      "durationMs": 61100,
+      "timelineStartMs": 0,
+      "name": "шёпот леса кортекст звук обр.wav",
+      "sequenceID": "428ae3a6-9b46-4044-b516-28fe1467bef4"
+    },
+    "created": 1791828080083,
+    "phase": "complete"
+  }
+}

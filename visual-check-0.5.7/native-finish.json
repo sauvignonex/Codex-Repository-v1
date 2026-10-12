@@ -1,0 +1,13 @@
+{
+  "verified": true,
+  "state": {
+    "version": "CEP · 0.5.8",
+    "stage": "finish",
+    "tabs": 4,
+    "button": "Завершить проверку текста",
+    "summary": "Будут использованы фразы из текущей проверки. Кнопка применит их и создаст субтитры.",
+    "diagnosticsHere": true,
+    "overflow": false
+  },
+  "savedDocumentAndReviewUnchanged": true
+}

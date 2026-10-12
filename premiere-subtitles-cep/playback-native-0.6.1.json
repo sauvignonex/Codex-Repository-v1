@@ -1,0 +1,21 @@
+{
+  "templateLayersBefore": 7,
+  "templateLayersAfter": 4,
+  "AEPropertyReads": 576,
+  "AEExpressionErrors": 0,
+  "qaRenderMs": 24049,
+  "qaGreenRanges": 4,
+  "userSequenceID": "79090168-44cd-48f6-9228-fb1294790d89",
+  "userMogrtClips": 103,
+  "userRenderMs": 49375,
+  "userRenderConfirmed": true,
+  "greenRangesBefore": 0,
+  "greenRangesAfter": 1,
+  "userPlaybackAssessment": "User confirmed smooth full 103-clip 061 playback after complete cache preparation",
+  "userCacheDurationSeconds": 3.17,
+  "userRenderCoveredAllClips": false,
+  "partialCacheBugFixed": true,
+  "full061CacheCoveredClips": 103,
+  "full061CacheGreenRanges": 103,
+  "autoPreparationDefault": true
+}

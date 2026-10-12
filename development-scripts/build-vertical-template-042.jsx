@@ -1,0 +1,45 @@
+(function(){
+var base='C:/Users/Artem/Documents/Codex/2026-10-12/files-mentioned-by-the-user-md/outputs/subtitle-studio';
+var log=File(base+'/template-build-042.txt'),c=null,suppressed=false;log.open('w');
+try{
+ var filename=app.project&&app.project.file?decodeURI(app.project.file.name):'';
+ if(!app.project||app.project.numItems>0&&filename.indexOf('Subtitle Studio')<0&&filename.indexOf('template07')<0)throw Error('Открыт чужой проект.');
+ for(var ci=1;ci<=app.project.numItems;ci++)if(app.project.item(ci).name==='Subtitle Studio Vertical 042')app.project.item(ci).remove();
+ app.beginSuppressDialogs();suppressed=true;
+ c=app.project.items.addComp('Subtitle Studio Vertical 042',1080,1920,1,6,30);c.motionGraphicsTemplateName=c.name;
+ var ctl=c.layers.addNull();ctl.name='Настройки';ctl.enabled=false;
+ function slider(name,value){var effect=ctl.property('ADBE Effect Parade').addProperty('ADBE Slider Control');effect.name=name;effect.property(1).setValue(value);effect.property(1).addToMotionGraphicsTemplateAs(c,name);}
+ slider('Роль: 1 заголовок, 2 речь, 3 акцент',1);slider('Масштаб',50);slider('Высота',50);slider('Анимация: 0 нет, 1 мягкая, 2 акцент, 3 раскрытие',3);
+ var color=ctl.property('ADBE Effect Parade').addProperty('ADBE Color Control');color.name='Цвет';color.property(1).setValue([1,1,1]);color.property(1).addToMotionGraphicsTemplateAs(c,'Цвет');
+ slider('Масштаб акцента',50);slider('Длительность',6);
+ function layer(name,text,font,height,offset){
+  log.writeln('START '+name);
+  var l=c.layers.addText(text);l.name=name;
+  var p=l.property('ADBE Text Properties').property('ADBE Text Document'),t=p.value;t.fontCapsOption=FontCapsOption.FONT_NORMAL_CAPS;t.fauxBold=false;t.fauxItalic=false;t.font=font;t.fontSize=200;t.justification=ParagraphJustification.CENTER_JUSTIFY;t.applyFill=true;t.fillColor=[1,1,1];t.applyStroke=false;t.autoLeading=true;p.setValue(t);
+  p.expression='text.sourceText.style.setFont("'+font+'").setFontSize(200).setAllCaps(false).setSmallCaps(false).setFillColor(thisComp.layer("Настройки").effect(5)(1)).setText(value.toString());';p.addToMotionGraphicsTemplateAs(c,name);
+  var prefix='var ctl=thisComp.layer("Настройки");var role=Math.round(ctl.effect(1)(1));var motion=Math.round(ctl.effect(4)(1));var duration=Math.max(.034,Math.min(6,ctl.effect(7)(1)));var handwritten=thisLayer.name==="Рукописный акцент";var delay=role==1&&handwritten&&motion>=3?Math.min(.12,duration*.15):0;var intro=Math.min(.5,duration*.45);';
+  // Full text bounds remain fixed while character opacity or the reveal mask changes.
+  l.transform.anchorPoint.expression='var r=sourceRectAtTime(time,false);[r.left+r.width/2,r.top+r.height/2];';
+  l.transform.scale.expression=prefix+'var r=sourceRectAtTime(time,false);var m=Math.max(.7,Math.min(1.3,ctl.effect(2)(1)/50));var a=handwritten?Math.max(.7,Math.min(1.5,ctl.effect(6)(1)/50)):1;var s=Math.min('+height+'*m*a/Math.max(1,r.height),730/Math.max(1,r.width));var f=motion==2?ease(time,0,Math.min(.22,duration*.4),.9,1):1;[100*s*f,100*s*f];';
+  l.transform.position.expression=prefix+'var y=Math.max(420,Math.min(1380,ctl.effect(3)(1)*19.2));var dy=role==1?'+offset+':0;var r=sourceRectAtTime(time,false);var w=r.width*transform.scale[0]/100,h=r.height*transform.scale[1]/100;var cy=Math.max(260+h/2,Math.min(1570-h/2,y+dy));var x=cy+h/2>1320?Math.min(540,840-w/2):540;[x,cy];';
+  var visible=name==='Основной текст'?'role==1':name==='Рукописный акцент'?'(role==1||role==3)':'role==2';
+  l.transform.opacity.expression=prefix+'var visible='+visible+';var fade=Math.min(motion>=3?.08:.18,duration/4);var f=motion==0?100:Math.min(ease(time,delay,delay+fade,0,100),ease(time,duration-fade,duration,100,0));visible?f:0;';
+  if(name==='Рукописный акцент'){
+   var mask=l.property('ADBE Mask Parade').addProperty('ADBE Mask Atom');mask.name='Раскрытие рукописной строки';mask.maskMode=MaskMode.ADD;
+   mask.property('ADBE Mask Shape').expression=prefix+'var r=sourceRectAtTime(time,false);var pad=10;var f=motion==3?ease(time,delay,delay+intro,0,1):1;var left=r.left-pad,top=r.top-pad,right=left+(r.width+2*pad)*f,bottom=top+r.height+2*pad;createPath([[left,top],[right,top],[right,bottom],[left,bottom]],[],[],true);';
+  }
+  log.writeln('CHECK '+name);
+  log.writeln('SOURCE '+p.value.font+' '+p.expressionError);
+  var expressions=[p,l.transform.anchorPoint,l.transform.scale,l.transform.position,l.transform.opacity];if(name==='Рукописный акцент')expressions.push(mask.property('ADBE Mask Shape'));
+  for(var ei=0;ei<expressions.length;ei++)if(expressions[ei].expressionError)throw Error(name+': '+expressions[ei].expressionError);
+  log.writeln(name+' font='+p.value.font+' expressions=ok');
+ }
+ layer('Основной текст','КЕДРОВАЯ','BebasNeueCyrillic',145,-80);layer('Рукописный акцент','Бочка','Christopher',130,80);layer('Текст речи','Текст речи','CeraPro-Medium',190,0);
+ var folder=Folder(base+'/visual-check-0.4.2');if(!folder.exists)folder.create();
+ c.saveFrameToPng(1,File(folder.fsName+'/ae-full.png'));
+ app.project.save(File(base+'/recovery-inputs/templates/Subtitle Studio Vertical 042.aep'));
+ var exported=c.exportAsMotionGraphicsTemplate(true,base+'/premiere-subtitles-cep/templates');log.writeln('EXPORT '+exported);if(!exported)throw Error('Экспорт не подтверждён');
+ log.writeln('SUCCESS');
+}catch(e){log.writeln('ERROR '+String(e));if(c)try{c.remove();}catch(ignore){}}
+finally{if(suppressed)app.endSuppressDialogs(false);log.close();}
+})();

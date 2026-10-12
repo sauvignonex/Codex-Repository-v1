@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ExtensionManifest Version="7.0" ExtensionBundleId="com.artem.subtitle-studio" ExtensionBundleVersion="0.6.2" ExtensionBundleName="Субтитры">
+<ExtensionList><Extension Id="com.artem.subtitle-studio.panel" Version="0.6.2"/></ExtensionList>
+<ExecutionEnvironment><HostList><Host Name="PPRO" Version="[26.2,26.9]"/></HostList><LocaleList><Locale Code="All"/></LocaleList><RequiredRuntimeList><RequiredRuntime Name="CSXS" Version="12.0"/></RequiredRuntimeList></ExecutionEnvironment>
+<DispatchInfoList><Extension Id="com.artem.subtitle-studio.panel"><DispatchInfo>
+<Resources><MainPath>./index.html</MainPath><ScriptPath>./host.jsx</ScriptPath></Resources>
+<Lifecycle><AutoVisible>true</AutoVisible></Lifecycle>
+<UI><Type>Panel</Type><Menu>Субтитры — Artem</Menu><Geometry><Size><Width>520</Width><Height>850</Height></Size><MinSize><Width>320</Width><Height>400</Height></MinSize></Geometry></UI>
+</DispatchInfo></Extension></DispatchInfoList></ExtensionManifest>
+
+
+
+

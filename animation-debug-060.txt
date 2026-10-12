@@ -1,0 +1,26 @@
+Размер: Текст речи Source Text фитотерапия ERROR 
+Размер: Текст речи Scale 100,100,100 ERROR 
+Размер: Текст речи Position 540,960,0 ERROR 
+Размер: Текст речи Opacity 0 ERROR 
+Текст речи Source Text фитотерапия ERROR 
+Текст речи Scale 27.5,27.5,100 ERROR 
+Текст речи Position 791.752673527056,352.777077085663,0 ERROR 
+Текст речи Opacity 91.2208504801097 ERROR 
+Размер: Рукописный акцент Source Text Бочка ERROR 
+Размер: Рукописный акцент Scale 100,100,100 ERROR 
+Размер: Рукописный акцент Position 540,960,0 ERROR 
+Размер: Рукописный акцент Opacity 0 ERROR 
+Рукописный акцент Source Text Бочка ERROR 
+Рукописный акцент Scale 32,32,100 ERROR 
+Рукописный акцент Position 898.930313141313,348.283081639696,0 ERROR 
+Рукописный акцент Opacity 0 ERROR 
+Размер: Основной текст Source Text КЕДРОВАЯ ERROR 
+Размер: Основной текст Scale 100,100,100 ERROR 
+Размер: Основной текст Position 540,960,0 ERROR 
+Размер: Основной текст Opacity 0 ERROR 
+Основной текст Source Text КЕДРОВАЯ ERROR 
+Основной текст Scale 32,32,100 ERROR 
+Основной текст Position 861.459840337582,352.414485553194,0 ERROR 
+Основной текст Opacity 0 ERROR 
+no blur
+with blur

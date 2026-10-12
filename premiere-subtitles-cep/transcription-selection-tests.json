@@ -1,0 +1,10 @@
+{
+  "passed": 5,
+  "checks": [
+    "no selected clip returns file fallback",
+    "selected clip retains trim and timeline offset",
+    "multiple audio selections rejected",
+    "changed speed rejected before recognition",
+    "missing or nested media rejected"
+  ]
+}

@@ -1,0 +1,324 @@
+{
+  "verified": true,
+  "frames": [
+    {
+      "frame": "frame-01.png",
+      "bbox": [
+        175,
+        890,
+        904,
+        1029
+      ],
+      "visiblePixels": 24940,
+      "insideSafeZone": true
+    },
+    {
+      "frame": "frame-02.png",
+      "bbox": [
+        175,
+        909,
+        904,
+        1010
+      ],
+      "visiblePixels": 17988,
+      "insideSafeZone": true
+    },
+    {
+      "frame": "frame-03.png",
+      "bbox": [
+        238,
+        865,
+        841,
+        1054
+      ],
+      "visiblePixels": 28494,
+      "insideSafeZone": true
+    },
+    {
+      "frame": "frame-04.png",
+      "bbox": [
+        175,
+        891,
+        904,
+        1028
+      ],
+      "visiblePixels": 25002,
+      "insideSafeZone": true
+    },
+    {
+      "frame": "frame-05.png",
+      "bbox": [
+        193,
+        865,
+        886,
+        1054
+      ],
+      "visiblePixels": 27208,
+      "insideSafeZone": true
+    },
+    {
+      "frame": "frame-06.png",
+      "bbox": [
+        175,
+        875,
+        904,
+        1044
+      ],
+      "visiblePixels": 25811,
+      "insideSafeZone": true
+    },
+    {
+      "frame": "frame-07.png",
+      "bbox": [
+        186,
+        865,
+        893,
+        1054
+      ],
+      "visiblePixels": 24624,
+      "insideSafeZone": true
+    },
+    {
+      "frame": "frame-08.png",
+      "bbox": [
+        174,
+        882,
+        904,
+        1037
+      ],
+      "visiblePixels": 24381,
+      "insideSafeZone": true
+    },
+    {
+      "frame": "frame-09.png",
+      "bbox": [
+        175,
+        883,
+        904,
+        1036
+      ],
+      "visiblePixels": 30226,
+      "insideSafeZone": true
+    },
+    {
+      "frame": "frame-10.png",
+      "bbox": [
+        229,
+        865,
+        850,
+        1054
+      ],
+      "visiblePixels": 28937,
+      "insideSafeZone": true
+    },
+    {
+      "frame": "frame-11.png",
+      "bbox": [
+        175,
+        892,
+        904,
+        1027
+      ],
+      "visiblePixels": 25599,
+      "insideSafeZone": true
+    },
+    {
+      "frame": "frame-12.png",
+      "bbox": [
+        175,
+        892,
+        904,
+        1027
+      ],
+      "visiblePixels": 22968,
+      "insideSafeZone": true
+    },
+    {
+      "frame": "frame-13.png",
+      "bbox": [
+        175,
+        887,
+        904,
+        1032
+      ],
+      "visiblePixels": 22114,
+      "insideSafeZone": true
+    },
+    {
+      "frame": "frame-14.png",
+      "bbox": [
+        175,
+        892,
+        904,
+        1027
+      ],
+      "visiblePixels": 21529,
+      "insideSafeZone": true
+    },
+    {
+      "frame": "frame-15.png",
+      "bbox": [
+        248,
+        807,
+        831,
+        1104
+      ],
+      "visiblePixels": 64609,
+      "insideSafeZone": true
+    },
+    {
+      "frame": "frame-16.png",
+      "bbox": [
+        220,
+        865,
+        859,
+        1054
+      ],
+      "visiblePixels": 24290,
+      "insideSafeZone": true
+    },
+    {
+      "frame": "frame-17.png",
+      "bbox": [
+        175,
+        909,
+        904,
+        1010
+      ],
+      "visiblePixels": 14177,
+      "insideSafeZone": true
+    },
+    {
+      "frame": "frame-18.png",
+      "bbox": [
+        175,
+        885,
+        904,
+        1034
+      ],
+      "visiblePixels": 28332,
+      "insideSafeZone": true
+    },
+    {
+      "frame": "frame-19.png",
+      "bbox": [
+        195,
+        865,
+        884,
+        1054
+      ],
+      "visiblePixels": 31080,
+      "insideSafeZone": true
+    },
+    {
+      "frame": "frame-20.png",
+      "bbox": [
+        175,
+        807,
+        904,
+        1095
+      ],
+      "visiblePixels": 65750,
+      "insideSafeZone": true
+    },
+    {
+      "frame": "frame-21.png",
+      "bbox": [
+        175,
+        887,
+        904,
+        1033
+      ],
+      "visiblePixels": 24264,
+      "insideSafeZone": true
+    },
+    {
+      "frame": "frame-22.png",
+      "bbox": [
+        175,
+        901,
+        904,
+        1018
+      ],
+      "visiblePixels": 20449,
+      "insideSafeZone": true
+    },
+    {
+      "frame": "frame-23.png",
+      "bbox": [
+        175,
+        870,
+        904,
+        1049
+      ],
+      "visiblePixels": 34038,
+      "insideSafeZone": true
+    },
+    {
+      "frame": "frame-24.png",
+      "bbox": [
+        175,
+        882,
+        904,
+        1037
+      ],
+      "visiblePixels": 26593,
+      "insideSafeZone": true
+    },
+    {
+      "frame": "frame-25.png",
+      "bbox": [
+        175,
+        900,
+        904,
+        1019
+      ],
+      "visiblePixels": 19776,
+      "insideSafeZone": true
+    },
+    {
+      "frame": "frame-26.png",
+      "bbox": [
+        175,
+        899,
+        904,
+        1020
+      ],
+      "visiblePixels": 19544,
+      "insideSafeZone": true
+    },
+    {
+      "frame": "frame-27.png",
+      "bbox": [
+        246,
+        807,
+        833,
+        1104
+      ],
+      "visiblePixels": 63681,
+      "insideSafeZone": true
+    },
+    {
+      "frame": "frame-28.png",
+      "bbox": [
+        175,
+        901,
+        904,
+        1018
+      ],
+      "visiblePixels": 19396,
+      "insideSafeZone": true
+    },
+    {
+      "frame": "frame-29.png",
+      "bbox": [
+        175,
+        896,
+        904,
+        1023
+      ],
+      "visiblePixels": 17941,
+      "insideSafeZone": true
+    }
+  ]
+}

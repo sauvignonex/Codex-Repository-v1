@@ -1,0 +1,9 @@
+{
+  "passed": 4,
+  "checks": [
+    "primary action updates all pending ordinary corrections",
+    "highlight and accent never passed to native writer",
+    "exact cue times retained in write plans",
+    "no imports or new sequence requests"
+  ]
+}

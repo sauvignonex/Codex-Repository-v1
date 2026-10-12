@@ -1,0 +1,13 @@
+{
+  "verified": true,
+  "sequenceID": "1555a45a-b172-4dc2-bfca-82e4f3fccb7b",
+  "adaptiveTiming": true,
+  "template": "062 Adaptive",
+  "roles": [
+    "speech",
+    "title",
+    "accent",
+    "speech"
+  ],
+  "status": "Созданы четыре блока с адаптивным темпом"
+}

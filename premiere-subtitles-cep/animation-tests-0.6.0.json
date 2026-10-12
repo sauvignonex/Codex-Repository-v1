@@ -1,0 +1,10 @@
+{
+  "passed": 5,
+  "checks": [
+    "one content word with attached connectors and punctuation",
+    "highlights wholly unchanged",
+    "exact word timing uses recognition boundaries",
+    "motion finite, bounded and sharp during hold for short and long blocks",
+    "speech 55 px, top right inside safe area; animated preview"
+  ]
+}

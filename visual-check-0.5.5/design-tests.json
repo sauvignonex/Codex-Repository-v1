@@ -1,0 +1,12 @@
+{
+  "passed": 7,
+  "checks": [
+    "source screen has working import actions",
+    "import opens block styling",
+    "offscreen preview still measures correctly",
+    "scenario modal and review work across stages",
+    "apply retains cue times and opens styling",
+    "360px layout has no horizontal overflow",
+    "keyboard navigation and no browser errors"
+  ]
+}

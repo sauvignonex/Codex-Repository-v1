@@ -1,0 +1,12 @@
+ok|86641acd-3221-4587-b47c-73702bc7a1db|%5BSubtitle%20Studio%5D%20%D0%A2%D0%B5%D1%81%D1%82%201791806032175|000f4391
+param|0|Global%20Controls|%228334f22c-0e96-44ba-9dd2-4dd54c7c0682%3B6712d35a-9299-4083-ae0e-4aa8ef859ba8%3B3b24867c-9a51-4276-ac34-3f85375e5764%3B%22
+param|1|Global%20Rotation|0
+param|2|Global%20Scale|%5B0.02604166666667%2C0.0462962962963%5D
+param|3|Global%20Position|%5B0.5%2C0.5%5D
+param|4|Controller|%220488467f-cfaa-4475-9171-500294d19652%3B%22
+param|5|Text%201|72337973781266176
+param|6|Text%201|%22ae0aed58-7a76-4b2b-b9ac-bcd96d255de9%3B0a7aa628-09ac-4311-9e4a-32f7fb5328e3%3B59e22e47-277b-420d-bbc0-5c90da670872%3B%22
+param|7|Text%201|%22%7B%5C%22capPropFontEdit%5C%22%3Atrue%2C%5C%22capPropFontFauxStyleEdit%5C%22%3Atrue%2C%5C%22capPropFontSizeEdit%5C%22%3Atrue%2C%5C%22capPropTextRunCount%5C%22%3A1%2C%5C%22fontEditValue%5C%22%3A%5B%5C%22BebasNeueCyrillic%5C%22%5D%2C%5C%22fontFSAllCapsValue%5C%22%3A%5Bfalse%5D%2C%5C%22fontFSBoldValue%5C%22%3A%5Bfalse%5D%2C%5C%22fontFSItalicValue%5C%22%3A%5Bfalse%5D%2C%5C%22fontFSSmallCapsValue%5C%22%3A%5Bfalse%5D%2C%5C%22fontSizeEditValue%5C%22%3A%5B420%5D%2C%5C%22fontTextRunLength%5C%22%3A%5B16%5D%2C%5C%22textEditValue%5C%22%3A%5C%22%D0%9C%D0%90%D0%A0%D0%98%D0%99%D0%A1%D0%9A%D0%98%D0%99%5C%5Cr%D0%94%D0%95%D0%A1%D0%95%D0%A0%D0%A2%5C%22%7D%22
+param|8|Position%20Text%201|%5B0%2C0%5D
+param|9|Scale%20Text%201|0
+«[Subtitle Studio] Тест 1791806032175»: текст записан и прочитан обратно. Проверь кадр и ручное редактирование в Properties. Безопасная зона и тайминг SRT ещё не применены.

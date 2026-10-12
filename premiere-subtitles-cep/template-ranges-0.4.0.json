@@ -1,0 +1,25 @@
+{
+  "checks": [
+    {
+      "name": "Масштаб акцента",
+      "value": 75,
+      "passed": true
+    },
+    {
+      "name": "Масштаб",
+      "value": 65,
+      "passed": true
+    },
+    {
+      "name": "Масштаб акцента",
+      "value": 50,
+      "passed": true
+    },
+    {
+      "name": "Масштаб",
+      "value": 50,
+      "passed": true
+    }
+  ],
+  "sequence": "41867e73-faec-4618-b3b9-575420f61f3a"
+}

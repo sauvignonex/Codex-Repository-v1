@@ -1,0 +1,11 @@
+{
+  "passed": 6,
+  "checks": [
+    "typos corrected without altering cue intervals",
+    "unrelated script rejected",
+    "highlight and accent remain wholly unchanged",
+    "visible scenario dialog previews before applying",
+    "apply retains count and exact times and allows undo",
+    "failed comparison keeps dialog and document intact"
+  ]
+}

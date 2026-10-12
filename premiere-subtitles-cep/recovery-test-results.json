@@ -1,0 +1,8 @@
+{
+  "passed": 3,
+  "checks": [
+    "host-confirmed changed batch recovers client intent without import",
+    "preflight failure preserves registry and allows retry",
+    "unknown mutation keeps intent and blocks duplicate"
+  ]
+}

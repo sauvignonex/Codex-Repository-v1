@@ -1,0 +1,107 @@
+[
+  {
+    "path": "docs/history/screenshots/evalscript-unknown-result.png",
+    "available": true,
+    "original": "codex-clipboard-598796ce-8e8b-4e26-a9c5-6e80bbd0f30f.png"
+  },
+  {
+    "path": "docs/history/screenshots/evalscript-import-locked.png",
+    "available": true,
+    "original": "codex-clipboard-dcae45ea-4f6f-49a7-a311-d0ecca1b1ec5.png"
+  },
+  {
+    "path": "docs/history/screenshots/second-line-wrong-font.png",
+    "available": true,
+    "original": "codex-clipboard-cd8b0d4b-c890-42fc-8628-6b51e8809687.png"
+  },
+  {
+    "path": "docs/history/screenshots/second-line-too-small.png",
+    "available": true,
+    "original": "codex-clipboard-639f12f1-0466-44ec-9cc4-a365b2084952.png"
+  },
+  {
+    "path": "docs/history/screenshots/uppercase-wrong-second-font.png",
+    "available": true,
+    "original": "codex-clipboard-ea419027-9125-4c99-8f0a-18ec9e4a42b8.png"
+  },
+  {
+    "path": "docs/history/screenshots/second-line-still-small.png",
+    "available": true,
+    "original": "codex-clipboard-26fdd021-7fc1-4af9-9068-5764238f727a.png"
+  },
+  {
+    "path": "docs/history/screenshots/black-program-after-export.png",
+    "available": true,
+    "original": "codex-clipboard-3fa90428-4f23-4c3c-b541-984b1611916a.png"
+  },
+  {
+    "path": "docs/history/screenshots/ae-error-line-4.png",
+    "available": true,
+    "original": "codex-clipboard-d170381f-566b-43ee-bee8-942c0f0e2d26.png"
+  },
+  {
+    "path": "docs/history/screenshots/ae-error-line-19.png",
+    "available": true,
+    "original": "codex-clipboard-c8fe95c2-b1d7-4f7b-bc7b-b0da8cdbdad6.png"
+  },
+  {
+    "path": "docs/history/screenshots/both-lines-bebas.png",
+    "available": true,
+    "original": "codex-clipboard-72de63c2-0870-4a62-af73-7fdfc8edc083.png"
+  },
+  {
+    "path": "docs/history/screenshots/wrong-active-sequence.png",
+    "available": true,
+    "original": "codex-clipboard-98386c0e-d018-4e64-a15c-f075514bea1c.png"
+  },
+  {
+    "path": "docs/history/screenshots/christopher-caps-proportions.png",
+    "available": true,
+    "original": "codex-clipboard-94c75fff-403d-40e9-adc3-cd5835059391.png"
+  },
+  {
+    "path": "docs/history/screenshots/christopher-too-small.png",
+    "available": true,
+    "original": "codex-clipboard-40f573af-2af3-4514-ba90-9203a4ec2982.png"
+  },
+  {
+    "path": "docs/history/screenshots/approved-bebas-christopher.png",
+    "available": true,
+    "original": "codex-clipboard-18690e68-8e63-4c73-bb5a-172e9312cbc2.png"
+  },
+  {
+    "path": "docs/history/screenshots/ae-font-export-warning.png",
+    "available": true,
+    "original": "codex-clipboard-d9cabc19-5e7f-4b81-ac52-5599e05a208d.png"
+  },
+  {
+    "path": "docs/history/screenshots/cancelled-bottom-placement.png",
+    "available": true,
+    "original": "codex-clipboard-f8316a48-1c6a-4d62-8a2a-81768cc4768b.png"
+  },
+  {
+    "path": "docs/history/screenshots/cluttered-interface-disabled-actions.png",
+    "available": true,
+    "original": "codex-clipboard-20568d01-2251-4c61-8f49-a3520ec2af1f.png"
+  },
+  {
+    "path": "docs/history/screenshots/transcription-join-not-function.png",
+    "available": true,
+    "original": "codex-clipboard-cbef716f-1ef4-4681-92fa-047fcfea90f6.png"
+  },
+  {
+    "path": "docs/history/screenshots/recognition-uncertain-words.png",
+    "available": true,
+    "original": "codex-clipboard-52146782-3d56-4256-bdac-364295b93572.png"
+  },
+  {
+    "path": "docs/history/screenshots/requested-sticky-navigation.png",
+    "available": true,
+    "original": "codex-clipboard-41111b16-1062-4a18-8d16-d78e9e7ae336.png"
+  },
+  {
+    "path": "docs/history/screenshots/finish-page-missing-create-button.png",
+    "available": true,
+    "original": "codex-clipboard-ddd06915-68e9-4f9a-ac77-3213c7843e60.png"
+  }
+]

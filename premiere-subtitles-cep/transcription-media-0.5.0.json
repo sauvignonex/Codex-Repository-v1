@@ -1,0 +1,17 @@
+{
+  "verified": true,
+  "checks": [
+    {
+      "mode": "video",
+      "phase": "complete",
+      "words": 141,
+      "intermediateRemoved": true
+    },
+    {
+      "mode": "cancel",
+      "phase": "cancelled",
+      "words": 0,
+      "intermediateRemoved": true
+    }
+  ]
+}

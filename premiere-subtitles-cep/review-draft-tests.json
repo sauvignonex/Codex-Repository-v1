@@ -1,0 +1,9 @@
+{
+  "passed": 4,
+  "checks": [
+    "text and role draft restore after reload for same recognition",
+    "new recognition never inherits old corrections",
+    "damaged saved draft does not block recognition review",
+    "successful apply clears pending review snapshot"
+  ]
+}

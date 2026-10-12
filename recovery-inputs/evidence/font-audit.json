@@ -1,0 +1,64 @@
+[
+  {
+    "path": "C:\\Users\\Artem\\AppData\\Local\\Microsoft\\Windows\\Fonts\\bebasneuecyrillic.ttf",
+    "names": [
+      [
+        1,
+        "Bebas Neue Cyrillic"
+      ],
+      [
+        2,
+        "Regular"
+      ],
+      [
+        6,
+        "BebasNeueCyrillic"
+      ]
+    ],
+    "missingRussianLetters": ""
+  },
+  {
+    "path": "C:\\Users\\Artem\\AppData\\Local\\Microsoft\\Windows\\Fonts\\Christopher.otf",
+    "names": [
+      [
+        1,
+        "Christopher"
+      ],
+      [
+        2,
+        "Regular"
+      ],
+      [
+        6,
+        "Christopher"
+      ]
+    ],
+    "missingRussianLetters": ""
+  },
+  {
+    "path": "C:\\Windows\\Fonts\\CeraPro-Medium.ttf",
+    "names": [
+      [
+        1,
+        "Cera Pro"
+      ],
+      [
+        2,
+        "Medium"
+      ],
+      [
+        6,
+        "CeraPro-Medium"
+      ],
+      [
+        16,
+        "Cera Pro"
+      ],
+      [
+        17,
+        "Medium"
+      ]
+    ],
+    "missingRussianLetters": ""
+  }
+]

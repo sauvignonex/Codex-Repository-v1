@@ -1,0 +1,34 @@
+{
+  "version": "0.3.3",
+  "premiere": "26.2.0",
+  "verifiedDate": "2026-10-12",
+  "sequenceID": "37ab4a20-5a3e-4d90-83ce-59b59f4808ed",
+  "sequenceName": "[Subtitle Studio] Тест 1791805167576",
+  "clipID": "000f438d",
+  "text": "Традиционная",
+  "font": "BebasNeueCyrillic",
+  "fontSize": 300,
+  "durationSeconds": 6,
+  "checks": {
+    "newBlankSequence": true,
+    "oneVideoClip": true,
+    "noAudioClips": true,
+    "textWriteReadback": true,
+    "panelUpdate": true,
+    "panelReloadRestore": true,
+    "userConfirmedTextVisible": true,
+    "savedProjectReadback": true,
+    "originalClipCountsRetained": true,
+    "failedCopyRemoved": true
+  },
+  "limitations": [
+    "Безопасная зона и тайминги SRT ещё не применяются",
+    "Экспорт кадра через QE и exportAsMediaDirect вернул Unknown Error; экспорт не подтверждён",
+    "Вызов закрытия/открытия проекта превысил время ожидания; последующее чтение проекта подтвердило тот же клип и текст"
+  ],
+  "panel": {
+    "status": "Найден пробный блок в «[Subtitle Studio] Тест 1791805167576». Можно обновить его текст.",
+    "button": "Обновить пробный блок",
+    "report": ""
+  }
+}

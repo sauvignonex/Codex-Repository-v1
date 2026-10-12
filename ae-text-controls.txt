@@ -1,0 +1,17 @@
+0 ADBE Text Percent Start Start
+0 ADBE Text Percent End End
+0 ADBE Text Percent Offset Offset
+0 ADBE Text Index Start Start
+0 ADBE Text Index End End
+0 ADBE Text Index Offset Offset
+0 ADBE Text Range Advanced Advanced
+1 ADBE Text Range Units Units
+1 ADBE Text Range Type2 Based On
+1 ADBE Text Selector Mode Mode
+1 ADBE Text Selector Max Amount Amount
+1 ADBE Text Range Shape Shape
+1 ADBE Text Selector Smoothness Smoothness
+1 ADBE Text Levels Max Ease Ease High
+1 ADBE Text Levels Min Ease Ease Low
+1 ADBE Text Randomize Order Randomize Order
+1 ADBE Text Random Seed Random Seed

@@ -1,0 +1,4 @@
+Основной текст font=BebasNeueCyrillic bounds=167.458008071408 error=
+Рукописный акцент font=Christopher bounds=140.083844553679 error=
+Текст речи font=CeraPro-Medium bounds=191.294005393982 error=
+EXPORT true

@@ -1,0 +1,10 @@
+{
+  "passed": 5,
+  "checks": [
+    "real WAV playback starts at cue relative to timeline offset",
+    "playback stops at phrase end and restores button",
+    "another phrase seeks independently and stops on second click",
+    "Unicode and hash in file path are encoded",
+    "no misleading listen action without source audio"
+  ]
+}

@@ -1,0 +1,3329 @@
+{
+  "doc": {
+    "id": "8bd6ec3d-0568-4660-a877-5d4b1f086b87",
+    "name": "шёпот леса кортекст звук обр.wav — распознано",
+    "sourceMedia": {
+      "path": "C:\\Users\\Artem\\AppData\\Roaming\\SubtitleStudio\\jobs\\2d7133b8-249b-499a-9c50-7a6bab7a606e\\preview.wav",
+      "startMs": 0
+    },
+    "selected": 0,
+    "cues": [
+      {
+        "start": 10,
+        "end": 940,
+        "text": "В традиционной",
+        "originalText": "В традиционной",
+        "sourceIndices": [
+          0
+        ],
+        "words": [
+          {
+            "text": "В",
+            "start": 10,
+            "end": 30,
+            "confidence": 0.923736,
+            "estimated": false
+          },
+          {
+            "text": "традиционной",
+            "start": 180,
+            "end": 940,
+            "confidence": 0.986707,
+            "estimated": false
+          }
+        ],
+        "timingEstimated": false,
+        "appearance": {
+          "role": "speech",
+          "size": 100,
+          "accentSize": 100,
+          "position": 50,
+          "color": "#ffffff",
+          "motion": "soft"
+        },
+        "spokenText": "В традиционной бане манча обитали",
+        "sourceOriginalText": "В традиционной бане манча обитали"
+      },
+      {
+        "start": 940,
+        "end": 1230,
+        "text": "бане",
+        "originalText": "бане",
+        "sourceIndices": [
+          0
+        ],
+        "words": [
+          {
+            "text": "бане",
+            "start": 940,
+            "end": 1230,
+            "confidence": 0.972546,
+            "estimated": false
+          }
+        ],
+        "timingEstimated": false,
+        "appearance": {
+          "role": "speech",
+          "size": 100,
+          "accentSize": 100,
+          "position": 50,
+          "color": "#ffffff",
+          "motion": "soft"
+        },
+        "spokenText": "В традиционной бане манча обитали",
+        "sourceOriginalText": "В традиционной бане манча обитали"
+      },
+      {
+        "start": 1230,
+        "end": 1580,
+        "text": "манча",
+        "originalText": "манча",
+        "sourceIndices": [
+          0
+        ],
+        "words": [
+          {
+            "text": "манча",
+            "start": 1230,
+            "end": 1580,
+            "confidence": 0.577939,
+            "estimated": false
+          }
+        ],
+        "timingEstimated": false,
+        "appearance": {
+          "role": "speech",
+          "size": 100,
+          "accentSize": 100,
+          "position": 50,
+          "color": "#ffffff",
+          "motion": "soft"
+        },
+        "spokenText": "В традиционной бане манча обитали",
+        "sourceOriginalText": "В традиционной бане манча обитали"
+      },
+      {
+        "start": 1580,
+        "end": 2040,
+        "text": "обитали",
+        "originalText": "обитали",
+        "sourceIndices": [
+          0
+        ],
+        "words": [
+          {
+            "text": "обитали",
+            "start": 1580,
+            "end": 2040,
+            "confidence": 0.97875,
+            "estimated": false
+          }
+        ],
+        "timingEstimated": false,
+        "appearance": {
+          "role": "speech",
+          "size": 100,
+          "accentSize": 100,
+          "position": 50,
+          "color": "#ffffff",
+          "motion": "soft"
+        },
+        "spokenText": "В традиционной бане манча обитали",
+        "sourceOriginalText": "В традиционной бане манча обитали"
+      },
+      {
+        "start": 2140,
+        "end": 5300,
+        "text": "Духи-покровители\nманча-кува и манча-кугаза",
+        "originalText": "духи-покровители – манча-кува и манча-кугаза.",
+        "sourceIndices": [
+          1,
+          2
+        ],
+        "words": [
+          {
+            "text": "духи-покровители",
+            "start": 2140,
+            "end": 3320,
+            "confidence": 0.313355,
+            "estimated": false
+          },
+          {
+            "text": "–",
+            "start": 3320,
+            "end": 3480,
+            "confidence": 0.553545,
+            "estimated": false
+          },
+          {
+            "text": "манча-кува",
+            "start": 3480,
+            "end": 4120,
+            "confidence": 0.930513,
+            "estimated": false
+          }
+        ],
+        "timingEstimated": false,
+        "appearance": {
+          "role": "title",
+          "size": 100,
+          "accentSize": 100,
+          "position": 50,
+          "color": "#ffffff",
+          "motion": "write"
+        },
+        "spokenText": "духи-покровители – манча-кува и манча-кугаза."
+      },
+      {
+        "start": 5500,
+        "end": 6080,
+        "text": "оставляли",
+        "originalText": "оставляли",
+        "sourceIndices": [
+          3
+        ],
+        "words": [
+          {
+            "text": "оставляли",
+            "start": 5500,
+            "end": 6080,
+            "confidence": 0.999786,
+            "estimated": false
+          }
+        ],
+        "timingEstimated": false,
+        "appearance": {
+          "role": "speech",
+          "size": 100,
+          "accentSize": 100,
+          "position": 50,
+          "color": "#ffffff",
+          "motion": "soft"
+        },
+        "spokenText": "оставляли воду и веник,",
+        "sourceOriginalText": "оставляли воду и веник,"
+      },
+      {
+        "start": 6080,
+        "end": 6350,
+        "text": "воду",
+        "originalText": "воду",
+        "sourceIndices": [
+          3
+        ],
+        "words": [
+          {
+            "text": "воду",
+            "start": 6080,
+            "end": 6350,
+            "confidence": 0.999443,
+            "estimated": false
+          }
+        ],
+        "timingEstimated": false,
+        "appearance": {
+          "role": "speech",
+          "size": 100,
+          "accentSize": 100,
+          "position": 50,
+          "color": "#ffffff",
+          "motion": "soft"
+        },
+        "spokenText": "оставляли воду и веник,",
+        "sourceOriginalText": "оставляли воду и веник,"
+      },
+      {
+        "start": 6380,
+        "end": 6900,
+        "text": "и веник,",
+        "originalText": "и веник,",
+        "sourceIndices": [
+          3
+        ],
+        "words": [
+          {
+            "text": "и",
+            "start": 6380,
+            "end": 6430,
+            "confidence": 0.999962,
+            "estimated": false
+          },
+          {
+            "text": "веник,",
+            "start": 6430,
+            "end": 6900,
+            "confidence": 0.998466,
+            "estimated": false
+          }
+        ],
+        "timingEstimated": false,
+        "appearance": {
+          "role": "speech",
+          "size": 100,
+          "accentSize": 100,
+          "position": 50,
+          "color": "#ffffff",
+          "motion": "soft"
+        },
+        "spokenText": "оставляли воду и веник,",
+        "sourceOriginalText": "оставляли воду и веник,"
+      },
+      {
+        "start": 6950,
+        "end": 7260,
+        "text": "веря,",
+        "originalText": "веря,",
+        "sourceIndices": [
+          4
+        ],
+        "words": [
+          {
+            "text": "веря,",
+            "start": 6950,
+            "end": 7260,
+            "confidence": 0.994913,
+            "estimated": false
+          }
+        ],
+        "timingEstimated": false,
+        "appearance": {
+          "role": "speech",
+          "size": 100,
+          "accentSize": 100,
+          "position": 50,
+          "color": "#ffffff",
+          "motion": "soft"
+        },
+        "spokenText": "веря, что они хранят здоровье семьи.",
+        "sourceOriginalText": "веря, что они хранят здоровье семьи."
+      },
+      {
+        "start": 7360,
+        "end": 7540,
+        "text": "что",
+        "originalText": "что",
+        "sourceIndices": [
+          4
+        ],
+        "words": [
+          {
+            "text": "что",
+            "start": 7360,
+            "end": 7540,
+            "confidence": 0.999958,
+            "estimated": false
+          }
+        ],
+        "timingEstimated": false,
+        "appearance": {
+          "role": "speech",
+          "size": 100,
+          "accentSize": 100,
+          "position": 50,
+          "color": "#ffffff",
+          "motion": "soft"
+        },
+        "spokenText": "веря, что они хранят здоровье семьи.",
+        "sourceOriginalText": "веря, что они хранят здоровье семьи."
+      },
+      {
+        "start": 7640,
+        "end": 7760,
+        "text": "они",
+        "originalText": "они",
+        "sourceIndices": [
+          4
+        ],
+        "words": [
+          {
+            "text": "они",
+            "start": 7640,
+            "end": 7760,
+            "confidence": 0.999966,
+            "estimated": false
+          }
+        ],
+        "timingEstimated": false,
+        "appearance": {
+          "role": "speech",
+          "size": 100,
+          "accentSize": 100,
+          "position": 50,
+          "color": "#ffffff",
+          "motion": "soft"
+        },
+        "spokenText": "веря, что они хранят здоровье семьи.",
+        "sourceOriginalText": "веря, что они хранят здоровье семьи."
+      },
+      {
+        "start": 7760,
+        "end": 8180,
+        "text": "хранят",
+        "originalText": "хранят",
+        "sourceIndices": [
+          4
+        ],
+        "words": [
+          {
+            "text": "хранят",
+            "start": 7760,
+            "end": 8180,
+            "confidence": 0.999861,
+            "estimated": false
+          }
+        ],
+        "timingEstimated": false,
+        "appearance": {
+          "role": "speech",
+          "size": 100,
+          "accentSize": 100,
+          "position": 50,
+          "color": "#ffffff",
+          "motion": "soft"
+        },
+        "spokenText": "веря, что они хранят здоровье семьи.",
+        "sourceOriginalText": "веря, что они хранят здоровье семьи."
+      },
+      {
+        "start": 8220,
+        "end": 8740,
+        "text": "здоровье",
+        "originalText": "здоровье",
+        "sourceIndices": [
+          4
+        ],
+        "words": [
+          {
+            "text": "здоровье",
+            "start": 8220,
+            "end": 8740,
+            "confidence": 0.975202,
+            "estimated": false
+          }
+        ],
+        "timingEstimated": false,
+        "appearance": {
+          "role": "speech",
+          "size": 100,
+          "accentSize": 100,
+          "position": 50,
+          "color": "#ffffff",
+          "motion": "soft"
+        },
+        "spokenText": "веря, что они хранят здоровье семьи.",
+        "sourceOriginalText": "веря, что они хранят здоровье семьи."
+      },
+      {
+        "start": 8750,
+        "end": 9310,
+        "text": "семьи.",
+        "originalText": "семьи.",
+        "sourceIndices": [
+          4
+        ],
+        "words": [
+          {
+            "text": "семьи.",
+            "start": 8750,
+            "end": 9310,
+            "confidence": 0.998018,
+            "estimated": false
+          }
+        ],
+        "timingEstimated": false,
+        "appearance": {
+          "role": "speech",
+          "size": 100,
+          "accentSize": 100,
+          "position": 50,
+          "color": "#ffffff",
+          "motion": "soft"
+        },
+        "spokenText": "веря, что они хранят здоровье семьи.",
+        "sourceOriginalText": "веря, что они хранят здоровье семьи."
+      },
+      {
+        "start": 9620,
+        "end": 10980,
+        "text": "Священная пихта\nне просто дерево",
+        "originalText": "Пихта – не просто дерево,",
+        "sourceIndices": [
+          5
+        ],
+        "words": [
+          {
+            "text": "Пихта",
+            "start": 9620,
+            "end": 9750,
+            "confidence": 0.996314,
+            "estimated": false
+          },
+          {
+            "text": "–",
+            "start": 9800,
+            "end": 9820,
+            "confidence": 0.834689,
+            "estimated": false
+          },
+          {
+            "text": "не",
+            "start": 9820,
+            "end": 9960,
+            "confidence": 0.999392,
+            "estimated": false
+          },
+          {
+            "text": "просто",
+            "start": 9980,
+            "end": 10400,
+            "confidence": 0.999901,
+            "estimated": false
+          },
+          {
+            "text": "дерево,",
+            "start": 10400,
+            "end": 10980,
+            "confidence": 0.999342,
+            "estimated": false
+          }
+        ],
+        "timingEstimated": false,
+        "appearance": {
+          "role": "title",
+          "size": 100,
+          "accentSize": 100,
+          "position": 50,
+          "color": "#ffffff",
+          "motion": "write"
+        },
+        "spokenText": "Пихта – не просто дерево,"
+      },
+      {
+        "start": 10980,
+        "end": 11660,
+        "text": "а священный",
+        "originalText": "а священный",
+        "sourceIndices": [
+          6
+        ],
+        "words": [
+          {
+            "text": "а",
+            "start": 10980,
+            "end": 11020,
+            "confidence": 0.999308,
+            "estimated": false
+          },
+          {
+            "text": "священный",
+            "start": 11070,
+            "end": 11660,
+            "confidence": 0.998751,
+            "estimated": false
+          }
+        ],
+        "timingEstimated": false,
+        "appearance": {
+          "role": "speech",
+          "size": 100,
+          "accentSize": 100,
+          "position": 50,
+          "color": "#ffffff",
+          "motion": "soft"
+        },
+        "spokenText": "а священный оберег и целитель,",
+        "sourceOriginalText": "а священный оберег и целитель,"
+      },
+      {
+        "start": 11760,
+        "end": 12120,
+        "text": "оберег",
+        "originalText": "оберег",
+        "sourceIndices": [
+          6
+        ],
+        "words": [
+          {
+            "text": "оберег",
+            "start": 11760,
+            "end": 12120,
+            "confidence": 0.9989,
+            "estimated": false
+          }
+        ],
+        "timingEstimated": false,
+        "appearance": {
+          "role": "speech",
+          "size": 100,
+          "accentSize": 100,
+          "position": 50,
+          "color": "#ffffff",
+          "motion": "soft"
+        },
+        "spokenText": "а священный оберег и целитель,",
+        "sourceOriginalText": "а священный оберег и целитель,"
+      },
+      {
+        "start": 12120,
+        "end": 12980,
+        "text": "и целитель,",
+        "originalText": "и целитель,",
+        "sourceIndices": [
+          6
+        ],
+        "words": [
+          {
+            "text": "и",
+            "start": 12120,
+            "end": 12150,
+            "confidence": 0.999359,
+            "estimated": false
+          },
+          {
+            "text": "целитель,",
+            "start": 12190,
+            "end": 12980,
+            "confidence": 0.999064,
+            "estimated": false
+          }
+        ],
+        "timingEstimated": false,
+        "appearance": {
+          "role": "speech",
+          "size": 100,
+          "accentSize": 100,
+          "position": 50,
+          "color": "#ffffff",
+          "motion": "soft"
+        },
+        "spokenText": "а священный оберег и целитель,",
+        "sourceOriginalText": "а священный оберег и целитель,"
+      },
+      {
+        "start": 13070,
+        "end": 13430,
+        "text": "который",
+        "originalText": "который",
+        "sourceIndices": [
+          7
+        ],
+        "words": [
+          {
+            "text": "который",
+            "start": 13070,
+            "end": 13430,
+            "confidence": 0.970845,
+            "estimated": false
+          }
+        ],
+        "timingEstimated": false,
+        "appearance": {
+          "role": "speech",
+          "size": 100,
+          "accentSize": 100,
+          "position": 50,
+          "color": "#ffffff",
+          "motion": "soft"
+        },
+        "spokenText": "который изгоняет недуги.",
+        "sourceOriginalText": "который изгоняет недуги."
+      },
+      {
+        "start": 13560,
+        "end": 13950,
+        "text": "изгоняет",
+        "originalText": "изгоняет",
+        "sourceIndices": [
+          7
+        ],
+        "words": [
+          {
+            "text": "изгоняет",
+            "start": 13560,
+            "end": 13950,
+            "confidence": 0.998136,
+            "estimated": false
+          }
+        ],
+        "timingEstimated": false,
+        "appearance": {
+          "role": "speech",
+          "size": 100,
+          "accentSize": 100,
+          "position": 50,
+          "color": "#ffffff",
+          "motion": "soft"
+        },
+        "spokenText": "который изгоняет недуги.",
+        "sourceOriginalText": "который изгоняет недуги."
+      },
+      {
+        "start": 13950,
+        "end": 14530,
+        "text": "недуги.",
+        "originalText": "недуги.",
+        "sourceIndices": [
+          7
+        ],
+        "words": [
+          {
+            "text": "недуги.",
+            "start": 13950,
+            "end": 14530,
+            "confidence": 0.997101,
+            "estimated": false
+          }
+        ],
+        "timingEstimated": false,
+        "appearance": {
+          "role": "speech",
+          "size": 100,
+          "accentSize": 100,
+          "position": 50,
+          "color": "#ffffff",
+          "motion": "soft"
+        },
+        "spokenText": "который изгоняет недуги.",
+        "sourceOriginalText": "который изгоняет недуги."
+      },
+      {
+        "start": 14550,
+        "end": 14890,
+        "text": "Шепот",
+        "originalText": "Шепот",
+        "sourceIndices": [
+          8
+        ],
+        "words": [
+          {
+            "text": "Шепот",
+            "start": 14550,
+            "end": 14890,
+            "confidence": 0.872443,
+            "estimated": false
+          }
+        ],
+        "timingEstimated": false,
+        "appearance": {
+          "role": "speech",
+          "size": 100,
+          "accentSize": 100,
+          "position": 50,
+          "color": "#ffffff",
+          "motion": "soft"
+        },
+        "spokenText": "Шепот леса мари – это не просто",
+        "sourceOriginalText": "Шепот леса мари – это не просто"
+      },
+      {
+        "start": 14890,
+        "end": 15180,
+        "text": "леса",
+        "originalText": "леса",
+        "sourceIndices": [
+          8
+        ],
+        "words": [
+          {
+            "text": "леса",
+            "start": 14890,
+            "end": 15180,
+            "confidence": 0.775294,
+            "estimated": false
+          }
+        ],
+        "timingEstimated": false,
+        "appearance": {
+          "role": "speech",
+          "size": 100,
+          "accentSize": 100,
+          "position": 50,
+          "color": "#ffffff",
+          "motion": "soft"
+        },
+        "spokenText": "Шепот леса мари – это не просто",
+        "sourceOriginalText": "Шепот леса мари – это не просто"
+      },
+      {
+        "start": 15180,
+        "end": 15540,
+        "text": "мари –",
+        "originalText": "мари –",
+        "sourceIndices": [
+          8
+        ],
+        "words": [
+          {
+            "text": "мари",
+            "start": 15180,
+            "end": 15470,
+            "confidence": 0.309305,
+            "estimated": false
+          },
+          {
+            "text": "–",
+            "start": 15470,
+            "end": 15540,
+            "confidence": 0.997636,
+            "estimated": false
+          }
+        ],
+        "timingEstimated": false,
+        "appearance": {
+          "role": "speech",
+          "size": 100,
+          "accentSize": 100,
+          "position": 50,
+          "color": "#ffffff",
+          "motion": "soft"
+        },
+        "spokenText": "Шепот леса мари – это не просто",
+        "sourceOriginalText": "Шепот леса мари – это не просто"
+      },
+      {
+        "start": 15540,
+        "end": 15760,
+        "text": "это",
+        "originalText": "это",
+        "sourceIndices": [
+          8
+        ],
+        "words": [
+          {
+            "text": "это",
+            "start": 15540,
+            "end": 15760,
+            "confidence": 0.999293,
+            "estimated": false
+          }
+        ],
+        "timingEstimated": false,
+        "appearance": {
+          "role": "speech",
+          "size": 100,
+          "accentSize": 100,
+          "position": 50,
+          "color": "#ffffff",
+          "motion": "soft"
+        },
+        "spokenText": "Шепот леса мари – это не просто",
+        "sourceOriginalText": "Шепот леса мари – это не просто"
+      },
+      {
+        "start": 15760,
+        "end": 16300,
+        "text": "не просто",
+        "originalText": "не просто",
+        "sourceIndices": [
+          8
+        ],
+        "words": [
+          {
+            "text": "не",
+            "start": 15760,
+            "end": 15900,
+            "confidence": 0.999985,
+            "estimated": false
+          },
+          {
+            "text": "просто",
+            "start": 15900,
+            "end": 16300,
+            "confidence": 0.99992,
+            "estimated": false
+          }
+        ],
+        "timingEstimated": false,
+        "appearance": {
+          "role": "speech",
+          "size": 100,
+          "accentSize": 100,
+          "position": 50,
+          "color": "#ffffff",
+          "motion": "soft"
+        },
+        "spokenText": "Шепот леса мари – это не просто",
+        "sourceOriginalText": "Шепот леса мари – это не просто"
+      },
+      {
+        "start": 16400,
+        "end": 17520,
+        "text": "спа-процедура,",
+        "originalText": "спа-процедура,",
+        "sourceIndices": [
+          9
+        ],
+        "words": [
+          {
+            "text": "спа-процедура,",
+            "start": 16400,
+            "end": 17520,
+            "confidence": 0.823408,
+            "estimated": false
+          }
+        ],
+        "timingEstimated": false,
+        "appearance": {
+          "role": "speech",
+          "size": 100,
+          "accentSize": 100,
+          "position": 50,
+          "color": "#ffffff",
+          "motion": "soft"
+        },
+        "spokenText": "спа-процедура, а целостный ритуал,",
+        "sourceOriginalText": "спа-процедура, а целостный ритуал,"
+      },
+      {
+        "start": 17520,
+        "end": 18150,
+        "text": "а целостный",
+        "originalText": "а целостный",
+        "sourceIndices": [
+          9
+        ],
+        "words": [
+          {
+            "text": "а",
+            "start": 17520,
+            "end": 17580,
+            "confidence": 0.874788,
+            "estimated": false
+          },
+          {
+            "text": "целостный",
+            "start": 17580,
+            "end": 18150,
+            "confidence": 0.999531,
+            "estimated": false
+          }
+        ],
+        "timingEstimated": false,
+        "appearance": {
+          "role": "speech",
+          "size": 100,
+          "accentSize": 100,
+          "position": 50,
+          "color": "#ffffff",
+          "motion": "soft"
+        },
+        "spokenText": "спа-процедура, а целостный ритуал,",
+        "sourceOriginalText": "спа-процедура, а целостный ритуал,"
+      },
+      {
+        "start": 18190,
+        "end": 18720,
+        "text": "ритуал,",
+        "originalText": "ритуал,",
+        "sourceIndices": [
+          9
+        ],
+        "words": [
+          {
+            "text": "ритуал,",
+            "start": 18190,
+            "end": 18720,
+            "confidence": 0.999853,
+            "estimated": false
+          }
+        ],
+        "timingEstimated": false,
+        "appearance": {
+          "role": "speech",
+          "size": 100,
+          "accentSize": 100,
+          "position": 50,
+          "color": "#ffffff",
+          "motion": "soft"
+        },
+        "spokenText": "спа-процедура, а целостный ритуал,",
+        "sourceOriginalText": "спа-процедура, а целостный ритуал,"
+      },
+      {
+        "start": 18900,
+        "end": 18960,
+        "text": "где",
+        "originalText": "где",
+        "sourceIndices": [
+          10
+        ],
+        "words": [
+          {
+            "text": "где",
+            "start": 18900,
+            "end": 18960,
+            "confidence": 0.9998,
+            "estimated": false
+          }
+        ],
+        "timingEstimated": false,
+        "appearance": {
+          "role": "speech",
+          "size": 100,
+          "accentSize": 100,
+          "position": 50,
+          "color": "#ffffff",
+          "motion": "soft"
+        },
+        "spokenText": "где через тепло кедра,",
+        "sourceOriginalText": "где через тепло кедра,"
+      },
+      {
+        "start": 19080,
+        "end": 19740,
+        "text": "через тепло",
+        "originalText": "через тепло",
+        "sourceIndices": [
+          10
+        ],
+        "words": [
+          {
+            "text": "через",
+            "start": 19080,
+            "end": 19370,
+            "confidence": 0.998633,
+            "estimated": false
+          },
+          {
+            "text": "тепло",
+            "start": 19380,
+            "end": 19740,
+            "confidence": 0.997006,
+            "estimated": false
+          }
+        ],
+        "timingEstimated": false,
+        "appearance": {
+          "role": "speech",
+          "size": 100,
+          "accentSize": 100,
+          "position": 50,
+          "color": "#ffffff",
+          "motion": "soft"
+        },
+        "spokenText": "где через тепло кедра,",
+        "sourceOriginalText": "где через тепло кедра,"
+      },
+      {
+        "start": 19780,
+        "end": 20300,
+        "text": "кедра,",
+        "originalText": "кедра,",
+        "sourceIndices": [
+          10
+        ],
+        "words": [
+          {
+            "text": "кедра,",
+            "start": 19780,
+            "end": 20300,
+            "confidence": 0.989161,
+            "estimated": false
+          }
+        ],
+        "timingEstimated": false,
+        "appearance": {
+          "role": "speech",
+          "size": 100,
+          "accentSize": 100,
+          "position": 50,
+          "color": "#ffffff",
+          "motion": "soft"
+        },
+        "spokenText": "где через тепло кедра,",
+        "sourceOriginalText": "где через тепло кедра,"
+      },
+      {
+        "start": 20350,
+        "end": 20640,
+        "text": "силу",
+        "originalText": "силу",
+        "sourceIndices": [
+          11
+        ],
+        "words": [
+          {
+            "text": "силу",
+            "start": 20350,
+            "end": 20640,
+            "confidence": 0.999786,
+            "estimated": false
+          }
+        ],
+        "timingEstimated": false,
+        "appearance": {
+          "role": "speech",
+          "size": 100,
+          "accentSize": 100,
+          "position": 50,
+          "color": "#ffffff",
+          "motion": "soft"
+        },
+        "spokenText": "силу ягод и аромат пихты человек",
+        "sourceOriginalText": "силу ягод и аромат пихты человек"
+      },
+      {
+        "start": 20650,
+        "end": 20940,
+        "text": "ягод",
+        "originalText": "ягод",
+        "sourceIndices": [
+          11
+        ],
+        "words": [
+          {
+            "text": "ягод",
+            "start": 20650,
+            "end": 20940,
+            "confidence": 0.999682,
+            "estimated": false
+          }
+        ],
+        "timingEstimated": false,
+        "appearance": {
+          "role": "speech",
+          "size": 100,
+          "accentSize": 100,
+          "position": 50,
+          "color": "#ffffff",
+          "motion": "soft"
+        },
+        "spokenText": "силу ягод и аромат пихты человек",
+        "sourceOriginalText": "силу ягод и аромат пихты человек"
+      },
+      {
+        "start": 21040,
+        "end": 21530,
+        "text": "и аромат",
+        "originalText": "и аромат",
+        "sourceIndices": [
+          11
+        ],
+        "words": [
+          {
+            "text": "и",
+            "start": 21040,
+            "end": 21050,
+            "confidence": 0.999989,
+            "estimated": false
+          },
+          {
+            "text": "аромат",
+            "start": 21050,
+            "end": 21530,
+            "confidence": 0.999815,
+            "estimated": false
+          }
+        ],
+        "timingEstimated": false,
+        "appearance": {
+          "role": "speech",
+          "size": 100,
+          "accentSize": 100,
+          "position": 50,
+          "color": "#ffffff",
+          "motion": "soft"
+        },
+        "spokenText": "силу ягод и аромат пихты человек",
+        "sourceOriginalText": "силу ягод и аромат пихты человек"
+      },
+      {
+        "start": 21530,
+        "end": 22000,
+        "text": "пихты",
+        "originalText": "пихты",
+        "sourceIndices": [
+          11
+        ],
+        "words": [
+          {
+            "text": "пихты",
+            "start": 21530,
+            "end": 22000,
+            "confidence": 0.999089,
+            "estimated": false
+          }
+        ],
+        "timingEstimated": false,
+        "appearance": {
+          "role": "speech",
+          "size": 100,
+          "accentSize": 100,
+          "position": 50,
+          "color": "#ffffff",
+          "motion": "soft"
+        },
+        "spokenText": "силу ягод и аромат пихты человек",
+        "sourceOriginalText": "силу ягод и аромат пихты человек"
+      },
+      {
+        "start": 22060,
+        "end": 22490,
+        "text": "человек",
+        "originalText": "человек",
+        "sourceIndices": [
+          11
+        ],
+        "words": [
+          {
+            "text": "человек",
+            "start": 22060,
+            "end": 22490,
+            "confidence": 0.792442,
+            "estimated": false
+          }
+        ],
+        "timingEstimated": false,
+        "appearance": {
+          "role": "speech",
+          "size": 100,
+          "accentSize": 100,
+          "position": 50,
+          "color": "#ffffff",
+          "motion": "soft"
+        },
+        "spokenText": "силу ягод и аромат пихты человек",
+        "sourceOriginalText": "силу ягод и аромат пихты человек"
+      },
+      {
+        "start": 22490,
+        "end": 23120,
+        "text": "приобщается",
+        "originalText": "приобщается",
+        "sourceIndices": [
+          12
+        ],
+        "words": [
+          {
+            "text": "приобщается",
+            "start": 22490,
+            "end": 23120,
+            "confidence": 0.998591,
+            "estimated": false
+          }
+        ],
+        "timingEstimated": false,
+        "appearance": {
+          "role": "speech",
+          "size": 100,
+          "accentSize": 100,
+          "position": 50,
+          "color": "#ffffff",
+          "motion": "soft"
+        },
+        "spokenText": "приобщается к древней мудрости народа,",
+        "sourceOriginalText": "приобщается к древней мудрости народа,"
+      },
+      {
+        "start": 23210,
+        "end": 23640,
+        "text": "к древней",
+        "originalText": "к древней",
+        "sourceIndices": [
+          12
+        ],
+        "words": [
+          {
+            "text": "к",
+            "start": 23210,
+            "end": 23260,
+            "confidence": 0.958857,
+            "estimated": false
+          },
+          {
+            "text": "древней",
+            "start": 23260,
+            "end": 23640,
+            "confidence": 0.990975,
+            "estimated": false
+          }
+        ],
+        "timingEstimated": false,
+        "appearance": {
+          "role": "speech",
+          "size": 100,
+          "accentSize": 100,
+          "position": 50,
+          "color": "#ffffff",
+          "motion": "soft"
+        },
+        "spokenText": "приобщается к древней мудрости народа,",
+        "sourceOriginalText": "приобщается к древней мудрости народа,"
+      },
+      {
+        "start": 23730,
+        "end": 24160,
+        "text": "мудрости",
+        "originalText": "мудрости",
+        "sourceIndices": [
+          12
+        ],
+        "words": [
+          {
+            "text": "мудрости",
+            "start": 23730,
+            "end": 24160,
+            "confidence": 0.998323,
+            "estimated": false
+          }
+        ],
+        "timingEstimated": false,
+        "appearance": {
+          "role": "speech",
+          "size": 100,
+          "accentSize": 100,
+          "position": 50,
+          "color": "#ffffff",
+          "motion": "soft"
+        },
+        "spokenText": "приобщается к древней мудрости народа,",
+        "sourceOriginalText": "приобщается к древней мудрости народа,"
+      },
+      {
+        "start": 24160,
+        "end": 24700,
+        "text": "народа,",
+        "originalText": "народа,",
+        "sourceIndices": [
+          12
+        ],
+        "words": [
+          {
+            "text": "народа,",
+            "start": 24160,
+            "end": 24700,
+            "confidence": 0.997851,
+            "estimated": false
+          }
+        ],
+        "timingEstimated": false,
+        "appearance": {
+          "role": "speech",
+          "size": 100,
+          "accentSize": 100,
+          "position": 50,
+          "color": "#ffffff",
+          "motion": "soft"
+        },
+        "spokenText": "приобщается к древней мудрости народа,",
+        "sourceOriginalText": "приобщается к древней мудрости народа,"
+      },
+      {
+        "start": 24960,
+        "end": 25130,
+        "text": "который",
+        "originalText": "который",
+        "sourceIndices": [
+          13
+        ],
+        "words": [
+          {
+            "text": "который",
+            "start": 24960,
+            "end": 25130,
+            "confidence": 0.990834,
+            "estimated": false
+          }
+        ],
+        "timingEstimated": false,
+        "appearance": {
+          "role": "speech",
+          "size": 100,
+          "accentSize": 100,
+          "position": 50,
+          "color": "#ffffff",
+          "motion": "soft"
+        },
+        "spokenText": "который жил в гармонии с природой.",
+        "sourceOriginalText": "который жил в гармонии с природой."
+      },
+      {
+        "start": 25130,
+        "end": 25310,
+        "text": "жил",
+        "originalText": "жил",
+        "sourceIndices": [
+          13
+        ],
+        "words": [
+          {
+            "text": "жил",
+            "start": 25130,
+            "end": 25310,
+            "confidence": 0.999584,
+            "estimated": false
+          }
+        ],
+        "timingEstimated": false,
+        "appearance": {
+          "role": "speech",
+          "size": 100,
+          "accentSize": 100,
+          "position": 50,
+          "color": "#ffffff",
+          "motion": "soft"
+        },
+        "spokenText": "который жил в гармонии с природой.",
+        "sourceOriginalText": "который жил в гармонии с природой."
+      },
+      {
+        "start": 25310,
+        "end": 25850,
+        "text": "в гармонии",
+        "originalText": "в гармонии",
+        "sourceIndices": [
+          13
+        ],
+        "words": [
+          {
+            "text": "в",
+            "start": 25310,
+            "end": 25370,
+            "confidence": 0.999367,
+            "estimated": false
+          },
+          {
+            "text": "гармонии",
+            "start": 25370,
+            "end": 25850,
+            "confidence": 0.992667,
+            "estimated": false
+          }
+        ],
+        "timingEstimated": false,
+        "appearance": {
+          "role": "speech",
+          "size": 100,
+          "accentSize": 100,
+          "position": 50,
+          "color": "#ffffff",
+          "motion": "soft"
+        },
+        "spokenText": "который жил в гармонии с природой.",
+        "sourceOriginalText": "который жил в гармонии с природой."
+      },
+      {
+        "start": 25850,
+        "end": 26540,
+        "text": "с природой.",
+        "originalText": "с природой.",
+        "sourceIndices": [
+          13
+        ],
+        "words": [
+          {
+            "text": "с",
+            "start": 25850,
+            "end": 25910,
+            "confidence": 0.999996,
+            "estimated": false
+          },
+          {
+            "text": "природой.",
+            "start": 25910,
+            "end": 26540,
+            "confidence": 0.999874,
+            "estimated": false
+          }
+        ],
+        "timingEstimated": false,
+        "appearance": {
+          "role": "speech",
+          "size": 100,
+          "accentSize": 100,
+          "position": 50,
+          "color": "#ffffff",
+          "motion": "soft"
+        },
+        "spokenText": "который жил в гармонии с природой.",
+        "sourceOriginalText": "который жил в гармонии с природой."
+      },
+      {
+        "start": 26780,
+        "end": 27160,
+        "text": "Процедура",
+        "originalText": "Процедура",
+        "sourceIndices": [
+          14
+        ],
+        "words": [
+          {
+            "text": "Процедура",
+            "start": 26780,
+            "end": 27160,
+            "confidence": 0.895243,
+            "estimated": false
+          }
+        ],
+        "timingEstimated": false,
+        "appearance": {
+          "role": "speech",
+          "size": 100,
+          "accentSize": 100,
+          "position": 50,
+          "color": "#ffffff",
+          "motion": "soft"
+        },
+        "spokenText": "Процедура начинается с погружения",
+        "sourceOriginalText": "Процедура начинается с погружения"
+      },
+      {
+        "start": 27160,
+        "end": 27760,
+        "text": "начинается",
+        "originalText": "начинается",
+        "sourceIndices": [
+          14
+        ],
+        "words": [
+          {
+            "text": "начинается",
+            "start": 27160,
+            "end": 27760,
+            "confidence": 0.999523,
+            "estimated": false
+          }
+        ],
+        "timingEstimated": false,
+        "appearance": {
+          "role": "speech",
+          "size": 100,
+          "accentSize": 100,
+          "position": 50,
+          "color": "#ffffff",
+          "motion": "soft"
+        },
+        "spokenText": "Процедура начинается с погружения",
+        "sourceOriginalText": "Процедура начинается с погружения"
+      },
+      {
+        "start": 27760,
+        "end": 28420,
+        "text": "с погружения",
+        "originalText": "с погружения",
+        "sourceIndices": [
+          14
+        ],
+        "words": [
+          {
+            "text": "с",
+            "start": 27760,
+            "end": 27820,
+            "confidence": 0.999966,
+            "estimated": false
+          },
+          {
+            "text": "погружения",
+            "start": 27820,
+            "end": 28420,
+            "confidence": 0.999691,
+            "estimated": false
+          }
+        ],
+        "timingEstimated": false,
+        "appearance": {
+          "role": "speech",
+          "size": 100,
+          "accentSize": 100,
+          "position": 50,
+          "color": "#ffffff",
+          "motion": "soft"
+        },
+        "spokenText": "Процедура начинается с погружения",
+        "sourceOriginalText": "Процедура начинается с погружения"
+      },
+      {
+        "start": 28420,
+        "end": 29460,
+        "text": "Кедровая бочка\nв кедровую бочку",
+        "originalText": "в кедровую бочку.",
+        "sourceIndices": [
+          15
+        ],
+        "words": [
+          {
+            "text": "в",
+            "start": 28420,
+            "end": 28480,
+            "confidence": 0.999992,
+            "estimated": false
+          },
+          {
+            "text": "кедровую",
+            "start": 28480,
+            "end": 28960,
+            "confidence": 0.999087,
+            "estimated": false
+          },
+          {
+            "text": "бочку.",
+            "start": 28960,
+            "end": 29460,
+            "confidence": 0.987579,
+            "estimated": false
+          }
+        ],
+        "timingEstimated": false,
+        "appearance": {
+          "role": "title",
+          "size": 100,
+          "accentSize": 100,
+          "position": 50,
+          "color": "#ffffff",
+          "motion": "write"
+        },
+        "spokenText": "в кедровую бочку."
+      },
+      {
+        "start": 29880,
+        "end": 30370,
+        "text": "не просто",
+        "originalText": "не просто",
+        "sourceIndices": [
+          16
+        ],
+        "words": [
+          {
+            "text": "не",
+            "start": 29880,
+            "end": 30000,
+            "confidence": 0.999966,
+            "estimated": false
+          },
+          {
+            "text": "просто",
+            "start": 30050,
+            "end": 30370,
+            "confidence": 0.999819,
+            "estimated": false
+          }
+        ],
+        "timingEstimated": false,
+        "appearance": {
+          "role": "speech",
+          "size": 100,
+          "accentSize": 100,
+          "position": 50,
+          "color": "#ffffff",
+          "motion": "soft"
+        },
+        "spokenText": "не просто прогрев, а мощная",
+        "sourceOriginalText": "не просто прогрев, а мощная"
+      },
+      {
+        "start": 30370,
+        "end": 30910,
+        "text": "прогрев,",
+        "originalText": "прогрев,",
+        "sourceIndices": [
+          16
+        ],
+        "words": [
+          {
+            "text": "прогрев,",
+            "start": 30370,
+            "end": 30910,
+            "confidence": 0.999464,
+            "estimated": false
+          }
+        ],
+        "timingEstimated": false,
+        "appearance": {
+          "role": "speech",
+          "size": 100,
+          "accentSize": 100,
+          "position": 50,
+          "color": "#ffffff",
+          "motion": "soft"
+        },
+        "spokenText": "не просто прогрев, а мощная",
+        "sourceOriginalText": "не просто прогрев, а мощная"
+      },
+      {
+        "start": 30910,
+        "end": 31330,
+        "text": "а мощная",
+        "originalText": "а мощная",
+        "sourceIndices": [
+          16
+        ],
+        "words": [
+          {
+            "text": "а",
+            "start": 30910,
+            "end": 30970,
+            "confidence": 0.999893,
+            "estimated": false
+          },
+          {
+            "text": "мощная",
+            "start": 30970,
+            "end": 31330,
+            "confidence": 0.999783,
+            "estimated": false
+          }
+        ],
+        "timingEstimated": false,
+        "appearance": {
+          "role": "speech",
+          "size": 100,
+          "accentSize": 100,
+          "position": 50,
+          "color": "#ffffff",
+          "motion": "soft"
+        },
+        "spokenText": "не просто прогрев, а мощная",
+        "sourceOriginalText": "не просто прогрев, а мощная"
+      },
+      {
+        "start": 31330,
+        "end": 32470,
+        "text": "фитотерапевтическая",
+        "originalText": "фитотерапевтическая",
+        "sourceIndices": [
+          17
+        ],
+        "words": [
+          {
+            "text": "фитотерапевтическая",
+            "start": 31330,
+            "end": 32470,
+            "confidence": 0.988764,
+            "estimated": false
+          }
+        ],
+        "timingEstimated": false,
+        "appearance": {
+          "role": "speech",
+          "size": 100,
+          "accentSize": 100,
+          "position": 50,
+          "color": "#ffffff",
+          "motion": "soft"
+        },
+        "spokenText": "фитотерапевтическая процедура.",
+        "sourceOriginalText": "фитотерапевтическая процедура."
+      },
+      {
+        "start": 32500,
+        "end": 33310,
+        "text": "процедура.",
+        "originalText": "процедура.",
+        "sourceIndices": [
+          17
+        ],
+        "words": [
+          {
+            "text": "процедура.",
+            "start": 32500,
+            "end": 33310,
+            "confidence": 0.999756,
+            "estimated": false
+          }
+        ],
+        "timingEstimated": false,
+        "appearance": {
+          "role": "speech",
+          "size": 100,
+          "accentSize": 100,
+          "position": 50,
+          "color": "#ffffff",
+          "motion": "soft"
+        },
+        "spokenText": "фитотерапевтическая процедура.",
+        "sourceOriginalText": "фитотерапевтическая процедура."
+      },
+      {
+        "start": 33540,
+        "end": 33880,
+        "text": "Вещества",
+        "originalText": "Вещества",
+        "sourceIndices": [
+          18
+        ],
+        "words": [
+          {
+            "text": "Вещества",
+            "start": 33540,
+            "end": 33880,
+            "confidence": 0.994059,
+            "estimated": false
+          }
+        ],
+        "timingEstimated": false,
+        "appearance": {
+          "role": "speech",
+          "size": 100,
+          "accentSize": 100,
+          "position": 50,
+          "color": "#ffffff",
+          "motion": "soft"
+        },
+        "spokenText": "Вещества кедра отлично борются",
+        "sourceOriginalText": "Вещества кедра отлично борются"
+      },
+      {
+        "start": 33880,
+        "end": 34230,
+        "text": "кедра",
+        "originalText": "кедра",
+        "sourceIndices": [
+          18
+        ],
+        "words": [
+          {
+            "text": "кедра",
+            "start": 33880,
+            "end": 34230,
+            "confidence": 0.999256,
+            "estimated": false
+          }
+        ],
+        "timingEstimated": false,
+        "appearance": {
+          "role": "speech",
+          "size": 100,
+          "accentSize": 100,
+          "position": 50,
+          "color": "#ffffff",
+          "motion": "soft"
+        },
+        "spokenText": "Вещества кедра отлично борются",
+        "sourceOriginalText": "Вещества кедра отлично борются"
+      },
+      {
+        "start": 34230,
+        "end": 34720,
+        "text": "отлично",
+        "originalText": "отлично",
+        "sourceIndices": [
+          18
+        ],
+        "words": [
+          {
+            "text": "отлично",
+            "start": 34230,
+            "end": 34720,
+            "confidence": 0.999691,
+            "estimated": false
+          }
+        ],
+        "timingEstimated": false,
+        "appearance": {
+          "role": "speech",
+          "size": 100,
+          "accentSize": 100,
+          "position": 50,
+          "color": "#ffffff",
+          "motion": "soft"
+        },
+        "spokenText": "Вещества кедра отлично борются",
+        "sourceOriginalText": "Вещества кедра отлично борются"
+      },
+      {
+        "start": 34720,
+        "end": 35210,
+        "text": "борются",
+        "originalText": "борются",
+        "sourceIndices": [
+          18
+        ],
+        "words": [
+          {
+            "text": "борются",
+            "start": 34720,
+            "end": 35210,
+            "confidence": 0.987701,
+            "estimated": false
+          }
+        ],
+        "timingEstimated": false,
+        "appearance": {
+          "role": "speech",
+          "size": 100,
+          "accentSize": 100,
+          "position": 50,
+          "color": "#ffffff",
+          "motion": "soft"
+        },
+        "spokenText": "Вещества кедра отлично борются",
+        "sourceOriginalText": "Вещества кедра отлично борются"
+      },
+      {
+        "start": 35210,
+        "end": 35840,
+        "text": "с вирусами",
+        "originalText": "с вирусами",
+        "sourceIndices": [
+          19
+        ],
+        "words": [
+          {
+            "text": "с",
+            "start": 35210,
+            "end": 35280,
+            "confidence": 0.999996,
+            "estimated": false
+          },
+          {
+            "text": "вирусами",
+            "start": 35280,
+            "end": 35840,
+            "confidence": 0.999929,
+            "estimated": false
+          }
+        ],
+        "timingEstimated": false,
+        "appearance": {
+          "role": "speech",
+          "size": 100,
+          "accentSize": 100,
+          "position": 50,
+          "color": "#ffffff",
+          "motion": "soft"
+        },
+        "spokenText": "с вирусами и бактериями.",
+        "sourceOriginalText": "с вирусами и бактериями."
+      },
+      {
+        "start": 35840,
+        "end": 36900,
+        "text": "и бактериями.",
+        "originalText": "и бактериями.",
+        "sourceIndices": [
+          19
+        ],
+        "words": [
+          {
+            "text": "и",
+            "start": 35840,
+            "end": 35910,
+            "confidence": 0.999992,
+            "estimated": false
+          },
+          {
+            "text": "бактериями.",
+            "start": 35910,
+            "end": 36900,
+            "confidence": 0.999691,
+            "estimated": false
+          }
+        ],
+        "timingEstimated": false,
+        "appearance": {
+          "role": "speech",
+          "size": 100,
+          "accentSize": 100,
+          "position": 50,
+          "color": "#ffffff",
+          "motion": "soft"
+        },
+        "spokenText": "с вирусами и бактериями.",
+        "sourceOriginalText": "с вирусами и бактериями."
+      },
+      {
+        "start": 37060,
+        "end": 37240,
+        "text": "После",
+        "originalText": "После",
+        "sourceIndices": [
+          20
+        ],
+        "words": [
+          {
+            "text": "После",
+            "start": 37060,
+            "end": 37240,
+            "confidence": 0.999868,
+            "estimated": true
+          }
+        ],
+        "timingEstimated": true,
+        "appearance": {
+          "role": "speech",
+          "size": 100,
+          "accentSize": 100,
+          "position": 50,
+          "color": "#ffffff",
+          "motion": "soft"
+        },
+        "spokenText": "После прогрева – мягкое скрабирование.",
+        "sourceOriginalText": "После прогрева – мягкое скрабирование."
+      },
+      {
+        "start": 37240,
+        "end": 37790,
+        "text": "прогрева –",
+        "originalText": "прогрева –",
+        "sourceIndices": [
+          20
+        ],
+        "words": [
+          {
+            "text": "прогрева",
+            "start": 37240,
+            "end": 37730,
+            "confidence": 0.999773,
+            "estimated": false
+          },
+          {
+            "text": "–",
+            "start": 37730,
+            "end": 37790,
+            "confidence": 0.96279,
+            "estimated": false
+          }
+        ],
+        "timingEstimated": true,
+        "appearance": {
+          "role": "speech",
+          "size": 100,
+          "accentSize": 100,
+          "position": 50,
+          "color": "#ffffff",
+          "motion": "soft"
+        },
+        "spokenText": "После прогрева – мягкое скрабирование.",
+        "sourceOriginalText": "После прогрева – мягкое скрабирование."
+      },
+      {
+        "start": 37790,
+        "end": 38170,
+        "text": "мягкое",
+        "originalText": "мягкое",
+        "sourceIndices": [
+          20
+        ],
+        "words": [
+          {
+            "text": "мягкое",
+            "start": 37790,
+            "end": 38170,
+            "confidence": 0.999662,
+            "estimated": false
+          }
+        ],
+        "timingEstimated": true,
+        "appearance": {
+          "role": "speech",
+          "size": 100,
+          "accentSize": 100,
+          "position": 50,
+          "color": "#ffffff",
+          "motion": "soft"
+        },
+        "spokenText": "После прогрева – мягкое скрабирование.",
+        "sourceOriginalText": "После прогрева – мягкое скрабирование."
+      },
+      {
+        "start": 38170,
+        "end": 39260,
+        "text": "скрабирование.",
+        "originalText": "скрабирование.",
+        "sourceIndices": [
+          20
+        ],
+        "words": [
+          {
+            "text": "скрабирование.",
+            "start": 38170,
+            "end": 39260,
+            "confidence": 0.985586,
+            "estimated": false
+          }
+        ],
+        "timingEstimated": true,
+        "appearance": {
+          "role": "speech",
+          "size": 100,
+          "accentSize": 100,
+          "position": 50,
+          "color": "#ffffff",
+          "motion": "soft"
+        },
+        "spokenText": "После прогрева – мягкое скрабирование.",
+        "sourceOriginalText": "После прогрева – мягкое скрабирование."
+      },
+      {
+        "start": 39500,
+        "end": 39767,
+        "text": "Этот",
+        "originalText": "Этот",
+        "sourceIndices": [
+          21,
+          22
+        ],
+        "timingEstimated": true,
+        "appearance": {
+          "role": "speech",
+          "size": 100,
+          "accentSize": 100,
+          "position": 50,
+          "color": "#ffffff",
+          "motion": "soft"
+        },
+        "spokenText": "Этот этап – дань уважения марийской традиции.",
+        "sourceOriginalText": "Этот этап – дань уважения марийской традиции."
+      },
+      {
+        "start": 39767,
+        "end": 40102,
+        "text": "этап –",
+        "originalText": "этап –",
+        "sourceIndices": [
+          21,
+          22
+        ],
+        "timingEstimated": true,
+        "appearance": {
+          "role": "speech",
+          "size": 100,
+          "accentSize": 100,
+          "position": 50,
+          "color": "#ffffff",
+          "motion": "soft"
+        },
+        "spokenText": "Этот этап – дань уважения марийской традиции.",
+        "sourceOriginalText": "Этот этап – дань уважения марийской традиции."
+      },
+      {
+        "start": 40102,
+        "end": 40369,
+        "text": "дань",
+        "originalText": "дань",
+        "sourceIndices": [
+          21,
+          22
+        ],
+        "timingEstimated": true,
+        "appearance": {
+          "role": "speech",
+          "size": 100,
+          "accentSize": 100,
+          "position": 50,
+          "color": "#ffffff",
+          "motion": "soft"
+        },
+        "spokenText": "Этот этап – дань уважения марийской традиции.",
+        "sourceOriginalText": "Этот этап – дань уважения марийской традиции."
+      },
+      {
+        "start": 40369,
+        "end": 40904,
+        "text": "уважения",
+        "originalText": "уважения",
+        "sourceIndices": [
+          21,
+          22
+        ],
+        "timingEstimated": true,
+        "appearance": {
+          "role": "speech",
+          "size": 100,
+          "accentSize": 100,
+          "position": 50,
+          "color": "#ffffff",
+          "motion": "soft"
+        },
+        "spokenText": "Этот этап – дань уважения марийской традиции.",
+        "sourceOriginalText": "Этот этап – дань уважения марийской традиции."
+      },
+      {
+        "start": 40904,
+        "end": 41505,
+        "text": "марийской",
+        "originalText": "марийской",
+        "sourceIndices": [
+          21,
+          22
+        ],
+        "timingEstimated": true,
+        "appearance": {
+          "role": "speech",
+          "size": 100,
+          "accentSize": 100,
+          "position": 50,
+          "color": "#ffffff",
+          "motion": "soft"
+        },
+        "spokenText": "Этот этап – дань уважения марийской традиции.",
+        "sourceOriginalText": "Этот этап – дань уважения марийской традиции."
+      },
+      {
+        "start": 41505,
+        "end": 42040,
+        "text": "традиции.",
+        "originalText": "традиции.",
+        "sourceIndices": [
+          21,
+          22
+        ],
+        "timingEstimated": true,
+        "appearance": {
+          "role": "speech",
+          "size": 100,
+          "accentSize": 100,
+          "position": 50,
+          "color": "#ffffff",
+          "motion": "soft"
+        },
+        "spokenText": "Этот этап – дань уважения марийской традиции.",
+        "sourceOriginalText": "Этот этап – дань уважения марийской традиции."
+      },
+      {
+        "start": 42050,
+        "end": 42890,
+        "text": "Использовать",
+        "originalText": "Использовать",
+        "sourceIndices": [
+          23
+        ],
+        "words": [
+          {
+            "text": "Использовать",
+            "start": 42050,
+            "end": 42890,
+            "confidence": 0.991879,
+            "estimated": false
+          }
+        ],
+        "timingEstimated": false,
+        "appearance": {
+          "role": "speech",
+          "size": 100,
+          "accentSize": 100,
+          "position": 50,
+          "color": "#ffffff",
+          "motion": "soft"
+        },
+        "spokenText": "Использовать съедобные средства",
+        "sourceOriginalText": "Использовать съедобные средства"
+      },
+      {
+        "start": 42920,
+        "end": 43540,
+        "text": "съедобные",
+        "originalText": "съедобные",
+        "sourceIndices": [
+          23
+        ],
+        "words": [
+          {
+            "text": "съедобные",
+            "start": 42920,
+            "end": 43540,
+            "confidence": 0.813224,
+            "estimated": false
+          }
+        ],
+        "timingEstimated": false,
+        "appearance": {
+          "role": "speech",
+          "size": 100,
+          "accentSize": 100,
+          "position": 50,
+          "color": "#ffffff",
+          "motion": "soft"
+        },
+        "spokenText": "Использовать съедобные средства",
+        "sourceOriginalText": "Использовать съедобные средства"
+      },
+      {
+        "start": 43540,
+        "end": 44080,
+        "text": "средства",
+        "originalText": "средства",
+        "sourceIndices": [
+          23
+        ],
+        "words": [
+          {
+            "text": "средства",
+            "start": 43540,
+            "end": 44080,
+            "confidence": 0.999926,
+            "estimated": false
+          }
+        ],
+        "timingEstimated": false,
+        "appearance": {
+          "role": "speech",
+          "size": 100,
+          "accentSize": 100,
+          "position": 50,
+          "color": "#ffffff",
+          "motion": "soft"
+        },
+        "spokenText": "Использовать съедобные средства",
+        "sourceOriginalText": "Использовать съедобные средства"
+      },
+      {
+        "start": 44180,
+        "end": 44700,
+        "text": "для ухода",
+        "originalText": "для ухода",
+        "sourceIndices": [
+          24
+        ],
+        "words": [
+          {
+            "text": "для",
+            "start": 44180,
+            "end": 44340,
+            "confidence": 0.999975,
+            "estimated": false
+          },
+          {
+            "text": "ухода",
+            "start": 44340,
+            "end": 44700,
+            "confidence": 0.999878,
+            "estimated": false
+          }
+        ],
+        "timingEstimated": false,
+        "appearance": {
+          "role": "speech",
+          "size": 100,
+          "accentSize": 100,
+          "position": 50,
+          "color": "#ffffff",
+          "motion": "soft"
+        },
+        "spokenText": "для ухода за кожей.",
+        "sourceOriginalText": "для ухода за кожей."
+      },
+      {
+        "start": 44700,
+        "end": 45520,
+        "text": "за кожей.",
+        "originalText": "за кожей.",
+        "sourceIndices": [
+          24
+        ],
+        "words": [
+          {
+            "text": "за",
+            "start": 44700,
+            "end": 44800,
+            "confidence": 0.999874,
+            "estimated": false
+          },
+          {
+            "text": "кожей.",
+            "start": 44840,
+            "end": 45520,
+            "confidence": 0.998858,
+            "estimated": false
+          }
+        ],
+        "timingEstimated": false,
+        "appearance": {
+          "role": "speech",
+          "size": 100,
+          "accentSize": 100,
+          "position": 50,
+          "color": "#ffffff",
+          "motion": "soft"
+        },
+        "spokenText": "для ухода за кожей.",
+        "sourceOriginalText": "для ухода за кожей."
+      },
+      {
+        "start": 45660,
+        "end": 45840,
+        "text": "Мед –",
+        "originalText": "Мед –",
+        "sourceIndices": [
+          25
+        ],
+        "words": [
+          {
+            "text": "Мед",
+            "start": 45660,
+            "end": 45680,
+            "confidence": 0.971395,
+            "estimated": false
+          },
+          {
+            "text": "–",
+            "start": 45690,
+            "end": 45840,
+            "confidence": 0.998502,
+            "estimated": true
+          }
+        ],
+        "timingEstimated": true,
+        "appearance": {
+          "role": "speech",
+          "size": 100,
+          "accentSize": 100,
+          "position": 50,
+          "color": "#ffffff",
+          "motion": "soft"
+        },
+        "spokenText": "Мед – натуральный источник витаминов,",
+        "sourceOriginalText": "Мед – натуральный источник витаминов,"
+      },
+      {
+        "start": 45840,
+        "end": 46330,
+        "text": "натуральный",
+        "originalText": "натуральный",
+        "sourceIndices": [
+          25
+        ],
+        "words": [
+          {
+            "text": "натуральный",
+            "start": 45840,
+            "end": 46330,
+            "confidence": 0.999539,
+            "estimated": false
+          }
+        ],
+        "timingEstimated": true,
+        "appearance": {
+          "role": "speech",
+          "size": 100,
+          "accentSize": 100,
+          "position": 50,
+          "color": "#ffffff",
+          "motion": "soft"
+        },
+        "spokenText": "Мед – натуральный источник витаминов,",
+        "sourceOriginalText": "Мед – натуральный источник витаминов,"
+      },
+      {
+        "start": 46330,
+        "end": 46760,
+        "text": "источник",
+        "originalText": "источник",
+        "sourceIndices": [
+          25
+        ],
+        "words": [
+          {
+            "text": "источник",
+            "start": 46330,
+            "end": 46760,
+            "confidence": 0.999763,
+            "estimated": false
+          }
+        ],
+        "timingEstimated": true,
+        "appearance": {
+          "role": "speech",
+          "size": 100,
+          "accentSize": 100,
+          "position": 50,
+          "color": "#ffffff",
+          "motion": "soft"
+        },
+        "spokenText": "Мед – натуральный источник витаминов,",
+        "sourceOriginalText": "Мед – натуральный источник витаминов,"
+      },
+      {
+        "start": 46760,
+        "end": 47420,
+        "text": "витаминов,",
+        "originalText": "витаминов,",
+        "sourceIndices": [
+          25
+        ],
+        "words": [
+          {
+            "text": "витаминов,",
+            "start": 46760,
+            "end": 47420,
+            "confidence": 0.998921,
+            "estimated": false
+          }
+        ],
+        "timingEstimated": true,
+        "appearance": {
+          "role": "speech",
+          "size": 100,
+          "accentSize": 100,
+          "position": 50,
+          "color": "#ffffff",
+          "motion": "soft"
+        },
+        "spokenText": "Мед – натуральный источник витаминов,",
+        "sourceOriginalText": "Мед – натуральный источник витаминов,"
+      },
+      {
+        "start": 47500,
+        "end": 48181,
+        "text": "а брусника –",
+        "originalText": "а брусника –",
+        "sourceIndices": [
+          26,
+          27
+        ],
+        "timingEstimated": true,
+        "appearance": {
+          "role": "speech",
+          "size": 100,
+          "accentSize": 100,
+          "position": 50,
+          "color": "#ffffff",
+          "motion": "soft"
+        },
+        "spokenText": "а брусника – лучшее средство для омоложения.",
+        "sourceOriginalText": "а брусника – лучшее средство для омоложения."
+      },
+      {
+        "start": 48181,
+        "end": 48590,
+        "text": "лучшее",
+        "originalText": "лучшее",
+        "sourceIndices": [
+          26,
+          27
+        ],
+        "timingEstimated": true,
+        "appearance": {
+          "role": "speech",
+          "size": 100,
+          "accentSize": 100,
+          "position": 50,
+          "color": "#ffffff",
+          "motion": "soft"
+        },
+        "spokenText": "а брусника – лучшее средство для омоложения.",
+        "sourceOriginalText": "а брусника – лучшее средство для омоложения."
+      },
+      {
+        "start": 48590,
+        "end": 49135,
+        "text": "средство",
+        "originalText": "средство",
+        "sourceIndices": [
+          26,
+          27
+        ],
+        "timingEstimated": true,
+        "appearance": {
+          "role": "speech",
+          "size": 100,
+          "accentSize": 100,
+          "position": 50,
+          "color": "#ffffff",
+          "motion": "soft"
+        },
+        "spokenText": "а брусника – лучшее средство для омоложения.",
+        "sourceOriginalText": "а брусника – лучшее средство для омоложения."
+      },
+      {
+        "start": 49135,
+        "end": 50020,
+        "text": "для омоложения.",
+        "originalText": "для омоложения.",
+        "sourceIndices": [
+          26,
+          27
+        ],
+        "timingEstimated": true,
+        "appearance": {
+          "role": "speech",
+          "size": 100,
+          "accentSize": 100,
+          "position": 50,
+          "color": "#ffffff",
+          "motion": "soft"
+        },
+        "spokenText": "а брусника – лучшее средство для омоложения.",
+        "sourceOriginalText": "а брусника – лучшее средство для омоложения."
+      },
+      {
+        "start": 50240,
+        "end": 50790,
+        "text": "Завершающий",
+        "originalText": "Завершающий",
+        "sourceIndices": [
+          28
+        ],
+        "words": [
+          {
+            "text": "Завершающий",
+            "start": 50240,
+            "end": 50790,
+            "confidence": 0.999479,
+            "estimated": false
+          }
+        ],
+        "timingEstimated": false,
+        "appearance": {
+          "role": "speech",
+          "size": 100,
+          "accentSize": 100,
+          "position": 50,
+          "color": "#ffffff",
+          "motion": "soft"
+        },
+        "spokenText": "Завершающий ключевой этап – это глубокий",
+        "sourceOriginalText": "Завершающий ключевой этап – это глубокий"
+      },
+      {
+        "start": 50790,
+        "end": 51350,
+        "text": "ключевой",
+        "originalText": "ключевой",
+        "sourceIndices": [
+          28
+        ],
+        "words": [
+          {
+            "text": "ключевой",
+            "start": 50790,
+            "end": 51350,
+            "confidence": 0.998159,
+            "estimated": false
+          }
+        ],
+        "timingEstimated": false,
+        "appearance": {
+          "role": "speech",
+          "size": 100,
+          "accentSize": 100,
+          "position": 50,
+          "color": "#ffffff",
+          "motion": "soft"
+        },
+        "spokenText": "Завершающий ключевой этап – это глубокий",
+        "sourceOriginalText": "Завершающий ключевой этап – это глубокий"
+      },
+      {
+        "start": 51350,
+        "end": 51700,
+        "text": "этап –",
+        "originalText": "этап –",
+        "sourceIndices": [
+          28
+        ],
+        "words": [
+          {
+            "text": "этап",
+            "start": 51350,
+            "end": 51630,
+            "confidence": 0.999834,
+            "estimated": false
+          },
+          {
+            "text": "–",
+            "start": 51630,
+            "end": 51700,
+            "confidence": 0.999701,
+            "estimated": false
+          }
+        ],
+        "timingEstimated": false,
+        "appearance": {
+          "role": "speech",
+          "size": 100,
+          "accentSize": 100,
+          "position": 50,
+          "color": "#ffffff",
+          "motion": "soft"
+        },
+        "spokenText": "Завершающий ключевой этап – это глубокий",
+        "sourceOriginalText": "Завершающий ключевой этап – это глубокий"
+      },
+      {
+        "start": 51700,
+        "end": 51910,
+        "text": "это",
+        "originalText": "это",
+        "sourceIndices": [
+          28
+        ],
+        "words": [
+          {
+            "text": "это",
+            "start": 51700,
+            "end": 51910,
+            "confidence": 0.930532,
+            "estimated": false
+          }
+        ],
+        "timingEstimated": false,
+        "appearance": {
+          "role": "speech",
+          "size": 100,
+          "accentSize": 100,
+          "position": 50,
+          "color": "#ffffff",
+          "motion": "soft"
+        },
+        "spokenText": "Завершающий ключевой этап – это глубокий",
+        "sourceOriginalText": "Завершающий ключевой этап – это глубокий"
+      },
+      {
+        "start": 51910,
+        "end": 52470,
+        "text": "глубокий",
+        "originalText": "глубокий",
+        "sourceIndices": [
+          28
+        ],
+        "words": [
+          {
+            "text": "глубокий",
+            "start": 51910,
+            "end": 52470,
+            "confidence": 0.999741,
+            "estimated": false
+          }
+        ],
+        "timingEstimated": false,
+        "appearance": {
+          "role": "speech",
+          "size": 100,
+          "accentSize": 100,
+          "position": 50,
+          "color": "#ffffff",
+          "motion": "soft"
+        },
+        "spokenText": "Завершающий ключевой этап – это глубокий",
+        "sourceOriginalText": "Завершающий ключевой этап – это глубокий"
+      },
+      {
+        "start": 52470,
+        "end": 52890,
+        "text": "массаж",
+        "originalText": "массаж",
+        "sourceIndices": [
+          29
+        ],
+        "words": [
+          {
+            "text": "массаж",
+            "start": 52470,
+            "end": 52890,
+            "confidence": 0.999916,
+            "estimated": false
+          }
+        ],
+        "timingEstimated": false,
+        "appearance": {
+          "role": "speech",
+          "size": 100,
+          "accentSize": 100,
+          "position": 50,
+          "color": "#ffffff",
+          "motion": "soft"
+        },
+        "spokenText": "массаж с использованием пихтового масла,",
+        "sourceOriginalText": "массаж с использованием пихтового масла,"
+      },
+      {
+        "start": 52890,
+        "end": 53940,
+        "text": "с использованием",
+        "originalText": "с использованием",
+        "sourceIndices": [
+          29
+        ],
+        "words": [
+          {
+            "text": "с",
+            "start": 52890,
+            "end": 52930,
+            "confidence": 0.999861,
+            "estimated": false
+          },
+          {
+            "text": "использованием",
+            "start": 52960,
+            "end": 53940,
+            "confidence": 0.999809,
+            "estimated": false
+          }
+        ],
+        "timingEstimated": false,
+        "appearance": {
+          "role": "speech",
+          "size": 100,
+          "accentSize": 100,
+          "position": 50,
+          "color": "#ffffff",
+          "motion": "soft"
+        },
+        "spokenText": "массаж с использованием пихтового масла,",
+        "sourceOriginalText": "массаж с использованием пихтового масла,"
+      },
+      {
+        "start": 53940,
+        "end": 54570,
+        "text": "пихтового",
+        "originalText": "пихтового",
+        "sourceIndices": [
+          29
+        ],
+        "words": [
+          {
+            "text": "пихтового",
+            "start": 53940,
+            "end": 54570,
+            "confidence": 0.984752,
+            "estimated": false
+          }
+        ],
+        "timingEstimated": false,
+        "appearance": {
+          "role": "speech",
+          "size": 100,
+          "accentSize": 100,
+          "position": 50,
+          "color": "#ffffff",
+          "motion": "soft"
+        },
+        "spokenText": "массаж с использованием пихтового масла,",
+        "sourceOriginalText": "массаж с использованием пихтового масла,"
+      },
+      {
+        "start": 54570,
+        "end": 55100,
+        "text": "масла,",
+        "originalText": "масла,",
+        "sourceIndices": [
+          29
+        ],
+        "words": [
+          {
+            "text": "масла,",
+            "start": 54570,
+            "end": 55100,
+            "confidence": 0.999893,
+            "estimated": false
+          }
+        ],
+        "timingEstimated": false,
+        "appearance": {
+          "role": "speech",
+          "size": 100,
+          "accentSize": 100,
+          "position": 50,
+          "color": "#ffffff",
+          "motion": "soft"
+        },
+        "spokenText": "массаж с использованием пихтового масла,",
+        "sourceOriginalText": "массаж с использованием пихтового масла,"
+      },
+      {
+        "start": 55400,
+        "end": 55907,
+        "text": "которое",
+        "originalText": "которое",
+        "sourceIndices": [
+          30,
+          31
+        ],
+        "timingEstimated": true,
+        "appearance": {
+          "role": "speech",
+          "size": 100,
+          "accentSize": 100,
+          "position": 50,
+          "color": "#ffffff",
+          "motion": "soft"
+        },
+        "spokenText": "которое марийцы издрели считали даром леса.",
+        "sourceOriginalText": "которое марийцы издрели считали даром леса."
+      },
+      {
+        "start": 55907,
+        "end": 56414,
+        "text": "марийцы",
+        "originalText": "марийцы",
+        "sourceIndices": [
+          30,
+          31
+        ],
+        "timingEstimated": true,
+        "appearance": {
+          "role": "speech",
+          "size": 100,
+          "accentSize": 100,
+          "position": 50,
+          "color": "#ffffff",
+          "motion": "soft"
+        },
+        "spokenText": "которое марийцы издрели считали даром леса.",
+        "sourceOriginalText": "которое марийцы издрели считали даром леса."
+      },
+      {
+        "start": 56414,
+        "end": 56921,
+        "text": "издрели",
+        "originalText": "издрели",
+        "sourceIndices": [
+          30,
+          31
+        ],
+        "timingEstimated": true,
+        "appearance": {
+          "role": "speech",
+          "size": 100,
+          "accentSize": 100,
+          "position": 50,
+          "color": "#ffffff",
+          "motion": "soft"
+        },
+        "spokenText": "которое марийцы издрели считали даром леса.",
+        "sourceOriginalText": "которое марийцы издрели считали даром леса."
+      },
+      {
+        "start": 56921,
+        "end": 57428,
+        "text": "считали",
+        "originalText": "считали",
+        "sourceIndices": [
+          30,
+          31
+        ],
+        "timingEstimated": true,
+        "appearance": {
+          "role": "speech",
+          "size": 100,
+          "accentSize": 100,
+          "position": 50,
+          "color": "#ffffff",
+          "motion": "soft"
+        },
+        "spokenText": "которое марийцы издрели считали даром леса.",
+        "sourceOriginalText": "которое марийцы издрели считали даром леса."
+      },
+      {
+        "start": 57428,
+        "end": 57790,
+        "text": "даром",
+        "originalText": "даром",
+        "sourceIndices": [
+          30,
+          31
+        ],
+        "timingEstimated": true,
+        "appearance": {
+          "role": "speech",
+          "size": 100,
+          "accentSize": 100,
+          "position": 50,
+          "color": "#ffffff",
+          "motion": "soft"
+        },
+        "spokenText": "которое марийцы издрели считали даром леса.",
+        "sourceOriginalText": "которое марийцы издрели считали даром леса."
+      },
+      {
+        "start": 57790,
+        "end": 58080,
+        "text": "леса.",
+        "originalText": "леса.",
+        "sourceIndices": [
+          30,
+          31
+        ],
+        "timingEstimated": true,
+        "appearance": {
+          "role": "speech",
+          "size": 100,
+          "accentSize": 100,
+          "position": 50,
+          "color": "#ffffff",
+          "motion": "soft"
+        },
+        "spokenText": "которое марийцы издрели считали даром леса.",
+        "sourceOriginalText": "которое марийцы издрели считали даром леса."
+      },
+      {
+        "start": 58260,
+        "end": 58630,
+        "text": "А после",
+        "originalText": "А после",
+        "sourceIndices": [
+          32
+        ],
+        "words": [
+          {
+            "text": "А",
+            "start": 58260,
+            "end": 58320,
+            "confidence": 0.587269,
+            "estimated": false
+          },
+          {
+            "text": "после",
+            "start": 58440,
+            "end": 58630,
+            "confidence": 0.999786,
+            "estimated": false
+          }
+        ],
+        "timingEstimated": false,
+        "appearance": {
+          "role": "speech",
+          "size": 100,
+          "accentSize": 100,
+          "position": 50,
+          "color": "#ffffff",
+          "motion": "soft"
+        },
+        "spokenText": "А после бани, по традиции,",
+        "sourceOriginalText": "А после бани, по традиции,"
+      },
+      {
+        "start": 58630,
+        "end": 58990,
+        "text": "бани,",
+        "originalText": "бани,",
+        "sourceIndices": [
+          32
+        ],
+        "words": [
+          {
+            "text": "бани,",
+            "start": 58630,
+            "end": 58990,
+            "confidence": 0.585746,
+            "estimated": false
+          }
+        ],
+        "timingEstimated": false,
+        "appearance": {
+          "role": "speech",
+          "size": 100,
+          "accentSize": 100,
+          "position": 50,
+          "color": "#ffffff",
+          "motion": "soft"
+        },
+        "spokenText": "А после бани, по традиции,",
+        "sourceOriginalText": "А после бани, по традиции,"
+      },
+      {
+        "start": 58990,
+        "end": 59760,
+        "text": "по традиции,",
+        "originalText": "по традиции,",
+        "sourceIndices": [
+          32
+        ],
+        "words": [
+          {
+            "text": "по",
+            "start": 58990,
+            "end": 59100,
+            "confidence": 0.999537,
+            "estimated": false
+          },
+          {
+            "text": "традиции,",
+            "start": 59100,
+            "end": 59760,
+            "confidence": 0.991431,
+            "estimated": false
+          }
+        ],
+        "timingEstimated": false,
+        "appearance": {
+          "role": "speech",
+          "size": 100,
+          "accentSize": 100,
+          "position": 50,
+          "color": "#ffffff",
+          "motion": "soft"
+        },
+        "spokenText": "А после бани, по традиции,",
+        "sourceOriginalText": "А после бани, по традиции,"
+      },
+      {
+        "start": 59760,
+        "end": 60020,
+        "text": "чай",
+        "originalText": "чай",
+        "sourceIndices": [
+          33
+        ],
+        "words": [
+          {
+            "text": "чай",
+            "start": 59760,
+            "end": 60020,
+            "confidence": 0.981038,
+            "estimated": false
+          }
+        ],
+        "timingEstimated": false,
+        "appearance": {
+          "role": "speech",
+          "size": 100,
+          "accentSize": 100,
+          "position": 50,
+          "color": "#ffffff",
+          "motion": "soft"
+        },
+        "spokenText": "чай с медом.",
+        "sourceOriginalText": "чай с медом."
+      },
+      {
+        "start": 60120,
+        "end": 60910,
+        "text": "с медом.",
+        "originalText": "с медом.",
+        "sourceIndices": [
+          33
+        ],
+        "words": [
+          {
+            "text": "с",
+            "start": 60120,
+            "end": 60130,
+            "confidence": 0.999306,
+            "estimated": false
+          },
+          {
+            "text": "медом.",
+            "start": 60130,
+            "end": 60910,
+            "confidence": 0.729822,
+            "estimated": false
+          }
+        ],
+        "timingEstimated": false,
+        "appearance": {
+          "role": "speech",
+          "size": 100,
+          "accentSize": 100,
+          "position": 50,
+          "color": "#ffffff",
+          "motion": "soft"
+        },
+        "spokenText": "чай с медом.",
+        "sourceOriginalText": "чай с медом."
+      }
+    ]
+  },
+  "batch": {
+    "version": 1,
+    "documentKey": "8bd6ec3d-0568-4660-a877-5d4b1f086b87",
+    "projectPath": "D:\\Projects Adobe\\Разработка плагина\\Тестовая секвенция Разработка плагина.prproj",
+    "sequenceID": "249c558a-e18c-404e-8465-5fd6268f40dd",
+    "total": 103,
+    "completed": 103,
+    "phase": "complete",
+    "pending": false,
+    "clipID": "000f473c",
+    "clips": [
+      "000f473c",
+      "000f473d",
+      "000f473e",
+      "000f473f",
+      "000f4740",
+      "000f4741",
+      "000f4742",
+      "000f4743",
+      "000f4744",
+      "000f4745",
+      "000f4746",
+      "000f4747",
+      "000f4748",
+      "000f4749",
+      "000f474a",
+      "000f474b",
+      "000f474c",
+      "000f474d",
+      "000f474e",
+      "000f474f",
+      "000f4750",
+      "000f4751",
+      "000f4752",
+      "000f4753",
+      "000f4754",
+      "000f4755",
+      "000f4756",
+      "000f4757",
+      "000f4758",
+      "000f4759",
+      "000f475a",
+      "000f475b",
+      "000f475c",
+      "000f475d",
+      "000f475e",
+      "000f475f",
+      "000f4760",
+      "000f4761",
+      "000f4762",
+      "000f4763",
+      "000f4764",
+      "000f4765",
+      "000f4766",
+      "000f4767",
+      "000f4768",
+      "000f4769",
+      "000f476a",
+      "000f476b",
+      "000f476c",
+      "000f476d",
+      "000f476e",
+      "000f476f",
+      "000f4770",
+      "000f4771",
+      "000f4772",
+      "000f4773",
+      "000f4774",
+      "000f4775",
+      "000f4776",
+      "000f4777",
+      "000f4778",
+      "000f4779",
+      "000f477a",
+      "000f477b",
+      "000f477c",
+      "000f477d",
+      "000f477e",
+      "000f477f",
+      "000f4780",
+      "000f4781",
+      "000f4782",
+      "000f4783",
+      "000f4784",
+      "000f4785",
+      "000f4786",
+      "000f4787",
+      "000f4788",
+      "000f4789",
+      "000f478a",
+      "000f478b",
+      "000f478c",
+      "000f478d",
+      "000f478e",
+      "000f478f",
+      "000f4790",
+      "000f4791",
+      "000f4792",
+      "000f4793",
+      "000f4794",
+      "000f4795",
+      "000f4796",
+      "000f4797",
+      "000f4798",
+      "000f4799",
+      "000f479a",
+      "000f479b",
+      "000f479c",
+      "000f479d",
+      "000f479e",
+      "000f479f",
+      "000f47a0",
+      "000f47a1",
+      "000f47a2"
+    ],
+    "applied": [
+      "[\"В традиционной\",10,940,[\"speech\",100,100,50,\"#ffffff\",\"soft\"]]",
+      "[\"бане\",940,1230,[\"speech\",100,100,50,\"#ffffff\",\"soft\"]]",
+      "[\"манча\",1230,1580,[\"speech\",100,100,50,\"#ffffff\",\"soft\"]]",
+      "[\"обитали\",1580,2040,[\"speech\",100,100,50,\"#ffffff\",\"soft\"]]",
+      "[\"Духи-покровители\\nманча-кува и манча-кугаза\",2140,5300,[\"title\",100,100,50,\"#ffffff\",\"write\"]]",
+      "[\"оставляли\",5500,6080,[\"speech\",100,100,50,\"#ffffff\",\"soft\"]]",
+      "[\"воду\",6080,6350,[\"speech\",100,100,50,\"#ffffff\",\"soft\"]]",
+      "[\"и веник,\",6380,6900,[\"speech\",100,100,50,\"#ffffff\",\"soft\"]]",
+      "[\"веря,\",6950,7260,[\"speech\",100,100,50,\"#ffffff\",\"soft\"]]",
+      "[\"что\",7360,7540,[\"speech\",100,100,50,\"#ffffff\",\"soft\"]]",
+      "[\"они\",7640,7760,[\"speech\",100,100,50,\"#ffffff\",\"soft\"]]",
+      "[\"хранят\",7760,8180,[\"speech\",100,100,50,\"#ffffff\",\"soft\"]]",
+      "[\"здоровье\",8220,8740,[\"speech\",100,100,50,\"#ffffff\",\"soft\"]]",
+      "[\"семьи.\",8750,9310,[\"speech\",100,100,50,\"#ffffff\",\"soft\"]]",
+      "[\"Священная пихта\\nне просто дерево\",9620,10980,[\"title\",100,100,50,\"#ffffff\",\"write\"]]",
+      "[\"а священный\",10980,11660,[\"speech\",100,100,50,\"#ffffff\",\"soft\"]]",
+      "[\"оберег\",11760,12120,[\"speech\",100,100,50,\"#ffffff\",\"soft\"]]",
+      "[\"и целитель,\",12120,12980,[\"speech\",100,100,50,\"#ffffff\",\"soft\"]]",
+      "[\"который\",13070,13430,[\"speech\",100,100,50,\"#ffffff\",\"soft\"]]",
+      "[\"изгоняет\",13560,13950,[\"speech\",100,100,50,\"#ffffff\",\"soft\"]]",
+      "[\"недуги.\",13950,14530,[\"speech\",100,100,50,\"#ffffff\",\"soft\"]]",
+      "[\"Шепот\",14550,14890,[\"speech\",100,100,50,\"#ffffff\",\"soft\"]]",
+      "[\"леса\",14890,15180,[\"speech\",100,100,50,\"#ffffff\",\"soft\"]]",
+      "[\"мари –\",15180,15540,[\"speech\",100,100,50,\"#ffffff\",\"soft\"]]",
+      "[\"это\",15540,15760,[\"speech\",100,100,50,\"#ffffff\",\"soft\"]]",
+      "[\"не просто\",15760,16300,[\"speech\",100,100,50,\"#ffffff\",\"soft\"]]",
+      "[\"спа-процедура,\",16400,17520,[\"speech\",100,100,50,\"#ffffff\",\"soft\"]]",
+      "[\"а целостный\",17520,18150,[\"speech\",100,100,50,\"#ffffff\",\"soft\"]]",
+      "[\"ритуал,\",18190,18720,[\"speech\",100,100,50,\"#ffffff\",\"soft\"]]",
+      "[\"где\",18900,18960,[\"speech\",100,100,50,\"#ffffff\",\"soft\"]]",
+      "[\"через тепло\",19080,19740,[\"speech\",100,100,50,\"#ffffff\",\"soft\"]]",
+      "[\"кедра,\",19780,20300,[\"speech\",100,100,50,\"#ffffff\",\"soft\"]]",
+      "[\"силу\",20350,20640,[\"speech\",100,100,50,\"#ffffff\",\"soft\"]]",
+      "[\"ягод\",20650,20940,[\"speech\",100,100,50,\"#ffffff\",\"soft\"]]",
+      "[\"и аромат\",21040,21530,[\"speech\",100,100,50,\"#ffffff\",\"soft\"]]",
+      "[\"пихты\",21530,22000,[\"speech\",100,100,50,\"#ffffff\",\"soft\"]]",
+      "[\"человек\",22060,22490,[\"speech\",100,100,50,\"#ffffff\",\"soft\"]]",
+      "[\"приобщается\",22490,23120,[\"speech\",100,100,50,\"#ffffff\",\"soft\"]]",
+      "[\"к древней\",23210,23640,[\"speech\",100,100,50,\"#ffffff\",\"soft\"]]",
+      "[\"мудрости\",23730,24160,[\"speech\",100,100,50,\"#ffffff\",\"soft\"]]",
+      "[\"народа,\",24160,24700,[\"speech\",100,100,50,\"#ffffff\",\"soft\"]]",
+      "[\"который\",24960,25130,[\"speech\",100,100,50,\"#ffffff\",\"soft\"]]",
+      "[\"жил\",25130,25310,[\"speech\",100,100,50,\"#ffffff\",\"soft\"]]",
+      "[\"в гармонии\",25310,25850,[\"speech\",100,100,50,\"#ffffff\",\"soft\"]]",
+      "[\"с природой.\",25850,26540,[\"speech\",100,100,50,\"#ffffff\",\"soft\"]]",
+      "[\"Процедура\",26780,27160,[\"speech\",100,100,50,\"#ffffff\",\"soft\"]]",
+      "[\"начинается\",27160,27760,[\"speech\",100,100,50,\"#ffffff\",\"soft\"]]",
+      "[\"с погружения\",27760,28420,[\"speech\",100,100,50,\"#ffffff\",\"soft\"]]",
+      "[\"Кедровая бочка\\nв кедровую бочку\",28420,29460,[\"title\",100,100,50,\"#ffffff\",\"write\"]]",
+      "[\"не просто\",29880,30370,[\"speech\",100,100,50,\"#ffffff\",\"soft\"]]",
+      "[\"прогрев,\",30370,30910,[\"speech\",100,100,50,\"#ffffff\",\"soft\"]]",
+      "[\"а мощная\",30910,31330,[\"speech\",100,100,50,\"#ffffff\",\"soft\"]]",
+      "[\"фитотерапевтическая\",31330,32470,[\"speech\",100,100,50,\"#ffffff\",\"soft\"]]",
+      "[\"процедура.\",32500,33310,[\"speech\",100,100,50,\"#ffffff\",\"soft\"]]",
+      "[\"Вещества\",33540,33880,[\"speech\",100,100,50,\"#ffffff\",\"soft\"]]",
+      "[\"кедра\",33880,34230,[\"speech\",100,100,50,\"#ffffff\",\"soft\"]]",
+      "[\"отлично\",34230,34720,[\"speech\",100,100,50,\"#ffffff\",\"soft\"]]",
+      "[\"борются\",34720,35210,[\"speech\",100,100,50,\"#ffffff\",\"soft\"]]",
+      "[\"с вирусами\",35210,35840,[\"speech\",100,100,50,\"#ffffff\",\"soft\"]]",
+      "[\"и бактериями.\",35840,36900,[\"speech\",100,100,50,\"#ffffff\",\"soft\"]]",
+      "[\"После\",37060,37240,[\"speech\",100,100,50,\"#ffffff\",\"soft\"]]",
+      "[\"прогрева –\",37240,37790,[\"speech\",100,100,50,\"#ffffff\",\"soft\"]]",
+      "[\"мягкое\",37790,38170,[\"speech\",100,100,50,\"#ffffff\",\"soft\"]]",
+      "[\"скрабирование.\",38170,39260,[\"speech\",100,100,50,\"#ffffff\",\"soft\"]]",
+      "[\"Этот\",39500,39767,[\"speech\",100,100,50,\"#ffffff\",\"soft\"]]",
+      "[\"этап –\",39767,40102,[\"speech\",100,100,50,\"#ffffff\",\"soft\"]]",
+      "[\"дань\",40102,40369,[\"speech\",100,100,50,\"#ffffff\",\"soft\"]]",
+      "[\"уважения\",40369,40904,[\"speech\",100,100,50,\"#ffffff\",\"soft\"]]",
+      "[\"марийской\",40904,41505,[\"speech\",100,100,50,\"#ffffff\",\"soft\"]]",
+      "[\"традиции.\",41505,42040,[\"speech\",100,100,50,\"#ffffff\",\"soft\"]]",
+      "[\"Использовать\",42050,42890,[\"speech\",100,100,50,\"#ffffff\",\"soft\"]]",
+      "[\"съедобные\",42920,43540,[\"speech\",100,100,50,\"#ffffff\",\"soft\"]]",
+      "[\"средства\",43540,44080,[\"speech\",100,100,50,\"#ffffff\",\"soft\"]]",
+      "[\"для ухода\",44180,44700,[\"speech\",100,100,50,\"#ffffff\",\"soft\"]]",
+      "[\"за кожей.\",44700,45520,[\"speech\",100,100,50,\"#ffffff\",\"soft\"]]",
+      "[\"Мед –\",45660,45840,[\"speech\",100,100,50,\"#ffffff\",\"soft\"]]",
+      "[\"натуральный\",45840,46330,[\"speech\",100,100,50,\"#ffffff\",\"soft\"]]",
+      "[\"источник\",46330,46760,[\"speech\",100,100,50,\"#ffffff\",\"soft\"]]",
+      "[\"витаминов,\",46760,47420,[\"speech\",100,100,50,\"#ffffff\",\"soft\"]]",
+      "[\"а брусника –\",47500,48181,[\"speech\",100,100,50,\"#ffffff\",\"soft\"]]",
+      "[\"лучшее\",48181,48590,[\"speech\",100,100,50,\"#ffffff\",\"soft\"]]",
+      "[\"средство\",48590,49135,[\"speech\",100,100,50,\"#ffffff\",\"soft\"]]",
+      "[\"для омоложения.\",49135,50020,[\"speech\",100,100,50,\"#ffffff\",\"soft\"]]",
+      "[\"Завершающий\",50240,50790,[\"speech\",100,100,50,\"#ffffff\",\"soft\"]]",
+      "[\"ключевой\",50790,51350,[\"speech\",100,100,50,\"#ffffff\",\"soft\"]]",
+      "[\"этап –\",51350,51700,[\"speech\",100,100,50,\"#ffffff\",\"soft\"]]",
+      "[\"это\",51700,51910,[\"speech\",100,100,50,\"#ffffff\",\"soft\"]]",
+      "[\"глубокий\",51910,52470,[\"speech\",100,100,50,\"#ffffff\",\"soft\"]]",
+      "[\"массаж\",52470,52890,[\"speech\",100,100,50,\"#ffffff\",\"soft\"]]",
+      "[\"с использованием\",52890,53940,[\"speech\",100,100,50,\"#ffffff\",\"soft\"]]",
+      "[\"пихтового\",53940,54570,[\"speech\",100,100,50,\"#ffffff\",\"soft\"]]",
+      "[\"масла,\",54570,55100,[\"speech\",100,100,50,\"#ffffff\",\"soft\"]]",
+      "[\"которое\",55400,55907,[\"speech\",100,100,50,\"#ffffff\",\"soft\"]]",
+      "[\"марийцы\",55907,56414,[\"speech\",100,100,50,\"#ffffff\",\"soft\"]]",
+      "[\"издрели\",56414,56921,[\"speech\",100,100,50,\"#ffffff\",\"soft\"]]",
+      "[\"считали\",56921,57428,[\"speech\",100,100,50,\"#ffffff\",\"soft\"]]",
+      "[\"даром\",57428,57790,[\"speech\",100,100,50,\"#ffffff\",\"soft\"]]",
+      "[\"леса.\",57790,58080,[\"speech\",100,100,50,\"#ffffff\",\"soft\"]]",
+      "[\"А после\",58260,58630,[\"speech\",100,100,50,\"#ffffff\",\"soft\"]]",
+      "[\"бани,\",58630,58990,[\"speech\",100,100,50,\"#ffffff\",\"soft\"]]",
+      "[\"по традиции,\",58990,59760,[\"speech\",100,100,50,\"#ffffff\",\"soft\"]]",
+      "[\"чай\",59760,60020,[\"speech\",100,100,50,\"#ffffff\",\"soft\"]]",
+      "[\"с медом.\",60120,60910,[\"speech\",100,100,50,\"#ffffff\",\"soft\"]]"
+    ]
+  }
+}

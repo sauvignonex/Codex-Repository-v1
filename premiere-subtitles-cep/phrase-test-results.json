@@ -1,0 +1,11 @@
+{
+  "passed": 6,
+  "checks": [
+    "long cue splits without losing words or styles",
+    "approved titles remain intact",
+    "word timings retained after grouping",
+    "pause and overlap never silently fill missing audio",
+    "invalid offsets rejected",
+    "preposition moves with following phrase"
+  ]
+}

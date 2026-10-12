@@ -1,0 +1,88 @@
+{
+  "input": "outputs/plugin-ui-v2/panel-preview.html",
+  "checks": [
+    {
+      "name": "manual-line-breaks",
+      "passed": false
+    },
+    {
+      "name": "empty-text-blocked",
+      "passed": false
+    },
+    {
+      "name": "three-lines-not-silently-merged",
+      "passed": false
+    },
+    {
+      "name": "real-font-name",
+      "passed": false
+    },
+    {
+      "name": "long-unbroken-text-blocked",
+      "passed": false
+    },
+    {
+      "name": "invalid-restored-enums",
+      "passed": false
+    },
+    {
+      "name": "restore-design",
+      "passed": false
+    },
+    {
+      "name": "headline-revert",
+      "passed": false
+    },
+    {
+      "name": "safe-zone-extreme-layouts",
+      "passed": false,
+      "detail": [
+        {
+          "role": "title",
+          "pos": 63,
+          "r": {
+            "x": 102.82267594537815,
+            "y": 1069.5106909413198,
+            "right": 979.1773240546219,
+            "bottom": 1349.580117434174
+          }
+        }
+      ]
+    },
+    {
+      "name": "layout-dark-320",
+      "passed": true
+    },
+    {
+      "name": "layout-dark-520",
+      "passed": true
+    },
+    {
+      "name": "layout-dark-736",
+      "passed": true
+    },
+    {
+      "name": "layout-light-320",
+      "passed": true
+    },
+    {
+      "name": "layout-light-520",
+      "passed": true
+    },
+    {
+      "name": "layout-light-736",
+      "passed": true
+    },
+    {
+      "name": "html-is-text",
+      "passed": true
+    },
+    {
+      "name": "no-runtime-errors",
+      "passed": true
+    }
+  ],
+  "passed": 8,
+  "total": 17,
+  "errors": []
+}

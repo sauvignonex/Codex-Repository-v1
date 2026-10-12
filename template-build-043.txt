@@ -1,0 +1,5 @@
+Основной текст font=BebasNeueCyrillic textError=
+Рукописный акцент font=Christopher textError=
+Текст речи font=CeraPro-Medium textError=
+EXPORT true
+SUCCESS

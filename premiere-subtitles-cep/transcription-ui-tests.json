@@ -1,0 +1,10 @@
+{
+  "passed": 5,
+  "checks": [
+    "recognition review preserves current document",
+    "primary button applies reviewed phrases",
+    "source media preserved for audio preview",
+    "reload preserves imported document",
+    "undo restores original document identity"
+  ]
+}

@@ -1,0 +1,77 @@
+{
+  "checks": [
+    {
+      "name": "BOM CRLF multiline and subsecond duration",
+      "passed": true
+    },
+    {
+      "name": "invalid file rejected wholly",
+      "passed": true
+    },
+    {
+      "name": "end before start rejected",
+      "passed": true
+    },
+    {
+      "name": "invalid minute rejected",
+      "passed": true
+    },
+    {
+      "name": "overlap warning without changing timing",
+      "passed": true
+    },
+    {
+      "name": "format round trip",
+      "passed": true
+    },
+    {
+      "name": "HTML remains inert text",
+      "passed": true
+    },
+    {
+      "name": "real SRT: Уяча — новые заголовки ИСПР.srt",
+      "passed": true
+    },
+    {
+      "name": "real SRT: Рилс Колобки — по сценарию.srt",
+      "passed": true
+    },
+    {
+      "name": "real SRT: Рилс Колобки — хайлайты.srt",
+      "passed": true
+    },
+    {
+      "name": "real SRT: транскрибция Рилс Колобки.srt",
+      "passed": true
+    },
+    {
+      "name": "import actual Premiere SRT",
+      "passed": true
+    },
+    {
+      "name": "edit switch reload preserve text and timings",
+      "passed": true
+    },
+    {
+      "name": "cue appearance and document identity survive switching and reload",
+      "passed": true
+    },
+    {
+      "name": "bad import preserves existing document",
+      "passed": true
+    },
+    {
+      "name": "UTF16 BOM import",
+      "passed": true
+    },
+    {
+      "name": "empty edit persists without silently restoring original",
+      "passed": true
+    },
+    {
+      "name": "no runtime errors",
+      "passed": true
+    }
+  ],
+  "errors": []
+}

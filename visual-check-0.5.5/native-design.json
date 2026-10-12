@@ -1,0 +1,12 @@
+{
+  "verified": true,
+  "state": {
+    "version": "CEP · 0.5.5",
+    "stage": "text",
+    "cues": 4,
+    "review": 34,
+    "overflow": false,
+    "errors": ""
+  },
+  "documentDraftAndScenarioUnchanged": true
+}

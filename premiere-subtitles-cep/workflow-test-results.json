@@ -1,0 +1,19 @@
+{
+  "passed": 13,
+  "checks": [
+    "empty document starts with import",
+    "unavailable audio and demo AI cannot imply working features",
+    "browser preview never claims native timeline access",
+    "new document requires new sequence",
+    "selection changes native update target",
+    "native saved state and pending edits are distinguished",
+    "primary action delegates exactly once to existing update",
+    "local save does not perform native write",
+    "foreign registry cannot update selected document",
+    "unknown import outcome blocks both mutations",
+    "running operation prevents duplicate action",
+    "diagnostics and duplicate actions hidden from main workflow",
+    "no browser errors"
+  ],
+  "errors": []
+}

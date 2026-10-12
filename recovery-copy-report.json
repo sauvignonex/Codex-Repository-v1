@@ -1,0 +1,488 @@
+[
+  {
+    "source": "C:\\Users\\Artem\\Desktop\\Создание плагина.docx",
+    "backup": "outputs\\recovery-inputs\\documents\\Создание плагина.docx",
+    "sha256": "344999adc6302d49452cc88edef1440b24368c2ea4062c1956671140813700ee",
+    "status": "verified"
+  },
+  {
+    "source": "C:\\Users\\Artem\\Desktop\\Создание плагина 2.docx",
+    "backup": "outputs\\recovery-inputs\\documents\\Создание плагина 2.docx",
+    "sha256": "7637cb5c60d84c72456ff6aaff0d7d7fd962cc96333b89bc667cbd99fca7b206",
+    "status": "verified"
+  },
+  {
+    "source": "C:\\Users\\Artem\\Desktop\\создание плагина 3.docx",
+    "backup": "outputs\\recovery-inputs\\documents\\создание плагина 3.docx",
+    "sha256": "602c19eefa5e9eadc25c0fd5f704634a5c6c45bc0319a1a5a6ab78f028c3a052",
+    "status": "verified"
+  },
+  {
+    "source": "D:\\Projects Adobe\\Шаблон\\Безопасная зона reels.png",
+    "backup": "outputs\\recovery-inputs\\references\\Безопасная зона reels.png",
+    "sha256": "ab3dc1a9e677e93559f4b49880ff90ad9930c82ad013180f7531c0f96a4cae43",
+    "status": "verified"
+  },
+  {
+    "source": "D:\\Projects Adobe\\Рилс Колобки\\Рилс Колобки.prproj",
+    "backup": "outputs\\recovery-inputs\\projects\\Рилс Колобки.prproj",
+    "sha256": "bafc3d2b3b985d99430be1f5ec201dfdb7d3d7e8b21867219e5453c1186af9dd",
+    "status": "verified"
+  },
+  {
+    "source": "D:\\Projects Adobe\\Разработка плагина\\Тестовая секвенция Разработка плагина.prproj",
+    "backup": "outputs\\recovery-inputs\\projects\\Тестовая секвенция Разработка плагина.prproj",
+    "sha256": "d52876e6adba0ed47619a42e2dfceca71c53a79476f9fc00deba34974647744f",
+    "status": "verified"
+  },
+  {
+    "source": "D:\\Projects Adobe\\Рилс Колобки\\Звук\\Рилс Колобки — по сценарию.srt",
+    "backup": "outputs\\recovery-inputs\\srt\\Звук\\Рилс Колобки — по сценарию.srt",
+    "sha256": "76b7ab26aad8e3f3dbf15bebdf689809bbeade009cf5c9d07665e48010cf9e91",
+    "status": "verified"
+  },
+  {
+    "source": "D:\\Projects Adobe\\Рилс Колобки\\Звук\\Рилс Колобки — хайлайты.srt",
+    "backup": "outputs\\recovery-inputs\\srt\\Звук\\Рилс Колобки — хайлайты.srt",
+    "sha256": "f05745249e68370f0b9b724ca68a924f3cd660054239d3c990315bd05ac1a678",
+    "status": "verified"
+  },
+  {
+    "source": "D:\\Projects Adobe\\Рилс Колобки\\Звук\\транскрибция Рилс Колобки.srt",
+    "backup": "outputs\\recovery-inputs\\srt\\Звук\\транскрибция Рилс Колобки.srt",
+    "sha256": "76b7ab26aad8e3f3dbf15bebdf689809bbeade009cf5c9d07665e48010cf9e91",
+    "status": "verified"
+  },
+  {
+    "source": "D:\\Projects Adobe\\Рилс Колобки\\Видео\\Motion Уяча — Bebas\\Уяча — новые заголовки ИСПР.srt",
+    "backup": "outputs\\recovery-inputs\\srt\\Видео\\Motion Уяча — Bebas\\Уяча — новые заголовки ИСПР.srt",
+    "sha256": "6c6d6895753c67fad80317776825289507d2447b102f4c44de6488cbe8794cf3",
+    "status": "verified"
+  },
+  {
+    "source": "C:\\Users\\Artem\\AppData\\Roaming\\Adobe\\Common\\Motion Graphics Templates\\Reels Text Animation 01.mogrt",
+    "backup": "outputs\\recovery-inputs\\templates\\Reels Text Animation 01.mogrt",
+    "sha256": "6106df56e75ed7528103bc2c694bc98661998792e76828def2a226beeef00dc7",
+    "status": "verified"
+  },
+  {
+    "source": "C:\\Users\\Artem\\AppData\\Roaming\\Adobe\\Common\\Motion Graphics Templates\\Reels Text Animation 02.mogrt",
+    "backup": "outputs\\recovery-inputs\\templates\\Reels Text Animation 02.mogrt",
+    "sha256": "d5226178ad791981021519240a41a56de702b0e04bce5306ed9594f6b7bdc67f",
+    "status": "verified"
+  },
+  {
+    "source": "C:\\Users\\Artem\\AppData\\Roaming\\Adobe\\Common\\Motion Graphics Templates\\Reels Text Animation 03.mogrt",
+    "backup": "outputs\\recovery-inputs\\templates\\Reels Text Animation 03.mogrt",
+    "sha256": "0131484bcb87bb4fd1415269c71ae5db8510fddaf54f9633560643cf02a3e41c",
+    "status": "verified"
+  },
+  {
+    "source": "C:\\Users\\Artem\\AppData\\Roaming\\Adobe\\Common\\Motion Graphics Templates\\Reels Text Animation 04.mogrt",
+    "backup": "outputs\\recovery-inputs\\templates\\Reels Text Animation 04.mogrt",
+    "sha256": "30e7ad521301bf12024c0227e26e7bf635c489582cd5f361849ef14ff9ba4382",
+    "status": "verified"
+  },
+  {
+    "source": "C:\\Users\\Artem\\AppData\\Roaming\\Adobe\\Common\\Motion Graphics Templates\\Reels Text Animation 05.mogrt",
+    "backup": "outputs\\recovery-inputs\\templates\\Reels Text Animation 05.mogrt",
+    "sha256": "70ce0b109b36f0e3bc00a76e7013f838086eb05725ecff0e1f362141d709fa95",
+    "status": "verified"
+  },
+  {
+    "source": "C:\\Users\\Artem\\AppData\\Roaming\\Adobe\\Common\\Motion Graphics Templates\\Reels Text Animation 06.mogrt",
+    "backup": "outputs\\recovery-inputs\\templates\\Reels Text Animation 06.mogrt",
+    "sha256": "eb292d3cfc7fabdcc3c39d47ebaf13ebda82d6b585d58347404ac0505e0883e7",
+    "status": "verified"
+  },
+  {
+    "source": "C:\\Users\\Artem\\AppData\\Roaming\\Adobe\\Common\\Motion Graphics Templates\\Reels Text Animation 07.mogrt",
+    "backup": "outputs\\recovery-inputs\\templates\\Reels Text Animation 07.mogrt",
+    "sha256": "916b1884540ad252d85261dba6def0d0450ea07e3e9510e58ed5cec780ada630",
+    "status": "verified"
+  },
+  {
+    "source": "C:\\Users\\Artem\\AppData\\Roaming\\Adobe\\Common\\Motion Graphics Templates\\Reels Text Animation 08.mogrt",
+    "backup": "outputs\\recovery-inputs\\templates\\Reels Text Animation 08.mogrt",
+    "sha256": "15be2b748562e8e586bef918e0e3482271d6d2345436e5102350ec9f9f7ba807",
+    "status": "verified"
+  },
+  {
+    "source": "C:\\Users\\Artem\\AppData\\Roaming\\Adobe\\Common\\Motion Graphics Templates\\Reels Text Animation 09.mogrt",
+    "backup": "outputs\\recovery-inputs\\templates\\Reels Text Animation 09.mogrt",
+    "sha256": "9f224f6b01182fd8b17eea05749992a9bf535430a8d87f7fa4529799c7f17067",
+    "status": "verified"
+  },
+  {
+    "source": "C:\\Users\\Artem\\AppData\\Roaming\\Adobe\\Common\\Motion Graphics Templates\\Reels Text Animation 10.mogrt",
+    "backup": "outputs\\recovery-inputs\\templates\\Reels Text Animation 10.mogrt",
+    "sha256": "42b82f6b10d464a8402896c2d89b6b8524475dba05e0d2e443a8addb8123ba77",
+    "status": "verified"
+  },
+  {
+    "source": "C:\\Users\\Artem\\AppData\\Roaming\\Adobe\\Common\\Motion Graphics Templates\\Reels Text Animation 11.mogrt",
+    "backup": "outputs\\recovery-inputs\\templates\\Reels Text Animation 11.mogrt",
+    "sha256": "ecf03a85ac93b93fa7619c0bebb8e02f58905db5492c22b65b5f575a95a31f6c",
+    "status": "verified"
+  },
+  {
+    "source": "C:\\Users\\Artem\\AppData\\Roaming\\Adobe\\Common\\Motion Graphics Templates\\Reels Text Animation 12.mogrt",
+    "backup": "outputs\\recovery-inputs\\templates\\Reels Text Animation 12.mogrt",
+    "sha256": "6427c4fd2d4b04ad2d89d5c6b61fee110563b38869bd6a53486e5fa191a647b4",
+    "status": "verified"
+  },
+  {
+    "source": "C:\\Users\\Artem\\AppData\\Roaming\\Adobe\\Common\\Motion Graphics Templates\\Reels Text Animation 13.mogrt",
+    "backup": "outputs\\recovery-inputs\\templates\\Reels Text Animation 13.mogrt",
+    "sha256": "fa47efdc4fd36e716359e05b0868f302f6c4fb6dd7574067c5c9c5e6b3569e5b",
+    "status": "verified"
+  },
+  {
+    "source": "C:\\Users\\Artem\\AppData\\Roaming\\Adobe\\Common\\Motion Graphics Templates\\Reels Text Animation 14.mogrt",
+    "backup": "outputs\\recovery-inputs\\templates\\Reels Text Animation 14.mogrt",
+    "sha256": "47f5855660e5ab7a720321a2ca40d7a16ac9f5ea79b7fed7b20e5e8d24f3f5ba",
+    "status": "verified"
+  },
+  {
+    "source": "C:\\Users\\Artem\\AppData\\Roaming\\Adobe\\Common\\Motion Graphics Templates\\Reels Text Animation 15.mogrt",
+    "backup": "outputs\\recovery-inputs\\templates\\Reels Text Animation 15.mogrt",
+    "sha256": "022081a84201e0a9bf2d4cfabd0ef9cdc7fb211d04f0402b6b773ae80720fdd2",
+    "status": "verified"
+  },
+  {
+    "source": "C:\\Users\\Artem\\AppData\\Roaming\\Adobe\\Common\\Motion Graphics Templates\\Reels Text Animation 16.mogrt",
+    "backup": "outputs\\recovery-inputs\\templates\\Reels Text Animation 16.mogrt",
+    "sha256": "865c3479581ef4e5d2a49d439a23c9bcc28fbf24165c8d3c8478b90ba415b278",
+    "status": "verified"
+  },
+  {
+    "source": "C:\\Users\\Artem\\AppData\\Roaming\\Adobe\\Common\\Motion Graphics Templates\\Reels Text Animation 17.mogrt",
+    "backup": "outputs\\recovery-inputs\\templates\\Reels Text Animation 17.mogrt",
+    "sha256": "b8887f3d9d820c3227970554c1cc0b3b59019531eee4300431eb8aa476c17ddc",
+    "status": "verified"
+  },
+  {
+    "source": "C:\\Users\\Artem\\AppData\\Roaming\\Adobe\\Common\\Motion Graphics Templates\\Reels Text Animation 18.mogrt",
+    "backup": "outputs\\recovery-inputs\\templates\\Reels Text Animation 18.mogrt",
+    "sha256": "6b1e05a94a6bf314579500121f56a89591b65406bbefedaaab040c59af4e86a3",
+    "status": "verified"
+  },
+  {
+    "source": "C:\\Users\\Artem\\AppData\\Roaming\\Adobe\\Common\\Motion Graphics Templates\\Reels Text Animation 19.mogrt",
+    "backup": "outputs\\recovery-inputs\\templates\\Reels Text Animation 19.mogrt",
+    "sha256": "bfc981c81af8c52dc6b3d129a95ffe1d8b70f984c00a762243d84184cfb03028",
+    "status": "verified"
+  },
+  {
+    "source": "C:\\Users\\Artem\\AppData\\Roaming\\Adobe\\Common\\Motion Graphics Templates\\Reels Text Animation 20.mogrt",
+    "backup": "outputs\\recovery-inputs\\templates\\Reels Text Animation 20.mogrt",
+    "sha256": "eb6968a00d6664a9dc3eacd132acc5a8527a34e24311469c44304ed57a554909",
+    "status": "verified"
+  },
+  {
+    "source": "C:\\Users\\Artem\\AppData\\Roaming\\Adobe\\Common\\Motion Graphics Templates\\Reels Text Animation 21.mogrt",
+    "backup": "outputs\\recovery-inputs\\templates\\Reels Text Animation 21.mogrt",
+    "sha256": "67a8388e8805045b7321f9f4d3a46d45aa0d715103931169be495eaf5992236c",
+    "status": "verified"
+  },
+  {
+    "source": "C:\\Users\\Artem\\AppData\\Roaming\\Adobe\\Common\\Motion Graphics Templates\\Reels Text Animation 22.mogrt",
+    "backup": "outputs\\recovery-inputs\\templates\\Reels Text Animation 22.mogrt",
+    "sha256": "c26f2ebc9d1d9b893a45bf09fda2307e209bd013a0392c9dcb84170e33c3e07a",
+    "status": "verified"
+  },
+  {
+    "source": "C:\\Users\\Artem\\AppData\\Roaming\\Adobe\\Common\\Motion Graphics Templates\\Reels Text Animation 23.mogrt",
+    "backup": "outputs\\recovery-inputs\\templates\\Reels Text Animation 23.mogrt",
+    "sha256": "5243d740def7e444c048d6f88f64f3dbe025b200eb94bb81b871ca91194c7af0",
+    "status": "verified"
+  },
+  {
+    "source": "C:\\Users\\Artem\\AppData\\Roaming\\Adobe\\Common\\Motion Graphics Templates\\Reels Text Animation 24.mogrt",
+    "backup": "outputs\\recovery-inputs\\templates\\Reels Text Animation 24.mogrt",
+    "sha256": "80009f5ebb685415527b0d46fae7cb7590fa15680b70c84224250f10fa16c57e",
+    "status": "verified"
+  },
+  {
+    "source": "C:\\Users\\Artem\\AppData\\Roaming\\Adobe\\Common\\Motion Graphics Templates\\Reels Text Animation 25.mogrt",
+    "backup": "outputs\\recovery-inputs\\templates\\Reels Text Animation 25.mogrt",
+    "sha256": "6c57843763d539c136585e7def351ae1b0c8345486029ed04ef9250e33e945dd",
+    "status": "verified"
+  },
+  {
+    "source": "C:\\Users\\Artem\\AppData\\Roaming\\Adobe\\Common\\Motion Graphics Templates\\Reels Text Animation 26.mogrt",
+    "backup": "outputs\\recovery-inputs\\templates\\Reels Text Animation 26.mogrt",
+    "sha256": "520a953127c308bbc415782a74b525eebc02582eac0dc9bbde0f6bf029ddc9fc",
+    "status": "verified"
+  },
+  {
+    "source": "C:\\Users\\Artem\\AppData\\Roaming\\Adobe\\Common\\Motion Graphics Templates\\Reels Text Animation 27.mogrt",
+    "backup": "outputs\\recovery-inputs\\templates\\Reels Text Animation 27.mogrt",
+    "sha256": "02e7ef1085b06314c8968247a429f06f49ac4cfc80e5ea8b9b11cd2b55360a24",
+    "status": "verified"
+  },
+  {
+    "source": "C:\\Users\\Artem\\AppData\\Roaming\\Adobe\\Common\\Motion Graphics Templates\\Reels Text Animation 28.mogrt",
+    "backup": "outputs\\recovery-inputs\\templates\\Reels Text Animation 28.mogrt",
+    "sha256": "1a3ef2e63b9716f9aefa46e7c82325eb37f11f7583860a107a0ccdf71d55e020",
+    "status": "verified"
+  },
+  {
+    "source": "C:\\Users\\Artem\\AppData\\Roaming\\Adobe\\Common\\Motion Graphics Templates\\SaaS Pack Title 01.mogrt",
+    "backup": "outputs\\recovery-inputs\\templates\\SaaS Pack Title 01.mogrt",
+    "sha256": "6c58fdd9a8ae419cdf5dad90a6c57d941144ab91f4f2cede7e2e308d6d9cad93",
+    "status": "verified"
+  },
+  {
+    "source": "C:\\Users\\Artem\\AppData\\Roaming\\Adobe\\Common\\Motion Graphics Templates\\SaaS Pack Title 02.mogrt",
+    "backup": "outputs\\recovery-inputs\\templates\\SaaS Pack Title 02.mogrt",
+    "sha256": "b7fd24488e34ca2038685fb950001a575d268ac46215b96d7b9e5e3c63cd4609",
+    "status": "verified"
+  },
+  {
+    "source": "C:\\Users\\Artem\\AppData\\Roaming\\Adobe\\Common\\Motion Graphics Templates\\SaaS Pack Title 03.mogrt",
+    "backup": "outputs\\recovery-inputs\\templates\\SaaS Pack Title 03.mogrt",
+    "sha256": "abff7f87b2a09f613ceaf74bf069281d0290b41c1e8253e7641b7b8c14754539",
+    "status": "verified"
+  },
+  {
+    "source": "C:\\Users\\Artem\\AppData\\Roaming\\Adobe\\Common\\Motion Graphics Templates\\SaaS Pack Title 04.mogrt",
+    "backup": "outputs\\recovery-inputs\\templates\\SaaS Pack Title 04.mogrt",
+    "sha256": "adb8a668cd5f725b5287c375fb9a2a021ea0c9e753c97e560a0c4d7e948cf266",
+    "status": "verified"
+  },
+  {
+    "source": "C:\\Users\\Artem\\AppData\\Roaming\\Adobe\\Common\\Motion Graphics Templates\\SaaS Pack Title 05.mogrt",
+    "backup": "outputs\\recovery-inputs\\templates\\SaaS Pack Title 05.mogrt",
+    "sha256": "28481d466b3e542e42878972d4a04439f46225aec7580ba1407f32d385f86639",
+    "status": "verified"
+  },
+  {
+    "source": "C:\\Users\\Artem\\AppData\\Roaming\\Adobe\\Common\\Motion Graphics Templates\\SaaS Pack Title 06.mogrt",
+    "backup": "outputs\\recovery-inputs\\templates\\SaaS Pack Title 06.mogrt",
+    "sha256": "abb1a5814c274264d63b3821437af32e856336cdf3c4aed860cf49786a1581d0",
+    "status": "verified"
+  },
+  {
+    "source": "C:\\Users\\Artem\\AppData\\Roaming\\Adobe\\Common\\Motion Graphics Templates\\SaaS Pack Title 07.mogrt",
+    "backup": "outputs\\recovery-inputs\\templates\\SaaS Pack Title 07.mogrt",
+    "sha256": "3cf97a386adae1e380f674c8ece9dd2280ba82deeab68abe087001bdb2d93fab",
+    "status": "verified"
+  },
+  {
+    "source": "C:\\Users\\Artem\\AppData\\Roaming\\Adobe\\Common\\Motion Graphics Templates\\SaaS Pack Title 08.mogrt",
+    "backup": "outputs\\recovery-inputs\\templates\\SaaS Pack Title 08.mogrt",
+    "sha256": "15c8643f59085aece059785453bb2928f04cac92fda7425399ce47d3aad25d5d",
+    "status": "verified"
+  },
+  {
+    "source": "C:\\Users\\Artem\\AppData\\Roaming\\Adobe\\Common\\Motion Graphics Templates\\SaaS Pack Title 09.mogrt",
+    "backup": "outputs\\recovery-inputs\\templates\\SaaS Pack Title 09.mogrt",
+    "sha256": "09f2a8fd6ecd638d4ebf9bc89b6f0946b0627f83648418ed735c98a91e38d822",
+    "status": "verified"
+  },
+  {
+    "source": "C:\\Users\\Artem\\AppData\\Roaming\\Adobe\\Common\\Motion Graphics Templates\\SaaS Pack Title 10.mogrt",
+    "backup": "outputs\\recovery-inputs\\templates\\SaaS Pack Title 10.mogrt",
+    "sha256": "5cf6450dee15987e3114cd98f3ce72cfb28436e5b96c67761572b98b989de6fa",
+    "status": "verified"
+  },
+  {
+    "source": "C:\\Users\\Artem\\AppData\\Roaming\\Adobe\\Common\\Motion Graphics Templates\\SaaS Pack Title 11.mogrt",
+    "backup": "outputs\\recovery-inputs\\templates\\SaaS Pack Title 11.mogrt",
+    "sha256": "bf97c20944f3a3e798ccda009b8d397632d82914706e0fab45f220c21bffa7e7",
+    "status": "verified"
+  },
+  {
+    "source": "C:\\Users\\Artem\\AppData\\Roaming\\Adobe\\Common\\Motion Graphics Templates\\SaaS Pack Title 12.mogrt",
+    "backup": "outputs\\recovery-inputs\\templates\\SaaS Pack Title 12.mogrt",
+    "sha256": "51231b9e2dec104791fc78c05f5dfd926f2f1f9b331510a8adc6b3d6411f70b9",
+    "status": "verified"
+  },
+  {
+    "source": "C:\\Users\\Artem\\AppData\\Roaming\\Adobe\\Common\\Motion Graphics Templates\\SaaS Pack Title 13.mogrt",
+    "backup": "outputs\\recovery-inputs\\templates\\SaaS Pack Title 13.mogrt",
+    "sha256": "2fbeca0b9d52404dc69538146877d4511106090175cb13090f8c0f93abdb95a2",
+    "status": "verified"
+  },
+  {
+    "source": "C:\\Users\\Artem\\AppData\\Roaming\\Adobe\\Common\\Motion Graphics Templates\\SaaS Pack Title 14.mogrt",
+    "backup": "outputs\\recovery-inputs\\templates\\SaaS Pack Title 14.mogrt",
+    "sha256": "6d90461d5c7ace0d7d5b2a558679a96b08795237a163df77375cd649f28d92f0",
+    "status": "verified"
+  },
+  {
+    "source": "C:\\Users\\Artem\\AppData\\Roaming\\Adobe\\Common\\Motion Graphics Templates\\SaaS Pack Title 15.mogrt",
+    "backup": "outputs\\recovery-inputs\\templates\\SaaS Pack Title 15.mogrt",
+    "sha256": "8ceac09a78c5f7fbb6e080746951bd4750a26b09a8e62235d18e722c6379ffbb",
+    "status": "verified"
+  },
+  {
+    "source": "C:\\Users\\Artem\\AppData\\Roaming\\Adobe\\Common\\Motion Graphics Templates\\SaaS Pack Title 16.mogrt",
+    "backup": "outputs\\recovery-inputs\\templates\\SaaS Pack Title 16.mogrt",
+    "sha256": "a51042054660d336b18b6d77f6749fd021eae35a5cab2762c09f572df2435957",
+    "status": "verified"
+  },
+  {
+    "source": "C:\\Users\\Artem\\AppData\\Roaming\\Adobe\\Common\\Motion Graphics Templates\\SaaS Pack Title 17.mogrt",
+    "backup": "outputs\\recovery-inputs\\templates\\SaaS Pack Title 17.mogrt",
+    "sha256": "67f660da956e135c167b6809dfb128028217f38ed6194aa7b3fa8728c9eba37a",
+    "status": "verified"
+  },
+  {
+    "source": "C:\\Users\\Artem\\AppData\\Roaming\\Adobe\\Common\\Motion Graphics Templates\\SaaS Pack Title 18.mogrt",
+    "backup": "outputs\\recovery-inputs\\templates\\SaaS Pack Title 18.mogrt",
+    "sha256": "28e60e513d209bc83dc8da165e1befd0739abbc8f2da2388fe30e3aa8919fca1",
+    "status": "verified"
+  },
+  {
+    "source": "C:\\Users\\Artem\\AppData\\Local\\Microsoft\\Windows\\Fonts\\bebasneuecyrillic.ttf",
+    "backup": "outputs\\recovery-inputs\\fonts\\bebasneuecyrillic.ttf",
+    "sha256": "3cd5cafb1d78c90a3df89fe53e5299c742b7c2bf8aa0dddbf0c7e1546158fe68",
+    "status": "verified"
+  },
+  {
+    "source": "C:\\Users\\Artem\\AppData\\Local\\Microsoft\\Windows\\Fonts\\Christopher.otf",
+    "backup": "outputs\\recovery-inputs\\fonts\\Christopher.otf",
+    "sha256": "94ad2b24da428f4ea6c4acc5719706230eee17d0764fff21d0f65f0420de084f",
+    "status": "verified"
+  },
+  {
+    "source": "C:\\Windows\\Fonts\\CeraPro-Medium.ttf",
+    "backup": "outputs\\recovery-inputs\\fonts\\CeraPro-Medium.ttf",
+    "sha256": "23b2ee795fe4c5e1f9a25702a5f21c582a8c4ea8db7511c9670f6a550cbb99c7",
+    "status": "verified"
+  },
+  {
+    "source": "C:\\Users\\Artem\\AppData\\Local\\Temp\\cep_cache\\PPRO_26.2.0_com.artem.subtitle-studio.panel\\Local Storage\\leveldb\\000003.log",
+    "backup": "outputs\\recovery-inputs\\cep-local-storage\\leveldb\\000003.log",
+    "sha256": "2b4b57c675f3836e584653442800cc3279f5a3b62da4734e6f1dea964d9a9423",
+    "status": "verified"
+  },
+  {
+    "source": "C:\\Users\\Artem\\AppData\\Local\\Temp\\cep_cache\\PPRO_26.2.0_com.artem.subtitle-studio.panel\\Local Storage\\leveldb\\CURRENT",
+    "backup": "outputs\\recovery-inputs\\cep-local-storage\\leveldb\\CURRENT",
+    "sha256": "0f1bad70c7bd1e0a69562853ec529355462fcd0423263a3d39d6d0d70b780443",
+    "status": "verified"
+  },
+  {
+    "source": "C:\\Users\\Artem\\AppData\\Local\\Temp\\cep_cache\\PPRO_26.2.0_com.artem.subtitle-studio.panel\\Local Storage\\leveldb\\LOG",
+    "backup": "outputs\\recovery-inputs\\cep-local-storage\\leveldb\\LOG",
+    "sha256": "b236056dc84766a7225f6cc1f1d0819fd76ccebb6d96aa1a953936202587b85a",
+    "status": "verified"
+  },
+  {
+    "source": "C:\\Users\\Artem\\AppData\\Local\\Temp\\cep_cache\\PPRO_26.2.0_com.artem.subtitle-studio.panel\\Local Storage\\leveldb\\LOG.old",
+    "backup": "outputs\\recovery-inputs\\cep-local-storage\\leveldb\\LOG.old",
+    "sha256": "ee476463ffcb3b326af5ab7b1aa5ed9ed0573c0d4eaac29e09cb62874aa3821c",
+    "status": "verified"
+  },
+  {
+    "source": "C:\\Users\\Artem\\AppData\\Local\\Temp\\cep_cache\\PPRO_26.2.0_com.artem.subtitle-studio.panel\\Local Storage\\leveldb\\MANIFEST-000001",
+    "backup": "outputs\\recovery-inputs\\cep-local-storage\\leveldb\\MANIFEST-000001",
+    "sha256": "f9d31b278e215eb0d0e9cd709edfa037e828f36214ab7906f612160fead4b2b4",
+    "status": "verified"
+  },
+  {
+    "source": "work\\add-srt-ui.py",
+    "backup": "outputs\\development-scripts\\add-srt-ui.py",
+    "sha256": "97c5bac957153f3f2d4bd73acf6df5b5a8a4a9b700c1e257c0138c1411efd7d2",
+    "status": "verified"
+  },
+  {
+    "source": "work\\audit-fonts.py",
+    "backup": "outputs\\development-scripts\\audit-fonts.py",
+    "sha256": "7de516e9e607576e28222332f12b52bb4bdea44f60921a3ed50ea5569970c986",
+    "status": "verified"
+  },
+  {
+    "source": "work\\build_cep.py",
+    "backup": "outputs\\development-scripts\\build_cep.py",
+    "sha256": "62d6b8e2ae1c67903fd903f5f99bde953352d74376b2a829db10e39d4d1c92a1",
+    "status": "verified"
+  },
+  {
+    "source": "work\\inventory-templates.py",
+    "backup": "outputs\\development-scripts\\inventory-templates.py",
+    "sha256": "ee328d3df35fbaac9aafad79fbd251e0bb638a3ec1fc514626727b3f636271a9",
+    "status": "verified"
+  },
+  {
+    "source": "work\\prepare-recovery.py",
+    "backup": "outputs\\development-scripts\\prepare-recovery.py",
+    "sha256": "5d52fe831687f653f24cc562160b3c08b2855129dd382beda069ec84ab40b7be",
+    "status": "verified"
+  },
+  {
+    "source": "work\\review_motion.py",
+    "backup": "outputs\\development-scripts\\review_motion.py",
+    "sha256": "5dfcfc61786a015025ae91f33f1706ea7e4a1e2e2873eb6b69c583cab8e6d591",
+    "status": "verified"
+  },
+  {
+    "source": "work\\review_reel.py",
+    "backup": "outputs\\development-scripts\\review_reel.py",
+    "sha256": "b586ed8be79f1ecb8b4718213ca5946632856f2ba5b2205217c128a9c110d23b",
+    "status": "verified"
+  },
+  {
+    "source": "work\\update-panel-script.py",
+    "backup": "outputs\\development-scripts\\update-panel-script.py",
+    "sha256": "256b414f13a1eac8a646d878a2029d48d5f105283375b57c351f188b39f312d2",
+    "status": "verified"
+  },
+  {
+    "source": "work\\audit-panel.cjs",
+    "backup": "outputs\\development-scripts\\audit-panel.cjs",
+    "sha256": "2239e65d85191d00a62475c684dfc8b92e8164199a874dd7a53b02c82852ab72",
+    "status": "verified"
+  },
+  {
+    "source": "work\\check-ui-v2.cjs",
+    "backup": "outputs\\development-scripts\\check-ui-v2.cjs",
+    "sha256": "fca2cef27cba87966559051d715ef645e4008541d94d69d147b432798b34e4a7",
+    "status": "verified"
+  },
+  {
+    "source": "work\\check-ui.cjs",
+    "backup": "outputs\\development-scripts\\check-ui.cjs",
+    "sha256": "4c494e50661ace59eb3c8ab6ba1a592d06a9cd2029cc18f48d9d1373b6cc6651",
+    "status": "verified"
+  },
+  {
+    "source": "work\\test-cep.cjs",
+    "backup": "outputs\\development-scripts\\test-cep.cjs",
+    "sha256": "db6767cceca0f24ef11683374bce11af4aad50d995d010f45428f8367a5e6876",
+    "status": "verified"
+  },
+  {
+    "source": "work\\test-graphic.cjs",
+    "backup": "outputs\\development-scripts\\test-graphic.cjs",
+    "sha256": "71c7af935cdf3a7e335bba717b1e0708b0125ac072d51f4435654b336d466f4e",
+    "status": "verified"
+  },
+  {
+    "source": "work\\test-srt.cjs",
+    "backup": "outputs\\development-scripts\\test-srt.cjs",
+    "sha256": "e8742b065b75f2620570ff27d61aacc4ba5c99f36a7fa730d71dd043e133548b",
+    "status": "verified"
+  },
+  {
+    "source": "work\\font-audit.json",
+    "backup": "outputs\\recovery-inputs\\evidence\\font-audit.json",
+    "sha256": "ee72b6868fd7f730d044f1e16b7793a70f72dc54761b2864d567a9fb16a1cac9",
+    "status": "verified"
+  },
+  {
+    "source": "work\\panel-audit-before.json",
+    "backup": "outputs\\recovery-inputs\\evidence\\panel-audit-before.json",
+    "sha256": "18ba37100326685bf238b6f7cb3af1c24575b69c5527e1c30298a11835bddb25",
+    "status": "verified"
+  },
+  {
+    "source": "work\\srt-recording\\detail.png",
+    "backup": "outputs\\recovery-inputs\\evidence\\detail.png",
+    "sha256": "74e95b9dfc77eede7ab55106b40f5f4c857db94971bf70c397a42ca2311391b9",
+    "status": "verified"
+  }
+]

@@ -1,0 +1,251 @@
+<div id="subtitle-studio-preview" class="viz-dotted-background">
+<style>
+#subtitle-studio-preview{padding:20px 8px;font-family:Inter,"Segoe UI",sans-serif}
+#subtitle-studio-preview *{box-sizing:border-box}
+#subtitle-studio-preview .studio{--panel:light-dark(#f8f8fb,#202024);--field:light-dark(#ffffff,#29292f);--text:light-dark(#20212a,#f2f2f5);--dim:light-dark(#626572,#a6a6b3);--line:light-dark(#dddde5,#3b3b44);--highlight:#a99afa;--active:light-dark(#ece8ff,#373047);color:var(--text);background:var(--panel);border:1px solid var(--line);border-radius:16px;max-width:692px;margin:auto;overflow:hidden;box-shadow:0 16px 42px #00000018;font-size:13px;line-height:1.5}
+#subtitle-studio-preview .head{display:flex;align-items:center;gap:10px;padding:18px 20px 16px;border-bottom:1px solid var(--line)}
+#subtitle-studio-preview .mark{background:var(--active);color:var(--highlight);width:34px;height:34px;display:grid;place-items:center;border-radius:9px}
+#subtitle-studio-preview .name{font-size:16px;font-weight:600;letter-spacing:-.3px}
+#subtitle-studio-preview .muted{color:var(--dim);font-size:12px}
+#subtitle-studio-preview .demo{margin-left:auto;padding-right:72px;color:var(--dim);font-size:11px}
+#subtitle-studio-preview .body{padding:18px 20px}
+#subtitle-studio-preview button,#subtitle-studio-preview input,#subtitle-studio-preview select,#subtitle-studio-preview textarea{font:inherit;color:inherit}
+#subtitle-studio-preview button{border:1px solid var(--line);background:var(--field);border-radius:7px;padding:8px 11px;min-height:36px}
+#subtitle-studio-preview button:hover{filter:brightness(1.08)}
+#subtitle-studio-preview button:focus-visible,#subtitle-studio-preview input:focus-visible,#subtitle-studio-preview textarea:focus-visible,#subtitle-studio-preview select:focus-visible{outline:2px solid var(--highlight);outline-offset:3px}
+#subtitle-studio-preview .source-tabs{display:flex;padding:3px;background:var(--field);border:1px solid var(--line);border-radius:10px;gap:4px}
+#subtitle-studio-preview .source-tabs button{flex:1;background:transparent;border-color:transparent}
+#subtitle-studio-preview .source-tabs button[aria-pressed=true]{background:var(--active);border-color:color-mix(in srgb,var(--highlight) 35%,transparent)}
+#subtitle-studio-preview .source{display:flex;gap:10px;align-items:center;margin:13px 0 20px;padding:12px 14px;border:1px dashed var(--line);border-radius:9px}
+#subtitle-studio-preview .source strong{font-weight:500}
+#subtitle-studio-preview .workspace{display:grid;grid-template-columns:minmax(175px, .86fr) minmax(210px,1fr);gap:22px;align-items:start}
+#subtitle-studio-preview .row{display:flex;justify-content:space-between;align-items:center;gap:10px;flex-wrap:wrap;margin-bottom:10px}
+#subtitle-studio-preview .label{font-weight:600;font-size:12px}
+#subtitle-studio-preview .frame{position:relative;aspect-ratio:9/16;width:100%;max-width:238px;margin:auto;border-radius:10px;overflow:hidden;background:radial-gradient(ellipse at 65% 30%,#72705d 0%,#454638 48%,#262b25 100%);color:#fff;isolation:isolate}
+#subtitle-studio-preview .scene-circle{position:absolute;border-radius:50%;width:160%;height:56%;left:-30%;bottom:-10%;background:#908167;box-shadow:0 -12px 70px #00000035}
+#subtitle-studio-preview .scene-note{position:absolute;top:18px;left:0;right:0;text-align:center;font-size:11px;letter-spacing:.2px;color:#ffffffb8}
+#subtitle-studio-preview .safe{position:absolute;inset:0;width:100%;height:100%;pointer-events:none}
+#subtitle-studio-preview .caption{position:absolute;left:50%;top:55%;transform:translate(-50%,-50%);font-size:26px;font-weight:700;line-height:1.08;white-space:pre-line;text-align:center;text-shadow:0 2px 4px #0008;overflow-wrap:normal}
+#subtitle-studio-preview .safe-info{display:flex;align-items:center;gap:6px;margin-top:10px;color:var(--dim);font-size:11px;justify-content:center}
+#subtitle-studio-preview .safe-dot{width:5px;height:5px;background:#6bbfa2;border-radius:50%}
+#subtitle-studio-preview .preview-bar{display:flex;justify-content:center;align-items:center;gap:12px;margin-top:10px}
+#subtitle-studio-preview .preview-bar button{display:flex;gap:6px;align-items:center;min-height:32px;font-size:12px}
+#subtitle-studio-preview .settings{display:grid;gap:17px}
+#subtitle-studio-preview textarea,#subtitle-studio-preview select{background:var(--field);border:1px solid var(--line);border-radius:7px;width:100%;padding:9px 10px}
+#subtitle-studio-preview textarea{resize:vertical;min-height:68px;display:block;margin-top:7px}
+#subtitle-studio-preview .samples{display:flex;gap:6px;margin-top:7px;flex-wrap:wrap}
+#subtitle-studio-preview .samples button{font-size:11px;min-height:29px;padding:4px 8px;color:var(--dim)}
+#subtitle-studio-preview .ai-button{display:flex;align-items:center;justify-content:center;gap:8px;width:100%;margin-top:10px;border-color:color-mix(in srgb,var(--highlight) 45%,var(--line));background:var(--active)}
+#subtitle-studio-preview .ai-review{margin-top:10px;padding:12px;border:1px solid var(--line);border-radius:9px;background:var(--field);display:grid;gap:10px}
+#subtitle-studio-preview .ai-review p{margin:0;font-size:12px;color:var(--dim)}
+#subtitle-studio-preview .ai-review .ai-actions{display:flex;gap:7px;flex-wrap:wrap}
+#subtitle-studio-preview .ai-review .ai-actions button{flex:1;font-size:12px}
+#subtitle-studio-preview .fontrow{padding:8px 0;display:flex;justify-content:space-between;gap:10px;border-bottom:1px solid var(--line);font-size:12px}
+#subtitle-studio-preview .fontrow span{color:var(--dim)}
+#subtitle-studio-preview .check{display:flex;align-items:center;gap:8px;font-size:12px}
+#subtitle-studio-preview input[type=checkbox],#subtitle-studio-preview input[type=range]{accent-color:var(--highlight)}
+#subtitle-studio-preview input[type=range]{width:100%;margin:4px 0}
+#subtitle-studio-preview input[type=color]{width:28px;height:28px;border:1px solid var(--line);border-radius:6px;background:var(--field);padding:3px}
+#subtitle-studio-preview details{border-top:1px solid var(--line);padding-top:12px}
+#subtitle-studio-preview summary{font-size:12px;color:var(--dim)}
+#subtitle-studio-preview .advanced{display:grid;gap:12px;padding-top:12px}
+#subtitle-studio-preview .foot{border-top:1px solid var(--line);padding:15px 20px;display:flex;align-items:center;justify-content:space-between;gap:14px}
+#subtitle-studio-preview .main-action{background:var(--highlight);color:#1d1737;border:0;font-weight:600;padding:11px 17px}
+#subtitle-studio-preview .notice{font-size:12px;color:var(--dim);max-width:270px}
+#subtitle-studio-preview button:disabled{opacity:.45;cursor:not-allowed}
+#subtitle-studio-preview .validation{font-size:12px;color:light-dark(#9a3d0e,#f4b879);margin-top:6px}
+#subtitle-studio-preview .caption{white-space:pre;box-sizing:content-box}
+#subtitle-studio-preview [hidden]{display:none!important}
+@media(max-width:520px){#subtitle-studio-preview{padding:8px 0}#subtitle-studio-preview .body{padding:14px}#subtitle-studio-preview .workspace{grid-template-columns:1fr;gap:20px}#subtitle-studio-preview .frame{max-width:200px}#subtitle-studio-preview .demo{padding-right:0}#subtitle-studio-preview .foot{align-items:stretch;flex-direction:column;padding:14px}#subtitle-studio-preview .notice{max-width:none}#subtitle-studio-preview textarea,#subtitle-studio-preview select{font-size:16px}}
+@media(pointer:coarse){#subtitle-studio-preview button{min-height:44px}#subtitle-studio-preview .samples button{min-height:44px}}
+</style>
+<section class="studio" aria-label="Макет панели субтитров для Premiere">
+  <header class="head"><span class="mark"><i data-lucide="captions" aria-hidden="true"></i></span><div><div class="name">Субтитры</div><div class="muted">Текст, который попадает в ритм</div></div><span class="demo">Макет панели</span></header>
+  <div class="body">
+    <div class="source-tabs" aria-label="Источник субтитров"><button type="button" data-source="srt" aria-pressed="true">Готовые субтитры</button><button type="button" data-source="audio" aria-pressed="false">Из аудио</button></div>
+    <div class="source"><i data-lucide="file-text" aria-hidden="true"></i><div><strong id="ss-source-name">Колобки · пример субтитров</strong><div class="muted" id="ss-source-description">SRT или субтитры последовательности</div></div></div>
+    <div class="workspace">
+      <div>
+        <div class="row"><span class="label">Предпросмотр</span><label class="check"><input id="ss-safe-toggle" type="checkbox" checked> Зона Reels</label></div>
+        <div class="frame" id="ss-frame">
+          <div class="scene-circle"></div><div class="scene-note">Демонстрационный фон</div>
+          <svg class="safe" id="ss-safe-overlay" viewBox="0 0 1082 1920" aria-label="Безопасная область по вашему шаблону" role="img"><path fill="#ff98182b" fill-rule="evenodd" d="M0 0H1082V1920H0Z M72 234H1018V1348H864V1600H72Z"/><path fill="none" stroke="#ffffff78" stroke-width="3" stroke-dasharray="12 10" d="M72 234H1018V1348H864V1600H72Z"/></svg>
+          <div class="caption" id="ss-caption">МАРИЙСКИЙ<br>ДЕСЕРТ</div>
+        </div>
+        <div class="safe-info"><span class="safe-dot"></span><span id="ss-fit">Текст внутри безопасной зоны</span></div>
+        <div class="preview-bar"><button type="button" id="ss-play"><i data-lucide="play" aria-hidden="true"></i> Анимация</button><span class="muted">9:16</span></div>
+      </div>
+      <div class="settings">
+        <div><label class="label" for="ss-text">Текст блока</label><textarea id="ss-text" maxlength="200">Марийский десерт</textarea><div class="samples"><button type="button" data-sample="short">Короткая фраза</button><button type="button" data-sample="long">Длинная фраза</button></div>
+          <button type="button" id="ss-headlines" class="ai-button" aria-expanded="false" aria-controls="ss-ai-review"><i data-lucide="sparkles" aria-hidden="true"></i>Смысловые заголовки</button>
+          <section id="ss-ai-review" class="ai-review" aria-label="Предпросмотр смыслового заголовка" hidden>
+            <div class="row"><span class="label">Из речи — в заголовок</span><span class="muted">Демо</span></div>
+            <p>«Количество угощений на тарелке должно быть нечётным».</p>
+            <div><label for="ss-headline-draft" class="label">Предложенный заголовок</label><textarea id="ss-headline-draft" maxlength="120">Правило нечётного числа</textarea></div>
+            <div class="ai-actions"><button type="button" id="ss-headline-apply" class="main-action">Применить пример</button><button type="button" id="ss-headline-cancel">Закрыть</button></div>
+            <p>Демонстрация на готовом примере. ИИ ещё не подключён.</p>
+          </section>
+        </div>
+        <div><label class="label" for="ss-role">Роль текста</label><select id="ss-role"><option value="auto">Определить автоматически</option><option value="speech">Субтитры речи</option><option value="title">Крупный заголовок</option><option value="accent">Рукописный акцент</option></select><div class="fontrow"><span>Шрифт примера</span><strong id="ss-current-font">Bebas Neue Cyrillic</strong></div><div class="muted">Bebas Neue Cyrillic · Cera Pro · Christopher</div><div id="ss-font-warning" class="validation" hidden></div></div>
+        <div><label class="label" for="ss-motion">Анимация</label><select id="ss-motion"><option value="soft">Мягкое появление</option><option value="pop">Акцентное появление</option><option value="none">Без анимации</option></select></div>
+        <details><summary>Размер, положение и цвет</summary><div class="advanced"><div><div class="row"><label for="ss-size">Масштаб текста</label><output id="ss-size-value">100%</output></div><input id="ss-size" type="range" min="70" max="130" value="100" step="5"></div><div><div class="row"><label for="ss-position">Положение по высоте</label><output id="ss-position-value">55%</output></div><input id="ss-position" type="range" min="28" max="74" value="55"></div><div class="row"><label for="ss-color">Цвет текста</label><input id="ss-color" type="color" value="#ffffff"></div></div></details>
+        <div><div class="muted">До двух строк · размер подбирается автоматически</div><div id="ss-validation" class="validation" role="status" aria-live="polite" hidden></div><button type="button" id="ss-headline-undo" hidden>Отменить заголовок</button><div id="ss-storage-warning" class="validation" role="status" hidden></div></div>
+      </div>
+    </div>
+  </div>
+  <footer class="foot"><div class="notice" id="ss-status" aria-live="polite">Проверь оформление на короткой и длинной фразе.</div><button type="button" class="main-action" id="ss-apply">Применить к примеру</button></footer>
+</section>
+<script>
+(() => {
+  const root = document.getElementById('subtitle-studio-preview');
+  const q = id => root.querySelector('#' + id);
+  const defaults = {text:'Марийский десерт',size:100,position:50,color:'#ffffff',safe:true,motion:'soft',source:'srt',role:'auto'};
+  const state = {...defaults}, design = {radius:16,accent:'#a99afa'};
+  const enums = {motion:['soft','pop','none'],source:['srt','audio'],role:['auto','speech','title','accent']};
+  const measure = document.createElement('canvas').getContext('2d');
+  const fontCache = new Map();
+  let anim, undo = null, valid = false, saveTimer;
+  const hex = value => typeof value === 'string' && /^#[0-9a-f]{6}$/i.test(value);
+  const clamp = (v,a,b) => Math.max(a,Math.min(b,v));
+  const normalText = value => value.replace(/\r\n?/g,'\n').replace(/[\u0000-\u0008\u000b\u000c\u000e-\u001f\u007f\u200b\ufeff]/g,'');
+  const publicState = () => ({...state});
+  function show(id,text) { q(id).textContent=text;q(id).hidden=!text; }
+  async function save() {
+    try {
+      if (!window.openai?.setWidgetState) throw new Error('unavailable');
+      await window.openai.setWidgetState({modelContent:{subtitlePanel:publicState()},privateContent:{design:{...design},headlineDraft:q('ss-headline-draft').value,undo}});
+      show('ss-storage-warning','');return true;
+    } catch (_) {
+      show('ss-storage-warning','Не удалось сохранить настройки. Текущий текст остаётся в панели.');return false;
+    }
+  }
+  function queueSave() {clearTimeout(saveTimer);saveTimer=setTimeout(save,200);}
+  function restore(saved) {
+    const s=saved?.modelContent?.subtitlePanel;
+    if(s && typeof s==='object') {
+      if(typeof s.text==='string')state.text=normalText(s.text);
+      for(const [key,limits] of Object.entries({size:[70,130],position:[28,74]}))
+        if(key in s)state[key]=Number.isFinite(s[key])?clamp(s[key],...limits):defaults[key];
+      for(const [key,values] of Object.entries(enums))if(key in s)state[key]=values.includes(s[key])?s[key]:defaults[key];
+      if('color' in s)state.color=hex(s.color)?s.color:defaults.color;
+      if(typeof s.safe==='boolean')state.safe=s.safe;
+    }
+    const p=saved?.privateContent;
+    if(p?.design && typeof p.design==='object') {
+      if(Number.isFinite(p.design.radius))design.radius=clamp(p.design.radius,0,20);
+      if(hex(p.design.accent))design.accent=p.design.accent;
+    }
+    if(typeof p?.headlineDraft==='string')q('ss-headline-draft').value=p.headlineDraft.slice(0,120);
+    const u=p?.undo;
+    if(u && typeof u.beforeText==='string' && u.beforeText.length<=200 && typeof u.appliedText==='string' && u.appliedText.length<=120 && enums.role.includes(u.beforeRole))undo={beforeText:u.beforeText,beforeRole:u.beforeRole,appliedText:u.appliedText};
+  }
+  function fontAvailable(name,weight) {
+    const key=name+weight;if(fontCache.has(key))return fontCache.get(key);
+    const sample='Марийский десерт ЙЁЩ 0123456789';
+    const result=['monospace','serif','sans-serif'].some(fallback=>{
+      measure.font=weight+' 32px '+fallback;const a=measure.measureText(sample).width;
+      measure.font=weight+' 32px "'+name+'",'+fallback;return Math.abs(a-measure.measureText(sample).width)>.1;
+    });
+    fontCache.set(key,result);return result;
+  }
+  function lineOptions(text) {
+    const explicit=text.split('\n').map(l=>l.replace(/[ \t]+/g,' ').trim()).filter(Boolean);
+    if(explicit.length>1)return [explicit];
+    const words=(explicit[0]||'').split(' '), variants=[[explicit[0]||'']];
+    for(let i=1;i<words.length;i++)variants.push([words.slice(0,i).join(' '),words.slice(i).join(' ')]);
+    return variants;
+  }
+  function setReview(open) {
+    q('ss-ai-review').hidden=!open;q('ss-headlines').setAttribute('aria-expanded',String(open));
+    (open?q('ss-headline-draft'):q('ss-headlines')).focus();
+  }
+  function render() {
+    if(anim){anim.cancel();anim=null;}
+    if(q('ss-text').value!==state.text)q('ss-text').value=state.text;
+    for(const [id,key] of [['ss-size','size'],['ss-position','position'],['ss-color','color'],['ss-motion','motion'],['ss-role','role']])q(id).value=state[key];
+    q('ss-safe-toggle').checked=state.safe;q('ss-safe-overlay').toggleAttribute('hidden',!state.safe);
+    q('ss-size-value').textContent=state.size+'%';q('ss-position-value').textContent=state.position+'%';
+    root.querySelectorAll('[data-source]').forEach(b=>b.setAttribute('aria-pressed',String(b.dataset.source===state.source)));
+    q('ss-source-name').textContent=state.source==='srt'?'Колобки · пример субтитров':'Аудиодорожка · пример';
+    q('ss-source-description').textContent=state.source==='srt'?'SRT или субтитры последовательности':'Распознавание речи и сверка со сценарием';
+    root.querySelector('.studio').style.borderRadius=design.radius+'px';root.querySelector('.studio').style.setProperty('--highlight',design.accent);
+    q('ss-headline-undo').hidden=!(undo && undo.appliedText===state.text);
+    const caption=q('ss-caption'),frame=q('ss-frame'),clean=normalText(state.text).trim();
+    const count=clean.split(/\s+/).filter(Boolean).length;
+    const title=state.role==='title'||(state.role==='auto'&&count<=2),accent=state.role==='accent';
+    const family=accent?'Christopher':title?'Bebas Neue Cyrillic':'Cera Pro';
+    const weight=title||accent?400:500;
+    caption.style.fontFamily='"'+family+'", '+(accent?'"Segoe Script", cursive':'Arial, sans-serif');caption.style.fontWeight=weight;caption.style.color=state.color;
+    q('ss-current-font').textContent=family==='Cera Pro'?'Cera Pro Medium':family;
+    show('ss-font-warning',fontAvailable(family,weight)?'':family+' недоступен в предпросмотре — используется замена.');
+    let problem=!clean?'Введи текст для предпросмотра.':clean.length>200?'Блок длиннее 200 символов. Раздели его на части.':clean.split('\n').filter(l=>l.trim()).length>2?'Здесь больше двух строк. Раздели блок или убери перенос.':'';
+    const w=frame.clientWidth,h=frame.clientHeight;
+    valid=false;caption.hidden=true;
+    if(!problem && w>0 && h>0) {
+      const display=title?clean.toLocaleUpperCase('ru'):clean;
+      const options=lineOptions(display),start=w*(title?.136:accent?.135:.105)*state.size/100,min=12;
+      const effect=6,movement=state.motion==='soft'?8:0;
+      const topLimit=h*234/1920+effect,bottomLimit=h*1600/1920-effect-movement;
+      const leftLimit=w*72/1082+effect,rightLimit=w*1018/1082-effect,notchRight=w*864/1082-effect,notchY=h*1348/1920-effect-movement;
+      caption.hidden=false;
+      const requestedY=h*state.position/100;
+      outer: for(let font=Math.max(min,start);font>=min-.001;font-=.5) {
+        measure.font=weight+' '+font+'px '+caption.style.fontFamily;
+        const ranked=options.map(lines=>{
+          const widths=lines.map(line=>{const m=measure.measureText(line);return Math.max(m.width,(m.actualBoundingBoxLeft||0)+(m.actualBoundingBoxRight||0));});
+          return{lines,width:Math.max(...widths),score:Math.max(...widths)+(lines.length===2?Math.abs(widths[0]-widths[1])*.12+3:0)};
+        }).sort((a,b)=>a.score-b.score);
+        for(const option of ranked) {
+          const boxWidth=Math.ceil(option.width)+2;
+          caption.style.width=boxWidth+'px';caption.style.fontSize=font+'px';caption.textContent=option.lines.join('\n');
+          const boxHeight=caption.offsetHeight;
+          if(boxHeight>bottomLimit-topLimit)continue;
+          const y=clamp(requestedY,topLimit+boxHeight/2,bottomLimit-boxHeight/2);
+          const right=y+boxHeight/2>notchY?notchRight:rightLimit;
+          if(boxWidth>right-leftLimit)continue;
+          const x=clamp(w/2,leftLimit+boxWidth/2,right-boxWidth/2);
+          caption.style.left=x+'px';caption.style.top=y+'px';valid=true;break outer;
+        }
+      }
+      if(!valid)problem='Текст не помещается читаемым размером. Раздели его на несколько блоков.';
+    }
+    caption.hidden=!valid;q('ss-apply').disabled=!valid;q('ss-play').disabled=!valid;
+    show('ss-validation',problem);q('ss-text').setAttribute('aria-invalid',String(Boolean(problem)));
+    q('ss-fit').textContent=valid?'Внутри зоны предпросмотра':'Нужна правка текста';
+    q('ss-headline-apply').disabled=!q('ss-headline-draft').value.trim();
+  }
+  q('ss-text').addEventListener('input',e=>{state.text=normalText(e.target.value);render();queueSave();});
+  for(const [id,key] of [['ss-size','size'],['ss-position','position']])q(id).addEventListener('input',e=>{state[key]=Number(e.target.value);render();queueSave();});
+  q('ss-color').addEventListener('input',e=>{if(hex(e.target.value))state.color=e.target.value;render();queueSave();});
+  for(const [id,key] of [['ss-motion','motion'],['ss-role','role']])q(id).addEventListener('change',e=>{state[key]=e.target.value;render();queueSave();});
+  q('ss-safe-toggle').addEventListener('change',e=>{state.safe=e.target.checked;render();queueSave();});
+  root.querySelectorAll('[data-source]').forEach(b=>b.addEventListener('click',()=>{state.source=b.dataset.source;render();queueSave();}));
+  root.querySelectorAll('[data-sample]').forEach(b=>b.addEventListener('click',()=>{state.text=b.dataset.sample==='short'?'Марийский десерт':'Новая гастрономическая визитная карточка Марий Эл';render();queueSave();}));
+  q('ss-headlines').addEventListener('click',()=>setReview(q('ss-ai-review').hidden));
+  q('ss-headline-cancel').addEventListener('click',()=>setReview(false));
+  q('ss-ai-review').addEventListener('keydown',e=>{if(e.key==='Escape')setReview(false);});
+  q('ss-headline-draft').addEventListener('input',()=>{q('ss-headline-apply').disabled=!q('ss-headline-draft').value.trim();queueSave();});
+  q('ss-headline-apply').addEventListener('click',()=>{
+    const draft=normalText(q('ss-headline-draft').value).trim();if(!draft)return;
+    undo={beforeText:state.text,beforeRole:state.role,appliedText:draft};state.text=draft;state.role='title';render();queueSave();setReview(false);
+    q('ss-status').textContent='Заголовок примера применён. Его можно изменить или отменить.';
+  });
+  q('ss-headline-undo').addEventListener('click',()=>{if(!undo||undo.appliedText!==state.text)return;state.text=undo.beforeText;state.role=undo.beforeRole;undo=null;render();queueSave();q('ss-status').textContent='Исходный текст восстановлен.';});
+  q('ss-play').addEventListener('click',()=>{
+    if(!valid)return;if(anim)anim.cancel();
+    if(state.motion==='none'||matchMedia('(prefers-reduced-motion: reduce)').matches)return;
+    const end={opacity:1,transform:'translate(-50%,-50%) scale(1)'};
+    const frames=state.motion==='pop'?[{opacity:0,transform:'translate(-50%,-50%) scale(.82)'},end]:[{opacity:0,transform:'translate(-50%,calc(-50% + 8px))'},end];
+    anim=captionElement().animate(frames,{duration:state.motion==='pop'?280:440,easing:'cubic-bezier(.2,.8,.2,1)'});
+  });
+  function captionElement(){return q('ss-caption');}
+  q('ss-apply').addEventListener('click',async()=>{if(!valid)return;clearTimeout(saveTimer);q('ss-status').textContent=await save()?'Настройки примера сохранены. Подключение к Premiere — следующий этап.':'Пример обновлён. Сохранение настроек недоступно.';});
+  restore(window.openai?.widgetState);render();
+  window.addEventListener('openai:set_globals',e=>{if(e.detail?.globals?.widgetState){restore(e.detail.globals.widgetState);render();}});
+  new ResizeObserver(render).observe(q('ss-frame'));
+  document.fonts?.ready.then(()=>{fontCache.clear();render();});
+  if(globalThis.Tweak){const tweak=new Tweak({container:root.querySelector('.studio'),onChange:()=>{render();queueSave();}});tweak.addSlider(design,'radius',{label:'Скругление панели',min:0,max:20,unit:'px'});tweak.addColorPicker(design,'accent',{label:'Цвет акцента',reference:'--highlight'});}
+})();
+
+</script>
+</div>

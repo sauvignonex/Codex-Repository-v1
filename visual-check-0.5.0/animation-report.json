@@ -1,0 +1,26 @@
+{
+  "verified": true,
+  "counts": {
+    "start": {
+      "main": 0,
+      "hand": 0,
+      "all": 0
+    },
+    "early": {
+      "main": 11010,
+      "hand": 0,
+      "all": 11010
+    },
+    "reveal": {
+      "main": 48461,
+      "hand": 4084,
+      "all": 52545
+    },
+    "full": {
+      "main": 48461,
+      "hand": 16023,
+      "all": 64484
+    }
+  },
+  "sequentialReveal": true
+}

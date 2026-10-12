@@ -1,0 +1,41 @@
+{
+  "grouped": 29,
+  "checks": [
+    {
+      "name": "script alignment restores entire script without inventing timings",
+      "passed": true
+    },
+    {
+      "name": "grouping covers every source cue once in original order",
+      "passed": true
+    },
+    {
+      "name": "unrelated script cannot overwrite transcript",
+      "passed": true
+    },
+    {
+      "name": "overlap and substantial pause remain separate",
+      "passed": true
+    },
+    {
+      "name": "AI cannot omit cues, change roles or saturate highlights",
+      "passed": true
+    },
+    {
+      "name": "reimport identical SRT preserves document identity and edits",
+      "passed": true
+    },
+    {
+      "name": "preparation has separate identity, persists and can undo",
+      "passed": true
+    },
+    {
+      "name": "all grouped SPA phrases fit at readable size on two lines",
+      "passed": true
+    },
+    {
+      "name": "no UI runtime errors",
+      "passed": true
+    }
+  ]
+}

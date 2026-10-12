@@ -1,0 +1,12 @@
+{
+  "verified": true,
+  "reloadKeepsNewBoundary": true,
+  "playbackUsesEditedCue": true,
+  "currentDocumentUnchanged": true,
+  "audio": {
+    "playing": true,
+    "time": 0.568545,
+    "end": 2.16,
+    "source": "file:///C:/Users/Artem/AppData/Roaming/SubtitleStudio/jobs/72e274a1-ae1c-4cd5-8dc0-257fea57a151/preview.wav"
+  }
+}

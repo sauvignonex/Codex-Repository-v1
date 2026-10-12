@@ -1,0 +1,141 @@
+{
+  "verified": true,
+  "files": [
+    {
+      "path": "batch.js",
+      "sha256": "87e676e4f112f9447497a59b0cd5aebecb70ec5c3c5b3f953fdc57c164384e23"
+    },
+    {
+      "path": "batch.jsx",
+      "sha256": "5f8f45f84868410e9aa9177d319e68badb711d2461304020d581458b90585f45"
+    },
+    {
+      "path": "bridge.js",
+      "sha256": "fc07fa40cda0c2fd8dd30e2da93d99126fd7edb5aa0b39189ccd04e2e0ade448"
+    },
+    {
+      "path": "editorial-ui.js",
+      "sha256": "3bfa6a58c8c96d41747c5f710b4172527e8615f2a80398912b277840e2caa2c3"
+    },
+    {
+      "path": "editorial.js",
+      "sha256": "d1fc3a5f120d1f6c031c2bc64b3e31f5dcc3cd4632018bd23e8214141f56ab84"
+    },
+    {
+      "path": "host-loader.js",
+      "sha256": "5f992b7884dd5356599c549c509774c850351105e25324f912489f2e92e85305"
+    },
+    {
+      "path": "host.jsx",
+      "sha256": "f7379ca5367cfeb4898b2f627db584f0f406dc5d90932f9bcf4dbba25f3599a0"
+    },
+    {
+      "path": "index.html",
+      "sha256": "1c76f6b60c69df390b761dabaab7054f265698656ddad428881955c3c8cc8f06"
+    },
+    {
+      "path": "local-ai-launcher.py",
+      "sha256": "89ccd32d65840ae072fabb9cd7f1efdf543e40b6bb98852a487cee2b9adfe005"
+    },
+    {
+      "path": "local-ai.js",
+      "sha256": "2bd8b14fa81f8cfd36ec244ebb7c250eaf42185a4a9e94242001bc448e4819a3"
+    },
+    {
+      "path": "panel.css",
+      "sha256": "30c9cd9ec787c0e915afe6928fbf11f41bb99d50985accedf32ee7893ad36ae0"
+    },
+    {
+      "path": "panel.js",
+      "sha256": "8c357cba23ef128d95b83fa216bd06224eec62d61bf681bc747202184a978486"
+    },
+    {
+      "path": "phrases.js",
+      "sha256": "84d32f93d50a01822f15241f284d950c89ca90cfba9697612f7815b61b56db76"
+    },
+    {
+      "path": "review-audio.js",
+      "sha256": "4898fbd9f728c449b3229ed75f179447d26c839a6aa7215fc54869f7b1e1d6fe"
+    },
+    {
+      "path": "review-timing.js",
+      "sha256": "e39b08914828279828f28d2207ca51c2dae21306fc9b6167fe1c0d1fbe1c7d9b"
+    },
+    {
+      "path": "srt-ui.js",
+      "sha256": "5b18332a8622b5ac5f80d7c320cba3b8083dfd540f0c9a9b72fcfd6ac350577f"
+    },
+    {
+      "path": "srt.js",
+      "sha256": "b03a0e88d1887111472c85034ab249e964e1fbf4b2bd6ef9db4a045b60c98ca2"
+    },
+    {
+      "path": "storage.js",
+      "sha256": "5dccb554fadc2f7736ad504234e91fc4455d628d6d76ef5a9b0a4f1f4b9a8fcd"
+    },
+    {
+      "path": "test-graphic.js",
+      "sha256": "99b850969f241992b486f41e9540fd86709a73c27bb018e568714eabc02288ce"
+    },
+    {
+      "path": "test-graphic.jsx",
+      "sha256": "48cf2a9a7fa871e2d11bb0acd47a4beacb8725b471b77393e37f30a91120e7ac"
+    },
+    {
+      "path": "transcription-config.json",
+      "sha256": "21c3f6ebd22cf45ac90bc9aa56f000514dac6bf62cbb058006a7e09b37a14826"
+    },
+    {
+      "path": "transcription-worker.py",
+      "sha256": "cff70f35a175b7cf4a0b8f7074526f7ba9e52f761cfdc0de409bef270c2e3111"
+    },
+    {
+      "path": "transcription.js",
+      "sha256": "e983d27d23b5db5e28e78329368a7f4d20b6341d2a89cfa624041752a0a187b4"
+    },
+    {
+      "path": "typography.js",
+      "sha256": "e8f47a3dc609a8d9adda31f2ab462b41346f2321f7c88abcbacded20e1cc344c"
+    },
+    {
+      "path": "workflow.js",
+      "sha256": "54a8b1c87b842b3141ff6583dc219c751604e3d3581c35f87cc6eabe556a52dc"
+    },
+    {
+      "path": "CSXS/manifest.xml",
+      "sha256": "b95384f14da3de8b9d5bc786cef9c5ec3125c245f97559146484787ecb5c67eb"
+    },
+    {
+      "path": "templates/Subtitle Studio Title 07.mogrt",
+      "sha256": "8ec9038d8ab3218e0003b562d5b3069fe3400422b6f8fdb1c52eb37b4f69e669"
+    },
+    {
+      "path": "templates/Subtitle Studio Vertical 035.mogrt",
+      "sha256": "a040d4166ec8a3945f1ed5e2cb9bffdea40d830f88dc2e762c6d06f4d55cb52b"
+    },
+    {
+      "path": "templates/Subtitle Studio Vertical 036.mogrt",
+      "sha256": "505f173f8b2168296db5d07668cd6d58d16048993ccfff8de592fc1ca0228380"
+    },
+    {
+      "path": "templates/Subtitle Studio Vertical 037.mogrt",
+      "sha256": "dc221f00d6f680f4947b338a15474fe1396507c117c95d08aac5d879566ba083"
+    },
+    {
+      "path": "templates/Subtitle Studio Vertical 038.mogrt",
+      "sha256": "b3b98163d89863b97f221afb7f4864e9eefc0e402a5b8cba7ea4199c63918300"
+    },
+    {
+      "path": "templates/Subtitle Studio Vertical 040.mogrt",
+      "sha256": "7f5d3be5acada7ed75c9d2052e33e1364ff8a47ef547c1ed8354d94cb18082fb"
+    },
+    {
+      "path": "templates/Subtitle Studio Vertical 043.mogrt",
+      "sha256": "1eaedb8ce92b55a0c18dacc51da8e08919f5649c3b9057f0f367963e68fb53dc"
+    },
+    {
+      "path": "templates/Subtitle Studio Vertical 050.mogrt",
+      "sha256": "a63b21366c8d86cb734bbf14a68b952e94cfda023d2c22a5899e16cbccf67e63"
+    }
+  ]
+}

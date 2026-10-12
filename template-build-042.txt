@@ -1,0 +1,14 @@
+START Основной текст
+CHECK Основной текст
+SOURCE BebasNeueCyrillic 
+Основной текст font=BebasNeueCyrillic expressions=ok
+START Рукописный акцент
+CHECK Рукописный акцент
+SOURCE Christopher 
+Рукописный акцент font=Christopher expressions=ok
+START Текст речи
+CHECK Текст речи
+SOURCE CeraPro-Medium 
+Текст речи font=CeraPro-Medium expressions=ok
+EXPORT true
+SUCCESS

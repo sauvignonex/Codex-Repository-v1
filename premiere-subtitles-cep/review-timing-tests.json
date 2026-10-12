@@ -1,0 +1,11 @@
+{
+  "passed": 6,
+  "checks": [
+    "seconds and full timecode parse exactly",
+    "negative and scientific notation rejected",
+    "reversed end blocks apply without losing prior valid cue",
+    "overlap blocks apply until corrected",
+    "edited boundaries survive review reload",
+    "apply preserves edited intervals and count"
+  ]
+}

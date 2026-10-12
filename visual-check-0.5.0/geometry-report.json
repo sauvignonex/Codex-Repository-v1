@@ -1,0 +1,379 @@
+{
+  "verified": true,
+  "frames": [
+    {
+      "frame": "frame-01.png",
+      "bbox": [
+        175,
+        890,
+        904,
+        1029
+      ],
+      "visiblePixels": 24849,
+      "insideSafeZone": true
+    },
+    {
+      "frame": "frame-02.png",
+      "bbox": [
+        175,
+        884,
+        904,
+        1035
+      ],
+      "visiblePixels": 24847,
+      "insideSafeZone": true
+    },
+    {
+      "frame": "frame-03.png",
+      "bbox": [
+        175,
+        871,
+        904,
+        1048
+      ],
+      "visiblePixels": 20020,
+      "insideSafeZone": true
+    },
+    {
+      "frame": "frame-04.png",
+      "bbox": [
+        216,
+        865,
+        863,
+        1054
+      ],
+      "visiblePixels": 28971,
+      "insideSafeZone": true
+    },
+    {
+      "frame": "frame-05.png",
+      "bbox": [
+        175,
+        891,
+        904,
+        1028
+      ],
+      "visiblePixels": 24894,
+      "insideSafeZone": true
+    },
+    {
+      "frame": "frame-06.png",
+      "bbox": [
+        195,
+        807,
+        884,
+        1104
+      ],
+      "visiblePixels": 72325,
+      "insideSafeZone": true
+    },
+    {
+      "frame": "frame-07.png",
+      "bbox": [
+        175,
+        875,
+        904,
+        1044
+      ],
+      "visiblePixels": 25742,
+      "insideSafeZone": true
+    },
+    {
+      "frame": "frame-08.png",
+      "bbox": [
+        186,
+        865,
+        893,
+        1054
+      ],
+      "visiblePixels": 24550,
+      "insideSafeZone": true
+    },
+    {
+      "frame": "frame-09.png",
+      "bbox": [
+        174,
+        882,
+        904,
+        1037
+      ],
+      "visiblePixels": 24271,
+      "insideSafeZone": true
+    },
+    {
+      "frame": "frame-10.png",
+      "bbox": [
+        175,
+        883,
+        904,
+        1036
+      ],
+      "visiblePixels": 30119,
+      "insideSafeZone": true
+    },
+    {
+      "frame": "frame-11.png",
+      "bbox": [
+        248,
+        807,
+        831,
+        1104
+      ],
+      "visiblePixels": 64484,
+      "insideSafeZone": true
+    },
+    {
+      "frame": "frame-12.png",
+      "bbox": [
+        175,
+        892,
+        904,
+        1027
+      ],
+      "visiblePixels": 25508,
+      "insideSafeZone": true
+    },
+    {
+      "frame": "frame-13.png",
+      "bbox": [
+        175,
+        892,
+        904,
+        1027
+      ],
+      "visiblePixels": 22868,
+      "insideSafeZone": true
+    },
+    {
+      "frame": "frame-14.png",
+      "bbox": [
+        175,
+        887,
+        904,
+        1032
+      ],
+      "visiblePixels": 22012,
+      "insideSafeZone": true
+    },
+    {
+      "frame": "frame-15.png",
+      "bbox": [
+        175,
+        892,
+        904,
+        1027
+      ],
+      "visiblePixels": 21436,
+      "insideSafeZone": true
+    },
+    {
+      "frame": "frame-16.png",
+      "bbox": [
+        175,
+        875,
+        904,
+        1044
+      ],
+      "visiblePixels": 19484,
+      "insideSafeZone": true
+    },
+    {
+      "frame": "frame-17.png",
+      "bbox": [
+        175,
+        878,
+        904,
+        1041
+      ],
+      "visiblePixels": 25951,
+      "insideSafeZone": true
+    },
+    {
+      "frame": "frame-18.png",
+      "bbox": [
+        175,
+        886,
+        904,
+        1033
+      ],
+      "visiblePixels": 22124,
+      "insideSafeZone": true
+    },
+    {
+      "frame": "frame-19.png",
+      "bbox": [
+        175,
+        877,
+        904,
+        1042
+      ],
+      "visiblePixels": 33099,
+      "insideSafeZone": true
+    },
+    {
+      "frame": "frame-20.png",
+      "bbox": [
+        195,
+        865,
+        884,
+        1054
+      ],
+      "visiblePixels": 32344,
+      "insideSafeZone": true
+    },
+    {
+      "frame": "frame-21.png",
+      "bbox": [
+        175,
+        807,
+        904,
+        1095
+      ],
+      "visiblePixels": 65579,
+      "insideSafeZone": true
+    },
+    {
+      "frame": "frame-22.png",
+      "bbox": [
+        175,
+        887,
+        904,
+        1033
+      ],
+      "visiblePixels": 24179,
+      "insideSafeZone": true
+    },
+    {
+      "frame": "frame-23.png",
+      "bbox": [
+        175,
+        901,
+        904,
+        1018
+      ],
+      "visiblePixels": 20351,
+      "insideSafeZone": true
+    },
+    {
+      "frame": "frame-24.png",
+      "bbox": [
+        175,
+        902,
+        904,
+        1017
+      ],
+      "visiblePixels": 33139,
+      "insideSafeZone": true
+    },
+    {
+      "frame": "frame-25.png",
+      "bbox": [
+        276,
+        865,
+        803,
+        1054
+      ],
+      "visiblePixels": 30623,
+      "insideSafeZone": true
+    },
+    {
+      "frame": "frame-26.png",
+      "bbox": [
+        175,
+        882,
+        904,
+        1037
+      ],
+      "visiblePixels": 26520,
+      "insideSafeZone": true
+    },
+    {
+      "frame": "frame-27.png",
+      "bbox": [
+        175,
+        867,
+        904,
+        1052
+      ],
+      "visiblePixels": 28553,
+      "insideSafeZone": true
+    },
+    {
+      "frame": "frame-28.png",
+      "bbox": [
+        183,
+        865,
+        896,
+        1054
+      ],
+      "visiblePixels": 26054,
+      "insideSafeZone": true
+    },
+    {
+      "frame": "frame-29.png",
+      "bbox": [
+        175,
+        873,
+        904,
+        1045
+      ],
+      "visiblePixels": 31532,
+      "insideSafeZone": true
+    },
+    {
+      "frame": "frame-30.png",
+      "bbox": [
+        175,
+        904,
+        904,
+        1015
+      ],
+      "visiblePixels": 21546,
+      "insideSafeZone": true
+    },
+    {
+      "frame": "frame-31.png",
+      "bbox": [
+        174,
+        906,
+        904,
+        1013
+      ],
+      "visiblePixels": 18426,
+      "insideSafeZone": true
+    },
+    {
+      "frame": "frame-32.png",
+      "bbox": [
+        175,
+        894,
+        904,
+        1025
+      ],
+      "visiblePixels": 21568,
+      "insideSafeZone": true
+    },
+    {
+      "frame": "frame-33.png",
+      "bbox": [
+        175,
+        883,
+        904,
+        1036
+      ],
+      "visiblePixels": 50294,
+      "insideSafeZone": true
+    },
+    {
+      "frame": "frame-34.png",
+      "bbox": [
+        175,
+        896,
+        904,
+        1023
+      ],
+      "visiblePixels": 17876,
+      "insideSafeZone": true
+    }
+  ]
+}

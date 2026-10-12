@@ -1,0 +1,6 @@
+CHECKS 576 ERRORS 0
+RENDER title-write
+RENDER speech-soft
+RENDER accent-pop
+EXPORT true
+SUCCESS

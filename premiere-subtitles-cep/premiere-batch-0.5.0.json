@@ -1,0 +1,1547 @@
+{
+  "verified": true,
+  "total": 34,
+  "topics": [
+    "Священная пихта",
+    "Кедровая бочка",
+    "Мягкое скрабирование"
+  ],
+  "native": {
+    "name": "[Subtitle Studio] SRT 1791827116366",
+    "id": "3be7cd2c-51b0-426d-a00c-0e04654658f8",
+    "timebase": "8467200000",
+    "audio": 1,
+    "clips": [
+      [
+        "000f453c",
+        "0",
+        "516499200000",
+        [
+          "Текст речи",
+          "{\"capPropFontEdit\":false,\"capPropFontFauxStyleEdit\":false,\"capPropFontSizeEdit\":false,\"capPropTextRunCount\":1,\"fontEditValue\":[\"CeraPro-Medium\"],\"fontFSAllCapsValue\":[false],\"fontFSBoldValue\":[false],\"fontFSItalicValue\":[false],\"fontFSSmallCapsValue\":[false],\"fontSizeEditValue\":[200],\"fontTextRunLength\":[37],\"textEditValue\":\"В традиционной бане\\r— монча — обитали\"}"
+        ],
+        [
+          "Рукописный акцент",
+          "{\"capPropFontEdit\":false,\"capPropFontFauxStyleEdit\":false,\"capPropFontSizeEdit\":false,\"capPropTextRunCount\":1,\"fontEditValue\":[\"Christopher\"],\"fontFSAllCapsValue\":[false],\"fontFSBoldValue\":[false],\"fontFSItalicValue\":[false],\"fontFSSmallCapsValue\":[false],\"fontSizeEditValue\":[200],\"fontTextRunLength\":[0],\"textEditValue\":\"\"}"
+        ],
+        [
+          "Основной текст",
+          "{\"capPropFontEdit\":false,\"capPropFontFauxStyleEdit\":false,\"capPropFontSizeEdit\":false,\"capPropTextRunCount\":1,\"fontEditValue\":[\"BebasNeueCyrillic\"],\"fontFSAllCapsValue\":[false],\"fontFSBoldValue\":[false],\"fontFSItalicValue\":[false],\"fontFSSmallCapsValue\":[false],\"fontSizeEditValue\":[200],\"fontTextRunLength\":[0],\"textEditValue\":\"\"}"
+        ],
+        [
+          "Длительность",
+          2.03
+        ],
+        [
+          "Масштаб акцента",
+          50
+        ],
+        [
+          "Цвет",
+          18374966859414962000
+        ],
+        [
+          "Анимация: 0 нет, 1 мягкая, 2 акцент, 3 раскрытие",
+          1
+        ],
+        [
+          "Высота",
+          50
+        ],
+        [
+          "Масштаб",
+          50
+        ],
+        [
+          "Роль: 1 заголовок, 2 речь, 3 акцент",
+          2
+        ]
+      ],
+      [
+        "000f453d",
+        "541900800000",
+        "1049932800000",
+        [
+          "Текст речи",
+          "{\"capPropFontEdit\":false,\"capPropFontFauxStyleEdit\":false,\"capPropFontSizeEdit\":false,\"capPropTextRunCount\":1,\"fontEditValue\":[\"CeraPro-Medium\"],\"fontFSAllCapsValue\":[false],\"fontFSBoldValue\":[false],\"fontFSItalicValue\":[false],\"fontFSSmallCapsValue\":[false],\"fontSizeEditValue\":[200],\"fontTextRunLength\":[28],\"textEditValue\":\"духи-покровители:\\rМонча-кува\"}"
+        ],
+        [
+          "Рукописный акцент",
+          "{\"capPropFontEdit\":false,\"capPropFontFauxStyleEdit\":false,\"capPropFontSizeEdit\":false,\"capPropTextRunCount\":1,\"fontEditValue\":[\"Christopher\"],\"fontFSAllCapsValue\":[false],\"fontFSBoldValue\":[false],\"fontFSItalicValue\":[false],\"fontFSSmallCapsValue\":[false],\"fontSizeEditValue\":[200],\"fontTextRunLength\":[0],\"textEditValue\":\"\"}"
+        ],
+        [
+          "Основной текст",
+          "{\"capPropFontEdit\":false,\"capPropFontFauxStyleEdit\":false,\"capPropFontSizeEdit\":false,\"capPropTextRunCount\":1,\"fontEditValue\":[\"BebasNeueCyrillic\"],\"fontFSAllCapsValue\":[false],\"fontFSBoldValue\":[false],\"fontFSItalicValue\":[false],\"fontFSSmallCapsValue\":[false],\"fontSizeEditValue\":[200],\"fontTextRunLength\":[0],\"textEditValue\":\"\"}"
+        ],
+        [
+          "Длительность",
+          1.98
+        ],
+        [
+          "Масштаб акцента",
+          50
+        ],
+        [
+          "Цвет",
+          18374966859414962000
+        ],
+        [
+          "Анимация: 0 нет, 1 мягкая, 2 акцент, 3 раскрытие",
+          1
+        ],
+        [
+          "Высота",
+          50
+        ],
+        [
+          "Масштаб",
+          50
+        ],
+        [
+          "Роль: 1 заголовок, 2 речь, 3 акцент",
+          2
+        ]
+      ],
+      [
+        "000f453e",
+        "1049932800000",
+        "1346284800000",
+        [
+          "Текст речи",
+          "{\"capPropFontEdit\":false,\"capPropFontFauxStyleEdit\":false,\"capPropFontSizeEdit\":false,\"capPropTextRunCount\":1,\"fontEditValue\":[\"CeraPro-Medium\"],\"fontFSAllCapsValue\":[false],\"fontFSBoldValue\":[false],\"fontFSItalicValue\":[false],\"fontFSSmallCapsValue\":[false],\"fontSizeEditValue\":[200],\"fontTextRunLength\":[18],\"textEditValue\":\"и Монча-кугыза.\\rИм\"}"
+        ],
+        [
+          "Рукописный акцент",
+          "{\"capPropFontEdit\":false,\"capPropFontFauxStyleEdit\":false,\"capPropFontSizeEdit\":false,\"capPropTextRunCount\":1,\"fontEditValue\":[\"Christopher\"],\"fontFSAllCapsValue\":[false],\"fontFSBoldValue\":[false],\"fontFSItalicValue\":[false],\"fontFSSmallCapsValue\":[false],\"fontSizeEditValue\":[200],\"fontTextRunLength\":[0],\"textEditValue\":\"\"}"
+        ],
+        [
+          "Основной текст",
+          "{\"capPropFontEdit\":false,\"capPropFontFauxStyleEdit\":false,\"capPropFontSizeEdit\":false,\"capPropTextRunCount\":1,\"fontEditValue\":[\"BebasNeueCyrillic\"],\"fontFSAllCapsValue\":[false],\"fontFSBoldValue\":[false],\"fontFSItalicValue\":[false],\"fontFSSmallCapsValue\":[false],\"fontSizeEditValue\":[200],\"fontTextRunLength\":[0],\"textEditValue\":\"\"}"
+        ],
+        [
+          "Длительность",
+          1.18
+        ],
+        [
+          "Масштаб акцента",
+          50
+        ],
+        [
+          "Цвет",
+          18374966859414962000
+        ],
+        [
+          "Анимация: 0 нет, 1 мягкая, 2 акцент, 3 раскрытие",
+          1
+        ],
+        [
+          "Высота",
+          50
+        ],
+        [
+          "Масштаб",
+          50
+        ],
+        [
+          "Роль: 1 заголовок, 2 речь, 3 акцент",
+          2
+        ]
+      ],
+      [
+        "000f453f",
+        "1397088000000",
+        "1752710400000",
+        [
+          "Текст речи",
+          "{\"capPropFontEdit\":false,\"capPropFontFauxStyleEdit\":false,\"capPropFontSizeEdit\":false,\"capPropTextRunCount\":1,\"fontEditValue\":[\"CeraPro-Medium\"],\"fontFSAllCapsValue\":[false],\"fontFSBoldValue\":[false],\"fontFSItalicValue\":[false],\"fontFSSmallCapsValue\":[false],\"fontSizeEditValue\":[200],\"fontTextRunLength\":[23],\"textEditValue\":\"оставляли\\rводу и веник,\"}"
+        ],
+        [
+          "Рукописный акцент",
+          "{\"capPropFontEdit\":false,\"capPropFontFauxStyleEdit\":false,\"capPropFontSizeEdit\":false,\"capPropTextRunCount\":1,\"fontEditValue\":[\"Christopher\"],\"fontFSAllCapsValue\":[false],\"fontFSBoldValue\":[false],\"fontFSItalicValue\":[false],\"fontFSSmallCapsValue\":[false],\"fontSizeEditValue\":[200],\"fontTextRunLength\":[0],\"textEditValue\":\"\"}"
+        ],
+        [
+          "Основной текст",
+          "{\"capPropFontEdit\":false,\"capPropFontFauxStyleEdit\":false,\"capPropFontSizeEdit\":false,\"capPropTextRunCount\":1,\"fontEditValue\":[\"BebasNeueCyrillic\"],\"fontFSAllCapsValue\":[false],\"fontFSBoldValue\":[false],\"fontFSItalicValue\":[false],\"fontFSSmallCapsValue\":[false],\"fontSizeEditValue\":[200],\"fontTextRunLength\":[0],\"textEditValue\":\"\"}"
+        ],
+        [
+          "Длительность",
+          1.4
+        ],
+        [
+          "Масштаб акцента",
+          50
+        ],
+        [
+          "Цвет",
+          18374966859414962000
+        ],
+        [
+          "Анимация: 0 нет, 1 мягкая, 2 акцент, 3 раскрытие",
+          1
+        ],
+        [
+          "Высота",
+          50
+        ],
+        [
+          "Масштаб",
+          50
+        ],
+        [
+          "Роль: 1 заголовок, 2 речь, 3 акцент",
+          2
+        ]
+      ],
+      [
+        "000f4540",
+        "1769644800000",
+        "2362348800000",
+        [
+          "Текст речи",
+          "{\"capPropFontEdit\":false,\"capPropFontFauxStyleEdit\":false,\"capPropFontSizeEdit\":false,\"capPropTextRunCount\":1,\"fontEditValue\":[\"CeraPro-Medium\"],\"fontFSAllCapsValue\":[false],\"fontFSBoldValue\":[false],\"fontFSItalicValue\":[false],\"fontFSSmallCapsValue\":[false],\"fontSizeEditValue\":[200],\"fontTextRunLength\":[36],\"textEditValue\":\"веря, что они хранят\\rздоровье семьи.\"}"
+        ],
+        [
+          "Рукописный акцент",
+          "{\"capPropFontEdit\":false,\"capPropFontFauxStyleEdit\":false,\"capPropFontSizeEdit\":false,\"capPropTextRunCount\":1,\"fontEditValue\":[\"Christopher\"],\"fontFSAllCapsValue\":[false],\"fontFSBoldValue\":[false],\"fontFSItalicValue\":[false],\"fontFSSmallCapsValue\":[false],\"fontSizeEditValue\":[200],\"fontTextRunLength\":[0],\"textEditValue\":\"\"}"
+        ],
+        [
+          "Основной текст",
+          "{\"capPropFontEdit\":false,\"capPropFontFauxStyleEdit\":false,\"capPropFontSizeEdit\":false,\"capPropTextRunCount\":1,\"fontEditValue\":[\"BebasNeueCyrillic\"],\"fontFSAllCapsValue\":[false],\"fontFSBoldValue\":[false],\"fontFSItalicValue\":[false],\"fontFSSmallCapsValue\":[false],\"fontSizeEditValue\":[200],\"fontTextRunLength\":[0],\"textEditValue\":\"\"}"
+        ],
+        [
+          "Длительность",
+          2.36
+        ],
+        [
+          "Масштаб акцента",
+          50
+        ],
+        [
+          "Цвет",
+          18374966859414962000
+        ],
+        [
+          "Анимация: 0 нет, 1 мягкая, 2 акцент, 3 раскрытие",
+          1
+        ],
+        [
+          "Высота",
+          50
+        ],
+        [
+          "Масштаб",
+          50
+        ],
+        [
+          "Роль: 1 заголовок, 2 речь, 3 акцент",
+          2
+        ]
+      ],
+      [
+        "000f4541",
+        "2447020800000",
+        "2785708800000",
+        [
+          "Текст речи",
+          "{\"capPropFontEdit\":false,\"capPropFontFauxStyleEdit\":false,\"capPropFontSizeEdit\":false,\"capPropTextRunCount\":1,\"fontEditValue\":[\"CeraPro-Medium\"],\"fontFSAllCapsValue\":[false],\"fontFSBoldValue\":[false],\"fontFSItalicValue\":[false],\"fontFSSmallCapsValue\":[false],\"fontSizeEditValue\":[200],\"fontTextRunLength\":[0],\"textEditValue\":\"\"}"
+        ],
+        [
+          "Рукописный акцент",
+          "{\"capPropFontEdit\":false,\"capPropFontFauxStyleEdit\":false,\"capPropFontSizeEdit\":false,\"capPropTextRunCount\":1,\"fontEditValue\":[\"Christopher\"],\"fontFSAllCapsValue\":[false],\"fontFSBoldValue\":[false],\"fontFSItalicValue\":[false],\"fontFSSmallCapsValue\":[false],\"fontSizeEditValue\":[200],\"fontTextRunLength\":[5],\"textEditValue\":\"Пихта\"}"
+        ],
+        [
+          "Основной текст",
+          "{\"capPropFontEdit\":false,\"capPropFontFauxStyleEdit\":false,\"capPropFontSizeEdit\":false,\"capPropTextRunCount\":1,\"fontEditValue\":[\"BebasNeueCyrillic\"],\"fontFSAllCapsValue\":[false],\"fontFSBoldValue\":[false],\"fontFSItalicValue\":[false],\"fontFSSmallCapsValue\":[false],\"fontSizeEditValue\":[200],\"fontTextRunLength\":[9],\"textEditValue\":\"СВЯЩЕННАЯ\"}"
+        ],
+        [
+          "Длительность",
+          1.36
+        ],
+        [
+          "Масштаб акцента",
+          50
+        ],
+        [
+          "Цвет",
+          18374966859414962000
+        ],
+        [
+          "Анимация: 0 нет, 1 мягкая, 2 акцент, 3 раскрытие",
+          3
+        ],
+        [
+          "Высота",
+          50
+        ],
+        [
+          "Масштаб",
+          50
+        ],
+        [
+          "Роль: 1 заголовок, 2 речь, 3 акцент",
+          1
+        ]
+      ],
+      [
+        "000f4542",
+        "2785708800000",
+        "3293740800000",
+        [
+          "Текст речи",
+          "{\"capPropFontEdit\":false,\"capPropFontFauxStyleEdit\":false,\"capPropFontSizeEdit\":false,\"capPropTextRunCount\":1,\"fontEditValue\":[\"CeraPro-Medium\"],\"fontFSAllCapsValue\":[false],\"fontFSBoldValue\":[false],\"fontFSItalicValue\":[false],\"fontFSSmallCapsValue\":[false],\"fontSizeEditValue\":[200],\"fontTextRunLength\":[30],\"textEditValue\":\"а священный\\rоберег и целитель,\"}"
+        ],
+        [
+          "Рукописный акцент",
+          "{\"capPropFontEdit\":false,\"capPropFontFauxStyleEdit\":false,\"capPropFontSizeEdit\":false,\"capPropTextRunCount\":1,\"fontEditValue\":[\"Christopher\"],\"fontFSAllCapsValue\":[false],\"fontFSBoldValue\":[false],\"fontFSItalicValue\":[false],\"fontFSSmallCapsValue\":[false],\"fontSizeEditValue\":[200],\"fontTextRunLength\":[0],\"textEditValue\":\"\"}"
+        ],
+        [
+          "Основной текст",
+          "{\"capPropFontEdit\":false,\"capPropFontFauxStyleEdit\":false,\"capPropFontSizeEdit\":false,\"capPropTextRunCount\":1,\"fontEditValue\":[\"BebasNeueCyrillic\"],\"fontFSAllCapsValue\":[false],\"fontFSBoldValue\":[false],\"fontFSItalicValue\":[false],\"fontFSSmallCapsValue\":[false],\"fontSizeEditValue\":[200],\"fontTextRunLength\":[0],\"textEditValue\":\"\"}"
+        ],
+        [
+          "Длительность",
+          2
+        ],
+        [
+          "Масштаб акцента",
+          50
+        ],
+        [
+          "Цвет",
+          18374966859414962000
+        ],
+        [
+          "Анимация: 0 нет, 1 мягкая, 2 акцент, 3 раскрытие",
+          1
+        ],
+        [
+          "Высота",
+          50
+        ],
+        [
+          "Масштаб",
+          50
+        ],
+        [
+          "Роль: 1 заголовок, 2 речь, 3 акцент",
+          2
+        ]
+      ],
+      [
+        "000f4543",
+        "3319142400000",
+        "3691699200000",
+        [
+          "Текст речи",
+          "{\"capPropFontEdit\":false,\"capPropFontFauxStyleEdit\":false,\"capPropFontSizeEdit\":false,\"capPropTextRunCount\":1,\"fontEditValue\":[\"CeraPro-Medium\"],\"fontFSAllCapsValue\":[false],\"fontFSBoldValue\":[false],\"fontFSItalicValue\":[false],\"fontFSSmallCapsValue\":[false],\"fontSizeEditValue\":[200],\"fontTextRunLength\":[24],\"textEditValue\":\"который\\rизгоняет недуги.\"}"
+        ],
+        [
+          "Рукописный акцент",
+          "{\"capPropFontEdit\":false,\"capPropFontFauxStyleEdit\":false,\"capPropFontSizeEdit\":false,\"capPropTextRunCount\":1,\"fontEditValue\":[\"Christopher\"],\"fontFSAllCapsValue\":[false],\"fontFSBoldValue\":[false],\"fontFSItalicValue\":[false],\"fontFSSmallCapsValue\":[false],\"fontSizeEditValue\":[200],\"fontTextRunLength\":[0],\"textEditValue\":\"\"}"
+        ],
+        [
+          "Основной текст",
+          "{\"capPropFontEdit\":false,\"capPropFontFauxStyleEdit\":false,\"capPropFontSizeEdit\":false,\"capPropTextRunCount\":1,\"fontEditValue\":[\"BebasNeueCyrillic\"],\"fontFSAllCapsValue\":[false],\"fontFSBoldValue\":[false],\"fontFSItalicValue\":[false],\"fontFSSmallCapsValue\":[false],\"fontSizeEditValue\":[200],\"fontTextRunLength\":[0],\"textEditValue\":\"\"}"
+        ],
+        [
+          "Длительность",
+          1.46
+        ],
+        [
+          "Масштаб акцента",
+          50
+        ],
+        [
+          "Цвет",
+          18374966859414962000
+        ],
+        [
+          "Анимация: 0 нет, 1 мягкая, 2 акцент, 3 раскрытие",
+          1
+        ],
+        [
+          "Высота",
+          50
+        ],
+        [
+          "Масштаб",
+          50
+        ],
+        [
+          "Роль: 1 заголовок, 2 речь, 3 акцент",
+          2
+        ]
+      ],
+      [
+        "000f4544",
+        "3700166400000",
+        "4140460800000",
+        [
+          "Текст речи",
+          "{\"capPropFontEdit\":false,\"capPropFontFauxStyleEdit\":false,\"capPropFontSizeEdit\":false,\"capPropTextRunCount\":1,\"fontEditValue\":[\"CeraPro-Medium\"],\"fontFSAllCapsValue\":[false],\"fontFSBoldValue\":[false],\"fontFSItalicValue\":[false],\"fontFSSmallCapsValue\":[false],\"fontSizeEditValue\":[200],\"fontTextRunLength\":[33],\"textEditValue\":\"«Шепот леса Мари»\\r— это не просто\"}"
+        ],
+        [
+          "Рукописный акцент",
+          "{\"capPropFontEdit\":false,\"capPropFontFauxStyleEdit\":false,\"capPropFontSizeEdit\":false,\"capPropTextRunCount\":1,\"fontEditValue\":[\"Christopher\"],\"fontFSAllCapsValue\":[false],\"fontFSBoldValue\":[false],\"fontFSItalicValue\":[false],\"fontFSSmallCapsValue\":[false],\"fontSizeEditValue\":[200],\"fontTextRunLength\":[0],\"textEditValue\":\"\"}"
+        ],
+        [
+          "Основной текст",
+          "{\"capPropFontEdit\":false,\"capPropFontFauxStyleEdit\":false,\"capPropFontSizeEdit\":false,\"capPropTextRunCount\":1,\"fontEditValue\":[\"BebasNeueCyrillic\"],\"fontFSAllCapsValue\":[false],\"fontFSBoldValue\":[false],\"fontFSItalicValue\":[false],\"fontFSSmallCapsValue\":[false],\"fontSizeEditValue\":[200],\"fontTextRunLength\":[0],\"textEditValue\":\"\"}"
+        ],
+        [
+          "Длительность",
+          1.75
+        ],
+        [
+          "Масштаб акцента",
+          50
+        ],
+        [
+          "Цвет",
+          18374966859414962000
+        ],
+        [
+          "Анимация: 0 нет, 1 мягкая, 2 акцент, 3 раскрытие",
+          1
+        ],
+        [
+          "Высота",
+          50
+        ],
+        [
+          "Масштаб",
+          50
+        ],
+        [
+          "Роль: 1 заголовок, 2 речь, 3 акцент",
+          2
+        ]
+      ],
+      [
+        "000f4545",
+        "4165862400000",
+        "4758566400000",
+        [
+          "Текст речи",
+          "{\"capPropFontEdit\":false,\"capPropFontFauxStyleEdit\":false,\"capPropFontSizeEdit\":false,\"capPropTextRunCount\":1,\"fontEditValue\":[\"CeraPro-Medium\"],\"fontFSAllCapsValue\":[false],\"fontFSBoldValue\":[false],\"fontFSItalicValue\":[false],\"fontFSSmallCapsValue\":[false],\"fontSizeEditValue\":[200],\"fontTextRunLength\":[34],\"textEditValue\":\"спа-процедура, а\\rцелостный ритуал,\"}"
+        ],
+        [
+          "Рукописный акцент",
+          "{\"capPropFontEdit\":false,\"capPropFontFauxStyleEdit\":false,\"capPropFontSizeEdit\":false,\"capPropTextRunCount\":1,\"fontEditValue\":[\"Christopher\"],\"fontFSAllCapsValue\":[false],\"fontFSBoldValue\":[false],\"fontFSItalicValue\":[false],\"fontFSSmallCapsValue\":[false],\"fontSizeEditValue\":[200],\"fontTextRunLength\":[0],\"textEditValue\":\"\"}"
+        ],
+        [
+          "Основной текст",
+          "{\"capPropFontEdit\":false,\"capPropFontFauxStyleEdit\":false,\"capPropFontSizeEdit\":false,\"capPropTextRunCount\":1,\"fontEditValue\":[\"BebasNeueCyrillic\"],\"fontFSAllCapsValue\":[false],\"fontFSBoldValue\":[false],\"fontFSItalicValue\":[false],\"fontFSSmallCapsValue\":[false],\"fontSizeEditValue\":[200],\"fontTextRunLength\":[0],\"textEditValue\":\"\"}"
+        ],
+        [
+          "Длительность",
+          2.32
+        ],
+        [
+          "Масштаб акцента",
+          50
+        ],
+        [
+          "Цвет",
+          18374966859414962000
+        ],
+        [
+          "Анимация: 0 нет, 1 мягкая, 2 акцент, 3 раскрытие",
+          1
+        ],
+        [
+          "Высота",
+          50
+        ],
+        [
+          "Масштаб",
+          50
+        ],
+        [
+          "Роль: 1 заголовок, 2 речь, 3 акцент",
+          2
+        ]
+      ],
+      [
+        "000f4546",
+        "4800902400000",
+        "5156524800000",
+        [
+          "Текст речи",
+          "{\"capPropFontEdit\":false,\"capPropFontFauxStyleEdit\":false,\"capPropFontSizeEdit\":false,\"capPropTextRunCount\":1,\"fontEditValue\":[\"CeraPro-Medium\"],\"fontFSAllCapsValue\":[false],\"fontFSBoldValue\":[false],\"fontFSItalicValue\":[false],\"fontFSSmallCapsValue\":[false],\"fontSizeEditValue\":[200],\"fontTextRunLength\":[0],\"textEditValue\":\"\"}"
+        ],
+        [
+          "Рукописный акцент",
+          "{\"capPropFontEdit\":false,\"capPropFontFauxStyleEdit\":false,\"capPropFontSizeEdit\":false,\"capPropTextRunCount\":1,\"fontEditValue\":[\"Christopher\"],\"fontFSAllCapsValue\":[false],\"fontFSBoldValue\":[false],\"fontFSItalicValue\":[false],\"fontFSSmallCapsValue\":[false],\"fontSizeEditValue\":[200],\"fontTextRunLength\":[5],\"textEditValue\":\"Бочка\"}"
+        ],
+        [
+          "Основной текст",
+          "{\"capPropFontEdit\":false,\"capPropFontFauxStyleEdit\":false,\"capPropFontSizeEdit\":false,\"capPropTextRunCount\":1,\"fontEditValue\":[\"BebasNeueCyrillic\"],\"fontFSAllCapsValue\":[false],\"fontFSBoldValue\":[false],\"fontFSItalicValue\":[false],\"fontFSSmallCapsValue\":[false],\"fontSizeEditValue\":[200],\"fontTextRunLength\":[8],\"textEditValue\":\"КЕДРОВАЯ\"}"
+        ],
+        [
+          "Длительность",
+          1.4
+        ],
+        [
+          "Масштаб акцента",
+          50
+        ],
+        [
+          "Цвет",
+          18374966859414962000
+        ],
+        [
+          "Анимация: 0 нет, 1 мягкая, 2 акцент, 3 раскрытие",
+          3
+        ],
+        [
+          "Высота",
+          50
+        ],
+        [
+          "Масштаб",
+          50
+        ],
+        [
+          "Роль: 1 заголовок, 2 речь, 3 акцент",
+          1
+        ]
+      ],
+      [
+        "000f4547",
+        "5173459200000",
+        "5715360000000",
+        [
+          "Текст речи",
+          "{\"capPropFontEdit\":false,\"capPropFontFauxStyleEdit\":false,\"capPropFontSizeEdit\":false,\"capPropTextRunCount\":1,\"fontEditValue\":[\"CeraPro-Medium\"],\"fontFSAllCapsValue\":[false],\"fontFSBoldValue\":[false],\"fontFSItalicValue\":[false],\"fontFSSmallCapsValue\":[false],\"fontSizeEditValue\":[200],\"fontTextRunLength\":[32],\"textEditValue\":\"силу ягод и аромат\\rпихты человек\"}"
+        ],
+        [
+          "Рукописный акцент",
+          "{\"capPropFontEdit\":false,\"capPropFontFauxStyleEdit\":false,\"capPropFontSizeEdit\":false,\"capPropTextRunCount\":1,\"fontEditValue\":[\"Christopher\"],\"fontFSAllCapsValue\":[false],\"fontFSBoldValue\":[false],\"fontFSItalicValue\":[false],\"fontFSSmallCapsValue\":[false],\"fontSizeEditValue\":[200],\"fontTextRunLength\":[0],\"textEditValue\":\"\"}"
+        ],
+        [
+          "Основной текст",
+          "{\"capPropFontEdit\":false,\"capPropFontFauxStyleEdit\":false,\"capPropFontSizeEdit\":false,\"capPropTextRunCount\":1,\"fontEditValue\":[\"BebasNeueCyrillic\"],\"fontFSAllCapsValue\":[false],\"fontFSBoldValue\":[false],\"fontFSItalicValue\":[false],\"fontFSSmallCapsValue\":[false],\"fontSizeEditValue\":[200],\"fontTextRunLength\":[0],\"textEditValue\":\"\"}"
+        ],
+        [
+          "Длительность",
+          2.14
+        ],
+        [
+          "Масштаб акцента",
+          50
+        ],
+        [
+          "Цвет",
+          18374966859414962000
+        ],
+        [
+          "Анимация: 0 нет, 1 мягкая, 2 акцент, 3 раскрытие",
+          1
+        ],
+        [
+          "Высота",
+          50
+        ],
+        [
+          "Масштаб",
+          50
+        ],
+        [
+          "Роль: 1 заголовок, 2 речь, 3 акцент",
+          2
+        ]
+      ],
+      [
+        "000f4548",
+        "5715360000000",
+        "6274195200000",
+        [
+          "Текст речи",
+          "{\"capPropFontEdit\":false,\"capPropFontFauxStyleEdit\":false,\"capPropFontSizeEdit\":false,\"capPropTextRunCount\":1,\"fontEditValue\":[\"CeraPro-Medium\"],\"fontFSAllCapsValue\":[false],\"fontFSBoldValue\":[false],\"fontFSItalicValue\":[false],\"fontFSSmallCapsValue\":[false],\"fontSizeEditValue\":[200],\"fontTextRunLength\":[38],\"textEditValue\":\"приобщается к древней\\rмудрости народа,\"}"
+        ],
+        [
+          "Рукописный акцент",
+          "{\"capPropFontEdit\":false,\"capPropFontFauxStyleEdit\":false,\"capPropFontSizeEdit\":false,\"capPropTextRunCount\":1,\"fontEditValue\":[\"Christopher\"],\"fontFSAllCapsValue\":[false],\"fontFSBoldValue\":[false],\"fontFSItalicValue\":[false],\"fontFSSmallCapsValue\":[false],\"fontSizeEditValue\":[200],\"fontTextRunLength\":[0],\"textEditValue\":\"\"}"
+        ],
+        [
+          "Основной текст",
+          "{\"capPropFontEdit\":false,\"capPropFontFauxStyleEdit\":false,\"capPropFontSizeEdit\":false,\"capPropTextRunCount\":1,\"fontEditValue\":[\"BebasNeueCyrillic\"],\"fontFSAllCapsValue\":[false],\"fontFSBoldValue\":[false],\"fontFSItalicValue\":[false],\"fontFSSmallCapsValue\":[false],\"fontSizeEditValue\":[200],\"fontTextRunLength\":[0],\"textEditValue\":\"\"}"
+        ],
+        [
+          "Длительность",
+          2.21
+        ],
+        [
+          "Масштаб акцента",
+          50
+        ],
+        [
+          "Цвет",
+          18374966859414962000
+        ],
+        [
+          "Анимация: 0 нет, 1 мягкая, 2 акцент, 3 раскрытие",
+          1
+        ],
+        [
+          "Высота",
+          50
+        ],
+        [
+          "Масштаб",
+          50
+        ],
+        [
+          "Роль: 1 заголовок, 2 речь, 3 акцент",
+          2
+        ]
+      ],
+      [
+        "000f4549",
+        "6341932800000",
+        "6739891200000",
+        [
+          "Текст речи",
+          "{\"capPropFontEdit\":false,\"capPropFontFauxStyleEdit\":false,\"capPropFontSizeEdit\":false,\"capPropTextRunCount\":1,\"fontEditValue\":[\"CeraPro-Medium\"],\"fontFSAllCapsValue\":[false],\"fontFSBoldValue\":[false],\"fontFSItalicValue\":[false],\"fontFSSmallCapsValue\":[false],\"fontSizeEditValue\":[200],\"fontTextRunLength\":[34],\"textEditValue\":\"который жил в\\rгармонии с природой.\"}"
+        ],
+        [
+          "Рукописный акцент",
+          "{\"capPropFontEdit\":false,\"capPropFontFauxStyleEdit\":false,\"capPropFontSizeEdit\":false,\"capPropTextRunCount\":1,\"fontEditValue\":[\"Christopher\"],\"fontFSAllCapsValue\":[false],\"fontFSBoldValue\":[false],\"fontFSItalicValue\":[false],\"fontFSSmallCapsValue\":[false],\"fontSizeEditValue\":[200],\"fontTextRunLength\":[0],\"textEditValue\":\"\"}"
+        ],
+        [
+          "Основной текст",
+          "{\"capPropFontEdit\":false,\"capPropFontFauxStyleEdit\":false,\"capPropFontSizeEdit\":false,\"capPropTextRunCount\":1,\"fontEditValue\":[\"BebasNeueCyrillic\"],\"fontFSAllCapsValue\":[false],\"fontFSBoldValue\":[false],\"fontFSItalicValue\":[false],\"fontFSSmallCapsValue\":[false],\"fontSizeEditValue\":[200],\"fontTextRunLength\":[0],\"textEditValue\":\"\"}"
+        ],
+        [
+          "Длительность",
+          1.58
+        ],
+        [
+          "Масштаб акцента",
+          50
+        ],
+        [
+          "Цвет",
+          18374966859414962000
+        ],
+        [
+          "Анимация: 0 нет, 1 мягкая, 2 акцент, 3 раскрытие",
+          1
+        ],
+        [
+          "Высота",
+          50
+        ],
+        [
+          "Масштаб",
+          50
+        ],
+        [
+          "Роль: 1 заголовок, 2 речь, 3 акцент",
+          2
+        ]
+      ],
+      [
+        "000f454a",
+        "6799161600000",
+        "7222521600000",
+        [
+          "Текст речи",
+          "{\"capPropFontEdit\":false,\"capPropFontFauxStyleEdit\":false,\"capPropFontSizeEdit\":false,\"capPropTextRunCount\":1,\"fontEditValue\":[\"CeraPro-Medium\"],\"fontFSAllCapsValue\":[false],\"fontFSBoldValue\":[false],\"fontFSItalicValue\":[false],\"fontFSSmallCapsValue\":[false],\"fontSizeEditValue\":[200],\"fontTextRunLength\":[33],\"textEditValue\":\"Процедура начинается\\rс погружения\"}"
+        ],
+        [
+          "Рукописный акцент",
+          "{\"capPropFontEdit\":false,\"capPropFontFauxStyleEdit\":false,\"capPropFontSizeEdit\":false,\"capPropTextRunCount\":1,\"fontEditValue\":[\"Christopher\"],\"fontFSAllCapsValue\":[false],\"fontFSBoldValue\":[false],\"fontFSItalicValue\":[false],\"fontFSSmallCapsValue\":[false],\"fontSizeEditValue\":[200],\"fontTextRunLength\":[0],\"textEditValue\":\"\"}"
+        ],
+        [
+          "Основной текст",
+          "{\"capPropFontEdit\":false,\"capPropFontFauxStyleEdit\":false,\"capPropFontSizeEdit\":false,\"capPropTextRunCount\":1,\"fontEditValue\":[\"BebasNeueCyrillic\"],\"fontFSAllCapsValue\":[false],\"fontFSBoldValue\":[false],\"fontFSItalicValue\":[false],\"fontFSSmallCapsValue\":[false],\"fontSizeEditValue\":[200],\"fontTextRunLength\":[0],\"textEditValue\":\"\"}"
+        ],
+        [
+          "Длительность",
+          1.64
+        ],
+        [
+          "Масштаб акцента",
+          50
+        ],
+        [
+          "Цвет",
+          18374966859414962000
+        ],
+        [
+          "Анимация: 0 нет, 1 мягкая, 2 акцент, 3 раскрытие",
+          1
+        ],
+        [
+          "Высота",
+          50
+        ],
+        [
+          "Масштаб",
+          50
+        ],
+        [
+          "Роль: 1 заголовок, 2 речь, 3 акцент",
+          2
+        ]
+      ],
+      [
+        "000f454b",
+        "7222521600000",
+        "7485004800000",
+        [
+          "Текст речи",
+          "{\"capPropFontEdit\":false,\"capPropFontFauxStyleEdit\":false,\"capPropFontSizeEdit\":false,\"capPropTextRunCount\":1,\"fontEditValue\":[\"CeraPro-Medium\"],\"fontFSAllCapsValue\":[false],\"fontFSBoldValue\":[false],\"fontFSItalicValue\":[false],\"fontFSSmallCapsValue\":[false],\"fontSizeEditValue\":[200],\"fontTextRunLength\":[17],\"textEditValue\":\"в\\rкедровую бочку.\"}"
+        ],
+        [
+          "Рукописный акцент",
+          "{\"capPropFontEdit\":false,\"capPropFontFauxStyleEdit\":false,\"capPropFontSizeEdit\":false,\"capPropTextRunCount\":1,\"fontEditValue\":[\"Christopher\"],\"fontFSAllCapsValue\":[false],\"fontFSBoldValue\":[false],\"fontFSItalicValue\":[false],\"fontFSSmallCapsValue\":[false],\"fontSizeEditValue\":[200],\"fontTextRunLength\":[0],\"textEditValue\":\"\"}"
+        ],
+        [
+          "Основной текст",
+          "{\"capPropFontEdit\":false,\"capPropFontFauxStyleEdit\":false,\"capPropFontSizeEdit\":false,\"capPropTextRunCount\":1,\"fontEditValue\":[\"BebasNeueCyrillic\"],\"fontFSAllCapsValue\":[false],\"fontFSBoldValue\":[false],\"fontFSItalicValue\":[false],\"fontFSSmallCapsValue\":[false],\"fontSizeEditValue\":[200],\"fontTextRunLength\":[0],\"textEditValue\":\"\"}"
+        ],
+        [
+          "Длительность",
+          1.04
+        ],
+        [
+          "Масштаб акцента",
+          50
+        ],
+        [
+          "Цвет",
+          18374966859414962000
+        ],
+        [
+          "Анимация: 0 нет, 1 мягкая, 2 акцент, 3 раскрытие",
+          1
+        ],
+        [
+          "Высота",
+          50
+        ],
+        [
+          "Масштаб",
+          50
+        ],
+        [
+          "Роль: 1 заголовок, 2 речь, 3 акцент",
+          2
+        ]
+      ],
+      [
+        "000f454c",
+        "7586611200000",
+        "7959168000000",
+        [
+          "Текст речи",
+          "{\"capPropFontEdit\":false,\"capPropFontFauxStyleEdit\":false,\"capPropFontSizeEdit\":false,\"capPropTextRunCount\":1,\"fontEditValue\":[\"CeraPro-Medium\"],\"fontFSAllCapsValue\":[false],\"fontFSBoldValue\":[false],\"fontFSItalicValue\":[false],\"fontFSSmallCapsValue\":[false],\"fontSizeEditValue\":[200],\"fontTextRunLength\":[31],\"textEditValue\":\"Это не просто\\rпрогрев, а мощная\"}"
+        ],
+        [
+          "Рукописный акцент",
+          "{\"capPropFontEdit\":false,\"capPropFontFauxStyleEdit\":false,\"capPropFontSizeEdit\":false,\"capPropTextRunCount\":1,\"fontEditValue\":[\"Christopher\"],\"fontFSAllCapsValue\":[false],\"fontFSBoldValue\":[false],\"fontFSItalicValue\":[false],\"fontFSSmallCapsValue\":[false],\"fontSizeEditValue\":[200],\"fontTextRunLength\":[0],\"textEditValue\":\"\"}"
+        ],
+        [
+          "Основной текст",
+          "{\"capPropFontEdit\":false,\"capPropFontFauxStyleEdit\":false,\"capPropFontSizeEdit\":false,\"capPropTextRunCount\":1,\"fontEditValue\":[\"BebasNeueCyrillic\"],\"fontFSAllCapsValue\":[false],\"fontFSBoldValue\":[false],\"fontFSItalicValue\":[false],\"fontFSSmallCapsValue\":[false],\"fontSizeEditValue\":[200],\"fontTextRunLength\":[0],\"textEditValue\":\"\"}"
+        ],
+        [
+          "Длительность",
+          1.45
+        ],
+        [
+          "Масштаб акцента",
+          50
+        ],
+        [
+          "Цвет",
+          18374966859414962000
+        ],
+        [
+          "Анимация: 0 нет, 1 мягкая, 2 акцент, 3 раскрытие",
+          1
+        ],
+        [
+          "Высота",
+          50
+        ],
+        [
+          "Масштаб",
+          50
+        ],
+        [
+          "Роль: 1 заголовок, 2 речь, 3 акцент",
+          2
+        ]
+      ],
+      [
+        "000f454d",
+        "7959168000000",
+        "8458732800000",
+        [
+          "Текст речи",
+          "{\"capPropFontEdit\":false,\"capPropFontFauxStyleEdit\":false,\"capPropFontSizeEdit\":false,\"capPropTextRunCount\":1,\"fontEditValue\":[\"CeraPro-Medium\"],\"fontFSAllCapsValue\":[false],\"fontFSBoldValue\":[false],\"fontFSItalicValue\":[false],\"fontFSSmallCapsValue\":[false],\"fontSizeEditValue\":[200],\"fontTextRunLength\":[30],\"textEditValue\":\"фитотерапевтическая\\rпроцедура:\"}"
+        ],
+        [
+          "Рукописный акцент",
+          "{\"capPropFontEdit\":false,\"capPropFontFauxStyleEdit\":false,\"capPropFontSizeEdit\":false,\"capPropTextRunCount\":1,\"fontEditValue\":[\"Christopher\"],\"fontFSAllCapsValue\":[false],\"fontFSBoldValue\":[false],\"fontFSItalicValue\":[false],\"fontFSSmallCapsValue\":[false],\"fontSizeEditValue\":[200],\"fontTextRunLength\":[0],\"textEditValue\":\"\"}"
+        ],
+        [
+          "Основной текст",
+          "{\"capPropFontEdit\":false,\"capPropFontFauxStyleEdit\":false,\"capPropFontSizeEdit\":false,\"capPropTextRunCount\":1,\"fontEditValue\":[\"BebasNeueCyrillic\"],\"fontFSAllCapsValue\":[false],\"fontFSBoldValue\":[false],\"fontFSItalicValue\":[false],\"fontFSSmallCapsValue\":[false],\"fontSizeEditValue\":[200],\"fontTextRunLength\":[0],\"textEditValue\":\"\"}"
+        ],
+        [
+          "Длительность",
+          1.98
+        ],
+        [
+          "Масштаб акцента",
+          50
+        ],
+        [
+          "Цвет",
+          18374966859414962000
+        ],
+        [
+          "Анимация: 0 нет, 1 мягкая, 2 акцент, 3 раскрытие",
+          1
+        ],
+        [
+          "Высота",
+          50
+        ],
+        [
+          "Масштаб",
+          50
+        ],
+        [
+          "Роль: 1 заголовок, 2 речь, 3 акцент",
+          2
+        ]
+      ],
+      [
+        "000f454e",
+        "8518003200000",
+        "8941363200000",
+        [
+          "Текст речи",
+          "{\"capPropFontEdit\":false,\"capPropFontFauxStyleEdit\":false,\"capPropFontSizeEdit\":false,\"capPropTextRunCount\":1,\"fontEditValue\":[\"CeraPro-Medium\"],\"fontFSAllCapsValue\":[false],\"fontFSBoldValue\":[false],\"fontFSItalicValue\":[false],\"fontFSSmallCapsValue\":[false],\"fontSizeEditValue\":[200],\"fontTextRunLength\":[30],\"textEditValue\":\"вещества кедра\\rотлично борются\"}"
+        ],
+        [
+          "Рукописный акцент",
+          "{\"capPropFontEdit\":false,\"capPropFontFauxStyleEdit\":false,\"capPropFontSizeEdit\":false,\"capPropTextRunCount\":1,\"fontEditValue\":[\"Christopher\"],\"fontFSAllCapsValue\":[false],\"fontFSBoldValue\":[false],\"fontFSItalicValue\":[false],\"fontFSSmallCapsValue\":[false],\"fontSizeEditValue\":[200],\"fontTextRunLength\":[0],\"textEditValue\":\"\"}"
+        ],
+        [
+          "Основной текст",
+          "{\"capPropFontEdit\":false,\"capPropFontFauxStyleEdit\":false,\"capPropFontSizeEdit\":false,\"capPropTextRunCount\":1,\"fontEditValue\":[\"BebasNeueCyrillic\"],\"fontFSAllCapsValue\":[false],\"fontFSBoldValue\":[false],\"fontFSItalicValue\":[false],\"fontFSSmallCapsValue\":[false],\"fontSizeEditValue\":[200],\"fontTextRunLength\":[0],\"textEditValue\":\"\"}"
+        ],
+        [
+          "Длительность",
+          1.67
+        ],
+        [
+          "Масштаб акцента",
+          50
+        ],
+        [
+          "Цвет",
+          18374966859414962000
+        ],
+        [
+          "Анимация: 0 нет, 1 мягкая, 2 акцент, 3 раскрытие",
+          1
+        ],
+        [
+          "Высота",
+          50
+        ],
+        [
+          "Масштаб",
+          50
+        ],
+        [
+          "Роль: 1 заголовок, 2 речь, 3 акцент",
+          2
+        ]
+      ],
+      [
+        "000f454f",
+        "8941363200000",
+        "9373190400000",
+        [
+          "Текст речи",
+          "{\"capPropFontEdit\":false,\"capPropFontFauxStyleEdit\":false,\"capPropFontSizeEdit\":false,\"capPropTextRunCount\":1,\"fontEditValue\":[\"CeraPro-Medium\"],\"fontFSAllCapsValue\":[false],\"fontFSBoldValue\":[false],\"fontFSItalicValue\":[false],\"fontFSSmallCapsValue\":[false],\"fontSizeEditValue\":[200],\"fontTextRunLength\":[24],\"textEditValue\":\"с вирусами\\rи бактериями.\"}"
+        ],
+        [
+          "Рукописный акцент",
+          "{\"capPropFontEdit\":false,\"capPropFontFauxStyleEdit\":false,\"capPropFontSizeEdit\":false,\"capPropTextRunCount\":1,\"fontEditValue\":[\"Christopher\"],\"fontFSAllCapsValue\":[false],\"fontFSBoldValue\":[false],\"fontFSItalicValue\":[false],\"fontFSSmallCapsValue\":[false],\"fontSizeEditValue\":[200],\"fontTextRunLength\":[0],\"textEditValue\":\"\"}"
+        ],
+        [
+          "Основной текст",
+          "{\"capPropFontEdit\":false,\"capPropFontFauxStyleEdit\":false,\"capPropFontSizeEdit\":false,\"capPropTextRunCount\":1,\"fontEditValue\":[\"BebasNeueCyrillic\"],\"fontFSAllCapsValue\":[false],\"fontFSBoldValue\":[false],\"fontFSItalicValue\":[false],\"fontFSSmallCapsValue\":[false],\"fontSizeEditValue\":[200],\"fontTextRunLength\":[0],\"textEditValue\":\"\"}"
+        ],
+        [
+          "Длительность",
+          1.69
+        ],
+        [
+          "Масштаб акцента",
+          50
+        ],
+        [
+          "Цвет",
+          18374966859414962000
+        ],
+        [
+          "Анимация: 0 нет, 1 мягкая, 2 акцент, 3 раскрытие",
+          1
+        ],
+        [
+          "Высота",
+          50
+        ],
+        [
+          "Масштаб",
+          50
+        ],
+        [
+          "Роль: 1 заголовок, 2 речь, 3 акцент",
+          2
+        ]
+      ],
+      [
+        "000f4550",
+        "9415526400000",
+        "9974361600000",
+        [
+          "Текст речи",
+          "{\"capPropFontEdit\":false,\"capPropFontFauxStyleEdit\":false,\"capPropFontSizeEdit\":false,\"capPropTextRunCount\":1,\"fontEditValue\":[\"CeraPro-Medium\"],\"fontFSAllCapsValue\":[false],\"fontFSBoldValue\":[false],\"fontFSItalicValue\":[false],\"fontFSSmallCapsValue\":[false],\"fontSizeEditValue\":[200],\"fontTextRunLength\":[0],\"textEditValue\":\"\"}"
+        ],
+        [
+          "Рукописный акцент",
+          "{\"capPropFontEdit\":false,\"capPropFontFauxStyleEdit\":false,\"capPropFontSizeEdit\":false,\"capPropTextRunCount\":1,\"fontEditValue\":[\"Christopher\"],\"fontFSAllCapsValue\":[false],\"fontFSBoldValue\":[false],\"fontFSItalicValue\":[false],\"fontFSSmallCapsValue\":[false],\"fontSizeEditValue\":[200],\"fontTextRunLength\":[13],\"textEditValue\":\"Скрабирование\"}"
+        ],
+        [
+          "Основной текст",
+          "{\"capPropFontEdit\":false,\"capPropFontFauxStyleEdit\":false,\"capPropFontSizeEdit\":false,\"capPropTextRunCount\":1,\"fontEditValue\":[\"BebasNeueCyrillic\"],\"fontFSAllCapsValue\":[false],\"fontFSBoldValue\":[false],\"fontFSItalicValue\":[false],\"fontFSSmallCapsValue\":[false],\"fontSizeEditValue\":[200],\"fontTextRunLength\":[6],\"textEditValue\":\"МЯГКОЕ\"}"
+        ],
+        [
+          "Длительность",
+          2.2
+        ],
+        [
+          "Масштаб акцента",
+          50
+        ],
+        [
+          "Цвет",
+          18374966859414962000
+        ],
+        [
+          "Анимация: 0 нет, 1 мягкая, 2 акцент, 3 раскрытие",
+          3
+        ],
+        [
+          "Высота",
+          50
+        ],
+        [
+          "Масштаб",
+          50
+        ],
+        [
+          "Роль: 1 заголовок, 2 речь, 3 акцент",
+          1
+        ]
+      ],
+      [
+        "000f4551",
+        "10033632000000",
+        "10516262400000",
+        [
+          "Текст речи",
+          "{\"capPropFontEdit\":false,\"capPropFontFauxStyleEdit\":false,\"capPropFontSizeEdit\":false,\"capPropTextRunCount\":1,\"fontEditValue\":[\"CeraPro-Medium\"],\"fontFSAllCapsValue\":[false],\"fontFSBoldValue\":[false],\"fontFSItalicValue\":[false],\"fontFSSmallCapsValue\":[false],\"fontSizeEditValue\":[200],\"fontTextRunLength\":[35],\"textEditValue\":\"Этот этап — дань\\rуважения марийской\"}"
+        ],
+        [
+          "Рукописный акцент",
+          "{\"capPropFontEdit\":false,\"capPropFontFauxStyleEdit\":false,\"capPropFontSizeEdit\":false,\"capPropTextRunCount\":1,\"fontEditValue\":[\"Christopher\"],\"fontFSAllCapsValue\":[false],\"fontFSBoldValue\":[false],\"fontFSItalicValue\":[false],\"fontFSSmallCapsValue\":[false],\"fontSizeEditValue\":[200],\"fontTextRunLength\":[0],\"textEditValue\":\"\"}"
+        ],
+        [
+          "Основной текст",
+          "{\"capPropFontEdit\":false,\"capPropFontFauxStyleEdit\":false,\"capPropFontSizeEdit\":false,\"capPropTextRunCount\":1,\"fontEditValue\":[\"BebasNeueCyrillic\"],\"fontFSAllCapsValue\":[false],\"fontFSBoldValue\":[false],\"fontFSItalicValue\":[false],\"fontFSSmallCapsValue\":[false],\"fontSizeEditValue\":[200],\"fontTextRunLength\":[0],\"textEditValue\":\"\"}"
+        ],
+        [
+          "Длительность",
+          1.89
+        ],
+        [
+          "Масштаб акцента",
+          50
+        ],
+        [
+          "Цвет",
+          18374966859414962000
+        ],
+        [
+          "Анимация: 0 нет, 1 мягкая, 2 акцент, 3 раскрытие",
+          1
+        ],
+        [
+          "Высота",
+          50
+        ],
+        [
+          "Масштаб",
+          50
+        ],
+        [
+          "Роль: 1 заголовок, 2 речь, 3 акцент",
+          2
+        ]
+      ],
+      [
+        "000f4552",
+        "10516262400000",
+        "11058163200000",
+        [
+          "Текст речи",
+          "{\"capPropFontEdit\":false,\"capPropFontFauxStyleEdit\":false,\"capPropFontSizeEdit\":false,\"capPropTextRunCount\":1,\"fontEditValue\":[\"CeraPro-Medium\"],\"fontFSAllCapsValue\":[false],\"fontFSBoldValue\":[false],\"fontFSItalicValue\":[false],\"fontFSSmallCapsValue\":[false],\"fontSizeEditValue\":[200],\"fontTextRunLength\":[33],\"textEditValue\":\"традиции использовать\\r«съедобные»\"}"
+        ],
+        [
+          "Рукописный акцент",
+          "{\"capPropFontEdit\":false,\"capPropFontFauxStyleEdit\":false,\"capPropFontSizeEdit\":false,\"capPropTextRunCount\":1,\"fontEditValue\":[\"Christopher\"],\"fontFSAllCapsValue\":[false],\"fontFSBoldValue\":[false],\"fontFSItalicValue\":[false],\"fontFSSmallCapsValue\":[false],\"fontSizeEditValue\":[200],\"fontTextRunLength\":[0],\"textEditValue\":\"\"}"
+        ],
+        [
+          "Основной текст",
+          "{\"capPropFontEdit\":false,\"capPropFontFauxStyleEdit\":false,\"capPropFontSizeEdit\":false,\"capPropTextRunCount\":1,\"fontEditValue\":[\"BebasNeueCyrillic\"],\"fontFSAllCapsValue\":[false],\"fontFSBoldValue\":[false],\"fontFSItalicValue\":[false],\"fontFSSmallCapsValue\":[false],\"fontSizeEditValue\":[200],\"fontTextRunLength\":[0],\"textEditValue\":\"\"}"
+        ],
+        [
+          "Длительность",
+          2.138
+        ],
+        [
+          "Масштаб акцента",
+          50
+        ],
+        [
+          "Цвет",
+          18374966859414962000
+        ],
+        [
+          "Анимация: 0 нет, 1 мягкая, 2 акцент, 3 раскрытие",
+          1
+        ],
+        [
+          "Высота",
+          50
+        ],
+        [
+          "Масштаб",
+          50
+        ],
+        [
+          "Роль: 1 заголовок, 2 речь, 3 акцент",
+          2
+        ]
+      ],
+      [
+        "000f4553",
+        "11058163200000",
+        "11193638400000",
+        [
+          "Текст речи",
+          "{\"capPropFontEdit\":false,\"capPropFontFauxStyleEdit\":false,\"capPropFontSizeEdit\":false,\"capPropTextRunCount\":1,\"fontEditValue\":[\"CeraPro-Medium\"],\"fontFSAllCapsValue\":[false],\"fontFSBoldValue\":[false],\"fontFSItalicValue\":[false],\"fontFSSmallCapsValue\":[false],\"fontSizeEditValue\":[200],\"fontTextRunLength\":[8],\"textEditValue\":\"средства\"}"
+        ],
+        [
+          "Рукописный акцент",
+          "{\"capPropFontEdit\":false,\"capPropFontFauxStyleEdit\":false,\"capPropFontSizeEdit\":false,\"capPropTextRunCount\":1,\"fontEditValue\":[\"Christopher\"],\"fontFSAllCapsValue\":[false],\"fontFSBoldValue\":[false],\"fontFSItalicValue\":[false],\"fontFSSmallCapsValue\":[false],\"fontSizeEditValue\":[200],\"fontTextRunLength\":[0],\"textEditValue\":\"\"}"
+        ],
+        [
+          "Основной текст",
+          "{\"capPropFontEdit\":false,\"capPropFontFauxStyleEdit\":false,\"capPropFontSizeEdit\":false,\"capPropTextRunCount\":1,\"fontEditValue\":[\"BebasNeueCyrillic\"],\"fontFSAllCapsValue\":[false],\"fontFSBoldValue\":[false],\"fontFSItalicValue\":[false],\"fontFSSmallCapsValue\":[false],\"fontSizeEditValue\":[200],\"fontTextRunLength\":[0],\"textEditValue\":\"\"}"
+        ],
+        [
+          "Длительность",
+          0.552
+        ],
+        [
+          "Масштаб акцента",
+          50
+        ],
+        [
+          "Цвет",
+          18374966859414962000
+        ],
+        [
+          "Анимация: 0 нет, 1 мягкая, 2 акцент, 3 раскрытие",
+          1
+        ],
+        [
+          "Высота",
+          50
+        ],
+        [
+          "Масштаб",
+          50
+        ],
+        [
+          "Роль: 1 заголовок, 2 речь, 3 акцент",
+          2
+        ]
+      ],
+      [
+        "000f4554",
+        "11219040000000",
+        "11566195200000",
+        [
+          "Текст речи",
+          "{\"capPropFontEdit\":false,\"capPropFontFauxStyleEdit\":false,\"capPropFontSizeEdit\":false,\"capPropTextRunCount\":1,\"fontEditValue\":[\"CeraPro-Medium\"],\"fontFSAllCapsValue\":[false],\"fontFSBoldValue\":[false],\"fontFSItalicValue\":[false],\"fontFSSmallCapsValue\":[false],\"fontSizeEditValue\":[200],\"fontTextRunLength\":[19],\"textEditValue\":\"для ухода\\rза кожей:\"}"
+        ],
+        [
+          "Рукописный акцент",
+          "{\"capPropFontEdit\":false,\"capPropFontFauxStyleEdit\":false,\"capPropFontSizeEdit\":false,\"capPropTextRunCount\":1,\"fontEditValue\":[\"Christopher\"],\"fontFSAllCapsValue\":[false],\"fontFSBoldValue\":[false],\"fontFSItalicValue\":[false],\"fontFSSmallCapsValue\":[false],\"fontSizeEditValue\":[200],\"fontTextRunLength\":[0],\"textEditValue\":\"\"}"
+        ],
+        [
+          "Основной текст",
+          "{\"capPropFontEdit\":false,\"capPropFontFauxStyleEdit\":false,\"capPropFontSizeEdit\":false,\"capPropTextRunCount\":1,\"fontEditValue\":[\"BebasNeueCyrillic\"],\"fontFSAllCapsValue\":[false],\"fontFSBoldValue\":[false],\"fontFSItalicValue\":[false],\"fontFSSmallCapsValue\":[false],\"fontSizeEditValue\":[200],\"fontTextRunLength\":[0],\"textEditValue\":\"\"}"
+        ],
+        [
+          "Длительность",
+          1.34
+        ],
+        [
+          "Масштаб акцента",
+          50
+        ],
+        [
+          "Цвет",
+          18374966859414962000
+        ],
+        [
+          "Анимация: 0 нет, 1 мягкая, 2 акцент, 3 раскрытие",
+          1
+        ],
+        [
+          "Высота",
+          50
+        ],
+        [
+          "Масштаб",
+          50
+        ],
+        [
+          "Роль: 1 заголовок, 2 речь, 3 акцент",
+          2
+        ]
+      ],
+      [
+        "000f4555",
+        "11600064000000",
+        "12048825600000",
+        [
+          "Текст речи",
+          "{\"capPropFontEdit\":false,\"capPropFontFauxStyleEdit\":false,\"capPropFontSizeEdit\":false,\"capPropTextRunCount\":1,\"fontEditValue\":[\"CeraPro-Medium\"],\"fontFSAllCapsValue\":[false],\"fontFSBoldValue\":[false],\"fontFSItalicValue\":[false],\"fontFSSmallCapsValue\":[false],\"fontSizeEditValue\":[200],\"fontTextRunLength\":[37],\"textEditValue\":\"мёд — натуральный\\rисточник витаминов,\"}"
+        ],
+        [
+          "Рукописный акцент",
+          "{\"capPropFontEdit\":false,\"capPropFontFauxStyleEdit\":false,\"capPropFontSizeEdit\":false,\"capPropTextRunCount\":1,\"fontEditValue\":[\"Christopher\"],\"fontFSAllCapsValue\":[false],\"fontFSBoldValue\":[false],\"fontFSItalicValue\":[false],\"fontFSSmallCapsValue\":[false],\"fontSizeEditValue\":[200],\"fontTextRunLength\":[0],\"textEditValue\":\"\"}"
+        ],
+        [
+          "Основной текст",
+          "{\"capPropFontEdit\":false,\"capPropFontFauxStyleEdit\":false,\"capPropFontSizeEdit\":false,\"capPropTextRunCount\":1,\"fontEditValue\":[\"BebasNeueCyrillic\"],\"fontFSAllCapsValue\":[false],\"fontFSBoldValue\":[false],\"fontFSItalicValue\":[false],\"fontFSSmallCapsValue\":[false],\"fontSizeEditValue\":[200],\"fontTextRunLength\":[0],\"textEditValue\":\"\"}"
+        ],
+        [
+          "Длительность",
+          1.76
+        ],
+        [
+          "Масштаб акцента",
+          50
+        ],
+        [
+          "Цвет",
+          18374966859414962000
+        ],
+        [
+          "Анимация: 0 нет, 1 мягкая, 2 акцент, 3 раскрытие",
+          1
+        ],
+        [
+          "Высота",
+          50
+        ],
+        [
+          "Масштаб",
+          50
+        ],
+        [
+          "Роль: 1 заголовок, 2 речь, 3 акцент",
+          2
+        ]
+      ],
+      [
+        "000f4556",
+        "12065760000000",
+        "12472185600000",
+        [
+          "Текст речи",
+          "{\"capPropFontEdit\":false,\"capPropFontFauxStyleEdit\":false,\"capPropFontSizeEdit\":false,\"capPropTextRunCount\":1,\"fontEditValue\":[\"CeraPro-Medium\"],\"fontFSAllCapsValue\":[false],\"fontFSBoldValue\":[false],\"fontFSItalicValue\":[false],\"fontFSSmallCapsValue\":[false],\"fontSizeEditValue\":[200],\"fontTextRunLength\":[28],\"textEditValue\":\"а брусника —\\rлучшее средство\"}"
+        ],
+        [
+          "Рукописный акцент",
+          "{\"capPropFontEdit\":false,\"capPropFontFauxStyleEdit\":false,\"capPropFontSizeEdit\":false,\"capPropTextRunCount\":1,\"fontEditValue\":[\"Christopher\"],\"fontFSAllCapsValue\":[false],\"fontFSBoldValue\":[false],\"fontFSItalicValue\":[false],\"fontFSSmallCapsValue\":[false],\"fontSizeEditValue\":[200],\"fontTextRunLength\":[0],\"textEditValue\":\"\"}"
+        ],
+        [
+          "Основной текст",
+          "{\"capPropFontEdit\":false,\"capPropFontFauxStyleEdit\":false,\"capPropFontSizeEdit\":false,\"capPropTextRunCount\":1,\"fontEditValue\":[\"BebasNeueCyrillic\"],\"fontFSAllCapsValue\":[false],\"fontFSBoldValue\":[false],\"fontFSItalicValue\":[false],\"fontFSSmallCapsValue\":[false],\"fontSizeEditValue\":[200],\"fontTextRunLength\":[0],\"textEditValue\":\"\"}"
+        ],
+        [
+          "Длительность",
+          1.592
+        ],
+        [
+          "Масштаб акцента",
+          50
+        ],
+        [
+          "Цвет",
+          18374966859414962000
+        ],
+        [
+          "Анимация: 0 нет, 1 мягкая, 2 акцент, 3 раскрытие",
+          1
+        ],
+        [
+          "Высота",
+          50
+        ],
+        [
+          "Масштаб",
+          50
+        ],
+        [
+          "Роль: 1 заголовок, 2 речь, 3 акцент",
+          2
+        ]
+      ],
+      [
+        "000f4557",
+        "12472185600000",
+        "12709267200000",
+        [
+          "Текст речи",
+          "{\"capPropFontEdit\":false,\"capPropFontFauxStyleEdit\":false,\"capPropFontSizeEdit\":false,\"capPropTextRunCount\":1,\"fontEditValue\":[\"CeraPro-Medium\"],\"fontFSAllCapsValue\":[false],\"fontFSBoldValue\":[false],\"fontFSItalicValue\":[false],\"fontFSSmallCapsValue\":[false],\"fontSizeEditValue\":[200],\"fontTextRunLength\":[15],\"textEditValue\":\"для\\rомоложения.\"}"
+        ],
+        [
+          "Рукописный акцент",
+          "{\"capPropFontEdit\":false,\"capPropFontFauxStyleEdit\":false,\"capPropFontSizeEdit\":false,\"capPropTextRunCount\":1,\"fontEditValue\":[\"Christopher\"],\"fontFSAllCapsValue\":[false],\"fontFSBoldValue\":[false],\"fontFSItalicValue\":[false],\"fontFSSmallCapsValue\":[false],\"fontSizeEditValue\":[200],\"fontTextRunLength\":[0],\"textEditValue\":\"\"}"
+        ],
+        [
+          "Основной текст",
+          "{\"capPropFontEdit\":false,\"capPropFontFauxStyleEdit\":false,\"capPropFontSizeEdit\":false,\"capPropTextRunCount\":1,\"fontEditValue\":[\"BebasNeueCyrillic\"],\"fontFSAllCapsValue\":[false],\"fontFSBoldValue\":[false],\"fontFSItalicValue\":[false],\"fontFSSmallCapsValue\":[false],\"fontSizeEditValue\":[200],\"fontTextRunLength\":[0],\"textEditValue\":\"\"}"
+        ],
+        [
+          "Длительность",
+          0.928
+        ],
+        [
+          "Масштаб акцента",
+          50
+        ],
+        [
+          "Цвет",
+          18374966859414962000
+        ],
+        [
+          "Анимация: 0 нет, 1 мягкая, 2 акцент, 3 раскрытие",
+          1
+        ],
+        [
+          "Высота",
+          50
+        ],
+        [
+          "Масштаб",
+          50
+        ],
+        [
+          "Роль: 1 заголовок, 2 речь, 3 акцент",
+          2
+        ]
+      ],
+      [
+        "000f4558",
+        "12760070400000",
+        "13158028800000",
+        [
+          "Текст речи",
+          "{\"capPropFontEdit\":false,\"capPropFontFauxStyleEdit\":false,\"capPropFontSizeEdit\":false,\"capPropTextRunCount\":1,\"fontEditValue\":[\"CeraPro-Medium\"],\"fontFSAllCapsValue\":[false],\"fontFSBoldValue\":[false],\"fontFSItalicValue\":[false],\"fontFSSmallCapsValue\":[false],\"fontSizeEditValue\":[200],\"fontTextRunLength\":[29],\"textEditValue\":\"Завершающий и\\rключевой этап —\"}"
+        ],
+        [
+          "Рукописный акцент",
+          "{\"capPropFontEdit\":false,\"capPropFontFauxStyleEdit\":false,\"capPropFontSizeEdit\":false,\"capPropTextRunCount\":1,\"fontEditValue\":[\"Christopher\"],\"fontFSAllCapsValue\":[false],\"fontFSBoldValue\":[false],\"fontFSItalicValue\":[false],\"fontFSSmallCapsValue\":[false],\"fontSizeEditValue\":[200],\"fontTextRunLength\":[0],\"textEditValue\":\"\"}"
+        ],
+        [
+          "Основной текст",
+          "{\"capPropFontEdit\":false,\"capPropFontFauxStyleEdit\":false,\"capPropFontSizeEdit\":false,\"capPropTextRunCount\":1,\"fontEditValue\":[\"BebasNeueCyrillic\"],\"fontFSAllCapsValue\":[false],\"fontFSBoldValue\":[false],\"fontFSItalicValue\":[false],\"fontFSSmallCapsValue\":[false],\"fontSizeEditValue\":[200],\"fontTextRunLength\":[0],\"textEditValue\":\"\"}"
+        ],
+        [
+          "Длительность",
+          1.549
+        ],
+        [
+          "Масштаб акцента",
+          50
+        ],
+        [
+          "Цвет",
+          18374966859414962000
+        ],
+        [
+          "Анимация: 0 нет, 1 мягкая, 2 акцент, 3 раскрытие",
+          1
+        ],
+        [
+          "Высота",
+          50
+        ],
+        [
+          "Масштаб",
+          50
+        ],
+        [
+          "Роль: 1 заголовок, 2 речь, 3 акцент",
+          2
+        ]
+      ],
+      [
+        "000f4559",
+        "13158028800000",
+        "13327372800000",
+        [
+          "Текст речи",
+          "{\"capPropFontEdit\":false,\"capPropFontFauxStyleEdit\":false,\"capPropFontSizeEdit\":false,\"capPropTextRunCount\":1,\"fontEditValue\":[\"CeraPro-Medium\"],\"fontFSAllCapsValue\":[false],\"fontFSBoldValue\":[false],\"fontFSItalicValue\":[false],\"fontFSSmallCapsValue\":[false],\"fontSizeEditValue\":[200],\"fontTextRunLength\":[12],\"textEditValue\":\"это глубокий\"}"
+        ],
+        [
+          "Рукописный акцент",
+          "{\"capPropFontEdit\":false,\"capPropFontFauxStyleEdit\":false,\"capPropFontSizeEdit\":false,\"capPropTextRunCount\":1,\"fontEditValue\":[\"Christopher\"],\"fontFSAllCapsValue\":[false],\"fontFSBoldValue\":[false],\"fontFSItalicValue\":[false],\"fontFSSmallCapsValue\":[false],\"fontSizeEditValue\":[200],\"fontTextRunLength\":[0],\"textEditValue\":\"\"}"
+        ],
+        [
+          "Основной текст",
+          "{\"capPropFontEdit\":false,\"capPropFontFauxStyleEdit\":false,\"capPropFontSizeEdit\":false,\"capPropTextRunCount\":1,\"fontEditValue\":[\"BebasNeueCyrillic\"],\"fontFSAllCapsValue\":[false],\"fontFSBoldValue\":[false],\"fontFSItalicValue\":[false],\"fontFSSmallCapsValue\":[false],\"fontSizeEditValue\":[200],\"fontTextRunLength\":[0],\"textEditValue\":\"\"}"
+        ],
+        [
+          "Длительность",
+          0.681
+        ],
+        [
+          "Масштаб акцента",
+          50
+        ],
+        [
+          "Цвет",
+          18374966859414962000
+        ],
+        [
+          "Анимация: 0 нет, 1 мягкая, 2 акцент, 3 раскрытие",
+          1
+        ],
+        [
+          "Высота",
+          50
+        ],
+        [
+          "Масштаб",
+          50
+        ],
+        [
+          "Роль: 1 заголовок, 2 речь, 3 акцент",
+          2
+        ]
+      ],
+      [
+        "000f455a",
+        "13327372800000",
+        "13996281600000",
+        [
+          "Текст речи",
+          "{\"capPropFontEdit\":false,\"capPropFontFauxStyleEdit\":false,\"capPropFontSizeEdit\":false,\"capPropTextRunCount\":1,\"fontEditValue\":[\"CeraPro-Medium\"],\"fontFSAllCapsValue\":[false],\"fontFSBoldValue\":[false],\"fontFSItalicValue\":[false],\"fontFSSmallCapsValue\":[false],\"fontSizeEditValue\":[200],\"fontTextRunLength\":[40],\"textEditValue\":\"массаж с использованием\\rпихтового масла,\"}"
+        ],
+        [
+          "Рукописный акцент",
+          "{\"capPropFontEdit\":false,\"capPropFontFauxStyleEdit\":false,\"capPropFontSizeEdit\":false,\"capPropTextRunCount\":1,\"fontEditValue\":[\"Christopher\"],\"fontFSAllCapsValue\":[false],\"fontFSBoldValue\":[false],\"fontFSItalicValue\":[false],\"fontFSSmallCapsValue\":[false],\"fontSizeEditValue\":[200],\"fontTextRunLength\":[0],\"textEditValue\":\"\"}"
+        ],
+        [
+          "Основной текст",
+          "{\"capPropFontEdit\":false,\"capPropFontFauxStyleEdit\":false,\"capPropFontSizeEdit\":false,\"capPropTextRunCount\":1,\"fontEditValue\":[\"BebasNeueCyrillic\"],\"fontFSAllCapsValue\":[false],\"fontFSBoldValue\":[false],\"fontFSItalicValue\":[false],\"fontFSSmallCapsValue\":[false],\"fontSizeEditValue\":[200],\"fontTextRunLength\":[0],\"textEditValue\":\"\"}"
+        ],
+        [
+          "Длительность",
+          2.63
+        ],
+        [
+          "Масштаб акцента",
+          50
+        ],
+        [
+          "Цвет",
+          18374966859414962000
+        ],
+        [
+          "Анимация: 0 нет, 1 мягкая, 2 акцент, 3 раскрытие",
+          1
+        ],
+        [
+          "Высота",
+          50
+        ],
+        [
+          "Масштаб",
+          50
+        ],
+        [
+          "Роль: 1 заголовок, 2 речь, 3 акцент",
+          2
+        ]
+      ],
+      [
+        "000f455b",
+        "14072486400000",
+        "14665190400000",
+        [
+          "Текст речи",
+          "{\"capPropFontEdit\":false,\"capPropFontFauxStyleEdit\":false,\"capPropFontSizeEdit\":false,\"capPropTextRunCount\":1,\"fontEditValue\":[\"CeraPro-Medium\"],\"fontFSAllCapsValue\":[false],\"fontFSBoldValue\":[false],\"fontFSItalicValue\":[false],\"fontFSSmallCapsValue\":[false],\"fontSizeEditValue\":[200],\"fontTextRunLength\":[38],\"textEditValue\":\"которое марийцы\\rиздревле считали даром\"}"
+        ],
+        [
+          "Рукописный акцент",
+          "{\"capPropFontEdit\":false,\"capPropFontFauxStyleEdit\":false,\"capPropFontSizeEdit\":false,\"capPropTextRunCount\":1,\"fontEditValue\":[\"Christopher\"],\"fontFSAllCapsValue\":[false],\"fontFSBoldValue\":[false],\"fontFSItalicValue\":[false],\"fontFSSmallCapsValue\":[false],\"fontSizeEditValue\":[200],\"fontTextRunLength\":[0],\"textEditValue\":\"\"}"
+        ],
+        [
+          "Основной текст",
+          "{\"capPropFontEdit\":false,\"capPropFontFauxStyleEdit\":false,\"capPropFontSizeEdit\":false,\"capPropTextRunCount\":1,\"fontEditValue\":[\"BebasNeueCyrillic\"],\"fontFSAllCapsValue\":[false],\"fontFSBoldValue\":[false],\"fontFSItalicValue\":[false],\"fontFSSmallCapsValue\":[false],\"fontSizeEditValue\":[200],\"fontTextRunLength\":[0],\"textEditValue\":\"\"}"
+        ],
+        [
+          "Длительность",
+          2.336
+        ],
+        [
+          "Масштаб акцента",
+          50
+        ],
+        [
+          "Цвет",
+          18374966859414962000
+        ],
+        [
+          "Анимация: 0 нет, 1 мягкая, 2 акцент, 3 раскрытие",
+          1
+        ],
+        [
+          "Высота",
+          50
+        ],
+        [
+          "Масштаб",
+          50
+        ],
+        [
+          "Роль: 1 заголовок, 2 речь, 3 акцент",
+          2
+        ]
+      ],
+      [
+        "000f455c",
+        "14665190400000",
+        "14749862400000",
+        [
+          "Текст речи",
+          "{\"capPropFontEdit\":false,\"capPropFontFauxStyleEdit\":false,\"capPropFontSizeEdit\":false,\"capPropTextRunCount\":1,\"fontEditValue\":[\"CeraPro-Medium\"],\"fontFSAllCapsValue\":[false],\"fontFSBoldValue\":[false],\"fontFSItalicValue\":[false],\"fontFSSmallCapsValue\":[false],\"fontSizeEditValue\":[200],\"fontTextRunLength\":[5],\"textEditValue\":\"леса.\"}"
+        ],
+        [
+          "Рукописный акцент",
+          "{\"capPropFontEdit\":false,\"capPropFontFauxStyleEdit\":false,\"capPropFontSizeEdit\":false,\"capPropTextRunCount\":1,\"fontEditValue\":[\"Christopher\"],\"fontFSAllCapsValue\":[false],\"fontFSBoldValue\":[false],\"fontFSItalicValue\":[false],\"fontFSSmallCapsValue\":[false],\"fontSizeEditValue\":[200],\"fontTextRunLength\":[0],\"textEditValue\":\"\"}"
+        ],
+        [
+          "Основной текст",
+          "{\"capPropFontEdit\":false,\"capPropFontFauxStyleEdit\":false,\"capPropFontSizeEdit\":false,\"capPropTextRunCount\":1,\"fontEditValue\":[\"BebasNeueCyrillic\"],\"fontFSAllCapsValue\":[false],\"fontFSBoldValue\":[false],\"fontFSItalicValue\":[false],\"fontFSSmallCapsValue\":[false],\"fontSizeEditValue\":[200],\"fontTextRunLength\":[0],\"textEditValue\":\"\"}"
+        ],
+        [
+          "Длительность",
+          0.344
+        ],
+        [
+          "Масштаб акцента",
+          50
+        ],
+        [
+          "Цвет",
+          18374966859414962000
+        ],
+        [
+          "Анимация: 0 нет, 1 мягкая, 2 акцент, 3 раскрытие",
+          1
+        ],
+        [
+          "Высота",
+          50
+        ],
+        [
+          "Масштаб",
+          50
+        ],
+        [
+          "Роль: 1 заголовок, 2 речь, 3 акцент",
+          2
+        ]
+      ],
+      [
+        "000f455d",
+        "14800665600000",
+        "15469574400000",
+        [
+          "Текст речи",
+          "{\"capPropFontEdit\":false,\"capPropFontFauxStyleEdit\":false,\"capPropFontSizeEdit\":false,\"capPropTextRunCount\":1,\"fontEditValue\":[\"CeraPro-Medium\"],\"fontFSAllCapsValue\":[false],\"fontFSBoldValue\":[false],\"fontFSItalicValue\":[false],\"fontFSSmallCapsValue\":[false],\"fontSizeEditValue\":[200],\"fontTextRunLength\":[39],\"textEditValue\":\"А после бани по\\rтрадиции — чай с мёдом.\"}"
+        ],
+        [
+          "Рукописный акцент",
+          "{\"capPropFontEdit\":false,\"capPropFontFauxStyleEdit\":false,\"capPropFontSizeEdit\":false,\"capPropTextRunCount\":1,\"fontEditValue\":[\"Christopher\"],\"fontFSAllCapsValue\":[false],\"fontFSBoldValue\":[false],\"fontFSItalicValue\":[false],\"fontFSSmallCapsValue\":[false],\"fontSizeEditValue\":[200],\"fontTextRunLength\":[0],\"textEditValue\":\"\"}"
+        ],
+        [
+          "Основной текст",
+          "{\"capPropFontEdit\":false,\"capPropFontFauxStyleEdit\":false,\"capPropFontSizeEdit\":false,\"capPropTextRunCount\":1,\"fontEditValue\":[\"BebasNeueCyrillic\"],\"fontFSAllCapsValue\":[false],\"fontFSBoldValue\":[false],\"fontFSItalicValue\":[false],\"fontFSSmallCapsValue\":[false],\"fontSizeEditValue\":[200],\"fontTextRunLength\":[0],\"textEditValue\":\"\"}"
+        ],
+        [
+          "Длительность",
+          2.65
+        ],
+        [
+          "Масштаб акцента",
+          50
+        ],
+        [
+          "Цвет",
+          18374966859414962000
+        ],
+        [
+          "Анимация: 0 нет, 1 мягкая, 2 акцент, 3 раскрытие",
+          1
+        ],
+        [
+          "Высота",
+          50
+        ],
+        [
+          "Масштаб",
+          50
+        ],
+        [
+          "Роль: 1 заголовок, 2 речь, 3 акцент",
+          2
+        ]
+      ]
+    ]
+  }
+}

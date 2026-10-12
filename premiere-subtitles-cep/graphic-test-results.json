@@ -1,0 +1,128 @@
+{
+  "checks": [
+    {
+      "name": "create only in blank sequence, original clips and locks intact",
+      "passed": true
+    },
+    {
+      "name": "duplicate creation blocked",
+      "passed": true
+    },
+    {
+      "name": "host reload preserves duplicate guard and clip access",
+      "passed": true
+    },
+    {
+      "name": "ambiguous creation cannot be retried after host reload",
+      "passed": true
+    },
+    {
+      "name": "project switch blocks text writes even with matching sequence IDs",
+      "passed": true
+    },
+    {
+      "name": "missing template before creation",
+      "passed": true
+    },
+    {
+      "name": "wrong aspect before creation",
+      "passed": true
+    },
+    {
+      "name": "sequence failure never clears original",
+      "passed": true
+    },
+    {
+      "name": "missing portrait preset stops before creation",
+      "passed": true
+    },
+    {
+      "name": "nonempty new sequence blocks import without removing media",
+      "passed": true
+    },
+    {
+      "name": "restore describes the same clip without creating a sequence",
+      "passed": true
+    },
+    {
+      "name": "text roundtrip handles quotes and Cyrillic",
+      "passed": true
+    },
+    {
+      "name": "manifest host loads when fileName is unavailable",
+      "passed": true
+    },
+    {
+      "name": "batch owns separate state and blocks duplicate begin after reload",
+      "passed": true
+    },
+    {
+      "name": "unconfirmed batch step cannot import another clip",
+      "passed": true
+    },
+    {
+      "name": "batch frame rounding, commit order and project guard",
+      "passed": true
+    },
+    {
+      "name": "batch rejects subframe timing and refuses premature finish",
+      "passed": true
+    },
+    {
+      "name": "completed batch update checks document identity and index",
+      "passed": true
+    },
+    {
+      "name": "missing confirmed sequence allows explicit new batch while keeping original",
+      "passed": true
+    },
+    {
+      "name": "changed confirmed clips allow fresh sequence but prevent update",
+      "passed": true
+    },
+    {
+      "name": "confirmed partial batch can update existing cue and start a separate sequence",
+      "passed": true
+    },
+    {
+      "name": "confirmed partial registry reconnects without another import",
+      "passed": true
+    },
+    {
+      "name": "restore completed registry reconnects existing clip without import",
+      "passed": true
+    },
+    {
+      "name": "restore refuses unconfirmed import and switched project",
+      "passed": true
+    },
+    {
+      "name": "restore changed confirmed registry without importing",
+      "passed": true
+    },
+    {
+      "name": "failed fresh preflight preserves completed registry",
+      "passed": true
+    },
+    {
+      "name": "browser verified response and no errors",
+      "passed": true
+    },
+    {
+      "name": "mixed title preserves Christopher sentence case and native font",
+      "passed": true
+    },
+    {
+      "name": "load failure exposes diagnostic, no creation, retry allowed",
+      "passed": true
+    },
+    {
+      "name": "mutation EvalScript error stays locked",
+      "passed": true
+    },
+    {
+      "name": "generated loader executes JSX and escapes path",
+      "passed": true
+    }
+  ]
+}

@@ -1,0 +1,16 @@
+{
+  "verified": true,
+  "started": {
+    "playing": true,
+    "time": 0.39642,
+    "end": 2.16,
+    "source": "file:///C:/Users/Artem/AppData/Roaming/SubtitleStudio/jobs/72e274a1-ae1c-4cd5-8dc0-257fea57a151/preview.wav"
+  },
+  "stopped": {
+    "playing": false,
+    "time": 2.172254,
+    "end": 2.16,
+    "source": "file:///C:/Users/Artem/AppData/Roaming/SubtitleStudio/jobs/72e274a1-ae1c-4cd5-8dc0-257fea57a151/preview.wav"
+  },
+  "currentDocumentUnchanged": true
+}

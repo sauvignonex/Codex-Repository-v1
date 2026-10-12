@@ -1,0 +1,21 @@
+node_modules/
+__pycache__/
+*.pyc
+.env
+.env.*
+!.env.example
+*.pek
+local-ai/
+Adobe Premiere Pro Video Previews/
+Adobe Premiere Pro Audio Previews/
+*.PRV/
+*.zip
+
+# Private local credentials (never publish)
+.env
+.env.*
+!.env.example
+secrets/
+keys/
+*.key
+*.pem

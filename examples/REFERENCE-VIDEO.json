@@ -1,0 +1,13 @@
+{
+  "original": {
+    "name": "Рилс Колобки [Обложка вшита].mp4",
+    "bytes": 131519908,
+    "sha256": "a45077430f675ffac6982cdc58d6b2dc99db4713d940e9d45693474bea776793"
+  },
+  "copy": {
+    "path": "examples/Рилс Колобки — референс.mp4",
+    "bytes": 38374854,
+    "sha256": "9474d8b2bd8b51d332a2c049f271128edc9edcf868288ee19f619f533f858593"
+  },
+  "transcode": "H.264 CRF24 fast + AAC192k, original unchanged"
+}

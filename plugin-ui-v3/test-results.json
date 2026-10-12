@@ -1,0 +1,76 @@
+{
+  "input": "outputs/plugin-ui-v3/panel-preview.html",
+  "checks": [
+    {
+      "name": "manual-line-breaks",
+      "passed": true
+    },
+    {
+      "name": "empty-text-blocked",
+      "passed": true
+    },
+    {
+      "name": "three-lines-not-silently-merged",
+      "passed": true
+    },
+    {
+      "name": "real-font-name",
+      "passed": true
+    },
+    {
+      "name": "long-unbroken-text-blocked",
+      "passed": true
+    },
+    {
+      "name": "invalid-restored-enums",
+      "passed": true
+    },
+    {
+      "name": "restore-design",
+      "passed": true
+    },
+    {
+      "name": "headline-revert",
+      "passed": true
+    },
+    {
+      "name": "safe-zone-extreme-layouts",
+      "passed": true
+    },
+    {
+      "name": "layout-dark-320",
+      "passed": true
+    },
+    {
+      "name": "layout-dark-520",
+      "passed": true
+    },
+    {
+      "name": "layout-dark-736",
+      "passed": true
+    },
+    {
+      "name": "layout-light-320",
+      "passed": true
+    },
+    {
+      "name": "layout-light-520",
+      "passed": true
+    },
+    {
+      "name": "layout-light-736",
+      "passed": true
+    },
+    {
+      "name": "html-is-text",
+      "passed": true
+    },
+    {
+      "name": "no-runtime-errors",
+      "passed": true
+    }
+  ],
+  "passed": 17,
+  "total": 17,
+  "errors": []
+}

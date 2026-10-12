@@ -1,0 +1,9 @@
+{
+  "python": "D:/Projects Adobe/Разработка плагина/local-ai/python/pythonw.exe",
+  "ffmpeg": "D:/Projects Adobe/Разработка плагина/local-ai/ffmpeg.exe",
+  "whisper": "D:/Projects Adobe/Разработка плагина/local-ai/whisper-cpp/Release/whisper-cli.exe",
+  "model": "D:/Projects Adobe/Разработка плагина/local-ai/ggml-large-v3-turbo.bin",
+  "llama": "D:/Projects Adobe/Разработка плагина/local-ai/llama-cpp/llama-server.exe",
+  "topicsModel": "D:/Projects Adobe/Разработка плагина/local-ai/Qwen3-4B-Instruct-2507-Q4_K_M.gguf",
+  "llamaSha256": "7e3547f7aeaf4f72611517235c11b020270dc5b0dc898589a90979ef720e8502"
+}

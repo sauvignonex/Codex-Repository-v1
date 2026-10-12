@@ -1,0 +1,22 @@
+{
+  "version": 3,
+  "savedAt": "2026-10-12",
+  "subtitlePanel": {
+    "text": "Марийский десерт",
+    "size": 100,
+    "position": 50,
+    "color": "#ffffff",
+    "safe": true,
+    "motion": "soft",
+    "source": "srt",
+    "role": "auto"
+  },
+  "design": {"radius": 16, "accent": "#a99afa"},
+  "features": {
+    "semanticHeadlinesApproved": true,
+    "directAiProcessingFromPluginRequired": true,
+    "reviewBeforeApply": true,
+    "preserveOriginalTranscript": true
+  },
+  "implementation": {"uiDemo": true, "premiereConnected": false, "aiConnected": false}
+}

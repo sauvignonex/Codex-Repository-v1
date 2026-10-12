@@ -1,0 +1,11 @@
+{
+  "passed": 6,
+  "checks": [
+    "subword tokens reconstruct timed words",
+    "missing token offsets explicitly approximate",
+    "non speech annotations excluded",
+    "missing audio returns recoverable error",
+    "silence rejected and intermediate audio removed",
+    "cancelled recognition never launches decoder"
+  ]
+}

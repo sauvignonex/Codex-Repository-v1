@@ -1,0 +1,9 @@
+{
+  "passed": 4,
+  "checks": [
+    "native file filter receives array",
+    "no selected audio falls back to file selection",
+    "selection error never opens unexpected dialog",
+    "uncertain warning names only low-confidence words"
+  ]
+}
