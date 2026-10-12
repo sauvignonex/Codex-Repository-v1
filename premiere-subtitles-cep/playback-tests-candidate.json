@@ -1,0 +1,11 @@
+{
+  "passed": 6,
+  "checks": [
+    "foreign, changed and empty sequences never render",
+    "full range overrides narrow marks and restores all four marks",
+    "cancel reported, marks restored and repeat possible",
+    "no success without preview ranges",
+    "partial green range cannot report success",
+    "render completion and cancel both release browser lock"
+  ]
+}

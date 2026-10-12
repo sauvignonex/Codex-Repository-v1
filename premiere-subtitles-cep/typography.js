@@ -27,5 +27,7 @@
     }).sort((a,b)=>b.fontSize-a.fontSize);
     const best=ranked[0];return {...best,valid:best.fontSize>=30,reason:best.fontSize>=30?'':'Фраза слишком длинная для читаемого размера. Раздели блок.'};
   }
-  window.subtitleTypography={plan,sentence,fitSpeech};
+  // A font baseline, not the visible glyph box, anchors consecutive words.
+  function speechPosition(position=50){return {right:964,baseline:Math.max(315,Math.min(1100,375+(position-50)*19.2))};}
+  window.subtitleTypography={plan,sentence,fitSpeech,speechPosition};
 })();

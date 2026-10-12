@@ -1,0 +1,12 @@
+{
+  "status": "CEP-contract-tested; native Premiere verification pending",
+  "passed": 6,
+  "checks": [
+    "concurrent loads share one request and reuse confirmed success",
+    "ordinary and malformed host errors reject promptly and allow retry",
+    "timeout rejects and late response does not settle a retry",
+    "sync CEP exception releases the request for retry",
+    "all JSX files are preflighted before evaluating any host code",
+    "unicode extension path and complete JSX load are confirmed"
+  ]
+}

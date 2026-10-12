@@ -114,7 +114,22 @@
           const right=y+boxHeight/2>notchY?notchRight:rightLimit;
           if(boxWidth>right-leftLimit)continue;
           const x=clamp(speechFit?w*964/1080-boxWidth/2:w/2,leftLimit+boxWidth/2,right-boxWidth/2);
-          caption.style.left=x+'px';caption.style.top=y+'px';valid=true;break outer;
+          caption.style.left=x+'px';caption.style.top=y+'px';
+          if(speechFit){
+            // Zero-size inline box measures the actual CSS baseline, including font fallback.
+            const baseline=document.createElement('span');baseline.dataset.speechBaseline='';
+            baseline.style.cssText='display:inline-block;width:0;height:0;vertical-align:baseline';
+            caption.replaceChildren(document.createTextNode(option.lines[0]),baseline);
+            if(option.lines.length>1)caption.append(document.createTextNode('\n'+option.lines.slice(1).join('\n')));
+            const box=caption.getBoundingClientRect(),offset=baseline.getBoundingClientRect().top-box.top;
+            const anchor=window.subtitleTypography.speechPosition(state.position);
+            measure.font=weight+' '+font+'px '+caption.style.fontFamily;
+            const bearing=Math.min(...option.lines.map(line=>{const ink=measure.measureText(line);return ink.width-ink.actualBoundingBoxRight;}));
+            // Right-align visible ink rather than the font's advance/side bearing.
+            caption.style.left=(w*anchor.right/1080-boxWidth/2+bearing)+'px';
+            caption.style.top=(h*anchor.baseline/1920+box.height/2-offset)+'px';
+          }
+          valid=true;break outer;
         }
       }
       if(!valid)problem='Текст не помещается читаемым размером. Раздели его на несколько блоков.';
@@ -148,7 +163,7 @@
     if(!valid)return;if(anim)anim.cancel();
     if(state.motion==='none'||matchMedia('(prefers-reduced-motion: reduce)').matches)return;
     const layout=window.subtitlePreview.getLayout(),cue=window.SubtitleDocument?.getSelected(),duration=Math.max(.034,Math.min(6,cue?(cue.end-cue.start)/1000:1.2));
-    const caption=captionElement(),parts=caption.children.length?[...caption.children]:[caption],scale=q('ss-frame').clientWidth/1080;
+    const caption=captionElement(),parts=layout.role!=='speech'&&caption.children.length?[...caption.children]:[caption],scale=q('ss-frame').clientWidth/1080;
     const animations=parts.map((target,i)=>{const hand=layout.role==='accent'||layout.role==='title'&&i===1;
       const frames=[];for(let n=0;n<=Math.max(2,Math.ceil(duration*60));n++){const offset=n/Math.max(2,Math.ceil(duration*60)),m=SubtitleMotion.sample(offset*duration,duration,state.motion,layout.role,hand,Math.max(1,target.textContent.replace(/[^0-9A-Za-zА-Яа-яЁё]/g,'').length));
         const base=target===caption?'translate(-50%,-50%) ':'';
