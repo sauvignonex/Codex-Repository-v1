@@ -1,0 +1,7 @@
+{
+  "source": "89 actual Premiere RGB frames; black shadow separately checked in native AE full RGBA",
+  "frames": 89,
+  "first_word_pause_stable": true,
+  "hold_stable": true,
+  "failures": []
+}

@@ -1,0 +1,113 @@
+{
+  "source": "Native AE white opaque glyph pixels; 8-connected component check of \u0412\u041a\u0423\u0421, not generic language segmentation",
+  "rows": [
+    {
+      "source": "before",
+      "first_word_8_connected_components": 1,
+      "glyph_bounds": [
+        [
+          110,
+          1460,
+          357,
+          1585
+        ]
+      ],
+      "bounding_box_horizontal_gaps": [],
+      "full_body_empty_column_runs": [
+        [
+          11,
+          357,
+          368
+        ]
+      ]
+    },
+    {
+      "source": "after",
+      "first_word_8_connected_components": 4,
+      "glyph_bounds": [
+        [
+          110,
+          1458,
+          161,
+          1558
+        ],
+        [
+          172,
+          1458,
+          225,
+          1558
+        ],
+        [
+          230,
+          1458,
+          295,
+          1558
+        ],
+        [
+          302,
+          1457,
+          351,
+          1559
+        ]
+      ],
+      "bounding_box_horizontal_gaps": [
+        11,
+        5,
+        7
+      ],
+      "full_body_empty_column_runs": [
+        [
+          35,
+          351,
+          386
+        ],
+        [
+          13,
+          637,
+          650
+        ],
+        [
+          11,
+          702,
+          713
+        ],
+        [
+          11,
+          161,
+          172
+        ],
+        [
+          9,
+          454,
+          463
+        ],
+        [
+          8,
+          577,
+          585
+        ],
+        [
+          8,
+          520,
+          528
+        ],
+        [
+          7,
+          762,
+          769
+        ],
+        [
+          7,
+          295,
+          302
+        ],
+        [
+          5,
+          225,
+          230
+        ]
+      ]
+    }
+  ],
+  "pass": true
+}
