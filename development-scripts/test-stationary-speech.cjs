@@ -17,15 +17,15 @@ function evaluate(layers,name,prop,{role=2,mode=1,time=0,duration=1,position=50,
  return vm.runInNewContext(layers[name].transform[prop].expression,context);
 }
 const rects=[{left:0,top:-142,width:53,height:143},{left:-7,top:-148,width:315,height:190},{left:5,top:-180,width:580,height:225},{left:-11,top:-146,width:1850,height:188}];
-for(const rect of rects)for(const mode of [0,1,2,3])for(const duration of [.06,.1,.233,1.2,6])for(const time of [0,duration*.05,duration*.5,duration*.99]){
+for(const rect of rects)for(const mode of [0,1,2,3])for(const duration of [.06,.1,Math.fround(.1),.101,.233,1.2,6])for(const time of [0,duration*.05,duration*.5,duration*.99]){
  const options={rect,mode,duration,time};const anchor=evaluate(next,'Текст речи','anchorPoint',options),scale=evaluate(next,'Текст речи','scale',options),pos=evaluate(next,'Текст речи','position',options);
  assert.equal(pos[0]+(rect.left+rect.width-anchor[0])*scale[0]/100,964);
  assert.equal(pos[1]-anchor[1]*scale[1]/100,375);
  const m=motion.sample(time,duration,['none','soft','pop','write'][mode],'speech');
  assert.equal(m.scale,1);assert.equal(m.x,0);assert.equal(m.y,0);assert.equal(m.blur,0);assert.equal(m.reveal,1);
- const opacity=evaluate(next,'Текст речи','opacity',options);assert.ok(Math.abs(opacity/100-m.opacity)<1e-9);if(duration<=.1)assert.equal(opacity,100);
+ const opacity=evaluate(next,'Текст речи','opacity',options);assert.ok(Math.abs(opacity/100-m.opacity)<1e-9);if(duration<=.100001)assert.equal(opacity,100);
 }
-checks.push('AE expression model: fixed ink right and baseline across glyph bounds, modes and durations; preview opacity agrees; 60ms stays visible');
+checks.push('AE expression model: fixed ink right and baseline across glyph bounds, modes and durations; preview opacity agrees; 60/100ms including AE float32 slider rounding stay visible');
 for(const role of [1,3])for(const name of ['Основной текст','Рукописный акцент'])for(const mode of [0,1,2,3])for(const time of [0,.06,.2,.6,1.19])for(const prop of ['anchorPoint','scale','position','opacity']){
  const options={role,mode,time,duration:1.2};assert.deepEqual(Array.from([evaluate(next,name,prop,options)]).flat(),Array.from([evaluate(old,name,prop,options)]).flat());
 }

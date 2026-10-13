@@ -75,7 +75,7 @@
       const result=await SubtitleStyleAdvisor.analyze(cue,neighbors,controller.signal);
       if(controller.signal.aborted||request!==styleRequest||key!==styleContext()||q('ss-style-editor').hidden)return;
       if(result){const advice=SubtitleStyleAdvisor.recommend(state.text,{role:result.role},cue);semanticAdvice={key,advice:{...advice,reason:result.reason}};render();q('ss-style-detection').textContent='Предложение локальной модели. Проверь его перед применением.';}
-      else q('ss-style-detection').textContent='Недостаточно уверенности для смены роли. Сохраняем текущий тип.';
+      else q('ss-style-detection').textContent='Смена роли для этого блока не рекомендована. Сохраняем текущий тип.';
     }catch(_){if(request===styleRequest&&!q('ss-style-editor').hidden)q('ss-style-detection').textContent='Анализ модели недоступен. Подбор по текущему тексту работает; тип можно уточнить вручную.';}
     finally{clearTimeout(timeout);}
   }

@@ -1,0 +1,2 @@
+SUCCESS geometry samples=1680 font=CeraPro-Medium
+Это проверка свойств AE. Видео стыков слов, Premiere и полный кэш ещё требуют отдельной проверки.
