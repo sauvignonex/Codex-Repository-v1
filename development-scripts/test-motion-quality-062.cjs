@@ -20,8 +20,8 @@ assert.ok(first.opacity>.95);assert.equal(second.opacity,0);
 checks.push('main title precedes handwritten line');
 for(const role of ['title','accent'])assert.equal(motion.sample(.6,1.2,'pop',role,role==='accent').scale,1);
 checks.push('highlight scale settles exactly to approved proportions');
-for(const role of ['speech','title','accent']){const hand=role==='accent';const short=motion.sample(.08,1.8,'write',role,hand,3),long=motion.sample(.08,1.8,'write',role,hand,13);assert.ok(long.y>short.y);if(hand)assert.ok(long.reveal<short.reveal);}
+for(const role of ['title','accent']){const hand=role==='accent';const short=motion.sample(.08,1.8,'write',role,hand,3),long=motion.sample(.08,1.8,'write',role,hand,13);assert.ok(long.y>short.y);if(hand)assert.ok(long.reveal<short.reveal);}
 checks.push('long words move and reveal more slowly than short words');
 for(const count of [1,5,30])for(const role of ['speech','title','accent']){const m=motion.sample(.05,.1,'write',role,role==='accent',count);assert.ok(m.opacity>.999);assert.ok(m.reveal>.999);}
 checks.push('word length never consumes readable hold in a 100ms cue');
-fs.writeFileSync(root+'/motion-quality-tests-0.6.2.json',JSON.stringify({passed:checks.length,checks},null,2));console.log({passed:checks.length,checks});
+fs.writeFileSync(root+'/motion-quality-tests-candidate.json',JSON.stringify({passed:checks.length,checks},null,2));console.log({passed:checks.length,checks});

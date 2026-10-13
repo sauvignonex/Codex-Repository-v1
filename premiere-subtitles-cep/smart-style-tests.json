@@ -1,0 +1,21 @@
+{
+  "status": "browser/local advisor tested; semantic AI quality and Adobe animation acceptance pending",
+  "passed": 15,
+  "checks": [
+    "auto role follows explicit role or short line pair, never short word count alone",
+    "short highlights stay fully visible and normal titles retain sequential reveal",
+    "one style entry opens explainable settings without changing current document",
+    "speech style applies only to selected block; manual proportions/color, words, times and neighbors preserved without native write",
+    "undo restores exact prior style; speech has meaningful immediate display control",
+    "manual role correction adapts available controls and close restores collapsed entry",
+    "selection closes stale editor/undo; title and 60ms accent receive distinct appropriate motion",
+    "Escape closes settings and returns keyboard focus",
+    "chosen style survives panel reload",
+    "local model uses surrounding speech to propose role; explicit apply changes style without rewriting text or timing",
+    "late semantic response after block switch cannot change new selection or reopen editor",
+    "uncertain or invalid semantic roles cannot become style proposals",
+    "offline model leaves explainable local style selection available",
+    "abort releases style analysis even while shared model startup is still pending",
+    "smart style editor fits narrow/wide panels and keeps final action visible"
+  ]
+}

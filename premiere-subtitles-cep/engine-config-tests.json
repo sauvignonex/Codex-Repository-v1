@@ -1,0 +1,12 @@
+{
+  "status": "CEP-config-contract-tested; native engines not started",
+  "passed": 6,
+  "checks": [
+    "missing and malformed JSON configurations produce actionable errors",
+    "all blank, missing or non-string paths rejected before filesystem calls",
+    "missing files and directory paths report the concrete engine",
+    "topic runtime digest is required before startup",
+    "speech and topics validate only their required engines",
+    "worker presence and Unicode extension root are checked"
+  ]
+}

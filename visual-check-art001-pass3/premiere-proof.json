@@ -1,0 +1,70 @@
+{
+  "source": "368 actual Premiere PNG; RGB-visible contour excludes invisible black shadow, separately verified in AE full alpha",
+  "rows": [
+    {
+      "family": "A",
+      "frames": 89,
+      "first_visible": 1,
+      "hold": [
+        41,
+        88
+      ],
+      "stable": true
+    },
+    {
+      "family": "B",
+      "frames": 135,
+      "first_visible": 2,
+      "hold": [
+        30,
+        127
+      ],
+      "stable": true
+    },
+    {
+      "family": "C",
+      "frames": 144,
+      "first_visible": 1,
+      "hold": [
+        15,
+        134
+      ],
+      "stable": true
+    }
+  ],
+  "live_document_identical": true,
+  "prior_sequence_ids_names_counts_preserved": true,
+  "prior_sequences": [
+    [
+      "0cc7cd58-6dc9-4f39-8837-b3ad6fefcec0",
+      "Adjustment 79ec",
+      1,
+      0
+    ],
+    [
+      "428ae3a6-9b46-4044-b516-28fe1467bef4",
+      "Вертикальный шаблон",
+      0,
+      1
+    ],
+    [
+      "7009ef8e-a7b4-4830-b1ce-daf2f6040bce",
+      "ПЕРЕХОДЫ",
+      96,
+      26
+    ],
+    [
+      "7590381f-7ff2-4fb7-b302-d822363c76da",
+      "Нарезка",
+      0,
+      0
+    ],
+    [
+      "97ce174b-a927-4b87-a9eb-0258d94d24b7",
+      "Шаблон горизонтальный",
+      0,
+      1
+    ]
+  ],
+  "failures": []
+}

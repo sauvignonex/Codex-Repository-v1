@@ -1,0 +1,11 @@
+{
+  "status": "code-tested; native Adobe verification pending",
+  "checks": [
+    "AE expression model: fixed ink right and baseline across glyph bounds, modes and durations; preview opacity agrees; 60/100ms including AE float32 slider rounding stay visible",
+    "AE expression model: highlight transforms/opacity equal 062",
+    "highlights retain readable hold and bounded motion for short/long cues",
+    "Chromium with repository Cera font: seven words, four modes, wide/narrow panel have fixed visible right/baseline and 55px size",
+    "font sizes 70–130%, height 28–74%, connectors/multiline retain first baseline; switching to title removes speech marker"
+  ],
+  "passed": 5
+}

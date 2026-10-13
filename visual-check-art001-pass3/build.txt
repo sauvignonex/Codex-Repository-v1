@@ -1,0 +1,31 @@
+CASE A type=0 duration=0.25 frames=8 expressionErrors=0
+CASE A type=0 duration=0.5 frames=15 expressionErrors=0
+CASE A type=0 duration=1.2 frames=36 expressionErrors=0
+CASE A type=0 duration=3 frames=90 expressionErrors=0
+CASE A type=1 duration=0.25 frames=8 expressionErrors=0
+CASE A type=1 duration=0.5 frames=15 expressionErrors=0
+CASE A type=1 duration=1.2 frames=36 expressionErrors=0
+CASE A type=1 duration=3 frames=90 expressionErrors=0
+FULL_ALPHA A frames=135
+COMP SS ART001 Pass3 A layers=4 literalReadback=true
+CASE B type=0 duration=0.25 frames=8 expressionErrors=0
+CASE B type=0 duration=0.5 frames=15 expressionErrors=0
+CASE B type=0 duration=1.2 frames=36 expressionErrors=0
+CASE B type=0 duration=3 frames=90 expressionErrors=0
+CASE B type=1 duration=0.25 frames=8 expressionErrors=0
+CASE B type=1 duration=0.5 frames=15 expressionErrors=0
+CASE B type=1 duration=1.2 frames=36 expressionErrors=0
+CASE B type=1 duration=3 frames=90 expressionErrors=0
+FULL_ALPHA B frames=135
+COMP SS ART001 Pass3 B layers=4 literalReadback=true
+CASE C type=0 duration=0.25 frames=8 expressionErrors=0
+CASE C type=0 duration=0.5 frames=15 expressionErrors=0
+CASE C type=0 duration=1.2 frames=36 expressionErrors=0
+CASE C type=0 duration=3 frames=90 expressionErrors=0
+CASE C type=1 duration=0.25 frames=8 expressionErrors=0
+CASE C type=1 duration=0.5 frames=15 expressionErrors=0
+CASE C type=1 duration=1.2 frames=36 expressionErrors=0
+CASE C type=1 duration=3 frames=90 expressionErrors=0
+FULL_ALPHA C frames=144
+COMP SS ART001 Pass3 C layers=4 literalReadback=true
+SUCCESS cases=24 reads=10728 frames=96+3

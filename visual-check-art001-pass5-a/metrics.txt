@@ -1,0 +1,1 @@
+font=BebasNeueCyrillic family=Bebas Neue Cyrillic style=Regular substitute=false fauxBold=false fauxItalic=false tracking=0 scaleX=71.1812201638094 scaleY=71.1812201638094 boundary=0.34166595339775

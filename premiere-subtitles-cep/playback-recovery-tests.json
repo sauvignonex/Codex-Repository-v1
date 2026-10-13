@@ -1,0 +1,15 @@
+{
+  "status": "host-contract-tested; native Premiere verification pending",
+  "passed": 9,
+  "checks": [
+    "full coverage succeeds and restores four original marks",
+    "cancellation and render exceptions restore original marks",
+    "one failed restore never hides failure or skips remaining marks",
+    "malformed and partial cache ranges cannot report success",
+    "invalid timing, saved marks and unavailable cache reader prevent rendering",
+    "failed range expansion restores marks and never renders",
+    "sequence switch during rendering never reports cache success",
+    "disabled work area stays unchanged",
+    "split adjacent ranges merge to cover all clips"
+  ]
+}

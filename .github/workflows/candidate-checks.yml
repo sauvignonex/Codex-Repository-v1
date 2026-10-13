@@ -1,0 +1,78 @@
+name: Candidate source checks
+on:
+  pull_request:
+    branches: [CodexYT]
+  push:
+    branches: ['codex/subtitle-studio-*']
+  workflow_dispatch:
+permissions:
+  contents: read
+concurrency:
+  group: candidate-checks-${{ github.ref }}
+  cancel-in-progress: true
+jobs:
+  source-checks:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Install browser test dependency
+        run: |
+          npm install --no-save --ignore-scripts playwright@1.57.0
+          npx playwright install --with-deps chromium
+      - name: Verify candidate code contracts and browser layout
+        run: |
+          node development-scripts/test-stationary-speech.cjs
+          node development-scripts/test-motion-quality-062.cjs
+          node development-scripts/test-phrases.cjs
+          node development-scripts/test-host-loader.cjs
+          node development-scripts/test-playback-recovery.cjs
+          node development-scripts/test-playback-061.cjs
+          node development-scripts/test-writer-preflight.cjs
+          node development-scripts/test-update-races.cjs
+          node development-scripts/test-engine-config.cjs
+          node development-scripts/test-engine-startup.cjs
+          node development-scripts/test-transcription-recovery.cjs
+          node development-scripts/test-visual-design.cjs
+          node development-scripts/test-smart-style.cjs
+          node development-scripts/test-style-context.cjs
+          node development-scripts/test-dual-color-template.cjs
+          python development-scripts/test-package-candidate.py
+          python development-scripts/test-local-ai-launcher.py
+          python development-scripts/test-transcription-worker-candidate.py
+          node --check premiere-subtitles-cep/panel.js
+          node --check premiere-subtitles-cep/host-loader.js
+      - name: Build verified source-only archive
+        run: python development-scripts/package-candidate.py --output dist/Subtitle-Studio-0.6.3-source.zip
+      - name: Save candidate sources and current test reports
+        uses: actions/upload-artifact@v4
+        with:
+          name: subtitle-studio-candidate-source-checks
+          path: |
+            dist/Subtitle-Studio-0.6.3-source.zip
+            premiere-subtitles-cep/stationary-speech-tests.json
+            premiere-subtitles-cep/motion-quality-tests-candidate.json
+            premiere-subtitles-cep/phrase-test-results.json
+            premiere-subtitles-cep/host-loader-tests.json
+            premiere-subtitles-cep/playback-recovery-tests.json
+            premiere-subtitles-cep/playback-tests-candidate.json
+            premiere-subtitles-cep/package-candidate-tests.json
+            premiere-subtitles-cep/writer-preflight-tests.json
+            premiere-subtitles-cep/update-race-tests.json
+            premiere-subtitles-cep/engine-config-tests.json
+            premiere-subtitles-cep/engine-startup-tests.json
+            premiere-subtitles-cep/transcription-recovery-tests.json
+            premiere-subtitles-cep/local-ai-launcher-tests.json
+            premiere-subtitles-cep/transcription-worker-tests-candidate.json
+            premiere-subtitles-cep/visual-design-tests.json
+            premiere-subtitles-cep/smart-style-tests.json
+            premiere-subtitles-cep/style-context-tests.json
+            premiere-subtitles-cep/dual-color-template-tests.json
+            dist/visual-review/
+          if-no-files-found: error

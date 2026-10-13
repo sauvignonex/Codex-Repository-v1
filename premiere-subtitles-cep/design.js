@@ -10,7 +10,7 @@
     window.dispatchEvent(new Event('subtitle:stage-change'));
   }
   buttons.forEach((button,i)=>{button.addEventListener('click',()=>select(button.dataset.stage));button.addEventListener('keydown',e=>{if(!['ArrowLeft','ArrowRight'].includes(e.key))return;e.preventDefault();const target=buttons[(i+(e.key==='ArrowRight'?1:buttons.length-1))%buttons.length];target.focus();select(target.dataset.stage);});});
-  window.addEventListener('subtitle:document-change',()=>{if(stage==='source'&&window.SubtitleDocument?.getSnapshot())select('style');});
+  window.addEventListener('subtitle:document-change',()=>{if(stage==='source'&&window.SubtitleDocument?.getSnapshot())select('text');});
   window.addEventListener('subtitle:review-open',()=>select('text'));
   let hadDraft=!document.getElementById('editorial-draft').hidden;
   new MutationObserver(()=>{const pending=!document.getElementById('editorial-draft').hidden;if(pending&&!hadDraft)select('text');if(!pending&&hadDraft)select('style');hadDraft=pending;}).observe(document.getElementById('editorial-draft'),{attributes:true,attributeFilter:['hidden']});
@@ -18,10 +18,12 @@
   document.getElementById('design-review').addEventListener('click',()=>select('text'));
   document.getElementById('design-finish').addEventListener('click',()=>select('finish'));
   document.getElementById('design-style').addEventListener('click',()=>select('style'));
-  document.getElementById('finish-edit').addEventListener('click',()=>select('style'));
+  document.getElementById('finish-edit').addEventListener('click',()=>select(window.SubtitleDocument?.getSnapshot()?'style':'source'));
   let making=false;
   function summary(){
     const review=window.SubtitleEditorialUI?.getReviewSnapshot(),current=window.SubtitleDocument?.getSnapshot(),doc=review||current,batch=subtitleBatch.getState();
+    document.querySelector('.source').hidden=!current||stage==='style'||stage==='finish';
+    document.getElementById('finish-edit').textContent=current?'Вернуться к оформлению':'Выбрать источник';
     const stale=review&&(review.sourceID||null)!==(current?.id||null);
     let output=doc?.cues||[],splitError='';try{output=SubtitlePhrases.prepare(output);}catch(e){splitError=e.message;}
     const error=splitError||window.SubtitleEditorialUI?.timingError||(stale?'Проверка относится к другому набору. Вернись к тексту и подготовь текущий набор заново.':'');

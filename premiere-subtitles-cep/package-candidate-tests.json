@@ -1,0 +1,7 @@
+{
+  "status": "archive-contract-tested; native Adobe verification pending",
+  "passed": 8,
+  "tests": 8,
+  "successful": true,
+  "synthetic_mogrt_fixture": true
+}

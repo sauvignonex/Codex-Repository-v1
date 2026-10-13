@@ -1,0 +1,11 @@
+{
+  "source": "examples/Рилс Колобки — референс.mp4",
+  "analysis_grid_fps": 30,
+  "status": "entrance anchors inspected; exact hold/exit and background alignment still open",
+  "episodes": [
+    {"family":"A","first":"Уяча —","second":"ВКУС МАРИЙЭЛ","entrance_frame":88,"entrance_seconds":2.9333333333,"uncertainty_frames":1,"hold_example_seconds":4},
+    {"family":"B","first":"Угощение","second":"для ряженых","entrance_frame":708,"entrance_seconds":23.6,"uncertainty_frames":1,"hold_example_seconds":25},
+    {"family":"C","first":"ПОЧЕМУ","second":"РЖАНАЯ МУКА?","entrance_frame":564,"entrance_seconds":18.8,"uncertainty_frames":1,"hold_example_seconds":20}
+  ],
+  "background_note": "Reference contains baked text. A clean before-entrance plate or original footage is needed for comparable overlays; do not claim identical moving backgrounds or exact onset sync yet."
+}

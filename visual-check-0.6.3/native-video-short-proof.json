@@ -1,0 +1,33 @@
+{
+  "frames": 218,
+  "fps": 30,
+  "short100ms_visible_frames": [
+    {
+      "frame": 0,
+      "pixels": 471,
+      "right": 964
+    },
+    {
+      "frame": 1,
+      "pixels": 471,
+      "right": 964
+    },
+    {
+      "frame": 2,
+      "pixels": 471,
+      "right": 964
+    }
+  ],
+  "short60ms_visible_frames": [
+    {
+      "frame": 105,
+      "pixels": 1415,
+      "right": 964
+    },
+    {
+      "frame": 106,
+      "pixels": 1415,
+      "right": 964
+    }
+  ]
+}

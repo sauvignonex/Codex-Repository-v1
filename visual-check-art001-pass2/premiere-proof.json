@@ -1,0 +1,44 @@
+{
+  "source": "actual opaque Premiere frame exports",
+  "rows": [
+    {
+      "family": "A",
+      "frames": 90,
+      "first_visible_frame": 1,
+      "reading_hold_equal_frames": 39,
+      "reading_bounds": [
+        120,
+        1390,
+        846,
+        1567
+      ]
+    },
+    {
+      "family": "B",
+      "frames": 90,
+      "first_visible_frame": 1,
+      "reading_hold_equal_frames": 39,
+      "reading_bounds": [
+        120,
+        1370,
+        613,
+        1542
+      ]
+    },
+    {
+      "family": "C",
+      "frames": 90,
+      "first_visible_frame": 1,
+      "reading_hold_equal_frames": 39,
+      "reading_bounds": [
+        240,
+        1320,
+        752,
+        1555
+      ]
+    }
+  ],
+  "black_shadow_coverage": "AE RGBA samples tested separately",
+  "reference_sync_uncertainty_frames": 1,
+  "artistic_acceptance": false
+}

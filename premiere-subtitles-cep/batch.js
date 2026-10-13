@@ -12,7 +12,14 @@
 
   window.subtitleBatch={signature,getState:()=>{let record=null;try{record=JSON.parse(localStorage.getItem(registryKey)||'null');}catch(_){}return{issue,ready:bindingReady,connected:Boolean(window.__adobe_cep__?.evalScript),busy:running||window.subtitleGraphic.busy||Boolean(window.subtitleTranscription?.busy)||Boolean(window.SubtitleEditorialUI?.busy),canCreate:bindingReady&&!button.disabled,record:bindingReady&&!bindingMissing?record:null};}};
 
-  async function checkpoint(appliedIndex){
+  function invalidateApplied(documentKey,index){
+    const record=JSON.parse(localStorage.getItem(registryKey)||'null');
+    if(record?.documentKey!==documentKey||!Number.isInteger(index)||index<0||index>=record.completed)throw Error('Связь с клипом изменилась. Запись не начиналась.');
+    if(Array.isArray(record.applied))record.applied[index]=null;
+    try{localStorage.setItem(registryKey,JSON.stringify(record));changed();}catch(_){throw Error('Не удалось сохранить состояние перед записью. Клип не изменён.');}
+  }
+
+  async function checkpoint(appliedIndex,written){
 
     const row=window.subtitleGraphic.parse(await window.subtitleGraphic.call('$._artemSubtitleBatch.registry()'))[0];
 
@@ -20,7 +27,7 @@
 
     const previous=JSON.parse(localStorage.getItem(registryKey)||'null');record.applied=previous?.sequenceID===record.sequenceID&&Array.isArray(previous.applied)?previous.applied:[];
 
-    const doc=window.SubtitleDocument.getSnapshot();if(Number.isInteger(appliedIndex)&&doc?.id===record.documentKey&&doc.cues[appliedIndex])record.applied[appliedIndex]=signature(doc.cues[appliedIndex]);
+    if(Number.isInteger(appliedIndex)&&written?.documentKey===record.documentKey&&typeof written.signature==='string')record.applied[appliedIndex]=written.signature;
 
     try{localStorage.setItem(registryKey,JSON.stringify(record));bindingMissing=false;changed();}catch(_){throw Error('Не удалось сохранить связь с клипами. Операция остановлена. Не закрывай панель.');}
 
@@ -45,13 +52,13 @@
     if(current?.id!==doc.id||JSON.stringify(current.cues)!==JSON.stringify(doc.cues))throw Error('Текст или оформление изменились во время подготовки. Повтори создание с актуальными правками.');
     if(cancel){status.textContent='Создание отменено до импорта.';return;}
 
-    const plans=doc.cues.map((cue,index)=>{const style=index===doc.selected?settings:cue.appearance||{...settings,role:'speech'};const plan={...style,...window.subtitleTypography.plan(cue.text,style.role),timing:{start:cue.start,end:cue.end},duration:(cue.end-cue.start)/1000};if(plan.role==='speech'){const fit=window.subtitleTypography.fitSpeech(plan.speech,plan.size);plan.speech=fit.text;plan.fitValid=fit.valid;}return plan;});
+    const plans=doc.cues.map((cue,index)=>{const style=index===doc.selected?settings:cue.appearance||{...settings,role:'speech'};const plan={...style,...window.subtitleTypography.plan(cue.text,style.role),timing:{start:cue.start,end:cue.end},duration:(cue.end-cue.start)/1000};if(plan.role==='speech'){const fit=window.subtitleTypography.fitSpeech(plan.speech,plan.size);plan.speech=fit.text;plan.fitValid=fit.valid;}else{const lines=plan.role==='title'?[{text:plan.main,hand:false},{text:plan.accent,hand:true}]:[{text:plan.accent,hand:true}];plan.fitValid=lines.filter(l=>l.text).every(l=>200*window.subtitleTypography.highlightGeometry(l.text,l.hand,plan.size,plan.accentSize).scale>=30);}return plan;});
 
     const invalid=plans.findIndex((p,i)=>!p.text.trim()||p.text.length>200||p.text.split('\n').length>2||!Number.isSafeInteger(p.timing.start)||!Number.isSafeInteger(p.timing.end)||p.timing.start<0||!Number.isFinite(p.duration)||p.duration<.034||p.duration>6||!['title','speech','accent'].includes(p.role)||!['none','soft','pop','write'].includes(p.motion)||!/^#[0-9a-f]{6}$/i.test(p.color)||!Number.isFinite(p.size)||p.size<70||p.size>130||!Number.isFinite(p.accentSize)||p.accentSize<70||p.accentSize>150||!Number.isFinite(p.position)||p.position<28||p.position>74||(i>0&&p.timing.start<plans[i-1].timing.end));
 
     const unreadable=plans.findIndex(p=>p.fitValid===false);
 
-    if(unreadable>=0){issue='Блок '+(unreadable+1)+': фраза слишком длинная для читаемого размера. Раздели её при подготовке фраз или сократи текст.';status.textContent=issue;window.SubtitleDocument.select(unreadable);document.getElementById('ss-text').scrollIntoView({block:'center'});changed();return;}
+    if(unreadable>=0){issue='Блок '+(unreadable+1)+': текст слишком длинный для читаемого размера. Сократи его или раздели блок при подготовке текста.';status.textContent=issue;window.SubtitleDocument.select(unreadable);document.getElementById('ss-text').scrollIntoView({block:'center'});changed();return;}
 
     if(invalid>=0){issue='Проверь блок '+(invalid+1)+': текст до 200 символов, длительность от одного кадра до 6 секунд, тайминги без пересечений.';status.textContent=issue;window.SubtitleDocument.select(invalid);changed();return;}
 
@@ -91,7 +98,7 @@
 
         window.subtitleGraphic.parse(await window.subtitleGraphic.call('$._artemSubtitleBatch.commit('+i+')'));
 
-        await checkpoint(i);
+        await checkpoint(i,{documentKey:doc.id,signature:signature(doc.cues[i])});
 
         if(i===plans.length-1){completed=true;let audioWarning='';if(doc.sourceMedia){try{const audio=await window.subtitleGraphic.call('$._artemSubtitleBatch.addSourceAudio('+JSON.stringify(doc.sourceMedia)+')');if(audio!=='ok')window.subtitleGraphic.parse(audio);}catch(error){audioWarning=' Звук для проверки не добавлен: '+error.message;}}const result=await window.subtitleGraphic.call('$._artemSubtitleBatch.finish()');if(result!=='ok')window.subtitleGraphic.parse(result);completed=true;let playbackMessage='';
           if(document.getElementById('playback-auto')?.checked){
@@ -117,29 +124,33 @@
 
   update.addEventListener('click',async()=>{
 
-    if(running||window.subtitleGraphic.busy)return;
+    if(running||window.subtitleGraphic.busy||window.subtitleTranscription?.busy||window.SubtitleEditorialUI?.busy)return;
 
     issue=null;
 
     const doc=window.SubtitleDocument.getSnapshot(),cue=window.SubtitleDocument.getSelected(),layout=window.subtitlePreview.getLayout();
 
-    if(!doc||!layout.valid){status.textContent='Выбери корректный блок SRT.';return;}
+    if(!doc||!cue||!doc.cues[cue.index]||!layout.valid){status.textContent='Выбери корректный блок SRT.';return;}
+    const written={documentKey:doc.id,signature:signature(doc.cues[cue.index])};
+    const guard=()=>{const current=window.SubtitleDocument.getSnapshot();if(current?.id!==doc.id||current.selected!==cue.index||!current.cues[cue.index]||signature(current.cues[cue.index])!==written.signature)throw Error('Выбранный блок изменился во время подготовки. Повтори обновление с актуальными правками.');};
 
     running=true;update.disabled=true;window.subtitleGraphic.setBusy(true);
 
     try{
 
       await window.subtitleHost.ensure();
+      guard();
 
       const raw=await window.subtitleGraphic.call('$._artemSubtitleBatch.select('+cue.index+','+JSON.stringify(doc.id)+')');
 
       window.subtitleGraphic.parse(raw);
 
-      await window.subtitleGraphic.write(raw,{...layout,timing:cue,duration:(cue.end-cue.start)/1000},'$._artemSubtitleBatch');
+      await window.subtitleGraphic.write(raw,{...layout,timing:cue,duration:(cue.end-cue.start)/1000},'$._artemSubtitleBatch',true,guard,()=>invalidateApplied(doc.id,cue.index));
 
-      await checkpoint(cue.index);
+      await checkpoint(cue.index,written);
 
-      window.SubtitleDocument.save();status.textContent='Блок '+(cue.index+1)+' обновлён в созданной секвенции. Новый клип не импортировался.';
+      const current=window.SubtitleDocument.getSnapshot(),saved=window.SubtitleDocument.save();
+      status.textContent='Блок '+(cue.index+1)+' обновлён в созданной секвенции. Новый клип не импортировался.'+(current?.id!==doc.id||!current.cues[cue.index]||signature(current.cues[cue.index])!==written.signature?' Новые правки в панели ещё не записаны.':'')+(saved?'':' Не удалось сохранить панель; не закрывай её до сохранения.');
 
     }catch(error){try{const binding=window.subtitleGraphic.parse(await window.subtitleGraphic.call('$._artemSubtitleBatch.verifyBinding()'))[0];if(binding[1]!=='present'){bindingMissing=true;completed=true;button.disabled=false;}}catch(_){}issue=error.message;status.textContent=error.message;document.getElementById('ss-status').textContent='Не удалось обновить блок '+(cue.index+1)+': '+error.message;}
 
@@ -147,10 +158,10 @@
 
   });
   document.getElementById('srt-update-corrections').addEventListener('click',async()=>{
-    if(running||window.subtitleGraphic.busy)return;
+    if(running||window.subtitleGraphic.busy||window.subtitleTranscription?.busy||window.SubtitleEditorialUI?.busy)return;
     const doc=SubtitleDocument.getSnapshot(),state=subtitleBatch.getState(),record=state.record;
     if(!doc||record?.documentKey!==doc.id||record.pending||!['ready','complete'].includes(record.phase)){status.textContent='Нет связи исправленных фраз с клипами. Создай отдельную секвенцию.';return;}
-    const indices=(doc.correctionPending||[]).filter(i=>Number.isInteger(i)&&i>=0&&i<record.completed&&!['title','accent'].includes(doc.cues[i]?.appearance?.role)&&record.applied?.[i]!==signature(doc.cues[i]));
+    const indices=(doc.correctionPending||[]).filter(i=>Number.isInteger(i)&&i>=0&&i<record.completed&&Boolean(doc.cues[i])&&!['title','accent'].includes(doc.cues[i]?.appearance?.role)&&record.applied?.[i]!==signature(doc.cues[i]));
     if(!indices.length)return;
     // Preflight every correction before touching any native clip.
     try{for(const i of indices){SubtitleDocument.select(i);if(!subtitlePreview.getLayout().valid)throw Error('Блок '+(i+1)+': исправленный текст слишком длинный. Сократи его перед записью.');}}
@@ -160,14 +171,17 @@
       await subtitleHost.ensure();
       for(let n=0;n<indices.length;n++){
         const i=indices[n];SubtitleDocument.select(i);const cue=SubtitleDocument.getSelected(),layout=subtitlePreview.getLayout();
-        if(cue.text!==doc.cues[i].text||cue.start!==doc.cues[i].start||cue.end!==doc.cues[i].end)throw Error('Фраза изменилась во время записи. Запись остальных исправлений остановлена.');
+        const written={documentKey:doc.id,signature:signature(doc.cues[i])};
+        const guard=()=>{const current=SubtitleDocument.getSnapshot();if(current?.id!==doc.id||current.selected!==i||!current.cues[i]||signature(current.cues[i])!==written.signature||['title','accent'].includes(current.cues[i].appearance?.role))throw Error('Фраза или её оформление изменились во время записи. Запись остальных исправлений остановлена.');};
+        guard();
         status.textContent='Записываем исправление '+(n+1)+' из '+indices.length+'…';
         const raw=await subtitleGraphic.call('$._artemSubtitleBatch.select('+i+','+JSON.stringify(doc.id)+')');subtitleGraphic.parse(raw);
-        await subtitleGraphic.write(raw,{...layout,timing:cue,duration:(cue.end-cue.start)/1000},'$._artemSubtitleBatch');await checkpoint(i);
+        await subtitleGraphic.write(raw,{...layout,timing:cue,duration:(cue.end-cue.start)/1000},'$._artemSubtitleBatch',true,guard,()=>invalidateApplied(doc.id,i));await checkpoint(i,written);
       }
-      status.textContent='Записано исправлений речи: '+indices.length+'. Хайлайты и тайминги сохранены. Новые клипы не импортировались.';
+      const latest=SubtitleDocument.getSnapshot(),newEdits=latest?.id!==doc.id||indices.some(i=>!latest.cues[i]||signature(latest.cues[i])!==signature(doc.cues[i]));
+      status.textContent='Записано исправлений речи: '+indices.length+'. Хайлайты и тайминги сохранены. Новые клипы не импортировались.'+(newEdits?' Новые правки в панели ещё не записаны.':'');
     }catch(error){issue=error.message;status.textContent='Запись исправлений остановлена: '+error.message+'. Подтверждённые правки сохранены.';}
-    finally{SubtitleDocument.select(doc.selected);running=false;window.subtitleGraphic.setBusy(false);changed();}
+    finally{if(SubtitleDocument.getSnapshot()?.id===doc.id)SubtitleDocument.select(doc.selected);running=false;window.subtitleGraphic.setBusy(false);changed();}
   });
 
   if(window.__adobe_cep__?.evalScript){button.disabled=true;window.subtitleHost.ensure().then(async()=>{

@@ -1,0 +1,11 @@
+CASE A type=0 duration=0.25 frames=8 expressionErrors=0
+CASE A type=0 duration=0.5 frames=15 expressionErrors=0
+CASE A type=0 duration=1.2 frames=36 expressionErrors=0
+CASE A type=0 duration=3 frames=90 expressionErrors=0
+CASE A type=1 duration=0.25 frames=8 expressionErrors=0
+CASE A type=1 duration=0.5 frames=15 expressionErrors=0
+CASE A type=1 duration=1.2 frames=36 expressionErrors=0
+CASE A type=1 duration=3 frames=90 expressionErrors=0
+FULL_ALPHA A frames=89
+COMP SS ART001 Pass5 A A layers=4 literalReadback=true
+SUCCESS cases=8 reads=3576 sampleFrames=32+1 fullFrames=89

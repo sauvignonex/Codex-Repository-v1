@@ -1,0 +1,11 @@
+{
+  "passed": 6,
+  "checks": [
+    "all roles and modes: stable readable hold, bounded overshoot, continuous movement, full reveal even for 100ms cues",
+    "ordinary speech does not pulse or shrink on entry and exit in soft mode",
+    "main title precedes handwritten line",
+    "highlight scale settles exactly to approved proportions",
+    "long words move and reveal more slowly than short words",
+    "word length never consumes readable hold in a 100ms cue"
+  ]
+}

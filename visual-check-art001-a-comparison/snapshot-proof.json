@@ -1,0 +1,41 @@
+{
+  "source": "Six native AE RGBA snapshots only, not full motion/Premiere; connected groups not acceptance metric",
+  "rows": [
+    {
+      "tracking": -24,
+      "body_height": 126,
+      "body_width": 726,
+      "word_gap": [
+        29,
+        353,
+        382
+      ],
+      "first_word_connected_groups": 4,
+      "two_snapshot_alpha_safe": true
+    },
+    {
+      "tracking": -36,
+      "body_height": 130,
+      "body_width": 726,
+      "word_gap": [
+        26,
+        355,
+        381
+      ],
+      "first_word_connected_groups": 3,
+      "two_snapshot_alpha_safe": true
+    },
+    {
+      "tracking": -48,
+      "body_height": 134,
+      "body_width": 726,
+      "word_gap": [
+        23,
+        356,
+        379
+      ],
+      "first_word_connected_groups": 3,
+      "two_snapshot_alpha_safe": true
+    }
+  ]
+}

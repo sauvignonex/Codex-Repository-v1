@@ -14,7 +14,7 @@
     if(rows[0][0]!=='ok')throw Error(rows[0][1]||'Неизвестный ответ Premiere: '+raw);
     return rows;
   }
-  async function write(raw,layout,scope="$._artemSubtitleTest",show=true){
+  async function write(raw,layout,scope="$._artemSubtitleTest",show=true,guard=null,beforeWrite=null){
     if(layout.role==='speech'){
       await document.fonts.load('500 200px "Cera Pro"');
       const fit=window.subtitleTypography.fitSpeech(layout.speech,layout.size);
@@ -32,6 +32,17 @@
       try{const v=JSON.parse(row[3]);if(typeof v==='string'){const obj=JSON.parse(v);if(typeof obj.textEditValue==='string')fields.push({index:Number(row[1]),name:row[2],obj});}}catch(_){}
     }
     const texts={'Основной текст':layout.main,'Рукописный акцент':layout.accent,'Текст речи':layout.speech};
+    const numbers={'Роль: 1 заголовок, 2 речь, 3 акцент':({title:1,speech:2,accent:3})[layout.role],[normalized?'Масштаб':'Размер']:normalized?layout.size/2:layout.size,[normalized?'Масштаб акцента':'Размер акцента']:normalized?layout.accentSize/2:layout.accentSize,'Высота':layout.position,'Длительность':layout.duration||6,[motionRow[2]]:({none:0,soft:1,pop:2,write:3})[layout.motion]};
+    const colorRow=rows.find(r=>r[0]==='param'&&r[2]==='Цвет');if(!colorRow)throw Error('Параметр цвета отсутствует.');
+    // Validate the complete template contract before the first native setter.
+    for(const name of Object.keys(texts))if(!fields.some(f=>f.name===name))throw Error('В шаблоне отсутствует '+name);
+    for(const [name,value] of Object.entries(numbers))if(!Number.isFinite(value)||!rows.some(r=>r[0]==='param'&&r[2]===name))throw Error('В шаблоне отсутствует или неверен параметр '+name);
+    if(layout.timing&&(!Number.isSafeInteger(layout.timing.start)||!Number.isSafeInteger(layout.timing.end)||layout.timing.start<0||layout.timing.end-layout.timing.start<34||layout.timing.end-layout.timing.start>6000))throw Error('Некорректные границы блока.');
+    const targets=[...fields.filter(f=>Object.hasOwn(texts,f.name)).map(f=>f.index),...Object.keys(numbers).map(name=>Number(rows.find(r=>r[0]==='param'&&r[2]===name)[1])),Number(colorRow[1])];
+    if(targets.some(index=>!Number.isInteger(index)||index<0)||!/^#[0-9a-f]{6}$/i.test(layout.color))throw Error('Некорректные параметры шаблона или цвет.');
+    if(guard)guard();
+    // Persist an unconfirmed state before a setter can partially change the native clip.
+    if(beforeWrite)beforeWrite();
     for(const [name,text] of Object.entries(texts)){
       const field=fields.find(f=>f.name===name);if(!field)throw Error('В шаблоне отсутствует '+name);
       field.obj.textEditValue=(text||'').replace(/\n/g,'\r');field.obj.fontTextRunLength=[field.obj.textEditValue.length];field.obj.capPropTextRunCount=1;
@@ -40,13 +51,11 @@
       if(JSON.parse(JSON.parse(result[1])).textEditValue!==field.obj.textEditValue)throw Error('Premiere не подтвердил '+name);
       report.value+='\n'+name+': '+field.obj.textEditValue;
     }
-    const numbers={'Роль: 1 заголовок, 2 речь, 3 акцент':({title:1,speech:2,accent:3})[layout.role],[normalized?'Масштаб':'Размер']:normalized?layout.size/2:layout.size,[normalized?'Масштаб акцента':'Размер акцента']:normalized?layout.accentSize/2:layout.accentSize,'Высота':layout.position,'Длительность':layout.duration||6,[motionRow[2]]:({none:0,soft:1,pop:2,write:3})[layout.motion]};
     for(const [name,value] of Object.entries(numbers)){
       const row=rows.find(r=>r[0]==='param'&&r[2]===name);if(!row)throw Error('В шаблоне отсутствует '+name);
       const result=decode(await call(scope+'.setNumber('+Number(row[1])+','+value+')'));
       if(result[0]!=='ok'||Number(result[1])!==value)throw Error('Premiere не подтвердил '+name);
     }
-    const colorRow=rows.find(r=>r[0]==='param'&&r[2]==='Цвет');if(!colorRow)throw Error('Параметр цвета отсутствует.');
     const colored=decode(await call(scope+'.setColor('+Number(colorRow[1])+','+JSON.stringify(layout.color)+')'));if(colored[0]!=='ok')throw Error(colored[1]);
     if(layout.timing){const timed=decode(await call(scope+'.setTiming('+layout.timing.start+','+layout.timing.end+')'));if(timed[0]!=='ok')throw Error(timed[1]);report.value+='\nTIMING: '+timed.join(' | ');}
     if(show){const shown=await call(scope+'.show()');if(shown!=='ok')throw Error(decode(shown)[1]||'Не удалось открыть пробный блок.');}

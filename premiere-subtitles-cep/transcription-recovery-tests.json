@@ -1,0 +1,14 @@
+{
+  "status": "JS VM CEP contracts; no real recognition or Adobe",
+  "passed": 8,
+  "checks": [
+    "error persists in both stores and never resumes after reopening",
+    "cancelled persists in both stores and never resumes after reopening",
+    "malformed response becomes saved error",
+    "foreign job response is rejected before review",
+    "dead worker becomes terminal error rather than restored running job",
+    "filesystem failure still persists terminal local state and permits retry",
+    "local storage failure removes stale running record and releases controls",
+    "complete result blocked by native write remains reopenable without automatically using it"
+  ]
+}
