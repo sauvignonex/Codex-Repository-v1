@@ -1,0 +1,15 @@
+{
+  "status": "reference SRT/local motion and API contracts; real model and Adobe unverified",
+  "referenceBlocks": 130,
+  "passed": 8,
+  "checks": [
+    "word-level context grows beyond two neighbors per side in chronological order without mutating cues",
+    "context respects completed sentence boundaries rather than adjacent cue count",
+    "long pauses and overlapping audio stop context expansion",
+    "context is bounded by character budget, temporal distance and cue count",
+    "stale-analysis key includes source speech beyond former two-neighbor window",
+    "every selected block in repository reference SRT produces bounded context without loading a live document",
+    "readable-hold budget selects immediate 500ms title but preserves approved 1.2s reveal and 60ms speech",
+    "semantic proposals distinguish nearby highlight spacing from a distant topic and receive timed context"
+  ]
+}

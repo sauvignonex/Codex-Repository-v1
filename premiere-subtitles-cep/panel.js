@@ -56,7 +56,7 @@
     (open?q('ss-headline-draft'):q('ss-headlines')).focus();
   }
   function styleContext(){
-    const doc=window.SubtitleDocument?.getSnapshot();return JSON.stringify({id:doc?.id,index:doc?.selected,text:state.text,role:state.role,cues:doc?.cues.slice(Math.max(0,doc.selected-2),doc.selected+3).map(c=>[c.text,c.spokenText,c.start,c.end,c.appearance?.role])});
+    const doc=window.SubtitleDocument?.getSnapshot();return JSON.stringify({id:doc?.id,text:state.text,role:state.role,context:SubtitleStyleAdvisor.context(doc?.cues,doc?.selected).key});
   }
   function recommendation(){
     const local=SubtitleStyleAdvisor.recommend(state.text,appearance(),window.SubtitleDocument?.getSelected());
@@ -71,7 +71,7 @@
     const timeout=setTimeout(()=>controller.abort(),15000);
     q('ss-style-detection').textContent='Уточняем роль по соседней речи…';
     try{
-      const neighbors=doc.cues.slice(Math.max(0,doc.selected-2),doc.selected+3).filter((_,i)=>Math.max(0,doc.selected-2)+i!==doc.selected);
+      const neighbors=SubtitleStyleAdvisor.context(doc.cues,doc.selected).neighbors;
       const result=await SubtitleStyleAdvisor.analyze(cue,neighbors,controller.signal);
       if(controller.signal.aborted||request!==styleRequest||key!==styleContext()||q('ss-style-editor').hidden)return;
       if(result){const advice=SubtitleStyleAdvisor.recommend(state.text,{role:result.role},cue);semanticAdvice={key,advice:{...advice,reason:result.reason}};render();q('ss-style-detection').textContent='Предложение локальной модели. Проверь его перед применением.';}

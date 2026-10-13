@@ -41,6 +41,7 @@ jobs:
           node development-scripts/test-transcription-recovery.cjs
           node development-scripts/test-visual-design.cjs
           node development-scripts/test-smart-style.cjs
+          node development-scripts/test-style-context.cjs
           node development-scripts/test-dual-color-template.cjs
           python development-scripts/test-package-candidate.py
           python development-scripts/test-local-ai-launcher.py
@@ -71,6 +72,7 @@ jobs:
             premiere-subtitles-cep/transcription-worker-tests-candidate.json
             premiere-subtitles-cep/visual-design-tests.json
             premiere-subtitles-cep/smart-style-tests.json
+            premiere-subtitles-cep/style-context-tests.json
             premiere-subtitles-cep/dual-color-template-tests.json
             dist/visual-review/
           if-no-files-found: error

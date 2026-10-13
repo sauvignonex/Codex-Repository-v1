@@ -74,6 +74,8 @@ def build(output, template=None, engine_config=None):
             'premiere-subtitles-cep/transcription-recovery-tests.json',
             'development-scripts/test-visual-design.cjs',
             'development-scripts/test-smart-style.cjs',
+            'development-scripts/test-style-context.cjs',
+            'premiere-subtitles-cep/style-context-tests.json',
             'premiere-subtitles-cep/smart-style-tests.json',
             'docs/SMART-BLOCK-STYLE.md',
             'development-scripts/build-vertical-template-064.jsx',
