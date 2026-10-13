@@ -3592,5 +3592,20 @@
       "bytes": 2363,
       "sha256": "bcfc751f4baa6481f9ddc21ec7138e913428d7d6322d115ff414ee4721c8bb44"
     }
+  ],
+  "inventory_scope": "Original import snapshot; original entries retained. Resolve removed redundant paths using path_alias_rules; this is not a current working-tree inventory.",
+  "path_alias_rules": [
+    {
+      "directory": "visual-check-0.6.0",
+      "removed_filename_prefix": "1791834127405-",
+      "suffix": ".png",
+      "retained_filename": "remove the prefix from the original filename",
+      "verified_duplicates": 52,
+      "sha256_relation": "original and retained raw bytes are identical",
+      "verified_base_commit": "2879752d5158b27240e5290e0544376175202fc5"
+    }
+  ],
+  "removed_empty_placeholders": [
+    ".gitkeep"
   ]
 }

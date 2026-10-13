@@ -22,3 +22,8 @@ keys/
 
 # Local candidate build artifacts
 dist/
+
+# Operating-system metadata; never needed by the plugin
+.DS_Store
+Thumbs.db
+desktop.ini
