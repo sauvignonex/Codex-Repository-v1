@@ -1,9 +1,9 @@
 """Start the configured loopback model; report startup failures to the panel."""
 from pathlib import Path
-import hashlib, json, subprocess, urllib.request, urllib.error, sys, os
+import hashlib, json, subprocess, urllib.request, urllib.error, sys, os, time
 
 
-def launch():
+def launch(status_path=None):
     config = json.loads((Path(__file__).parent/'transcription-config.json').read_text(encoding='utf-8-sig'))
     try:
         with urllib.request.urlopen('http://127.0.0.1:18767/v1/models', timeout=2) as response:
@@ -24,8 +24,36 @@ def launch():
     if hashlib.sha256(executable.read_bytes()).hexdigest() != config['llamaSha256'].lower():
         raise RuntimeError('Контрольная сумма движка смысловых заголовков не совпадает. Проверь установку.')
     with (model.parent/'subtitle-api.stdout.log').open('wb') as stdout, (model.parent/'subtitle-api.stderr.log').open('wb') as stderr:
-        subprocess.Popen([str(executable), '-m', model.name, '-ngl', '99', '-c', '8192', '--host', '127.0.0.1', '--port', '18767', '--no-webui'], cwd=str(model.parent), stdout=stdout, stderr=stderr, creationflags=getattr(subprocess, 'CREATE_NO_WINDOW', 0))
+        child = subprocess.Popen([str(executable), '-m', model.name, '-ngl', '99', '-c', '8192', '--host', '127.0.0.1', '--port', '18767', '--no-webui'], cwd=str(model.parent), stdout=stdout, stderr=stderr, creationflags=getattr(subprocess, 'CREATE_NO_WINDOW', 0))
+    if status_path is not None:
+        report(status_path, {'phase': 'started'})
+        return wait_for_server(child)
     return 'started'
+
+
+def wait_for_server(child):
+    # Observe only the child we created. Leave running models alive on timeout.
+    deadline = time.monotonic() + 55
+    while time.monotonic() < deadline:
+        code = child.poll()
+        if code is not None:
+            raise RuntimeError('Сервер модели остановился при загрузке (код ' + str(code) + '). Проверь установку и журнал движка.')
+        try:
+            with urllib.request.urlopen('http://127.0.0.1:18767/v1/models', timeout=2) as response:
+                models = json.load(response)
+            if not any('Qwen3-4B-Instruct-2507' in entry.get('id', '') for entry in models.get('data', [])):
+                raise RuntimeError('Локальный порт занят другой моделью.')
+            # It may exit while the response is being read.
+            if child.poll() is not None:
+                raise RuntimeError('Сервер модели остановился при загрузке. Проверь журнал движка.')
+            return 'ready'
+        except urllib.error.HTTPError as error:
+            if error.code != 503:
+                raise RuntimeError('Локальный сервис заголовков вернул ошибку HTTP.') from error
+        except (OSError, urllib.error.URLError):
+            pass
+        time.sleep(.5)
+    return 'loading'
 
 
 def report(path, status):
@@ -37,7 +65,7 @@ def report(path, status):
 
 def main(status_path=None):
     try:
-        phase = launch()
+        phase = launch(status_path)
     except Exception as error:
         if status_path is None:
             raise

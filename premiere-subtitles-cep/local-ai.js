@@ -38,7 +38,13 @@
             }
           }
           if(status?.phase==='error')throw Error((typeof status.message==='string'&&status.message||'Не удалось запустить локальную модель.')+' Фразы сохранены; можно оформить темы вручную.');
-          try{if(await healthy())return;}catch(error){if(error.message.includes('занят'))throw error;}
+          try{
+            if(await healthy()){
+              // Let the observing wrapper finish publishing before removing its status file.
+              const running=status?.phase==='started'?window.cep.process.isRunning(process.data):null;
+              if(!running||running.err!==0||running.data===false)return;
+            }
+          }catch(error){if(error.message.includes('занят'))throw error;}
         }
         throw Error('Модель не загрузилась. Фразы сохранены; можно оформить темы вручную.');
       }finally{try{window.cep.fs.deleteFile(statusPath);}catch(_){}}

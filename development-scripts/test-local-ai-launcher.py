@@ -79,7 +79,7 @@ class LauncherTests(unittest.TestCase):
         self.config['llamaSha256'] = '0' * 64
         (self.root / 'transcription-config.json').write_text(json.dumps(self.config))
         module = runpy.run_path(str(self.launcher))
-        with patch('urllib.request.urlopen', side_effect=URLError('offline')), patch('subprocess.Popen') as process:
+        with patch('urllib.request.urlopen', side_effect=URLError('offline')), patch('subprocess.Popen') as process, patch.dict(module['main'].__globals__, wait_for_server=lambda child: 'ready'):
             self.assertEqual(module['main'](status), 1)
             self.assertEqual(json.loads(status.read_text())['phase'], 'error')
             self.assertIn('Контрольная сумма', json.loads(status.read_text())['message'])
@@ -87,9 +87,57 @@ class LauncherTests(unittest.TestCase):
             self.config['llamaSha256'] = hashlib.sha256(self.runtime.read_bytes()).hexdigest()
             (self.root / 'transcription-config.json').write_text(json.dumps(self.config))
             self.assertEqual(module['main'](status), 0)
-            self.assertEqual(json.loads(status.read_text())['phase'], 'started')
+            self.assertEqual(json.loads(status.read_text())['phase'], 'ready')
             process.assert_called_once()
         self.assertFalse(status.with_suffix('.tmp').exists())
+
+    def test_child_exit_reports_error_before_waiting_for_api(self):
+        (self.root / 'transcription-config.json').write_text(json.dumps(self.config))
+        module = runpy.run_path(str(self.launcher))
+        for code in (0, 1, -9):
+            child = MagicMock()
+            child.poll.return_value = code
+            status = self.root / 'status.json'
+            with patch('urllib.request.urlopen', side_effect=URLError('offline')) as request, patch('subprocess.Popen', return_value=child), patch('time.sleep') as sleep:
+                self.assertEqual(module['main'](status), 1)
+                response = json.loads(status.read_text())
+                self.assertEqual(response['phase'], 'error')
+                self.assertIn('Сервер модели остановился', response['message'])
+                self.assertIn(str(code), response['message'])
+                self.assertEqual(request.call_count, 1)
+                sleep.assert_not_called()
+            child.terminate.assert_not_called()
+
+    def test_loading_child_waits_until_expected_api_ready(self):
+        from urllib.error import HTTPError
+        module = runpy.run_path(str(self.launcher))
+        child = MagicMock()
+        child.poll.return_value = None
+        response = MagicMock()
+        response.__enter__.return_value.read.return_value = json.dumps({'data': [{'id': 'Qwen3-4B-Instruct-2507'}]}).encode()
+        with patch('urllib.request.urlopen', side_effect=[HTTPError('url', 503, 'loading', {}, None), response]), patch('time.sleep') as sleep:
+            self.assertEqual(module['wait_for_server'](child), 'ready')
+            sleep.assert_called_once_with(.5)
+        child.terminate.assert_not_called()
+
+    def test_loading_timeout_preserves_running_child(self):
+        module = runpy.run_path(str(self.launcher))
+        child = MagicMock()
+        child.poll.return_value = None
+        with patch('time.monotonic', side_effect=[0, 0, 60]), patch('urllib.request.urlopen', side_effect=URLError('offline')), patch('time.sleep'):
+            self.assertEqual(module['wait_for_server'](child), 'loading')
+        child.terminate.assert_not_called()
+        child.kill.assert_not_called()
+
+    def test_exit_during_ready_response_is_not_success(self):
+        module = runpy.run_path(str(self.launcher))
+        child = MagicMock()
+        child.poll.side_effect = [None, 1]
+        response = MagicMock()
+        response.__enter__.return_value.read.return_value = json.dumps({'data': [{'id': 'Qwen3-4B-Instruct-2507'}]}).encode()
+        with patch('urllib.request.urlopen', return_value=response):
+            with self.assertRaisesRegex(RuntimeError, 'Сервер модели остановился'):
+                module['wait_for_server'](child)
 
 
 if __name__ == '__main__':

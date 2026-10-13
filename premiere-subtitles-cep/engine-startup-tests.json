@@ -1,6 +1,6 @@
 {
   "status": "browser-CEP-contract-tested; native engines not started",
-  "passed": 12,
+  "passed": 13,
   "checks": [
     "blank configuration prevents process/job creation and identifies missing Python",
     "failed process launch persists an error job, releases UI and preserves current document",
@@ -13,6 +13,7 @@
     "Python exit without handshake fails promptly instead of waiting for model timeout",
     "malformed startup response is reported and retry lock is released",
     "retry waits for server after successful wrapper exit and concurrent callers share one launch",
-    "wrapper exit rechecks atomic status to avoid a false failure during publication"
+    "wrapper exit rechecks atomic status to avoid a false failure during publication",
+    "ready API waits for observing wrapper publication before status cleanup"
   ]
 }
