@@ -1,0 +1,13 @@
+{
+  "cueCount": 103,
+  "cuesEqualBeforeInstall": true,
+  "knownOriginalSequences": 5,
+  "previousFullQASequencePresent": false,
+  "newStudySequence": "c4f43473-d57d-4153-a868-997826aacd63",
+  "studyClipIDs": [
+    "000f48f6",
+    "000f48f7",
+    "000f48f8"
+  ],
+  "cacheReceipt": "ok|c4f43473-d57d-4153-a868-997826aacd63|3|17.084"
+}

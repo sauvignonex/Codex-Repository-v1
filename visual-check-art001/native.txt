@@ -1,0 +1,4 @@
+PASS A literalReadback frames=36 propertyReads=360
+PASS B literalReadback frames=36 propertyReads=360
+PASS C literalReadback frames=36 propertyReads=360
+SUCCESS 3 literal plans

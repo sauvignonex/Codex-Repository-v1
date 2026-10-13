@@ -1,0 +1,42 @@
+{
+  "source": "actual Premiere PNG exports",
+  "results": [
+    {
+      "study": "A",
+      "frames": 36,
+      "reading_bounds": [
+        248,
+        807,
+        832,
+        1105
+      ],
+      "unchanged_hold_frames": 19,
+      "changing_entrance_frames": 13
+    },
+    {
+      "study": "B",
+      "frames": 36,
+      "reading_bounds": [
+        257,
+        815,
+        823,
+        1113
+      ],
+      "unchanged_hold_frames": 19,
+      "changing_entrance_frames": 11
+    },
+    {
+      "study": "C",
+      "frames": 36,
+      "reading_bounds": [
+        284,
+        807,
+        796,
+        1105
+      ],
+      "unchanged_hold_frames": 19,
+      "changing_entrance_frames": 12
+    }
+  ],
+  "artistic_acceptance": false
+}
