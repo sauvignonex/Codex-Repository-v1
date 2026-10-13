@@ -70,6 +70,8 @@ def build(output, template=None, engine_config=None):
             'development-scripts/test-writer-preflight.cjs',
             'development-scripts/test-engine-config.cjs',
             'development-scripts/test-engine-startup.cjs',
+            'development-scripts/test-transcription-recovery.cjs',
+            'premiere-subtitles-cep/transcription-recovery-tests.json',
             'development-scripts/test-visual-design.cjs',
             'development-scripts/build-vertical-template-064.jsx',
             'development-scripts/check-dual-color-064.jsx',

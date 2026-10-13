@@ -8,6 +8,14 @@
   function read(path){const result=window.cep.fs.readFile(path);if(result.err!==0)throw Error('Не удалось прочитать '+path);return JSON.parse(result.data.replace(/^\ufeff/,''));}
   function write(path,data){const result=window.cep.fs.writeFile(path,JSON.stringify(data));if(result.err!==0)throw Error('Не удалось сохранить задание распознавания.');}
   function stop(){clearTimeout(timer);timer=null;setBusy(false);}
+  function finish(phase,text){
+    job.phase=phase;job.message=text;
+    let warning=false;
+    try{write(job.folder+'/ui.json',job);}catch(_){warning=true;}
+    // Persist independently: a filesystem failure must not leave a running local record.
+    try{localStorage.setItem(key,JSON.stringify(job));}catch(_){warning=true;try{localStorage.removeItem(key);}catch(ignore){}}
+    stop();message(text+(warning?' Не удалось сохранить состояние задания; проверь доступ к хранилищу.':''));
+  }
   async function poll(){
     if(!job)return;
     try{
@@ -16,21 +24,20 @@
         const status=JSON.parse(result.data.replace(/^\ufeff/,''));
         if(status.id!==job.id)throw Error('Ответ относится к другому заданию.');
         message(status.message+(Number.isFinite(status.progress)?' '+status.progress+'%':''));
-        if(['error','cancelled'].includes(status.phase)){stop();return;}
+        if(['error','cancelled'].includes(status.phase)){finish(status.phase,status.message||'Распознавание остановлено.');return;}
         if(status.phase==='complete'){
           stop();
-          if(window.subtitleGraphic.busy)throw Error('Заверши запись в Premiere, затем открой готовое распознавание ещё раз.');
+          if(window.subtitleGraphic.busy){finish('complete','Заверши запись в Premiere, затем открой готовое распознавание ещё раз.');return;}
           const cues=SubtitlePhrases.fromWords(status.words,subtitleTypography.fitSpeech);
           window.SubtitleEditorialUI.reviewTranscript(cues,status.name,status.previewMedia||job.input||read(job.folder+'/job.json').input,status.id);
-          message('Распознано '+cues.length+' фраз. Проверь текст ниже и нажми «Использовать фразы». Текущий набор пока сохранён.');
-          job.phase='complete';write(job.folder+'/ui.json',job);localStorage.setItem(key,JSON.stringify(job));
+          finish('complete','Распознано '+cues.length+' фраз. Проверь текст ниже и нажми «Использовать фразы». Текущий набор пока сохранён.');
           return;
         }
       }
       if(pid!==null){const running=window.cep.process.isRunning(pid);if(running.err===0&&running.data===false)throw Error('Движок остановился без результата. Текущий набор сохранён; повтори распознавание.');}
       if(Date.now()-job.created>3600000)throw Error('Распознавание слишком долго выполняется. Отмени и выбери короткий фрагмент.');
       timer=setTimeout(poll,700);
-    }catch(error){stop();message(error.message);}
+    }catch(error){finish('error',error.message);}
   }
   async function start(path,selection=null){
     if(busy||window.subtitleGraphic.busy||window.SubtitleEditorialUI?.busy)throw Error('Дождись текущей операции.');
@@ -77,5 +84,5 @@
   window.addEventListener('subtitle:document-change',()=>{if(job?.phase==='complete'){job.phase='used';try{localStorage.setItem(key,JSON.stringify(job));}catch(_){} }});
   window.subtitleTranscription={start,recognize,get busy(){return busy||choosing;}};
   // A reopened panel resumes the same job, never starts a second recognition process.
-  try{const saved=JSON.parse(localStorage.getItem(key)||'null');if(saved&&window.cep?.fs){const base=decodeURI(window.__adobe_cep__.getSystemPath('userData')).replace(/^file:\/\/\//,'').replace(/\\/g,'/').replace(/\/$/,'')+'/SubtitleStudio/jobs/';if(typeof saved.id==='string'&&/^[a-f0-9-]{36}$/.test(saved.id)&&saved.folder===base+saved.id){job=saved;if(job.phase==='running'||job.phase==='complete'){if(job.phase==='running')setBusy(true);timer=setTimeout(poll,500);}else message('Последнее распознавание сохранено. Можно выбрать новый файл.');}}}catch(_){message('Выбери аудио или видео для нового распознавания.');}
+  try{const saved=JSON.parse(localStorage.getItem(key)||'null');if(saved&&window.cep?.fs){const base=decodeURI(window.__adobe_cep__.getSystemPath('userData')).replace(/^file:\/\/\//,'').replace(/\\/g,'/').replace(/\/$/,'')+'/SubtitleStudio/jobs/';if(typeof saved.id==='string'&&/^[a-f0-9-]{36}$/.test(saved.id)&&saved.folder===base+saved.id){job=saved;if(job.phase==='running'||job.phase==='complete'){if(job.phase==='running')setBusy(true);timer=setTimeout(poll,500);}else message(job.message||'Последнее распознавание сохранено. Можно выбрать новый файл.');}}}catch(_){message('Выбери аудио или видео для нового распознавания.');}
 })();

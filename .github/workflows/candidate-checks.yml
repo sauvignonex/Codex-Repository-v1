@@ -38,6 +38,7 @@ jobs:
           node development-scripts/test-update-races.cjs
           node development-scripts/test-engine-config.cjs
           node development-scripts/test-engine-startup.cjs
+          node development-scripts/test-transcription-recovery.cjs
           node development-scripts/test-visual-design.cjs
           node development-scripts/test-dual-color-template.cjs
           python development-scripts/test-package-candidate.py
@@ -64,6 +65,7 @@ jobs:
             premiere-subtitles-cep/update-race-tests.json
             premiere-subtitles-cep/engine-config-tests.json
             premiere-subtitles-cep/engine-startup-tests.json
+            premiere-subtitles-cep/transcription-recovery-tests.json
             premiere-subtitles-cep/local-ai-launcher-tests.json
             premiere-subtitles-cep/transcription-worker-tests-candidate.json
             premiere-subtitles-cep/visual-design-tests.json
