@@ -3,7 +3,7 @@
   function plan(text,role='auto'){
     text=text.replace(/\r\n?/g,'\n').trim();
     const words=text.split(/\s+/).filter(Boolean);
-    if(role==='auto')role=words.length<=2?'title':'speech';
+    if(role==='auto')role=window.SubtitleStyleAdvisor.inferRole(text);
     if(role==='accent')return {role,main:'',accent:sentence(text),speech:'',text:sentence(text)};
     if(role==='speech')return {role,main:'',accent:'',speech:text,text};
     const lines=text.split('\n').filter(l=>l.trim());

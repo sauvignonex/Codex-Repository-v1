@@ -6,7 +6,7 @@
   const enums = {motion:['soft','pop','none','write'],source:['srt','audio'],role:['auto','speech','title','accent']};
   const measure = document.createElement('canvas').getContext('2d');
   const fontCache = new Map();
-  let anim, undo = null, valid = false, saveTimer, lastEmittedText;
+  let styleUndo=null, semanticAdvice=null, styleRequest=0, styleController=null, anim, undo = null, valid = false, saveTimer, lastEmittedText;
   const hex = value => typeof value === 'string' && /^#[0-9a-f]{6}$/i.test(value);
   const clamp = (v,a,b) => Math.max(a,Math.min(b,v));
   const normalText = value => value.replace(/\r\n?/g,'\n').replace(/[\u0000-\u0008\u000b\u000c\u000e-\u001f\u007f\u200b\ufeff]/g,'');
@@ -55,6 +55,30 @@
     q('ss-ai-review').hidden=!open;q('ss-headlines').setAttribute('aria-expanded',String(open));
     (open?q('ss-headline-draft'):q('ss-headlines')).focus();
   }
+  function styleContext(){
+    const doc=window.SubtitleDocument?.getSnapshot();return JSON.stringify({id:doc?.id,index:doc?.selected,text:state.text,role:state.role,cues:doc?.cues.slice(Math.max(0,doc.selected-2),doc.selected+3).map(c=>[c.text,c.spokenText,c.start,c.end,c.appearance?.role])});
+  }
+  function recommendation(){
+    const local=SubtitleStyleAdvisor.recommend(state.text,appearance(),window.SubtitleDocument?.getSelected());
+    if(semanticAdvice?.key===styleContext())return {...local,...semanticAdvice.advice};
+    return local;
+  }
+  function cancelStyleAnalysis(){styleRequest++;styleController?.abort();styleController=null;semanticAdvice=null;q('ss-style-detection').textContent='';}
+  async function analyzeStyle(){
+    cancelStyleAnalysis();const cue=window.SubtitleDocument?.getSelected(),doc=window.SubtitleDocument?.getSnapshot();
+    if(!cue||['title','accent'].includes(state.role))return;
+    const request=styleRequest,key=styleContext(),controller=new AbortController();styleController=controller;
+    const timeout=setTimeout(()=>controller.abort(),15000);
+    q('ss-style-detection').textContent='Уточняем роль по соседней речи…';
+    try{
+      const neighbors=doc.cues.slice(Math.max(0,doc.selected-2),doc.selected+3).filter((_,i)=>Math.max(0,doc.selected-2)+i!==doc.selected);
+      const result=await SubtitleStyleAdvisor.analyze(cue,neighbors,controller.signal);
+      if(controller.signal.aborted||request!==styleRequest||key!==styleContext()||q('ss-style-editor').hidden)return;
+      if(result){const advice=SubtitleStyleAdvisor.recommend(state.text,{role:result.role},cue);semanticAdvice={key,advice:{...advice,reason:result.reason}};render();q('ss-style-detection').textContent='Предложение локальной модели. Проверь его перед применением.';}
+      else q('ss-style-detection').textContent='Недостаточно уверенности для смены роли. Сохраняем текущий тип.';
+    }catch(_){if(request===styleRequest&&!q('ss-style-editor').hidden)q('ss-style-detection').textContent='Анализ модели недоступен. Подбор по текущему тексту работает; тип можно уточнить вручную.';}
+    finally{clearTimeout(timeout);}
+  }
   function render() {
     if(anim){anim.cancel();anim=null;}
     if(q('ss-text').value!==state.text)q('ss-text').value=state.text;
@@ -68,8 +92,17 @@
     root.querySelector('.studio').style.borderRadius=design.radius+'px';root.querySelector('.studio').style.setProperty('--highlight',design.accent);
     q('ss-headline-undo').hidden=!(undo && undo.appliedText===state.text);
     const caption=q('ss-caption'),frame=q('ss-frame'),clean=normalText(state.text).trim();
-    const count=clean.split(/\s+/).filter(Boolean).length;
-    const title=state.role==='title'||(state.role==='auto'&&count<=2),accent=state.role==='accent';
+    const effectiveRole=window.subtitleTypography.plan(clean,state.role).role;
+    const title=effectiveRole==='title',accent=effectiveRole==='accent';
+    const advice=recommendation();
+    q('ss-style-summary').textContent=(effectiveRole==='speech'?'Речь · Cera Pro · без движения':effectiveRole==='accent'?'Акцент · Christopher':'Заголовок · Bebas + Christopher')+' · настройки внутри';
+    q('ss-style-kind').textContent='Подходит: '+advice.label;
+    q('ss-style-reason').textContent=advice.reason;
+    q('ss-style-motion').textContent=advice.movement;
+    q('ss-hand-size-controls').hidden=effectiveRole==='speech';
+    q('ss-motion-controls').hidden=effectiveRole==='speech';
+    q('ss-speech-motion-controls').hidden=effectiveRole!=='speech';q('ss-speech-instant').checked=state.motion==='none';
+    q('ss-style-undo').hidden=!styleUndo;
     const family=accent?'Christopher':title?'Bebas Neue Cyrillic':'Cera Pro';
     const weight=title||accent?400:500;
     q('ss-layout-help').textContent=!title&&!accent?'Обычная речь: одно слово · Cera Pro Medium 55 · сверху справа. Предлоги и частицы остаются со словом.':'Хайлайты: до двух строк · масштаб Bebas и Christopher подбирается отдельно.';
@@ -158,10 +191,25 @@
     const emission=JSON.stringify({text:state.text,appearance:appearance()});
     if(lastEmittedText!==emission){lastEmittedText=emission;window.dispatchEvent(new CustomEvent('subtitle:block-change',{detail:{text:state.text,appearance:appearance()}}));}
   }
-  q('ss-text').addEventListener('input',e=>{state.text=normalText(e.target.value);render();queueSave();});
+  function styleEditor(open){
+    q('ss-style-editor').hidden=!open;q('ss-style-open').setAttribute('aria-expanded',String(open));
+    if(open){q('ss-style-close').focus();q('ss-style-editor').scrollIntoView({block:'nearest'});analyzeStyle();}else{cancelStyleAnalysis();q('ss-style-open').focus();}
+  }
+  q('ss-style-open').addEventListener('click',()=>styleEditor(q('ss-style-editor').hidden));
+  q('ss-style-close').addEventListener('click',()=>styleEditor(false));
+  q('ss-style-editor').addEventListener('keydown',e=>{if(e.key==='Escape'){e.preventDefault();styleEditor(false);}});
+  q('ss-style-auto').addEventListener('click',()=>{
+    const advice=recommendation();
+    styleUndo=appearance();cancelStyleAnalysis();state.role=advice.role;state.motion=advice.motion;
+    render();queueSave();q('ss-status').textContent='Стиль подобран для этого блока. Текст и время сохранены.';
+    if(valid)q('ss-play').click();
+  });
+  q('ss-style-undo').addEventListener('click',()=>{if(!styleUndo)return;cancelStyleAnalysis();Object.assign(state,styleUndo);styleUndo=null;render();queueSave();q('ss-status').textContent='Прежний стиль блока восстановлен.';});
+  q('ss-text').addEventListener('input',e=>{cancelStyleAnalysis();state.text=normalText(e.target.value);render();queueSave();});
   for(const [id,key] of [['ss-size','size'],['ss-accent-size','accentSize'],['ss-position','position']])q(id).addEventListener('input',e=>{state[key]=Number(e.target.value);render();queueSave();});
+  q('ss-speech-instant').addEventListener('change',e=>{state.motion=e.target.checked?'none':'soft';render();queueSave();});
   q('ss-color').addEventListener('input',e=>{if(hex(e.target.value))state.color=e.target.value;render();queueSave();});
-  for(const [id,key] of [['ss-motion','motion'],['ss-role','role']])q(id).addEventListener('change',e=>{state[key]=e.target.value;render();queueSave();});
+  for(const [id,key] of [['ss-motion','motion'],['ss-role','role']])q(id).addEventListener('change',e=>{cancelStyleAnalysis();state[key]=e.target.value;render();queueSave();});
   q('ss-safe-toggle').addEventListener('change',e=>{state.safe=e.target.checked;render();queueSave();});
   root.querySelectorAll('[data-source]').forEach(b=>b.addEventListener('click',()=>{state.source=b.dataset.source;render();queueSave();}));
   root.querySelectorAll('[data-sample]').forEach(b=>b.addEventListener('click',()=>{state.text=b.dataset.sample==='short'?'Марийский десерт':'Новая гастрономическая визитная карточка Марий Эл';render();queueSave();}));
@@ -193,7 +241,7 @@
   function captionElement(){return q('ss-caption');}
   q('ss-apply').addEventListener('click',async()=>{if(!valid)return;clearTimeout(saveTimer);const settingsSaved=await save();const documentSaved=window.SubtitleDocument?window.SubtitleDocument.save():true;q('ss-status').textContent=settingsSaved&&documentSaved?'Сохранено в панели. Для записи на таймлайн нажми основную кнопку рядом.':'Не все правки удалось сохранить. Не закрывай панель до сохранения.';});
   restore(window.subtitleStorage?.widgetState);render();
-  window.SubtitlePanel={getSettings:appearance,setText(text,name,settings){if(typeof text!=='string')return;if(settings)restore({modelContent:{subtitlePanel:{...defaults,...settings,text}}});state.text=normalText(text);if(typeof name==='string'){root.dataset.documentName=name;state.source='srt';}undo=null;render();queueSave();}};
+  window.SubtitlePanel={getSettings:appearance,setText(text,name,settings){if(typeof text!=='string')return;if(settings)restore({modelContent:{subtitlePanel:{...defaults,...settings,text}}});state.text=normalText(text);if(typeof name==='string'){root.dataset.documentName=name;state.source='srt';}undo=null;styleUndo=null;cancelStyleAnalysis();q('ss-style-editor').hidden=true;q('ss-style-open').setAttribute('aria-expanded','false');render();queueSave();}};
   window.addEventListener('openai:set_globals',e=>{if(e.detail?.globals?.widgetState){restore(e.detail.globals.widgetState);render();}});
   new ResizeObserver(render).observe(q('ss-frame'));
   document.fonts?.ready.then(()=>{fontCache.clear();render();});
