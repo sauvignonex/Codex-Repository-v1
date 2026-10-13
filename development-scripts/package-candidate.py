@@ -77,6 +77,8 @@ def build(output, template=None, engine_config=None):
             'docs/DUAL-COLOR-064.md',
             'premiere-subtitles-cep/dual-color-template-tests.json',
             'premiere-subtitles-cep/visual-design-tests.json',
+            'development-scripts/test-transcription-worker-candidate.py',
+            'premiere-subtitles-cep/transcription-worker-tests-candidate.json',
             'development-scripts/test-local-ai-launcher.py',
             'premiere-subtitles-cep/local-ai-launcher-tests.json',
             'premiere-subtitles-cep/engine-config-tests.json',
