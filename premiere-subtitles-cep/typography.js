@@ -29,5 +29,16 @@
   }
   // A font baseline, not the visible glyph box, anchors consecutive words.
   function speechPosition(position=50){return {right:964,baseline:Math.max(315,Math.min(1100,375+(position-50)*19.2))};}
-  window.subtitleTypography={plan,sentence,fitSpeech,speechPosition};
+  function highlightGeometry(text,hand=false,size=100,accentSize=100){
+    const lines=text.split('\n'),family=hand?'"Christopher", "Segoe Script", cursive':'"Bebas Neue Cyrillic", Arial, sans-serif';
+    measure.font='400 200px '+family;
+    const metrics=lines.map(line=>measure.measureText(line)),advance=Math.max(...metrics.map(m=>m.width));
+    const left=Math.min(...metrics.map(m=>(advance-m.width)/2-m.actualBoundingBoxLeft));
+    const right=Math.max(...metrics.map(m=>(advance-m.width)/2+m.actualBoundingBoxRight));
+    const top=-metrics[0].actualBoundingBoxAscent,bottom=240*(lines.length-1)+metrics.at(-1).actualBoundingBoxDescent;
+    const height=Math.max(1,bottom-top),width=Math.max(1,right-left),m=Math.max(.7,Math.min(1.3,size/100)),a=hand?Math.max(.7,Math.min(1.5,accentSize/100)):1;
+    const scale=Math.min((hand?130:145)*m*a/height,710/width);
+    return {family,advance,left,top,width,height,scale,centerX:(left+right)/2,centerY:(top+bottom)/2};
+  }
+  window.subtitleTypography={plan,sentence,fitSpeech,speechPosition,highlightGeometry};
 })();

@@ -52,13 +52,13 @@
     if(current?.id!==doc.id||JSON.stringify(current.cues)!==JSON.stringify(doc.cues))throw Error('Текст или оформление изменились во время подготовки. Повтори создание с актуальными правками.');
     if(cancel){status.textContent='Создание отменено до импорта.';return;}
 
-    const plans=doc.cues.map((cue,index)=>{const style=index===doc.selected?settings:cue.appearance||{...settings,role:'speech'};const plan={...style,...window.subtitleTypography.plan(cue.text,style.role),timing:{start:cue.start,end:cue.end},duration:(cue.end-cue.start)/1000};if(plan.role==='speech'){const fit=window.subtitleTypography.fitSpeech(plan.speech,plan.size);plan.speech=fit.text;plan.fitValid=fit.valid;}return plan;});
+    const plans=doc.cues.map((cue,index)=>{const style=index===doc.selected?settings:cue.appearance||{...settings,role:'speech'};const plan={...style,...window.subtitleTypography.plan(cue.text,style.role),timing:{start:cue.start,end:cue.end},duration:(cue.end-cue.start)/1000};if(plan.role==='speech'){const fit=window.subtitleTypography.fitSpeech(plan.speech,plan.size);plan.speech=fit.text;plan.fitValid=fit.valid;}else{const lines=plan.role==='title'?[{text:plan.main,hand:false},{text:plan.accent,hand:true}]:[{text:plan.accent,hand:true}];plan.fitValid=lines.filter(l=>l.text).every(l=>200*window.subtitleTypography.highlightGeometry(l.text,l.hand,plan.size,plan.accentSize).scale>=30);}return plan;});
 
     const invalid=plans.findIndex((p,i)=>!p.text.trim()||p.text.length>200||p.text.split('\n').length>2||!Number.isSafeInteger(p.timing.start)||!Number.isSafeInteger(p.timing.end)||p.timing.start<0||!Number.isFinite(p.duration)||p.duration<.034||p.duration>6||!['title','speech','accent'].includes(p.role)||!['none','soft','pop','write'].includes(p.motion)||!/^#[0-9a-f]{6}$/i.test(p.color)||!Number.isFinite(p.size)||p.size<70||p.size>130||!Number.isFinite(p.accentSize)||p.accentSize<70||p.accentSize>150||!Number.isFinite(p.position)||p.position<28||p.position>74||(i>0&&p.timing.start<plans[i-1].timing.end));
 
     const unreadable=plans.findIndex(p=>p.fitValid===false);
 
-    if(unreadable>=0){issue='Блок '+(unreadable+1)+': фраза слишком длинная для читаемого размера. Раздели её при подготовке фраз или сократи текст.';status.textContent=issue;window.SubtitleDocument.select(unreadable);document.getElementById('ss-text').scrollIntoView({block:'center'});changed();return;}
+    if(unreadable>=0){issue='Блок '+(unreadable+1)+': текст слишком длинный для читаемого размера. Сократи его или раздели блок при подготовке текста.';status.textContent=issue;window.SubtitleDocument.select(unreadable);document.getElementById('ss-text').scrollIntoView({block:'center'});changed();return;}
 
     if(invalid>=0){issue='Проверь блок '+(invalid+1)+': текст до 200 символов, длительность от одного кадра до 6 секунд, тайминги без пересечений.';status.textContent=issue;window.SubtitleDocument.select(invalid);changed();return;}
 

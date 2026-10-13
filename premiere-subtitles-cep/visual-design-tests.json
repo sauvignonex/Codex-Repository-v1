@@ -1,0 +1,14 @@
+{
+  "status": "browser-geometry/layout-tested; actual Premiere/reference video acceptance pending",
+  "passed": 8,
+  "checks": [
+    "320/520/1000px panels scroll content without horizontal overflow or hiding header/action",
+    "independent glyph heights/widths/centers follow AE rules across size, accent size, position and roles; approved 145/130 maintained",
+    "animated highlight keeps independent geometry and bounds-based reveal, main precedes handwritten line",
+    "font warning clears when actual fonts finish loading",
+    "empty source has one clear speech-first path and no sample-file summary",
+    "fresh recognition shows progress and disables the main action even before a document exists",
+    "source → text → style → make subtitles stays sequential with visible final button",
+    "unreadably long highlight stops the entire import before native mutation"
+  ]
+}

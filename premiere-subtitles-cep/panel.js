@@ -43,20 +43,13 @@
     if(u && typeof u.beforeText==='string' && u.beforeText.length<=200 && typeof u.appliedText==='string' && u.appliedText.length<=120 && enums.role.includes(u.beforeRole))undo={beforeText:u.beforeText,beforeRole:u.beforeRole,appliedText:u.appliedText};
   }
   function fontAvailable(name,weight) {
-    const key=name+weight;if(fontCache.has(key))return fontCache.get(key);
+    const key=name+weight;if(fontCache.get(key)===true)return true;
     const sample='Марийский десерт ЙЁЩ 0123456789';
     const result=['monospace','serif','sans-serif'].some(fallback=>{
       measure.font=weight+' 32px '+fallback;const a=measure.measureText(sample).width;
       measure.font=weight+' 32px "'+name+'",'+fallback;return Math.abs(a-measure.measureText(sample).width)>.1;
     });
     fontCache.set(key,result);return result;
-  }
-  function lineOptions(text) {
-    const explicit=text.split('\n').map(l=>l.replace(/[ \t]+/g,' ').trim()).filter(Boolean);
-    if(explicit.length>1)return [explicit];
-    const words=(explicit[0]||'').split(' '), variants=[[explicit[0]||'']];
-    for(let i=1;i<words.length;i++)variants.push([words.slice(0,i).join(' '),words.slice(i).join(' ')]);
-    return variants;
   }
   function setReview(open) {
     q('ss-ai-review').hidden=!open;q('ss-headlines').setAttribute('aria-expanded',String(open));
@@ -82,15 +75,40 @@
     q('ss-layout-help').textContent=!title&&!accent?'Обычная речь: одно слово · Cera Pro Medium 55 · сверху справа. Предлоги и частицы остаются со словом.':'Хайлайты: до двух строк · масштаб Bebas и Christopher подбирается отдельно.';
     caption.style.fontFamily='"'+family+'", '+(accent?'"Segoe Script", cursive':'Arial, sans-serif');caption.style.fontWeight=weight;caption.style.color=state.color;
     q('ss-current-font').textContent=family==='Cera Pro'?'Cera Pro Medium':family;
-    show('ss-font-warning',fontAvailable(family,weight)?'':family+' недоступен в предпросмотре — используется замена.');
+    const requiredFonts=title&&window.subtitleTypography.plan(clean,state.role).accent?[family,'Christopher']:[family],missingFonts=requiredFonts.filter(name=>!fontAvailable(name,name==='Cera Pro'?500:400));
+    show('ss-font-warning',missingFonts.length?missingFonts.join(', ')+' недоступен в предпросмотре — используется замена.':'');
     let problem=!clean?'Введи текст для предпросмотра.':clean.length>200?'Блок длиннее 200 символов. Раздели его на части.':clean.split('\n').filter(l=>l.trim()).length>2?'Здесь больше двух строк. Раздели блок или убери перенос.':'';
     const w=frame.clientWidth,h=frame.clientHeight;
-    valid=false;caption.hidden=true;
+    valid=false;caption.hidden=true;caption.style.height='';
     if(!problem && w>0 && h>0) {
       const plan=window.subtitleTypography.plan(clean,state.role);
       const display=plan.text;
       const speechFit=!title&&!accent?window.subtitleTypography.fitSpeech(display,state.size):null;
-      const options=speechFit?[speechFit.text.split('\n')]:lineOptions(display),start=speechFit?speechFit.fontSize*w/1080:w*(title?.136:.135)*state.size/100,min=speechFit?Math.min(12,start):12;
+      if(title||accent){
+        // Draw independent text layers with the approved AE ink-height/width/position rules.
+        caption.hidden=false;caption.replaceChildren();caption.style.width=w+'px';caption.style.height=h+'px';caption.style.left=(w/2)+'px';caption.style.top=(h/2)+'px';
+        const layers=title?[{text:plan.main,hand:false,offset:-80},{text:plan.accent,hand:true,offset:80}].filter(l=>l.text):[{text:plan.accent,hand:true,offset:0}];
+        let readable=true;
+        for(const layer of layers){
+          const g=window.subtitleTypography.highlightGeometry(layer.text,layer.hand,state.size,state.accentSize),unit=w/1080;
+          const y=Math.max(420,Math.min(1380,state.position*19.2)),height=g.height*g.scale,width=g.width*g.scale;
+          const cy=Math.max(260+height/2,Math.min(1570-height/2,y+layer.offset)),cx=cy+height/2>1320?Math.min(540,840-width/2):540;
+          const span=document.createElement('span');span.textContent=layer.text;span.style.cssText='position:absolute;display:block;white-space:pre;text-align:center;font-weight:400;font-size:200px;line-height:240px;transform-origin:0 0';
+          span.style.fontFamily=g.family;span.style.width=g.advance+'px';span.style.left=cx*unit+'px';span.style.top=cy*unit+'px';caption.append(span);
+          const baseline=document.createElement('span');baseline.style.cssText='display:inline-block;width:0;height:0;vertical-align:baseline';
+          span.replaceChildren(document.createTextNode(layer.text.split('\n')[0]),baseline);if(layer.text.includes('\n'))span.append(document.createTextNode('\n'+layer.text.split('\n').slice(1).join('\n')));
+          const baselineOffset=baseline.getBoundingClientRect().top-span.getBoundingClientRect().top;
+          const scale=g.scale*unit,tx=-g.centerX*scale,ty=-(baselineOffset+g.centerY)*scale;
+          span.dataset.restTransform='translate('+tx+'px,'+ty+'px) scale('+scale+')';span.style.transform=span.dataset.restTransform;
+          span.dataset.revealBox=JSON.stringify([g.left-26,baselineOffset+g.top-26,g.width+52,g.height+52]);
+          span.dataset.inkHeight=String(height);span.dataset.inkWidth=String(width);span.dataset.inkCenterY=String(cy);
+          if(200*g.scale<30)readable=false;
+        }
+        valid=readable;if(!readable)problem='Хайлайт слишком длинный для читаемого размера. Сократи текст или раздели его.';
+        q('ss-current-font').textContent=title&&plan.accent?'Bebas + Christopher':family;
+      }else{
+
+      const options=[speechFit.text.split('\n')],start=speechFit.fontSize*w/1080,min=Math.min(12,start);
       const effect=6,movement=state.motion==='soft'?8:0;
       const topLimit=h*234/1920+effect,bottomLimit=h*1600/1920-effect-movement;
       const leftLimit=w*72/1082+effect,rightLimit=w*1018/1082-effect,notchRight=w*864/1082-effect,notchY=h*1348/1920-effect-movement;
@@ -99,15 +117,12 @@
       outer: for(let font=Math.max(min,start);font>=min-.001;font-=.5) {
         measure.font=weight+' '+font+'px '+caption.style.fontFamily;
         const ranked=options.map(lines=>{
-          measure.font=weight+' '+font+'px '+caption.style.fontFamily;const base=measure.measureText(lines[0]);const target=(base.actualBoundingBoxAscent+base.actualBoundingBoxDescent)||font;
-          const lineFonts=[];
-          const widths=lines.map((line,i)=>{let f=font;const mixed=title&&plan.accent&&i===1;measure.font=weight+' '+font+'px '+(mixed?'"Christopher"':caption.style.fontFamily);if(mixed){const a=measure.measureText(line);f=font*target/Math.max(1,a.actualBoundingBoxAscent+a.actualBoundingBoxDescent)*.9*state.accentSize/100;measure.font=weight+' '+f+'px "Christopher"';}lineFonts.push(f);const m=measure.measureText(line);return Math.max(m.width,(m.actualBoundingBoxLeft||0)+(m.actualBoundingBoxRight||0));});
-          return{lines,lineFonts,width:Math.max(...widths),score:Math.max(...widths)+(lines.length===2?Math.abs(widths[0]-widths[1])*.12+3:0)};
+          const widths=lines.map(line=>{const m=measure.measureText(line);return Math.max(m.width,(m.actualBoundingBoxLeft||0)+(m.actualBoundingBoxRight||0));});
+          return{lines,width:Math.max(...widths),score:Math.max(...widths)+(lines.length===2?Math.abs(widths[0]-widths[1])*.12+3:0)};
         }).sort((a,b)=>a.score-b.score);
         for(const option of ranked) {
           const boxWidth=Math.ceil(option.width)+2;
           caption.style.textAlign=speechFit?'right':'center';caption.style.width=boxWidth+'px';caption.style.fontSize=font+'px';caption.textContent=option.lines.join('\n');
-          if(title&&plan.accent){caption.replaceChildren();option.lines.forEach((line,i)=>{const span=document.createElement('span');span.textContent=line;span.style.display='block';span.style.fontFamily=i===1?'"Christopher"':caption.style.fontFamily;span.style.fontSize=option.lineFonts[i]+'px';caption.append(span);});q('ss-current-font').textContent='Bebas + Christopher';}
           const boxHeight=caption.offsetHeight;
           if(boxHeight>bottomLimit-topLimit)continue;
           const y=clamp(requestedY+(speechFit?boxHeight/2:0),topLimit+boxHeight/2,bottomLimit-boxHeight/2);
@@ -133,6 +148,7 @@
         }
       }
       if(!valid)problem='Текст не помещается читаемым размером. Раздели его на несколько блоков.';
+      }
     }
     caption.hidden=!valid;q('ss-apply').disabled=!valid;q('ss-play').disabled=!valid;
     window.subtitlePreview={getLayout:()=>({...window.subtitleTypography.plan(clean,state.role),valid,font:accent?'Christopher':title?'BebasNeueCyrillic':'CeraPro-Medium',size:state.size,accentSize:state.accentSize,position:state.position,color:state.color,motion:state.motion,speech:!title&&!accent?caption.textContent:''})};
@@ -167,7 +183,10 @@
     const animations=parts.map((target,i)=>{const hand=layout.role==='accent'||layout.role==='title'&&i===1;
       const frames=[];for(let n=0;n<=Math.max(2,Math.ceil(duration*60));n++){const offset=n/Math.max(2,Math.ceil(duration*60)),m=SubtitleMotion.sample(offset*duration,duration,state.motion,layout.role,hand,Math.max(1,target.textContent.replace(/[^0-9A-Za-zА-Яа-яЁё]/g,'').length));
         const base=target===caption?'translate(-50%,-50%) ':'';
-        frames.push({offset,opacity:m.opacity,transform:base+'translate('+m.x*scale+'px,'+m.y*scale+'px) scale('+m.scale+')',filter:'blur('+m.blur*scale+'px)',clipPath:hand?'inset(0 '+(100*(1-m.reveal))+'% 0 0)':'inset('+(100*(1-m.reveal))+'% 0 0 0)'});
+        const rest=target.dataset.restTransform||'',box=target.dataset.revealBox?JSON.parse(target.dataset.revealBox):null;
+        let clipPath=hand?'inset(0 '+(100*(1-m.reveal))+'% 0 0)':'inset('+(100*(1-m.reveal))+'% 0 0 0)';
+        if(box){const [x,y,w,h]=box,edge=x+w*m.reveal,tip=hand?Math.min(28,w*.08)*Math.sin(Math.PI*m.reveal):0,top=hand?y:y+h*(1-m.reveal);clipPath=hand?'polygon('+x+'px '+y+'px,'+(edge+tip)+'px '+y+'px,'+(edge-tip)+'px '+(y+h)+'px,'+x+'px '+(y+h)+'px)':'polygon('+x+'px '+top+'px,'+(x+w)+'px '+top+'px,'+(x+w)+'px '+(y+h)+'px,'+x+'px '+(y+h)+'px)';}
+        frames.push({offset,opacity:m.opacity,transform:base+'translate('+m.x*scale+'px,'+m.y*scale+'px) scale('+m.scale+') '+rest,filter:'blur('+m.blur*scale+'px)',clipPath});
       }return target.animate(frames,{duration:duration*1000,easing:'linear'});
     });anim={cancel(){animations.forEach(a=>a.cancel());}};
   });
@@ -178,5 +197,6 @@
   window.addEventListener('openai:set_globals',e=>{if(e.detail?.globals?.widgetState){restore(e.detail.globals.widgetState);render();}});
   new ResizeObserver(render).observe(q('ss-frame'));
   document.fonts?.ready.then(()=>{fontCache.clear();render();});
+  document.fonts?.addEventListener('loadingdone',()=>{fontCache.clear();render();});
   if(globalThis.Tweak){const tweak=new Tweak({container:root.querySelector('.studio'),onChange:()=>{render();queueSave();}});tweak.addSlider(design,'radius',{label:'Скругление панели',min:0,max:20,unit:'px'});tweak.addColorPicker(design,'accent',{label:'Цвет акцента',reference:'--highlight'});}
 })();

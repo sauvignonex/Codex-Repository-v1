@@ -1,7 +1,7 @@
 <!doctype html><html lang="ru"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Субтитры</title><link rel="stylesheet" href="panel.css"></head><body><div id="subtitle-studio-preview" class="viz-dotted-background">
 
 <section class="studio" aria-label="CEP · 0.6.2 субтитров для Premiere">
-  <div class="topbar"><header class="head"><span class="mark"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" aria-hidden="true"><rect x="3" y="4" width="18" height="16" rx="3"/><path d="M6 10h4m4 0h4M6 14h12"/></svg></span><div><div class="name">Субтитры</div><div class="muted">Для твоего видео в Premiere</div></div><span class="demo">CEP · 0.6.2</span></header>
+  <div class="topbar"><header class="head"><span class="mark"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" aria-hidden="true"><rect x="3" y="4" width="18" height="16" rx="3"/><path d="M6 10h4m4 0h4M6 14h12"/></svg></span><div><div class="name">Субтитры</div><div class="muted">Для твоего видео в Premiere</div></div><span class="demo" hidden>CEP · 0.6.2</span></header>
     <nav class="stage-nav" aria-label="Этапы работы"><button type="button" data-stage="source" aria-current="step"><span>1</span> Источник</button><button type="button" data-stage="text"><span>2</span> Текст</button><button type="button" data-stage="style"><span>3</span> Оформление</button><button type="button" data-stage="finish"><span>4</span> Сделать субтитры</button></nav>
   </div>
   <div class="body">
@@ -25,8 +25,8 @@
       <button type="button" id="scenario-open">Сверить со сценарием</button>
       <dialog id="scenario-dialog" aria-labelledby="scenario-title"><h2 id="scenario-title">Сценарий для сверки</h2><p>Вставь правильный текст речи. Сверка исправляет только обычную речь, сохраняя количество блоков и тайминги. Хайлайты и рукописные акценты не меняются. Вступление вне сценария остаётся на месте.</p><textarea id="editorial-reference" aria-label="Сценарий для сверки" spellcheck="true" placeholder="Вставь сценарий здесь…"></textarea><p id="scenario-status" role="status" aria-live="polite"></p><div class="row"><button type="button" id="scenario-check" class="main-action">Сверить текст</button><button type="button" id="scenario-close">Закрыть</button></div></dialog>
       <details id="editorial-tools" open><summary>Фразы и смысловые акценты</summary>
-      <p class="muted">Собери слова в читаемые фразы. Сценарий помогает исправить распознавание. Предложения можно отредактировать до создания графики.</p>
-      <button type="button" id="editorial-group">Собрать читаемые фразы</button> <button type="button" id="editorial-ai">Выделить темы локально</button> <button type="button" id="editorial-undo">Вернуть предыдущий набор</button>
+      <p class="muted">Подготовь обычную речь по одному самостоятельному слову и выдели важные темы. Сценарий помогает исправить распознавание. Предложения можно отредактировать до создания графики.</p>
+      <button type="button" id="editorial-group">Подготовить блоки речи</button> <button type="button" id="editorial-ai">Выделить темы локально</button> <button type="button" id="editorial-undo">Вернуть предыдущий набор</button>
       <p id="editorial-status" role="status" aria-live="polite">Локальная модель работает на этом компьютере. Аудио и сценарий не отправляются в интернет.</p>
       <div id="editorial-draft" hidden><div id="editorial-review"></div><button type="button" id="editorial-apply" class="main-action">Применить подготовленные фразы</button></div>
       </details>
@@ -35,8 +35,8 @@
       <div>
         <div class="row"><span class="label">Как будет выглядеть</span><label class="check"><input id="ss-safe-toggle" type="checkbox" checked> Зона Reels</label></div>
         <div class="frame" id="ss-frame">
-          <div class="scene-circle"></div><div class="scene-note">Пример оформления</div>
-          <svg class="safe" id="ss-safe-overlay" viewBox="0 0 1082 1920" aria-label="Безопасная область по вашему шаблону" role="img"><path fill="#ff98182b" fill-rule="evenodd" d="M0 0H1082V1920H0Z M72 234H1018V1348H864V1600H72Z"/><path fill="none" stroke="#ffffff78" stroke-width="3" stroke-dasharray="12 10" d="M72 234H1018V1348H864V1600H72Z"/></svg>
+          <div class="scene-circle"></div><div class="scene-note">Предпросмотр · 9:16</div>
+          <svg class="safe" id="ss-safe-overlay" viewBox="0 0 1082 1920" aria-label="Безопасная область по вашему шаблону" role="img"><path fill="#ffffff09" fill-rule="evenodd" d="M0 0H1082V1920H0Z M72 234H1018V1348H864V1600H72Z"/><path fill="none" stroke="#ffffff78" stroke-width="3" stroke-dasharray="12 10" d="M72 234H1018V1348H864V1600H72Z"/></svg>
           <div class="caption" id="ss-caption">МАРИЙСКИЙ<br>ДЕСЕРТ</div>
         </div>
         <div class="safe-info"><span class="safe-dot"></span><span id="ss-fit">Текст внутри безопасной зоны</span></div>
@@ -53,7 +53,7 @@
             <p>Демонстрация на готовом примере. ИИ ещё не подключён.</p>
           </section>
         </div>
-        <div><label class="label" for="ss-role">Стиль блока</label><select id="ss-role"><option value="auto">Определить автоматически</option><option value="speech">Обычная речь · Cera Pro Medium</option><option value="title">Заголовок · Bebas + Christopher</option><option value="accent">Рукописный акцент · Christopher</option></select><div class="fontrow"><span>Шрифт блока</span><strong id="ss-current-font">Bebas Neue Cyrillic</strong></div><div class="muted">Bebas Neue Cyrillic · Cera Pro · Christopher</div><div id="ss-font-warning" class="validation" hidden></div></div>
+        <div><label class="label" for="ss-role">Стиль блока</label><select id="ss-role"><option value="auto">Определить автоматически</option><option value="speech">Обычная речь</option><option value="title">Крупный заголовок</option><option value="accent">Рукописный акцент</option></select><div class="fontrow"><span>Шрифт блока</span><strong id="ss-current-font">Bebas Neue Cyrillic</strong></div><div class="muted">Bebas Neue Cyrillic · Cera Pro · Christopher</div><div id="ss-font-warning" class="validation" hidden></div></div>
         <div><label class="label" for="ss-motion">Анимация</label><select id="ss-motion"><option value="soft">Мягкое появление</option><option value="pop">Акцентное появление</option><option value="write">Последовательное раскрытие строк</option><option value="none">Без анимации</option></select><div class="muted">Темп подстраивается под длину слова и время блока.</div></div>
         <details><summary>Размер, положение и цвет</summary><div class="advanced"><div><label for="ss-accent-size">Размер рукописной строки</label><input id="ss-accent-size" type="range" min="70" max="150" value="100" step="5"></div><div><div class="row"><label for="ss-size">Масштаб текста</label><output id="ss-size-value">100%</output></div><input id="ss-size" type="range" min="70" max="130" value="100" step="5"></div><div><div class="row"><label for="ss-position">Положение по высоте</label><output id="ss-position-value">55%</output></div><input id="ss-position" type="range" min="28" max="74" value="55"></div><div class="row"><label for="ss-color">Цвет текста</label><input id="ss-color" type="color" value="#ffffff"></div></div></details>
         <div><div class="muted"><span id="ss-layout-help">Хайлайты: до двух строк · размер подбирается автоматически</span></div><div id="ss-validation" class="validation" role="status" aria-live="polite" hidden></div><button type="button" id="ss-headline-undo" hidden>Отменить заголовок</button><div id="ss-storage-warning" class="validation" role="status" hidden></div></div>

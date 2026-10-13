@@ -58,7 +58,7 @@ def build(output, template=None, engine_config=None):
         if file.is_file() and file.suffix in RUNTIME_SUFFIXES:
             files[file.relative_to(ROOT).as_posix()] = file.read_bytes()
     docs = ['AGENTS.md', 'README.md', 'release-0.6.3-candidate.md',
-            'docs/NATIVE-QA-063.md', 'docs/AUTONOMOUS-WORK.md', 'local-ai.md', 'docs/STATUS-AND-ROADMAP.md',
+            'docs/NATIVE-QA-063.md', 'docs/AUTONOMOUS-WORK.md', 'docs/VISUAL-REVIEW-063.md', 'local-ai.md', 'docs/STATUS-AND-ROADMAP.md',
             'development-scripts/build-vertical-template-062.jsx',
             'development-scripts/build-vertical-template-063.jsx',
             'development-scripts/check-stationary-speech-063.jsx',
@@ -70,6 +70,8 @@ def build(output, template=None, engine_config=None):
             'development-scripts/test-writer-preflight.cjs',
             'development-scripts/test-engine-config.cjs',
             'development-scripts/test-engine-startup.cjs',
+            'development-scripts/test-visual-design.cjs',
+            'premiere-subtitles-cep/visual-design-tests.json',
             'development-scripts/test-local-ai-launcher.py',
             'premiere-subtitles-cep/local-ai-launcher-tests.json',
             'premiere-subtitles-cep/engine-config-tests.json',
