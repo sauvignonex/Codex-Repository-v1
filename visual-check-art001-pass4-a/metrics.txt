@@ -1,0 +1,1 @@
+font=BebasNeueCyrillic tracking=-84 scaleX=86.5888718431243 scaleY=86.5888718431243 boundary=0.35736778378487 layers=4
