@@ -35,7 +35,7 @@ class LauncherTests(unittest.TestCase):
             result.__enter__.return_value.read.return_value = json.dumps(response).encode()
         with patch('urllib.request.urlopen', side_effect=URLError('offline') if response is None else None,
                    return_value=result), patch('subprocess.Popen', self.process):
-            runpy.run_path(str(self.launcher), run_name='__test__')
+            runpy.run_path(str(self.launcher))['launch']()
             return self.process
 
     def test_matching_uppercase_digest_launches_configured_model(self):
@@ -47,13 +47,13 @@ class LauncherTests(unittest.TestCase):
 
     def test_wrong_digest_stops_before_process_creation(self):
         self.config['llamaSha256'] = '0' * 64
-        with self.assertRaisesRegex(RuntimeError, 'digest mismatch'):
+        with self.assertRaisesRegex(RuntimeError, 'Контрольная сумма'):
             self.run_launcher()
         self.process.assert_not_called()
 
     def test_missing_model_stops_before_process_creation(self):
         self.model.unlink()
-        with self.assertRaisesRegex(RuntimeError, 'not installed'):
+        with self.assertRaisesRegex(RuntimeError, 'Не установлен'):
             self.run_launcher()
         self.process.assert_not_called()
 
@@ -62,9 +62,34 @@ class LauncherTests(unittest.TestCase):
         process.assert_not_called()
 
     def test_other_service_on_port_never_spawns(self):
-        with self.assertRaisesRegex(RuntimeError, 'occupied'):
+        with self.assertRaisesRegex(RuntimeError, 'занят'):
             self.run_launcher({'data': [{'id': 'other-model'}]})
         self.process.assert_not_called()
+
+
+    def test_loading_service_never_spawns(self):
+        from urllib.error import HTTPError
+        (self.root / 'transcription-config.json').write_text(json.dumps(self.config))
+        with patch('urllib.request.urlopen', side_effect=HTTPError('url', 503, 'loading', {}, None)), patch('subprocess.Popen') as process:
+            self.assertEqual(runpy.run_path(str(self.launcher))['launch'](), 'loading')
+            process.assert_not_called()
+
+    def test_status_handshake_reports_digest_failure_and_retry(self):
+        status = self.root / 'status.json'
+        self.config['llamaSha256'] = '0' * 64
+        (self.root / 'transcription-config.json').write_text(json.dumps(self.config))
+        module = runpy.run_path(str(self.launcher))
+        with patch('urllib.request.urlopen', side_effect=URLError('offline')), patch('subprocess.Popen') as process:
+            self.assertEqual(module['main'](status), 1)
+            self.assertEqual(json.loads(status.read_text())['phase'], 'error')
+            self.assertIn('Контрольная сумма', json.loads(status.read_text())['message'])
+            process.assert_not_called()
+            self.config['llamaSha256'] = hashlib.sha256(self.runtime.read_bytes()).hexdigest()
+            (self.root / 'transcription-config.json').write_text(json.dumps(self.config))
+            self.assertEqual(module['main'](status), 0)
+            self.assertEqual(json.loads(status.read_text())['phase'], 'started')
+            process.assert_called_once()
+        self.assertFalse(status.with_suffix('.tmp').exists())
 
 
 if __name__ == '__main__':
