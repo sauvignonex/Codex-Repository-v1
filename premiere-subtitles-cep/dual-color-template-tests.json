@@ -1,0 +1,12 @@
+{
+  "status": "AE-expression-model-tested; actual AE export/render pending; panel integration pending",
+  "passed": 6,
+  "checks": [
+    "separate 064 comp, three text layers, first seven control names/defaults unchanged",
+    "geometry, timing, opacity, speech stability and reveal expressions byte-identical to 063",
+    "disabled split colors preserve shared color for all three layers",
+    "enabled red/white headline colors stay independent while speech keeps shared color",
+    "white/yellow variant changes only the chosen line",
+    "text, font size and normal caps are preserved by color expressions"
+  ]
+}
