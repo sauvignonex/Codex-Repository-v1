@@ -1,0 +1,11 @@
+{
+  "source": "examples/Рилс Колобки — референс.mp4",
+  "analysis_grid_fps": 30,
+  "method": "Manual frame contact sheets; entrance and first absent frame uncertainty ±1 analysis frame. First absent includes scene cut for A.",
+  "episodes": [
+    {"family":"A","comparison_start_frame":87,"first_visible_frame":88,"first_absent_frame":176,"study_frames":89,"exit":"hard cut at camera cut"},
+    {"family":"B","comparison_start_frame":707,"first_visible_frame":708,"exit_start_frame":835,"first_absent_frame":842,"study_frames":135,"exit_frames":7},
+    {"family":"C","comparison_start_frame":563,"first_visible_frame":564,"exit_start_frame":698,"first_absent_frame":707,"study_frames":144,"exit_frames":9}
+  ],
+  "limits": "These are prototype study durations, not edits of live cue timestamps. Moving reference background differs from offline frozen plate; true AE alpha overlay preserves shadow, no chromakey. Masked Christopher reveal is not stroke tracing."
+}

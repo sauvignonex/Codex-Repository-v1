@@ -1,0 +1,32 @@
+[
+  {
+    "source": "reference",
+    "method": "near-white threshold in manually isolated caption ROI; background contamination possible",
+    "bounds": [
+      246,
+      1483,
+      670,
+      1545
+    ]
+  },
+  {
+    "source": "pass2",
+    "method": "near-white threshold in manually isolated caption ROI; background contamination possible",
+    "bounds": [
+      240,
+      1490,
+      688,
+      1555
+    ]
+  },
+  {
+    "source": "pass3",
+    "method": "near-white threshold in manually isolated caption ROI; background contamination possible",
+    "bounds": [
+      246,
+      1483,
+      673,
+      1545
+    ]
+  }
+]

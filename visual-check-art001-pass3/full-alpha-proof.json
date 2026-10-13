@@ -1,0 +1,58 @@
+{
+  "source": "Every exported AE RGBA frame, alpha >2/255 includes shadow/blur; reference-length cases only",
+  "frames": 368,
+  "rows": [
+    {
+      "family": "A",
+      "frames": 89,
+      "first_visible": 1,
+      "stable_hold_frames": [
+        41,
+        88
+      ],
+      "stable_hold": true,
+      "full_motion_path_verified": true,
+      "last_bounds": [
+        120,
+        1390,
+        847,
+        1568
+      ]
+    },
+    {
+      "family": "B",
+      "frames": 135,
+      "first_visible": 2,
+      "stable_hold_frames": [
+        30,
+        127
+      ],
+      "stable_hold": true,
+      "full_motion_path_verified": true,
+      "last_bounds": [
+        120,
+        1350,
+        692,
+        1558
+      ]
+    },
+    {
+      "family": "C",
+      "frames": 144,
+      "first_visible": 1,
+      "stable_hold_frames": [
+        15,
+        134
+      ],
+      "stable_hold": true,
+      "full_motion_path_verified": true,
+      "last_bounds": [
+        240,
+        1320,
+        753,
+        1546
+      ]
+    }
+  ],
+  "failures": []
+}

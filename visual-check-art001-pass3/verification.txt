@@ -1,0 +1,13 @@
+INPUT root=D:\Projects Adobe\Разработка плагина\github-repository id=A frames=89
+A Ведущая строка font=CeraPro-Medium text=Уяча — scale=27.5
+A Подстрока font=BebasNeueCyrillic text=ВКУС МАРИЙЭЛ scale=75.3140171392346
+DURATION A 2.96666669845581
+INPUT root=D:\Projects Adobe\Разработка плагина\github-repository id=B frames=135
+B Ведущая строка font=Christopher text=Угощение scale=103.881434780988
+B Подстрока font=CeraPro-Medium text=для ряженых scale=27.5
+DURATION B 4.5
+INPUT root=D:\Projects Adobe\Разработка плагина\github-repository id=C frames=144
+C Ведущая строка font=BebasNeueCyrillic text=ПОЧЕМУ scale=100.2544381976
+C Подстрока font=BebasNeueCyrillic text=РЖАНАЯ МУКА? scale=43.2296748131021
+DURATION C 4.80000019073486
+SUCCESS actual font/text and duration readback
