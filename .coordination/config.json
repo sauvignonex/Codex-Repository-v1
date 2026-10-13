@@ -1,0 +1,15 @@
+{
+  "schema_version": 1,
+  "repository": "sauvignonex/Codex-Repository-v1",
+  "code_branch": "codex/subtitle-studio-063-candidate",
+  "coordination_branch": "codex/subtitle-studio-coordination",
+  "mailbox_pr": 1,
+  "mailbox_url": "https://github.com/sauvignonex/Codex-Repository-v1/pull/1",
+  "manager": {"title": "Руководитель Subtitle Studio", "thread_id": "01a1326a-085a-7348-8014-7d8835d53058", "host_id": "durable", "writes_code": false},
+  "executor": {"title": "Основная разработка", "thread_id": "01a12fd6-2d77-75c3-bde7-50dfc9cf881d", "host_id": "local", "writes_code": true},
+  "handshake_id": "SS-CONNECT-001",
+  "max_active_code_writers": 1,
+  "message_types": ["CONNECT", "TASK", "ACK", "REPORT", "REVIEW", "BLOCKED", "HEARTBEAT"],
+  "fallback": "single-local-chat-plan-execute-review",
+  "automatic_local_wakeup_configured": false
+}
