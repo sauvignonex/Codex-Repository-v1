@@ -132,3 +132,14 @@ Export completed Pass5 export=true after manual OK. Separate Premiere sequence9f
 Compare-A-full-alpha.mp4 uses explicitly offline frozen plate with trueAEalpha, actualmovingreference onleft, no chromakey. AE-A-full.mp4 adds10generated transparent tailframes for clip-out, excluded from89proof. Premiere video uses actual89exports without generatedtail. Moving native background/earliest reference hold/artistic equivalence open.
 
 Live document exactly equal before/after. Six previous sequence IDs/names/video/audio counts preserved (includes earlier QA), new isolated A only. Not fullXML property audit. Project saved, runtime063/live cues/word times/roles untouched. B/C not re-exported. Boundary must be recomputed for arbitrary runtime text edits; integration not implemented. Source/study archive is not an installer. Previous versions preserved. REVIEW-03 and SS-ART-001 remain open for reviewer assessment.
+
+
+## Reference A timing / remaining REVIEW-02
+
+# SS-ART-001 — reference timing evidence (no new native variant)
+
+HEAD base ec6f54cfbd329706c1fe3c6f17211735e6ad9379. ACK6146172032. Fresh PR after REPORT-05 contained no newerreview; manager chat idle. Remaining REVIEW-02 timing question examined read-only. No user footage/frames/video added here: frames remain local dist. No Adobe export/import/edit, runtime or cue update.
+
+A source interval89analysisframes from2.9s at30fps. Hold samplelocal48, bodyROI110/1438/830/1585; near-white mask eroded7px,33269letter-core pixels. Firstword core10540pixels; wordgap15px in manually constrained boundary351..366. Earliest3consecutive frames with95% and98% observedwhitecore coverage agree: firstwordanalysis109 (3.6333s, local22/.7333s); body121 (4.0333s, local34/1.1333s). Native Pass5 interior wordpause beginslocal25, readinghold36; those are stable-window samples and not identical detectors, so do not claim exact onset error from their difference.
+
+Heuristic data from baked moving footage, not keyframe/alpha reconstruction. Threshold/ROI, possible whitephoto contamination, ±1analysisframe sampling remain limitations; identical95/98% results provide threshold sensitivity evidence only. Full rawnumeric rows included, no sourceframes published. Does not independently accept native variants or prove artistic equivalence. REPORT-05 spacing/native proofs remain unchanged; B/C unchanged. Six/103 preservation checks not repeated because no Adobe mutation this stage. REVIEW-03 and SS-ART-001 open, awaiting reviewerresponse.

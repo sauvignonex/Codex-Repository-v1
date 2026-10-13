@@ -1,0 +1,651 @@
+{
+  "source": "Baked reference A, 30fps analysis grid; white core of manually isolated body ROI",
+  "method": "Hold sample local48, RGB min>240/spread<12, erosion7px; observed RGB min>=235; earliest3consecutive coverage frames",
+  "roi": [
+    110,
+    1438,
+    830,
+    1585
+  ],
+  "core_pixels": 33269,
+  "first_word_core_pixels": 10540,
+  "word_gap": {
+    "pixels": 15,
+    "global_x": [
+      351,
+      366
+    ]
+  },
+  "anchors": {
+    "body_0.95": 121,
+    "body_0.98": 121,
+    "first_word_0.95": 109,
+    "first_word_0.98": 109
+  },
+  "uncertainty": "Heuristic, \u00b11 analysis frame plus threshold/ROI sensitivity. White photography may contaminate mask; does not prove exact animation hold/keyframes or native alpha. Native variants unchanged.",
+  "rows": [
+    {
+      "local_frame": 0,
+      "analysis_frame": 87,
+      "seconds": 2.9,
+      "body_core_coverage": 0.0,
+      "first_word_core_coverage": 0.0
+    },
+    {
+      "local_frame": 1,
+      "analysis_frame": 88,
+      "seconds": 2.933333,
+      "body_core_coverage": 0.0,
+      "first_word_core_coverage": 0.0
+    },
+    {
+      "local_frame": 2,
+      "analysis_frame": 89,
+      "seconds": 2.966667,
+      "body_core_coverage": 0.0,
+      "first_word_core_coverage": 0.0
+    },
+    {
+      "local_frame": 3,
+      "analysis_frame": 90,
+      "seconds": 3.0,
+      "body_core_coverage": 0.0,
+      "first_word_core_coverage": 0.0
+    },
+    {
+      "local_frame": 4,
+      "analysis_frame": 91,
+      "seconds": 3.033333,
+      "body_core_coverage": 0.0,
+      "first_word_core_coverage": 0.0
+    },
+    {
+      "local_frame": 5,
+      "analysis_frame": 92,
+      "seconds": 3.066667,
+      "body_core_coverage": 0.0,
+      "first_word_core_coverage": 0.0
+    },
+    {
+      "local_frame": 6,
+      "analysis_frame": 93,
+      "seconds": 3.1,
+      "body_core_coverage": 0.0,
+      "first_word_core_coverage": 0.0
+    },
+    {
+      "local_frame": 7,
+      "analysis_frame": 94,
+      "seconds": 3.133333,
+      "body_core_coverage": 0.0,
+      "first_word_core_coverage": 0.0
+    },
+    {
+      "local_frame": 8,
+      "analysis_frame": 95,
+      "seconds": 3.166667,
+      "body_core_coverage": 0.0,
+      "first_word_core_coverage": 0.0
+    },
+    {
+      "local_frame": 9,
+      "analysis_frame": 96,
+      "seconds": 3.2,
+      "body_core_coverage": 0.0,
+      "first_word_core_coverage": 0.0
+    },
+    {
+      "local_frame": 10,
+      "analysis_frame": 97,
+      "seconds": 3.233333,
+      "body_core_coverage": 0.0,
+      "first_word_core_coverage": 0.0
+    },
+    {
+      "local_frame": 11,
+      "analysis_frame": 98,
+      "seconds": 3.266667,
+      "body_core_coverage": 0.0,
+      "first_word_core_coverage": 0.0
+    },
+    {
+      "local_frame": 12,
+      "analysis_frame": 99,
+      "seconds": 3.3,
+      "body_core_coverage": 0.0,
+      "first_word_core_coverage": 0.0
+    },
+    {
+      "local_frame": 13,
+      "analysis_frame": 100,
+      "seconds": 3.333333,
+      "body_core_coverage": 0.0,
+      "first_word_core_coverage": 0.0
+    },
+    {
+      "local_frame": 14,
+      "analysis_frame": 101,
+      "seconds": 3.366667,
+      "body_core_coverage": 0.0,
+      "first_word_core_coverage": 0.0
+    },
+    {
+      "local_frame": 15,
+      "analysis_frame": 102,
+      "seconds": 3.4,
+      "body_core_coverage": 0.0,
+      "first_word_core_coverage": 0.0
+    },
+    {
+      "local_frame": 16,
+      "analysis_frame": 103,
+      "seconds": 3.433333,
+      "body_core_coverage": 0.0,
+      "first_word_core_coverage": 0.0
+    },
+    {
+      "local_frame": 17,
+      "analysis_frame": 104,
+      "seconds": 3.466667,
+      "body_core_coverage": 0.0,
+      "first_word_core_coverage": 0.0
+    },
+    {
+      "local_frame": 18,
+      "analysis_frame": 105,
+      "seconds": 3.5,
+      "body_core_coverage": 0.0,
+      "first_word_core_coverage": 0.0
+    },
+    {
+      "local_frame": 19,
+      "analysis_frame": 106,
+      "seconds": 3.533333,
+      "body_core_coverage": 0.0,
+      "first_word_core_coverage": 0.0
+    },
+    {
+      "local_frame": 20,
+      "analysis_frame": 107,
+      "seconds": 3.566667,
+      "body_core_coverage": 0.0,
+      "first_word_core_coverage": 0.0
+    },
+    {
+      "local_frame": 21,
+      "analysis_frame": 108,
+      "seconds": 3.6,
+      "body_core_coverage": 6e-05,
+      "first_word_core_coverage": 0.00019
+    },
+    {
+      "local_frame": 22,
+      "analysis_frame": 109,
+      "seconds": 3.633333,
+      "body_core_coverage": 0.316811,
+      "first_word_core_coverage": 1.0
+    },
+    {
+      "local_frame": 23,
+      "analysis_frame": 110,
+      "seconds": 3.666667,
+      "body_core_coverage": 0.316811,
+      "first_word_core_coverage": 1.0
+    },
+    {
+      "local_frame": 24,
+      "analysis_frame": 111,
+      "seconds": 3.7,
+      "body_core_coverage": 0.316811,
+      "first_word_core_coverage": 1.0
+    },
+    {
+      "local_frame": 25,
+      "analysis_frame": 112,
+      "seconds": 3.733333,
+      "body_core_coverage": 0.316811,
+      "first_word_core_coverage": 1.0
+    },
+    {
+      "local_frame": 26,
+      "analysis_frame": 113,
+      "seconds": 3.766667,
+      "body_core_coverage": 0.316811,
+      "first_word_core_coverage": 1.0
+    },
+    {
+      "local_frame": 27,
+      "analysis_frame": 114,
+      "seconds": 3.8,
+      "body_core_coverage": 0.318405,
+      "first_word_core_coverage": 1.0
+    },
+    {
+      "local_frame": 28,
+      "analysis_frame": 115,
+      "seconds": 3.833333,
+      "body_core_coverage": 0.81875,
+      "first_word_core_coverage": 1.0
+    },
+    {
+      "local_frame": 29,
+      "analysis_frame": 116,
+      "seconds": 3.866667,
+      "body_core_coverage": 0.823409,
+      "first_word_core_coverage": 1.0
+    },
+    {
+      "local_frame": 30,
+      "analysis_frame": 117,
+      "seconds": 3.9,
+      "body_core_coverage": 0.823409,
+      "first_word_core_coverage": 1.0
+    },
+    {
+      "local_frame": 31,
+      "analysis_frame": 118,
+      "seconds": 3.933333,
+      "body_core_coverage": 0.823409,
+      "first_word_core_coverage": 1.0
+    },
+    {
+      "local_frame": 32,
+      "analysis_frame": 119,
+      "seconds": 3.966667,
+      "body_core_coverage": 0.823409,
+      "first_word_core_coverage": 1.0
+    },
+    {
+      "local_frame": 33,
+      "analysis_frame": 120,
+      "seconds": 4.0,
+      "body_core_coverage": 0.823499,
+      "first_word_core_coverage": 1.0
+    },
+    {
+      "local_frame": 34,
+      "analysis_frame": 121,
+      "seconds": 4.033333,
+      "body_core_coverage": 0.999729,
+      "first_word_core_coverage": 1.0
+    },
+    {
+      "local_frame": 35,
+      "analysis_frame": 122,
+      "seconds": 4.066667,
+      "body_core_coverage": 1.0,
+      "first_word_core_coverage": 1.0
+    },
+    {
+      "local_frame": 36,
+      "analysis_frame": 123,
+      "seconds": 4.1,
+      "body_core_coverage": 1.0,
+      "first_word_core_coverage": 1.0
+    },
+    {
+      "local_frame": 37,
+      "analysis_frame": 124,
+      "seconds": 4.133333,
+      "body_core_coverage": 1.0,
+      "first_word_core_coverage": 1.0
+    },
+    {
+      "local_frame": 38,
+      "analysis_frame": 125,
+      "seconds": 4.166667,
+      "body_core_coverage": 1.0,
+      "first_word_core_coverage": 1.0
+    },
+    {
+      "local_frame": 39,
+      "analysis_frame": 126,
+      "seconds": 4.2,
+      "body_core_coverage": 1.0,
+      "first_word_core_coverage": 1.0
+    },
+    {
+      "local_frame": 40,
+      "analysis_frame": 127,
+      "seconds": 4.233333,
+      "body_core_coverage": 1.0,
+      "first_word_core_coverage": 1.0
+    },
+    {
+      "local_frame": 41,
+      "analysis_frame": 128,
+      "seconds": 4.266667,
+      "body_core_coverage": 1.0,
+      "first_word_core_coverage": 1.0
+    },
+    {
+      "local_frame": 42,
+      "analysis_frame": 129,
+      "seconds": 4.3,
+      "body_core_coverage": 1.0,
+      "first_word_core_coverage": 1.0
+    },
+    {
+      "local_frame": 43,
+      "analysis_frame": 130,
+      "seconds": 4.333333,
+      "body_core_coverage": 1.0,
+      "first_word_core_coverage": 1.0
+    },
+    {
+      "local_frame": 44,
+      "analysis_frame": 131,
+      "seconds": 4.366667,
+      "body_core_coverage": 1.0,
+      "first_word_core_coverage": 1.0
+    },
+    {
+      "local_frame": 45,
+      "analysis_frame": 132,
+      "seconds": 4.4,
+      "body_core_coverage": 1.0,
+      "first_word_core_coverage": 1.0
+    },
+    {
+      "local_frame": 46,
+      "analysis_frame": 133,
+      "seconds": 4.433333,
+      "body_core_coverage": 1.0,
+      "first_word_core_coverage": 1.0
+    },
+    {
+      "local_frame": 47,
+      "analysis_frame": 134,
+      "seconds": 4.466667,
+      "body_core_coverage": 1.0,
+      "first_word_core_coverage": 1.0
+    },
+    {
+      "local_frame": 48,
+      "analysis_frame": 135,
+      "seconds": 4.5,
+      "body_core_coverage": 1.0,
+      "first_word_core_coverage": 1.0
+    },
+    {
+      "local_frame": 49,
+      "analysis_frame": 136,
+      "seconds": 4.533333,
+      "body_core_coverage": 1.0,
+      "first_word_core_coverage": 1.0
+    },
+    {
+      "local_frame": 50,
+      "analysis_frame": 137,
+      "seconds": 4.566667,
+      "body_core_coverage": 1.0,
+      "first_word_core_coverage": 1.0
+    },
+    {
+      "local_frame": 51,
+      "analysis_frame": 138,
+      "seconds": 4.6,
+      "body_core_coverage": 1.0,
+      "first_word_core_coverage": 1.0
+    },
+    {
+      "local_frame": 52,
+      "analysis_frame": 139,
+      "seconds": 4.633333,
+      "body_core_coverage": 1.0,
+      "first_word_core_coverage": 1.0
+    },
+    {
+      "local_frame": 53,
+      "analysis_frame": 140,
+      "seconds": 4.666667,
+      "body_core_coverage": 1.0,
+      "first_word_core_coverage": 1.0
+    },
+    {
+      "local_frame": 54,
+      "analysis_frame": 141,
+      "seconds": 4.7,
+      "body_core_coverage": 1.0,
+      "first_word_core_coverage": 1.0
+    },
+    {
+      "local_frame": 55,
+      "analysis_frame": 142,
+      "seconds": 4.733333,
+      "body_core_coverage": 1.0,
+      "first_word_core_coverage": 1.0
+    },
+    {
+      "local_frame": 56,
+      "analysis_frame": 143,
+      "seconds": 4.766667,
+      "body_core_coverage": 1.0,
+      "first_word_core_coverage": 1.0
+    },
+    {
+      "local_frame": 57,
+      "analysis_frame": 144,
+      "seconds": 4.8,
+      "body_core_coverage": 1.0,
+      "first_word_core_coverage": 1.0
+    },
+    {
+      "local_frame": 58,
+      "analysis_frame": 145,
+      "seconds": 4.833333,
+      "body_core_coverage": 1.0,
+      "first_word_core_coverage": 1.0
+    },
+    {
+      "local_frame": 59,
+      "analysis_frame": 146,
+      "seconds": 4.866667,
+      "body_core_coverage": 1.0,
+      "first_word_core_coverage": 1.0
+    },
+    {
+      "local_frame": 60,
+      "analysis_frame": 147,
+      "seconds": 4.9,
+      "body_core_coverage": 1.0,
+      "first_word_core_coverage": 1.0
+    },
+    {
+      "local_frame": 61,
+      "analysis_frame": 148,
+      "seconds": 4.933333,
+      "body_core_coverage": 1.0,
+      "first_word_core_coverage": 1.0
+    },
+    {
+      "local_frame": 62,
+      "analysis_frame": 149,
+      "seconds": 4.966667,
+      "body_core_coverage": 1.0,
+      "first_word_core_coverage": 1.0
+    },
+    {
+      "local_frame": 63,
+      "analysis_frame": 150,
+      "seconds": 5.0,
+      "body_core_coverage": 1.0,
+      "first_word_core_coverage": 1.0
+    },
+    {
+      "local_frame": 64,
+      "analysis_frame": 151,
+      "seconds": 5.033333,
+      "body_core_coverage": 1.0,
+      "first_word_core_coverage": 1.0
+    },
+    {
+      "local_frame": 65,
+      "analysis_frame": 152,
+      "seconds": 5.066667,
+      "body_core_coverage": 1.0,
+      "first_word_core_coverage": 1.0
+    },
+    {
+      "local_frame": 66,
+      "analysis_frame": 153,
+      "seconds": 5.1,
+      "body_core_coverage": 1.0,
+      "first_word_core_coverage": 1.0
+    },
+    {
+      "local_frame": 67,
+      "analysis_frame": 154,
+      "seconds": 5.133333,
+      "body_core_coverage": 1.0,
+      "first_word_core_coverage": 1.0
+    },
+    {
+      "local_frame": 68,
+      "analysis_frame": 155,
+      "seconds": 5.166667,
+      "body_core_coverage": 1.0,
+      "first_word_core_coverage": 1.0
+    },
+    {
+      "local_frame": 69,
+      "analysis_frame": 156,
+      "seconds": 5.2,
+      "body_core_coverage": 1.0,
+      "first_word_core_coverage": 1.0
+    },
+    {
+      "local_frame": 70,
+      "analysis_frame": 157,
+      "seconds": 5.233333,
+      "body_core_coverage": 1.0,
+      "first_word_core_coverage": 1.0
+    },
+    {
+      "local_frame": 71,
+      "analysis_frame": 158,
+      "seconds": 5.266667,
+      "body_core_coverage": 1.0,
+      "first_word_core_coverage": 1.0
+    },
+    {
+      "local_frame": 72,
+      "analysis_frame": 159,
+      "seconds": 5.3,
+      "body_core_coverage": 1.0,
+      "first_word_core_coverage": 1.0
+    },
+    {
+      "local_frame": 73,
+      "analysis_frame": 160,
+      "seconds": 5.333333,
+      "body_core_coverage": 1.0,
+      "first_word_core_coverage": 1.0
+    },
+    {
+      "local_frame": 74,
+      "analysis_frame": 161,
+      "seconds": 5.366667,
+      "body_core_coverage": 1.0,
+      "first_word_core_coverage": 1.0
+    },
+    {
+      "local_frame": 75,
+      "analysis_frame": 162,
+      "seconds": 5.4,
+      "body_core_coverage": 1.0,
+      "first_word_core_coverage": 1.0
+    },
+    {
+      "local_frame": 76,
+      "analysis_frame": 163,
+      "seconds": 5.433333,
+      "body_core_coverage": 1.0,
+      "first_word_core_coverage": 1.0
+    },
+    {
+      "local_frame": 77,
+      "analysis_frame": 164,
+      "seconds": 5.466667,
+      "body_core_coverage": 1.0,
+      "first_word_core_coverage": 1.0
+    },
+    {
+      "local_frame": 78,
+      "analysis_frame": 165,
+      "seconds": 5.5,
+      "body_core_coverage": 1.0,
+      "first_word_core_coverage": 1.0
+    },
+    {
+      "local_frame": 79,
+      "analysis_frame": 166,
+      "seconds": 5.533333,
+      "body_core_coverage": 1.0,
+      "first_word_core_coverage": 1.0
+    },
+    {
+      "local_frame": 80,
+      "analysis_frame": 167,
+      "seconds": 5.566667,
+      "body_core_coverage": 1.0,
+      "first_word_core_coverage": 1.0
+    },
+    {
+      "local_frame": 81,
+      "analysis_frame": 168,
+      "seconds": 5.6,
+      "body_core_coverage": 1.0,
+      "first_word_core_coverage": 1.0
+    },
+    {
+      "local_frame": 82,
+      "analysis_frame": 169,
+      "seconds": 5.633333,
+      "body_core_coverage": 1.0,
+      "first_word_core_coverage": 1.0
+    },
+    {
+      "local_frame": 83,
+      "analysis_frame": 170,
+      "seconds": 5.666667,
+      "body_core_coverage": 1.0,
+      "first_word_core_coverage": 1.0
+    },
+    {
+      "local_frame": 84,
+      "analysis_frame": 171,
+      "seconds": 5.7,
+      "body_core_coverage": 1.0,
+      "first_word_core_coverage": 1.0
+    },
+    {
+      "local_frame": 85,
+      "analysis_frame": 172,
+      "seconds": 5.733333,
+      "body_core_coverage": 1.0,
+      "first_word_core_coverage": 1.0
+    },
+    {
+      "local_frame": 86,
+      "analysis_frame": 173,
+      "seconds": 5.766667,
+      "body_core_coverage": 1.0,
+      "first_word_core_coverage": 1.0
+    },
+    {
+      "local_frame": 87,
+      "analysis_frame": 174,
+      "seconds": 5.8,
+      "body_core_coverage": 1.0,
+      "first_word_core_coverage": 1.0
+    },
+    {
+      "local_frame": 88,
+      "analysis_frame": 175,
+      "seconds": 5.833333,
+      "body_core_coverage": 1.0,
+      "first_word_core_coverage": 1.0
+    }
+  ]
+}
