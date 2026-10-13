@@ -1,0 +1,4 @@
+tracking=-24 font=BebasNeueCyrillic style=Regular substitute=false scaleX=75.3140171392346 scaleY=75.3140171392346 layers=4
+tracking=-36 font=BebasNeueCyrillic style=Regular substitute=false scaleX=77.5657620202777 scaleY=77.5657620202777 layers=4
+tracking=-48 font=BebasNeueCyrillic style=Regular substitute=false scaleX=79.9563077131231 scaleY=79.9563077131231 layers=4
+SUCCESS 3 snapshots x first/hold; not full motion or Premiere acceptance

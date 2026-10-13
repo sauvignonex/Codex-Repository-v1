@@ -1,0 +1,938 @@
+{
+  "method": "Same thresholds/erosion7/hold48/3consecutive frames; each source own hold-derived mask; not native keyframe reconstruction",
+  "sources": [
+    {
+      "source": "reference",
+      "core_pixels": 33269,
+      "word_gap_pixels": 15,
+      "readability_local_frames": {
+        "body_0.95": 34,
+        "body_0.98": 34,
+        "first_word_0.95": 22,
+        "first_word_0.98": 22
+      },
+      "earliest3_identical_RGB_crop_frames": null,
+      "earliest3_stable_readable_body": null,
+      "rows": [
+        {
+          "local_frame": 0,
+          "body": 0.0,
+          "first_word": 0.0
+        },
+        {
+          "local_frame": 1,
+          "body": 0.0,
+          "first_word": 0.0
+        },
+        {
+          "local_frame": 2,
+          "body": 0.0,
+          "first_word": 0.0
+        },
+        {
+          "local_frame": 3,
+          "body": 0.0,
+          "first_word": 0.0
+        },
+        {
+          "local_frame": 4,
+          "body": 0.0,
+          "first_word": 0.0
+        },
+        {
+          "local_frame": 5,
+          "body": 0.0,
+          "first_word": 0.0
+        },
+        {
+          "local_frame": 6,
+          "body": 0.0,
+          "first_word": 0.0
+        },
+        {
+          "local_frame": 7,
+          "body": 0.0,
+          "first_word": 0.0
+        },
+        {
+          "local_frame": 8,
+          "body": 0.0,
+          "first_word": 0.0
+        },
+        {
+          "local_frame": 9,
+          "body": 0.0,
+          "first_word": 0.0
+        },
+        {
+          "local_frame": 10,
+          "body": 0.0,
+          "first_word": 0.0
+        },
+        {
+          "local_frame": 11,
+          "body": 0.0,
+          "first_word": 0.0
+        },
+        {
+          "local_frame": 12,
+          "body": 0.0,
+          "first_word": 0.0
+        },
+        {
+          "local_frame": 13,
+          "body": 0.0,
+          "first_word": 0.0
+        },
+        {
+          "local_frame": 14,
+          "body": 0.0,
+          "first_word": 0.0
+        },
+        {
+          "local_frame": 15,
+          "body": 0.0,
+          "first_word": 0.0
+        },
+        {
+          "local_frame": 16,
+          "body": 0.0,
+          "first_word": 0.0
+        },
+        {
+          "local_frame": 17,
+          "body": 0.0,
+          "first_word": 0.0
+        },
+        {
+          "local_frame": 18,
+          "body": 0.0,
+          "first_word": 0.0
+        },
+        {
+          "local_frame": 19,
+          "body": 0.0,
+          "first_word": 0.0
+        },
+        {
+          "local_frame": 20,
+          "body": 0.0,
+          "first_word": 0.0
+        },
+        {
+          "local_frame": 21,
+          "body": 6e-05,
+          "first_word": 0.00019
+        },
+        {
+          "local_frame": 22,
+          "body": 0.316811,
+          "first_word": 1.0
+        },
+        {
+          "local_frame": 23,
+          "body": 0.316811,
+          "first_word": 1.0
+        },
+        {
+          "local_frame": 24,
+          "body": 0.316811,
+          "first_word": 1.0
+        },
+        {
+          "local_frame": 25,
+          "body": 0.316811,
+          "first_word": 1.0
+        },
+        {
+          "local_frame": 26,
+          "body": 0.316811,
+          "first_word": 1.0
+        },
+        {
+          "local_frame": 27,
+          "body": 0.318405,
+          "first_word": 1.0
+        },
+        {
+          "local_frame": 28,
+          "body": 0.81875,
+          "first_word": 1.0
+        },
+        {
+          "local_frame": 29,
+          "body": 0.823409,
+          "first_word": 1.0
+        },
+        {
+          "local_frame": 30,
+          "body": 0.823409,
+          "first_word": 1.0
+        },
+        {
+          "local_frame": 31,
+          "body": 0.823409,
+          "first_word": 1.0
+        },
+        {
+          "local_frame": 32,
+          "body": 0.823409,
+          "first_word": 1.0
+        },
+        {
+          "local_frame": 33,
+          "body": 0.823499,
+          "first_word": 1.0
+        },
+        {
+          "local_frame": 34,
+          "body": 0.999729,
+          "first_word": 1.0
+        },
+        {
+          "local_frame": 35,
+          "body": 1.0,
+          "first_word": 1.0
+        },
+        {
+          "local_frame": 36,
+          "body": 1.0,
+          "first_word": 1.0
+        },
+        {
+          "local_frame": 37,
+          "body": 1.0,
+          "first_word": 1.0
+        },
+        {
+          "local_frame": 38,
+          "body": 1.0,
+          "first_word": 1.0
+        },
+        {
+          "local_frame": 39,
+          "body": 1.0,
+          "first_word": 1.0
+        },
+        {
+          "local_frame": 40,
+          "body": 1.0,
+          "first_word": 1.0
+        },
+        {
+          "local_frame": 41,
+          "body": 1.0,
+          "first_word": 1.0
+        },
+        {
+          "local_frame": 42,
+          "body": 1.0,
+          "first_word": 1.0
+        },
+        {
+          "local_frame": 43,
+          "body": 1.0,
+          "first_word": 1.0
+        },
+        {
+          "local_frame": 44,
+          "body": 1.0,
+          "first_word": 1.0
+        },
+        {
+          "local_frame": 45,
+          "body": 1.0,
+          "first_word": 1.0
+        },
+        {
+          "local_frame": 46,
+          "body": 1.0,
+          "first_word": 1.0
+        },
+        {
+          "local_frame": 47,
+          "body": 1.0,
+          "first_word": 1.0
+        },
+        {
+          "local_frame": 48,
+          "body": 1.0,
+          "first_word": 1.0
+        },
+        {
+          "local_frame": 49,
+          "body": 1.0,
+          "first_word": 1.0
+        },
+        {
+          "local_frame": 50,
+          "body": 1.0,
+          "first_word": 1.0
+        },
+        {
+          "local_frame": 51,
+          "body": 1.0,
+          "first_word": 1.0
+        },
+        {
+          "local_frame": 52,
+          "body": 1.0,
+          "first_word": 1.0
+        },
+        {
+          "local_frame": 53,
+          "body": 1.0,
+          "first_word": 1.0
+        },
+        {
+          "local_frame": 54,
+          "body": 1.0,
+          "first_word": 1.0
+        },
+        {
+          "local_frame": 55,
+          "body": 1.0,
+          "first_word": 1.0
+        },
+        {
+          "local_frame": 56,
+          "body": 1.0,
+          "first_word": 1.0
+        },
+        {
+          "local_frame": 57,
+          "body": 1.0,
+          "first_word": 1.0
+        },
+        {
+          "local_frame": 58,
+          "body": 1.0,
+          "first_word": 1.0
+        },
+        {
+          "local_frame": 59,
+          "body": 1.0,
+          "first_word": 1.0
+        },
+        {
+          "local_frame": 60,
+          "body": 1.0,
+          "first_word": 1.0
+        },
+        {
+          "local_frame": 61,
+          "body": 1.0,
+          "first_word": 1.0
+        },
+        {
+          "local_frame": 62,
+          "body": 1.0,
+          "first_word": 1.0
+        },
+        {
+          "local_frame": 63,
+          "body": 1.0,
+          "first_word": 1.0
+        },
+        {
+          "local_frame": 64,
+          "body": 1.0,
+          "first_word": 1.0
+        },
+        {
+          "local_frame": 65,
+          "body": 1.0,
+          "first_word": 1.0
+        },
+        {
+          "local_frame": 66,
+          "body": 1.0,
+          "first_word": 1.0
+        },
+        {
+          "local_frame": 67,
+          "body": 1.0,
+          "first_word": 1.0
+        },
+        {
+          "local_frame": 68,
+          "body": 1.0,
+          "first_word": 1.0
+        },
+        {
+          "local_frame": 69,
+          "body": 1.0,
+          "first_word": 1.0
+        },
+        {
+          "local_frame": 70,
+          "body": 1.0,
+          "first_word": 1.0
+        },
+        {
+          "local_frame": 71,
+          "body": 1.0,
+          "first_word": 1.0
+        },
+        {
+          "local_frame": 72,
+          "body": 1.0,
+          "first_word": 1.0
+        },
+        {
+          "local_frame": 73,
+          "body": 1.0,
+          "first_word": 1.0
+        },
+        {
+          "local_frame": 74,
+          "body": 1.0,
+          "first_word": 1.0
+        },
+        {
+          "local_frame": 75,
+          "body": 1.0,
+          "first_word": 1.0
+        },
+        {
+          "local_frame": 76,
+          "body": 1.0,
+          "first_word": 1.0
+        },
+        {
+          "local_frame": 77,
+          "body": 1.0,
+          "first_word": 1.0
+        },
+        {
+          "local_frame": 78,
+          "body": 1.0,
+          "first_word": 1.0
+        },
+        {
+          "local_frame": 79,
+          "body": 1.0,
+          "first_word": 1.0
+        },
+        {
+          "local_frame": 80,
+          "body": 1.0,
+          "first_word": 1.0
+        },
+        {
+          "local_frame": 81,
+          "body": 1.0,
+          "first_word": 1.0
+        },
+        {
+          "local_frame": 82,
+          "body": 1.0,
+          "first_word": 1.0
+        },
+        {
+          "local_frame": 83,
+          "body": 1.0,
+          "first_word": 1.0
+        },
+        {
+          "local_frame": 84,
+          "body": 1.0,
+          "first_word": 1.0
+        },
+        {
+          "local_frame": 85,
+          "body": 1.0,
+          "first_word": 1.0
+        },
+        {
+          "local_frame": 86,
+          "body": 1.0,
+          "first_word": 1.0
+        },
+        {
+          "local_frame": 87,
+          "body": 1.0,
+          "first_word": 1.0
+        },
+        {
+          "local_frame": 88,
+          "body": 1.0,
+          "first_word": 1.0
+        }
+      ]
+    },
+    {
+      "source": "Pass5-Premiere",
+      "core_pixels": 23971,
+      "word_gap_pixels": 33,
+      "readability_local_frames": {
+        "body_0.95": 35,
+        "body_0.98": 35,
+        "first_word_0.95": 24,
+        "first_word_0.98": 24
+      },
+      "earliest3_identical_RGB_crop_frames": 0,
+      "earliest3_stable_readable_body": 36,
+      "rows": [
+        {
+          "local_frame": 0,
+          "body": 0.0,
+          "first_word": 0.0
+        },
+        {
+          "local_frame": 1,
+          "body": 0.0,
+          "first_word": 0.0
+        },
+        {
+          "local_frame": 2,
+          "body": 0.0,
+          "first_word": 0.0
+        },
+        {
+          "local_frame": 3,
+          "body": 0.0,
+          "first_word": 0.0
+        },
+        {
+          "local_frame": 4,
+          "body": 0.0,
+          "first_word": 0.0
+        },
+        {
+          "local_frame": 5,
+          "body": 0.0,
+          "first_word": 0.0
+        },
+        {
+          "local_frame": 6,
+          "body": 0.0,
+          "first_word": 0.0
+        },
+        {
+          "local_frame": 7,
+          "body": 0.0,
+          "first_word": 0.0
+        },
+        {
+          "local_frame": 8,
+          "body": 0.0,
+          "first_word": 0.0
+        },
+        {
+          "local_frame": 9,
+          "body": 0.0,
+          "first_word": 0.0
+        },
+        {
+          "local_frame": 10,
+          "body": 0.0,
+          "first_word": 0.0
+        },
+        {
+          "local_frame": 11,
+          "body": 0.0,
+          "first_word": 0.0
+        },
+        {
+          "local_frame": 12,
+          "body": 0.0,
+          "first_word": 0.0
+        },
+        {
+          "local_frame": 13,
+          "body": 0.0,
+          "first_word": 0.0
+        },
+        {
+          "local_frame": 14,
+          "body": 0.0,
+          "first_word": 0.0
+        },
+        {
+          "local_frame": 15,
+          "body": 0.0,
+          "first_word": 0.0
+        },
+        {
+          "local_frame": 16,
+          "body": 0.0,
+          "first_word": 0.0
+        },
+        {
+          "local_frame": 17,
+          "body": 0.0,
+          "first_word": 0.0
+        },
+        {
+          "local_frame": 18,
+          "body": 0.0,
+          "first_word": 0.0
+        },
+        {
+          "local_frame": 19,
+          "body": 0.066706,
+          "first_word": 0.204738
+        },
+        {
+          "local_frame": 20,
+          "body": 0.131242,
+          "first_word": 0.402817
+        },
+        {
+          "local_frame": 21,
+          "body": 0.188603,
+          "first_word": 0.578873
+        },
+        {
+          "local_frame": 22,
+          "body": 0.230362,
+          "first_word": 0.707042
+        },
+        {
+          "local_frame": 23,
+          "body": 0.269159,
+          "first_word": 0.82612
+        },
+        {
+          "local_frame": 24,
+          "body": 0.32581,
+          "first_word": 1.0
+        },
+        {
+          "local_frame": 25,
+          "body": 0.32581,
+          "first_word": 1.0
+        },
+        {
+          "local_frame": 26,
+          "body": 0.32581,
+          "first_word": 1.0
+        },
+        {
+          "local_frame": 27,
+          "body": 0.32581,
+          "first_word": 1.0
+        },
+        {
+          "local_frame": 28,
+          "body": 0.32581,
+          "first_word": 1.0
+        },
+        {
+          "local_frame": 29,
+          "body": 0.365108,
+          "first_word": 1.0
+        },
+        {
+          "local_frame": 30,
+          "body": 0.466898,
+          "first_word": 1.0
+        },
+        {
+          "local_frame": 31,
+          "body": 0.58187,
+          "first_word": 1.0
+        },
+        {
+          "local_frame": 32,
+          "body": 0.672521,
+          "first_word": 1.0
+        },
+        {
+          "local_frame": 33,
+          "body": 0.794001,
+          "first_word": 1.0
+        },
+        {
+          "local_frame": 34,
+          "body": 0.901715,
+          "first_word": 1.0
+        },
+        {
+          "local_frame": 35,
+          "body": 1.0,
+          "first_word": 1.0
+        },
+        {
+          "local_frame": 36,
+          "body": 1.0,
+          "first_word": 1.0
+        },
+        {
+          "local_frame": 37,
+          "body": 1.0,
+          "first_word": 1.0
+        },
+        {
+          "local_frame": 38,
+          "body": 1.0,
+          "first_word": 1.0
+        },
+        {
+          "local_frame": 39,
+          "body": 1.0,
+          "first_word": 1.0
+        },
+        {
+          "local_frame": 40,
+          "body": 1.0,
+          "first_word": 1.0
+        },
+        {
+          "local_frame": 41,
+          "body": 1.0,
+          "first_word": 1.0
+        },
+        {
+          "local_frame": 42,
+          "body": 1.0,
+          "first_word": 1.0
+        },
+        {
+          "local_frame": 43,
+          "body": 1.0,
+          "first_word": 1.0
+        },
+        {
+          "local_frame": 44,
+          "body": 1.0,
+          "first_word": 1.0
+        },
+        {
+          "local_frame": 45,
+          "body": 1.0,
+          "first_word": 1.0
+        },
+        {
+          "local_frame": 46,
+          "body": 1.0,
+          "first_word": 1.0
+        },
+        {
+          "local_frame": 47,
+          "body": 1.0,
+          "first_word": 1.0
+        },
+        {
+          "local_frame": 48,
+          "body": 1.0,
+          "first_word": 1.0
+        },
+        {
+          "local_frame": 49,
+          "body": 1.0,
+          "first_word": 1.0
+        },
+        {
+          "local_frame": 50,
+          "body": 1.0,
+          "first_word": 1.0
+        },
+        {
+          "local_frame": 51,
+          "body": 1.0,
+          "first_word": 1.0
+        },
+        {
+          "local_frame": 52,
+          "body": 1.0,
+          "first_word": 1.0
+        },
+        {
+          "local_frame": 53,
+          "body": 1.0,
+          "first_word": 1.0
+        },
+        {
+          "local_frame": 54,
+          "body": 1.0,
+          "first_word": 1.0
+        },
+        {
+          "local_frame": 55,
+          "body": 1.0,
+          "first_word": 1.0
+        },
+        {
+          "local_frame": 56,
+          "body": 1.0,
+          "first_word": 1.0
+        },
+        {
+          "local_frame": 57,
+          "body": 1.0,
+          "first_word": 1.0
+        },
+        {
+          "local_frame": 58,
+          "body": 1.0,
+          "first_word": 1.0
+        },
+        {
+          "local_frame": 59,
+          "body": 1.0,
+          "first_word": 1.0
+        },
+        {
+          "local_frame": 60,
+          "body": 1.0,
+          "first_word": 1.0
+        },
+        {
+          "local_frame": 61,
+          "body": 1.0,
+          "first_word": 1.0
+        },
+        {
+          "local_frame": 62,
+          "body": 1.0,
+          "first_word": 1.0
+        },
+        {
+          "local_frame": 63,
+          "body": 1.0,
+          "first_word": 1.0
+        },
+        {
+          "local_frame": 64,
+          "body": 1.0,
+          "first_word": 1.0
+        },
+        {
+          "local_frame": 65,
+          "body": 1.0,
+          "first_word": 1.0
+        },
+        {
+          "local_frame": 66,
+          "body": 1.0,
+          "first_word": 1.0
+        },
+        {
+          "local_frame": 67,
+          "body": 1.0,
+          "first_word": 1.0
+        },
+        {
+          "local_frame": 68,
+          "body": 1.0,
+          "first_word": 1.0
+        },
+        {
+          "local_frame": 69,
+          "body": 1.0,
+          "first_word": 1.0
+        },
+        {
+          "local_frame": 70,
+          "body": 1.0,
+          "first_word": 1.0
+        },
+        {
+          "local_frame": 71,
+          "body": 1.0,
+          "first_word": 1.0
+        },
+        {
+          "local_frame": 72,
+          "body": 1.0,
+          "first_word": 1.0
+        },
+        {
+          "local_frame": 73,
+          "body": 1.0,
+          "first_word": 1.0
+        },
+        {
+          "local_frame": 74,
+          "body": 1.0,
+          "first_word": 1.0
+        },
+        {
+          "local_frame": 75,
+          "body": 1.0,
+          "first_word": 1.0
+        },
+        {
+          "local_frame": 76,
+          "body": 1.0,
+          "first_word": 1.0
+        },
+        {
+          "local_frame": 77,
+          "body": 1.0,
+          "first_word": 1.0
+        },
+        {
+          "local_frame": 78,
+          "body": 1.0,
+          "first_word": 1.0
+        },
+        {
+          "local_frame": 79,
+          "body": 1.0,
+          "first_word": 1.0
+        },
+        {
+          "local_frame": 80,
+          "body": 1.0,
+          "first_word": 1.0
+        },
+        {
+          "local_frame": 81,
+          "body": 1.0,
+          "first_word": 1.0
+        },
+        {
+          "local_frame": 82,
+          "body": 1.0,
+          "first_word": 1.0
+        },
+        {
+          "local_frame": 83,
+          "body": 1.0,
+          "first_word": 1.0
+        },
+        {
+          "local_frame": 84,
+          "body": 1.0,
+          "first_word": 1.0
+        },
+        {
+          "local_frame": 85,
+          "body": 1.0,
+          "first_word": 1.0
+        },
+        {
+          "local_frame": 86,
+          "body": 1.0,
+          "first_word": 1.0
+        },
+        {
+          "local_frame": 87,
+          "body": 1.0,
+          "first_word": 1.0
+        },
+        {
+          "local_frame": 88,
+          "body": 1.0,
+          "first_word": 1.0
+        }
+      ]
+    }
+  ],
+  "Pass5_minus_reference_frames": {
+    "body_0.95": 1,
+    "body_0.98": 1,
+    "first_word_0.95": 2,
+    "first_word_0.98": 2
+  },
+  "typography_prior_evidence": {
+    "reference_body_height": 143,
+    "Pass5_body_height": 119,
+    "height_relative_error": -0.16783216783216784
+  },
+  "next_priority": "Typographic height/spacing exceeds temporal mismatch; keep timing until typography study reviewed",
+  "uncertainty": "Heuristic white-core readability, \u00b11frame plus ROI/whitebackground sensitivity. Equal RGB crop stability is separate and expected absent on moving background. No media published; unchanged native exports only."
+}
